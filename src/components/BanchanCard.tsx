@@ -72,9 +72,14 @@ export default function BanchanCard({ banchan, locale, categoryLabel }: BanchanC
             onError={() => setImgError(true)}
           />
         ) : (
-          <div className="absolute inset-0 bg-gradient-to-br from-red-600 via-amber-500 to-blue-700 flex items-center justify-center p-4">
-            <span className="text-white/20 text-7xl font-black select-none pointer-events-none">
-              K-FOOD
+          <div 
+            className="absolute inset-0 flex items-center justify-center p-4"
+            style={{
+              background: "linear-gradient(135deg, #007A33 0%, #CE1126 25%, #FFD700 50%, #F5F5F5 75%, #1C1C1C 100%)"
+            }}
+          >
+            <span className="text-white/20 text-5xl font-black select-none pointer-events-none tracking-widest">
+              K-BANCHAN
             </span>
           </div>
         )}

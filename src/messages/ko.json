@@ -115,7 +115,33 @@
     "title": "THE SECRET CODE OF KOREAN CUISINE",
     "subtitle": "한식의 5가지 비밀 코드를 발견하세요",
     "cta_banchan": "반찬 50선 보기",
-    "cta_articles": "5대 특성 읽기"
+    "cta_articles": "5대 특성 읽기",
+    "logo_alt": "K-BanChan - 한식의 비밀 코드"
+  },
+  "nav": {
+    "banchan": "반찬 50선",
+    "articles": "THE SECRET CODE",
+    "hot": "HOT 8 DISHES",
+    "previous": "이전 창",
+    "next": "다음 창"
+  },
+  "directions": {
+    "yaksik-dongwon": "동쪽",
+    "yukmi": "남쪽",
+    "obangsaek": "중앙",
+    "nanum": "서쪽",
+    "ingredients-terroir": "북쪽"
+  },
+  "elements": {
+    "yaksik-dongwon": "목(木)",
+    "yukmi": "화(火)",
+    "obangsaek": "토(土)",
+    "nanum": "금(金)",
+    "ingredients-terroir": "수(水)"
+  },
+  "cycle": {
+    "label": "循環",
+    "description": "오행상생(五行相生): 木生火 · 火生土 · 土生金 · 金生水 · 水生木"
   },
   "articles": {
     "title": "한식의 비밀 코드 (The Secret Code)",
@@ -127,25 +153,25 @@
     "back_to_list": "목록으로 돌아가기",
     "related_banchan": "관련 추천 반찬",
     "next_article": "다음 비밀 코드",
-    "yaksik": {
+    "yaksik-dongwon": {
       "title": "약식동원 (藥食同源)",
-      "summary": "음식과 약은 그 근원이 같다는 웰빙 철학"
+      "subtitle": "음식과 약은 그 근원이 같다는 웰빙 철학"
     },
     "yukmi": {
       "title": "육미 (六味)",
-      "summary": "여섯 가지 조화로운 맛의 완벽한 조화"
+      "subtitle": "여섯 가지 조화로운 맛의 완벽한 조화"
     },
     "obangsaek": {
       "title": "오방색 (五方色)",
-      "summary": "다섯 가지 방위색을 통한 영양 균형"
+      "subtitle": "다섯 가지 방위색을 통한 영양 균형"
     },
     "nanum": {
       "title": "나눔 (Sharing)",
-      "summary": "정(情)을 이웃과 함께 나누는 환대 문화"
+      "subtitle": "정(情)을 이웃과 함께 나누는 환대 문화"
     },
-    "ingredients_terroir": {
+    "ingredients-terroir": {
       "title": "식재료와 풍토 (Terroir)",
-      "summary": "계절과 삼면의 바다가 빚어낸 신선함과 발효"
+      "subtitle": "계절과 삼면의 바다가 빚어낸 신선함과 발효"
     }
   }
 }

@@ -115,7 +115,33 @@
     "title": "THE SECRET CODE OF KOREAN CUISINE",
     "subtitle": "Discover the 5 Secret Codes of Korean Cuisine",
     "cta_banchan": "View 50 Banchan",
-    "cta_articles": "Read 5 Secret Codes"
+    "cta_articles": "Read 5 Secret Codes",
+    "logo_alt": "K-BanChan - The Secret Code of Korean Cuisine"
+  },
+  "nav": {
+    "banchan": "50 Banchan",
+    "articles": "THE SECRET CODE",
+    "hot": "HOT 8 DISHES",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "directions": {
+    "yaksik-dongwon": "East",
+    "yukmi": "South",
+    "obangsaek": "Center",
+    "nanum": "West",
+    "ingredients-terroir": "North"
+  },
+  "elements": {
+    "yaksik-dongwon": "Wood (木)",
+    "yukmi": "Fire (火)",
+    "obangsaek": "Earth (土)",
+    "nanum": "Metal (金)",
+    "ingredients-terroir": "Water (水)"
+  },
+  "cycle": {
+    "label": "Cycle",
+    "description": "Five Elements Cycle: Wood feeds Fire, Fire creates Earth, Earth bears Metal, Metal collects Water, Water nourishes Wood"
   },
   "articles": {
     "title": "The Secret Code of K-Food",
@@ -127,25 +153,25 @@
     "back_to_list": "Back to List",
     "related_banchan": "Related Banchan",
     "next_article": "Next Secret Code",
-    "yaksik": {
-      "title": "Yaksik-dongwon (Medicine & Food)",
-      "summary": "The wellness philosophy that medicine and food share the same origin"
+    "yaksik-dongwon": {
+      "title": "Yak-sik Dong-won: Food as Medicine",
+      "subtitle": "The wellness philosophy that medicine and food share the same origin"
     },
     "yukmi": {
       "title": "Yukmi (Six Tastes)",
-      "summary": "Perfect harmony of six distinct tastes in one cuisine"
+      "subtitle": "Perfect harmony of six distinct tastes in one cuisine"
     },
     "obangsaek": {
       "title": "Obangsaek (Five Colors)",
-      "summary": "Nutritional balance represented by five cardinal colors"
+      "subtitle": "Nutritional balance represented by five cardinal colors"
     },
     "nanum": {
       "title": "Nanum (Sharing & Hospitality)",
-      "summary": "The warm culture of sharing affection (Jeong) through side dishes"
+      "subtitle": "The warm culture of sharing affection (Jeong) through side dishes"
     },
-    "ingredients_terroir": {
+    "ingredients-terroir": {
       "title": "Ingredients & Terroir",
-      "summary": "Freshness and fermentation crafted by four seasons and the peninsula geography"
+      "subtitle": "Freshness and fermentation crafted by four seasons and the peninsula geography"
     }
   }
 }

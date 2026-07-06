@@ -8,7 +8,7 @@ import { Globe, ChevronDown, Check, Menu, X } from "lucide-react";
 
 export default function Header() {
   const tHeader = useTranslations("header");
-  const tFooter = useTranslations("footer");
+  const tNav = useTranslations("nav");
   const currentLocale = useLocale();
   const pathname = usePathname();
   
@@ -57,11 +57,6 @@ export default function Header() {
               />
             </div>
           </Link>
-
-          {/* 슬로건 (데스크톱 전용, 얇은 서체로 표기) */}
-          <span className="hidden lg:inline-block text-slate-400 font-extralight text-xs tracking-widest pl-3 border-l border-slate-800 uppercase">
-            the Secret Code
-          </span>
         </div>
 
         {/* 2. 중앙 네비게이션 링크 (데스크톱 전용) */}
@@ -74,7 +69,7 @@ export default function Header() {
                 : "text-slate-300 hover:text-white"
             }`}
           >
-            {tFooter("banchan")}
+            {tNav("banchan")}
           </Link>
           <Link
             href="/articles"
@@ -84,7 +79,18 @@ export default function Header() {
                 : "text-slate-300 hover:text-white"
             }`}
           >
-            THE SECRET CODE
+            {tNav("articles")}
+          </Link>
+          <Link
+            href="/hot"
+            className={`transition-colors flex items-center gap-1.5 ${
+              pathname.startsWith("/hot")
+                ? "text-rose-400"
+                : "text-slate-300 hover:text-white"
+            }`}
+          >
+            <span className="animate-pulse">🔥</span>
+            <span>{tNav("hot")}</span>
           </Link>
         </nav>
 
@@ -161,7 +167,7 @@ export default function Header() {
                   : "text-slate-300 hover:bg-slate-900/50"
               }`}
             >
-              {tFooter("banchan")}
+              {tNav("banchan")}
             </Link>
             <Link
               href="/articles"
@@ -172,7 +178,19 @@ export default function Header() {
                   : "text-slate-300 hover:bg-slate-900/50"
               }`}
             >
-              THE SECRET CODE
+              {tNav("articles")}
+            </Link>
+            <Link
+              href="/hot"
+              onClick={() => setIsMenuOpen(false)}
+              className={`p-2 rounded-lg transition-colors flex items-center gap-1.5 ${
+                pathname.startsWith("/hot")
+                  ? "bg-rose-500/10 text-rose-400"
+                  : "text-slate-300 hover:bg-slate-900/50"
+              }`}
+            >
+              <span className="animate-pulse">🔥</span>
+              <span>{tNav("hot")}</span>
             </Link>
           </nav>
         </div>

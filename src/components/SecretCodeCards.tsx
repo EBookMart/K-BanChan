@@ -41,9 +41,9 @@ export default function SecretCodeCards({ locale }: SecretCodeCardsProps) {
     let badgeText = "";
 
     switch (art.slug) {
-      case "yaksik-dongwon": // 청
-        badgeBg = "bg-blue-950/50 border-blue-500/30";
-        badgeText = "text-blue-400";
+      case "yaksik-dongwon": // 청/녹
+        badgeBg = "bg-emerald-950/50 border-emerald-500/30";
+        badgeText = "text-emerald-400";
         break;
       case "yukmi": // 적
         badgeBg = "bg-red-950/50 border-red-500/30";
@@ -103,7 +103,7 @@ export default function SecretCodeCards({ locale }: SecretCodeCardsProps) {
 
             switch (art.slug) {
               case "yaksik-dongwon":
-                hoverRing = "hover:border-blue-500/50 hover:shadow-[0_0_20px_rgba(59,130,246,0.15)]";
+                hoverRing = "hover:border-emerald-500/50 hover:shadow-[0_0_20px_rgba(16,185,129,0.15)]";
                 break;
               case "yukmi":
                 hoverRing = "hover:border-red-500/50 hover:shadow-[0_0_20px_rgba(239,68,68,0.15)]";

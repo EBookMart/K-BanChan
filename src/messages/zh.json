@@ -47,11 +47,11 @@
   "terms_page": {
     "title": "使用条款",
     "rules": "服务使用规则",
-    "rules_desc": "本条款规定了用户在便用 Hangyeol Media 提供的 K-Banchan.net 服务时的权利和义务。用户访问本网站即视为同意本条款。",
+    "rules_desc": "本条款规定了用户在便用 Hangyeol Media 提供的 K-Banchan.net 服务时的权利 and 义务。用户访问本网站即视为同意本条款。",
     "user_responsibility": "用户责任",
     "user_responsibility_desc": "用户必须仅在法律允许的范围内使用本网站，不得侵犯他人的权利或干扰服务的运行。",
     "affiliate": "联盟营销政策",
-    "affiliate_desc": "K-Banchan.net 参与了各种联盟营销计划（Coupang Partners、Amazon Associates、Rakuten Advertising 等）。如果您通过本网站的链接购买商品，平台可能会收到少许佣金。这用于支持网站的稳定维护 and 韩食的推广。",
+    "affiliate_desc": "K-Banchan.net 参与了各种联盟营销计划（Coupang Partners、Amazon Associates、Rakuten Advertising 等）。如果您通过本网站的链接购买商品，平台可能会收到少许佣金。这用于支持网站的稳定维护韩食的推广。",
     "ads": "广告政策",
     "ads_desc": "本网站展示 Google AdSense 等广告，以筹集资金用于提供顺畅的信息服务。非个人身份识别信息（如 Cookie）可能用于广告展示和定向定位。",
     "disclaimer": "免责声明",
@@ -82,7 +82,6 @@
     "partnership_desc": "K-BanChan 平台合作、广告投放咨询以及商业合作提案",
     "general": "一般咨询",
     "general_desc": "反馈韩食食谱错误、网站使用不便问题以及其他一般反馈",
-    "response_time": "响应时间：3至5个工作日",
     "notice_desc": "Hangyeol Media 相关部门在收到您的邮件后，将在3至5个工作日内回复您填写的邮箱。请准确填写邮箱地址，并检查您的垃圾邮件文件夹。"
   },
   "banchan": {
@@ -113,7 +112,33 @@
     "title": "THE SECRET CODE OF KOREAN CUISINE",
     "subtitle": "探索韩国料理的五个秘密密码",
     "cta_banchan": "查看50选伴餐",
-    "cta_articles": "阅读五大特性"
+    "cta_articles": "阅读五大特性",
+    "logo_alt": "K-BanChan - 探索韩国料理的五个秘密密码"
+  },
+  "nav": {
+    "banchan": "伴餐50选",
+    "articles": "THE SECRET CODE",
+    "hot": "HOT 8 DISHES",
+    "previous": "上一页",
+    "next": "下一页"
+  },
+  "directions": {
+    "yaksik-dongwon": "东",
+    "yukmi": "南",
+    "obangsaek": "中",
+    "nanum": "西",
+    "ingredients-terroir": "北"
+  },
+  "elements": {
+    "yaksik-dongwon": "木",
+    "yukmi": "火",
+    "obangsaek": "土",
+    "nanum": "金",
+    "ingredients-terroir": "水"
+  },
+  "cycle": {
+    "label": "循环",
+    "description": "五行相生：木生火，火生土，土生金，金生水，水生木"
   },
   "articles": {
     "title": "韩国料理的秘密密码 (The Secret Code)",
@@ -125,25 +150,25 @@
     "back_to_list": "返回列表",
     "related_banchan": "相关推荐伴餐",
     "next_article": "下一个秘密密码",
-    "yaksik": {
-      "title": "药食同源 (药食同源)",
-      "summary": "药与食同源的养生哲学"
+    "yaksik-dongwon": {
+      "title": "药食同源: 药食同源",
+      "subtitle": "药与食同源的养生哲学"
     },
     "yukmi": {
       "title": "六味 (六味)",
-      "summary": "在一道菜中完美融合的六种和谐味道"
+      "subtitle": "在一道菜中完美融合的六种和谐味道"
     },
     "obangsaek": {
       "title": "五方色 (五方色)",
-      "summary": "通过五种基本色实现的营养均衡"
+      "subtitle": "通过五种基本色实现的营养均衡"
     },
     "nanum": {
       "title": "分享 (Sharing)",
-      "summary": "通过小菜分享温暖情谊的款待文化"
+      "subtitle": "通过小菜分享温暖情谊的款待文化"
     },
-    "ingredients_terroir": {
+    "ingredients-terroir": {
       "title": "食材与风土 (Terroir)",
-      "summary": "四季和三面环海孕育的鲜活风味与发酵技术"
+      "subtitle": "四季和三面环海孕育的鲜活风味与发酵技术"
     }
   }
 }

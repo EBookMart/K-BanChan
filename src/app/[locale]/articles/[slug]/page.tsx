@@ -2,7 +2,7 @@ import React from "react";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
-import { getArticleBySlug, getAllArticles } from "@/data/articles";
+import { getArticleBySlug, getAllArticles, getPreviousArticle, getNextArticle } from "@/data/articles";
 import { getAllBanchan } from "@/lib/banchan";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -63,6 +63,10 @@ export default async function ArticleDetailPage({ params: { locale, slug } }: Pr
 
   const t = await getTranslations({ locale, namespace: "articles" });
   const tBanchan = await getTranslations({ locale, namespace: "banchan" });
+  const tDirections = await getTranslations({ locale, namespace: "directions" });
+  const tElements = await getTranslations({ locale, namespace: "elements" });
+  const tCycle = await getTranslations({ locale, namespace: "cycle" });
+  const tNav = await getTranslations({ locale, namespace: "nav" });
 
   const titleText = art.title[locale] || art.title["en"];
   const summaryText = art.summary[locale] || art.summary["en"];
@@ -110,12 +114,13 @@ export default async function ArticleDetailPage({ params: { locale, slug } }: Pr
       relatedBanchans = allBanchans.slice(0, 3);
   }
 
-  // 순환 추천을 위한 다음 아티클 계산 (yaksik -> yukmi -> obangsaek -> nanum -> terroir -> yaksik)
+  // 순환 추천을 위한 이전/다음 아티클 계산
+  const prevArt = getPreviousArticle(slug);
+  const nextArt = getNextArticle(slug);
+  const prevTitleText = prevArt ? (prevArt.title[locale] || prevArt.title["en"]) : "";
+  const nextTitleText = nextArt ? (nextArt.title[locale] || nextArt.title["en"]) : "";
+  
   const articlesList = getAllArticles();
-  const currentIndex = articlesList.findIndex((a) => a.slug === slug);
-  const nextIndex = (currentIndex + 1) % articlesList.length;
-  const nextArt = articlesList[nextIndex];
-  const nextTitleText = nextArt.title[locale] || nextArt.title["en"];
 
   // 아이콘 매핑 함수
   const getIcon = (artSlug: string, className: string) => {
@@ -209,7 +214,88 @@ export default async function ArticleDetailPage({ params: { locale, slug } }: Pr
           </div>
         </section>
 
-        {/* 3. 스마트 관련 추천 반찬 3선 */}
+        {/* 3. 오행상생 순환 다이어그램 섹션 */}
+        <section className="max-w-4xl mx-auto px-4 mt-16 md:mt-24 border-t border-slate-900/80 pt-16">
+          <div className="bg-slate-900/30 border border-slate-800/80 rounded-3xl p-6 md:p-10">
+            <div className="text-center mb-8">
+              <span className="inline-block text-xs font-bold text-emerald-400 bg-emerald-950/40 border border-emerald-500/20 px-3 py-1 rounded-full mb-3 uppercase tracking-widest">
+                {tCycle("label")}
+              </span>
+              <h2 className="text-2xl md:text-3xl font-black text-white mb-3">
+                {locale === "ko" ? "오행상생(五行相生) 순환 체계" : "The Five Elements Cycle"}
+              </h2>
+              <p className="text-xs md:text-sm text-slate-400 font-light leading-relaxed max-w-2xl mx-auto">
+                {tCycle("description")}
+              </p>
+            </div>
+
+            {/* 순환 노드 리스트 */}
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 lg:gap-8 mt-10">
+              {articlesList.map((item, index) => {
+                const isActive = item.slug === slug;
+                const itemTitle = item.title[locale] || item.title["en"];
+                const itemDirection = tDirections(item.slug);
+                const itemElement = tElements(item.slug);
+
+                return (
+                  <React.Fragment key={item.slug}>
+                    {/* 모바일 화살표나 데스크톱 연결선 */}
+                    {index > 0 && (
+                      <div className="hidden md:block text-slate-700 text-lg font-bold select-none">
+                        →
+                      </div>
+                    )}
+                    
+                    <Link
+                      href={`/articles/${item.slug}`}
+                      className={`relative flex flex-col items-center justify-center p-5 rounded-2xl border transition-all duration-300 w-full md:w-40 text-center ${
+                        isActive
+                          ? "bg-slate-900/90 border-slate-700 shadow-[0_0_20px_rgba(255,255,255,0.05)] scale-105"
+                          : "bg-slate-950/40 border-slate-900 hover:border-slate-800"
+                      }`}
+                      style={{
+                        boxShadow: isActive ? `0 0 25px ${item.colorHex}25` : undefined,
+                        borderColor: isActive ? item.colorHex : undefined
+                      }}
+                    >
+                      {/* 전통 색상 서클 */}
+                      <div
+                        className="w-4 h-4 rounded-full mb-3 shadow-md"
+                        style={{ backgroundColor: item.colorHex }}
+                      />
+                      
+                      {/* 오행 속성 */}
+                      <span className="text-xs font-bold text-slate-400 mb-1">
+                        {itemElement} ({itemDirection})
+                      </span>
+                      
+                      {/* 아티클 타이틀 약칭 */}
+                      <span className="text-xs font-semibold text-white line-clamp-1">
+                        {itemTitle.split(":")[0]}
+                      </span>
+
+                      {isActive && (
+                        <span className="absolute -top-2 px-2 py-0.5 rounded-full bg-slate-800 text-[9px] font-bold text-emerald-400 border border-slate-750 uppercase tracking-widest">
+                          Active
+                        </span>
+                      )}
+                    </Link>
+                  </React.Fragment>
+                );
+              })}
+              
+              {/* 루프 연결용 마지막 데스크톱 화살표 */}
+              <div className="hidden md:block text-slate-700 text-lg font-bold select-none">
+                →
+              </div>
+              <div className="hidden md:block text-xs font-extrabold text-slate-600 border border-slate-850 px-2 py-1 rounded-md uppercase tracking-wider">
+                Loop
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 4. 스마트 관련 추천 반찬 3선 */}
         <section className="max-w-4xl mx-auto px-4 mt-16 md:mt-24 border-t border-slate-900/80 pt-16">
           <h2 className="text-xl md:text-2xl font-black text-white mb-8 border-b border-slate-800 pb-3 flex items-center gap-2">
             <span>{t("related_banchan")}</span>
@@ -226,24 +312,54 @@ export default async function ArticleDetailPage({ params: { locale, slug } }: Pr
           </div>
         </section>
 
-        {/* 4. 다음 특성 순환 카드 (다음 특성으로 매끄럽게 연결) */}
+        {/* 5. 오행 순환 이전/다음 비밀 코드 네비게이션 */}
         <section className="max-w-4xl mx-auto px-4 mt-16 md:mt-24">
-          <div className="bg-gradient-to-r from-slate-900 to-slate-950 border border-slate-850 p-8 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6 hover:border-slate-800 transition-all">
-            <div>
-              <span className="text-xs text-slate-500 font-bold uppercase tracking-wider block mb-1">
-                {t("next_article")}
-              </span>
-              <h3 className="text-lg md:text-xl font-bold text-white">
-                {nextTitleText}
-              </h3>
-            </div>
-            <Link
-              href={`/articles/${nextArt.slug}`}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold transition-all"
-            >
-              <span>{locale === "ko" ? "다음 장 읽기" : "Read Next"}</span>
-              <ArrowRight className={`w-4 h-4 ${isRtl ? "rotate-180" : ""}`} />
-            </Link>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* 이전 아티클 */}
+            {prevArt && (
+              <Link
+                href={`/articles/${prevArt.slug}`}
+                className="group flex items-center justify-between p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:bg-slate-900/60 transition-all duration-300 hover:border-slate-750"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-400 group-hover:text-white transition-colors">
+                    <ArrowLeft className={`w-4 h-4 ${isRtl ? "rotate-180" : ""}`} />
+                  </div>
+                  <div className="text-left">
+                    <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider block mb-0.5">
+                      {tNav("previous")}
+                    </span>
+                    <h4 className="text-sm font-bold text-slate-200 group-hover:text-white transition-colors line-clamp-1">
+                      {prevTitleText}
+                    </h4>
+                  </div>
+                </div>
+              </Link>
+            )}
+
+            {/* 다음 아티클 */}
+            {nextArt && (
+              <Link
+                href={`/articles/${nextArt.slug}`}
+                className="group flex items-center justify-between p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:bg-slate-900/60 transition-all duration-300 hover:border-slate-750"
+              >
+                <div className="flex items-center justify-between w-full">
+                  <div className="flex items-center gap-4">
+                    <div className="text-left">
+                      <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider block mb-0.5">
+                        {tNav("next")}
+                      </span>
+                      <h4 className="text-sm font-bold text-slate-200 group-hover:text-white transition-colors line-clamp-1">
+                        {nextTitleText}
+                      </h4>
+                    </div>
+                  </div>
+                  <div className="p-2.5 rounded-xl bg-slate-950 border border-slate-800 text-slate-400 group-hover:text-white transition-colors">
+                    <ArrowRight className={`w-4 h-4 ${isRtl ? "rotate-180" : ""}`} />
+                  </div>
+                </div>
+              </Link>
+            )}
           </div>
         </section>
 

@@ -43,6 +43,39 @@ export default function HomePage({ params: { locale } }: Props) {
         {/* 1. Hero 섹션 */}
         <HeroSection />
 
+        {/* 1.5. HOT 8 DISHES 특별 큐레이션 배너 */}
+        <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 mt-6">
+          <Link
+            href="/hot"
+            className="group flex flex-col sm:flex-row items-center justify-between p-4 sm:p-5 rounded-2xl bg-slate-900/30 border border-slate-800/80 hover:bg-slate-900/60 transition-all duration-300 hover:border-rose-500/20"
+          >
+            <div className="flex items-center gap-3.5 mb-3 sm:mb-0">
+              <span className="flex items-center justify-center w-8 h-8 rounded-full bg-rose-500/10 border border-rose-500/20 text-rose-400 text-sm animate-pulse">
+                🔥
+              </span>
+              <div className="text-left">
+                <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider block mb-0.5">
+                  Featured Curation
+                </span>
+                <p className="text-sm font-semibold text-slate-200 group-hover:text-white transition-colors">
+                  {locale === "ko" && "실시간 테마별 한식 큐레이션: [HOT 8 DISHES]를 만나보세요!"}
+                  {locale === "en" && "Discover Korean food by theme: Explore [HOT 8 DISHES] now!"}
+                  {locale === "ja" && "テーマ別韓国料理キュレーション: [HOT 8 DISHES] を今すぐ発見！"}
+                  {locale === "zh" && "主题韩食推荐：立即探索 [HOT 8 DISHES]！"}
+                  {locale === "es" && "Comida coreana por temas: ¡Explore [HOT 8 DISHES] ahora!"}
+                  {locale === "ar" && "اكتشف الأطباق الكورية حسب الموضوع: استكشف [HOT 8 DISHES] الآن!"}
+                  {locale === "ru" && "Корейская кухня по темам: откройте для себя [HOT 8 DISHES]!"}
+                  {!["ko", "en", "ja", "zh", "es", "ar", "ru"].includes(locale) && "Discover Korean food by theme: Explore [HOT 8 DISHES] now!"}
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-1.5 text-xs font-bold text-slate-400 group-hover:text-rose-400 transition-colors">
+              <span>{locale === "ko" ? "자세히 보기" : "Learn More"}</span>
+              <ArrowRight className="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" />
+            </div>
+          </Link>
+        </div>
+
         {/* 2. 한식의 5대 특성 카드 섹션 */}
         <SecretCodeCards locale={locale} />
 

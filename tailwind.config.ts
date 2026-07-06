@@ -11,6 +11,13 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        obangsaek: {
+          east:   '#007A33',
+          south:  '#CE1126',
+          center: '#FFD700',
+          west:   '#F5F5F5',
+          north:  '#1C1C1C',
+        },
       },
     },
   },

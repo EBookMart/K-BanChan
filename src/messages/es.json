@@ -113,7 +113,33 @@
     "title": "THE SECRET CODE OF KOREAN CUISINE",
     "subtitle": "Descubra los 5 Códigos Secretos de la Cocina Coreana",
     "cta_banchan": "Ver 50 Banchan",
-    "cta_articles": "Leer 5 Características"
+    "cta_articles": "Leer 5 Características",
+    "logo_alt": "K-BanChan - El Código Secreto de la Cocina Coreana"
+  },
+  "nav": {
+    "banchan": "50 Banchan",
+    "articles": "THE SECRET CODE",
+    "hot": "HOT 8 DISHES",
+    "previous": "Anterior",
+    "next": "Siguiente"
+  },
+  "directions": {
+    "yaksik-dongwon": "Este",
+    "yukmi": "Sur",
+    "obangsaek": "Centro",
+    "nanum": "Oeste",
+    "ingredients-terroir": "Norte"
+  },
+  "elements": {
+    "yaksik-dongwon": "Madera (木)",
+    "yukmi": "Fuego (火)",
+    "obangsaek": "Tierra (土)",
+    "nanum": "Metal (金)",
+    "ingredients-terroir": "Agua (水)"
+  },
+  "cycle": {
+    "label": "Ciclo",
+    "description": "Ciclo de los Cinco Elementos: la Madera alimenta al Fuego, el Fuego crea Tierra, la Tierra produce Metal, el Metal recoge Agua, el Agua nutre a la Madera"
   },
   "articles": {
     "title": "El Código Secreto de K-Food",
@@ -125,25 +151,25 @@
     "back_to_list": "Volver a la lista",
     "related_banchan": "Banchan relacionados",
     "next_article": "Siguiente código secreto",
-    "yaksik": {
+    "yaksik-dongwon": {
       "title": "Yaksik-dongwon (Medicina y Comida)",
-      "summary": "La filosofía del bienestar de que la medicina y la comida comparten el mismo origen"
+      "subtitle": "La filosofía del bienestar de que la medicina y la comida comparten el mismo origen"
     },
     "yukmi": {
       "title": "Yukmi (Seis sabores)",
-      "summary": "Perfecta armonía de seis sabores distintos en una sola cocina"
+      "subtitle": "Perfecta armonía de seis sabores distintos en una sola cocina"
     },
     "obangsaek": {
       "title": "Obangsaek (Cinco colores)",
-      "summary": "Equilibrio nutricional representado por cinco colores cardinales"
+      "subtitle": "Equilibrio nutricional representado por cinco colores cardinales"
     },
     "nanum": {
       "title": "Nanum (Compartir y Hospitalidad)",
-      "summary": "La cálida cultura de compartir afecto (Jeong) a través de platos de acompañamiento"
+      "subtitle": "La cálida cultura de compartir afecto (Jeong) a través de platos de acompañamiento"
     },
-    "ingredients_terroir": {
+    "ingredients-terroir": {
       "title": "Ingredientes y Terroir",
-      "summary": "Frescura y fermentación creadas por las cuatro estaciones y la geografía peninsular"
+      "subtitle": "Frescura y fermentación creadas por las cuatro estaciones y la geografía peninsular"
     }
   }
 }

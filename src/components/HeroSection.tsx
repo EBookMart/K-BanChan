@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { ArrowRight, BookOpen, Utensils } from "lucide-react";
@@ -20,6 +21,17 @@ export default function HeroSection() {
 
       {/* 컨텐츠 영역 */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 flex flex-col items-center">
+        {/* 대형 브랜드 로고 배치 */}
+        <div className="relative w-48 h-16 md:w-64 md:h-20 mb-6">
+          <Image
+            src="/logos/kbanchan-logo.png"
+            alt={t("logo_alt")}
+            fill
+            priority
+            className="object-contain"
+          />
+        </div>
+
         {/* 슬로건 뱃지 */}
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-widest mb-6">
           Premium K-Food Standard

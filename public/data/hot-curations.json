@@ -1,0 +1,71 @@
+[
+  {
+    "slug": "spicy-challenge",
+    "title": {
+      "ko": "🔥 K-매운맛 챌린지 8선",
+      "en": "🔥 K-Spicy Challenge: Hot 8",
+      "ja": "🔥 K-辛口チャレンジ8選",
+      "zh": "🔥 K-辣味挑战 8选",
+      "es": "🔥 Desafío Picante K-Spicy: Los 8",
+      "ar": "🔥 تحدي الكور الكوري الحار: أفضل 8",
+      "ru": "🔥 K-Spicy Челлендж: 8 Острых Блюд"
+    },
+    "description": {
+      "ko": "한국인의 화끈한 매운맛 자존심! 입맛을 돋우는 대표 매콤 반찬 8선",
+      "en": "The ultimate pride of Korean spice! 8 representative hot side dishes that stimulate your appetite.",
+      "ja": "韓国人のホットな辛さのプライд！食欲をそそる代表的なピリ辛おかず8選",
+      "zh": "韩国人火辣的辣味自豪感！激发食欲的8款代表性辣味伴餐",
+      "es": "¡El orgullo supremo del picante coreano! 8 platos de acompañamiento picantes que estimulan el apetito.",
+      "ar": "الكبرياء المطلق للتوابل الكورية! 8 أطباق جانية حارة تحفز شهيتك.",
+      "ru": "Гордость корейских специй! 8 знаковых острых банчанов, разжигающих аппетит."
+    },
+    "colorHex": "#CE1126",
+    "banchanRanks": [3, 9, 14, 18, 22, 28, 33, 41]
+  },
+  {
+    "slug": "vegan-wellness",
+    "title": {
+      "ko": "🌿 비건 & 웰빙 청정 나물 8선",
+      "en": "🌿 Clean Vegan & Wellness: Fresh 8",
+      "ja": "🌿 ビーガン＆ウェルネス清浄ナムル8選",
+      "zh": "🌿 纯素与健康清净野菜 8选",
+      "es": "🌿 Vegano y Bienestar: Los 8 Frescos",
+      "ar": "🌿 الخضار النباتي والصحة: أفضل 8",
+      "ru": "🌿 Веганство и Велнес: 8 Свежих Намулей"
+    },
+    "description": {
+      "ko": "자연의 영양을 담은 건강한 한식 처방. 순수 식물성 웰빙 반찬 8선",
+      "en": "A healthy Korean prescription with nature's nutrition. 8 pure plant-based wellness side dishes.",
+      "ja": "自然の栄養を詰め込んだ健康的な韓国料理の処方。純植物性のウェルネスおかず8選",
+      "zh": "富含自然营养的健康韩食配方。8款纯植物性健康伴餐",
+      "es": "Una receta coreana saludable con nutrición de la naturaleza. 8 platos veganos de puro bienestar.",
+      "ar": "وصفة كورية صحية تغذيها الطبيعة. 8 أطباق نباتية نقية للعافية.",
+      "ru": "Рецепты здоровья от самой природы. 8 чистых веганских банчанов для хорошего самочувствия."
+    },
+    "colorHex": "#007A33",
+    "banchanRanks": [5, 8, 12, 17, 25, 31, 37, 44]
+  },
+  {
+    "slug": "home-essentials",
+    "title": {
+      "ko": "🍳 한국 가정식 필수 에센셜 8선",
+      "en": "🍳 K-Home Meal Essentials: Daily 8",
+      "ja": "🍳 韓国家庭料理のエッセンシャル8選",
+      "zh": "🍳 韩国传统家常菜必需 8选",
+      "es": "🍳 Esenciales Caseros Coreanos: Los 8 Diarios",
+      "ar": "🍳 أساسيات الوجبات المنزلية الكورية: أفضل 8",
+      "ru": "🍳 Основы Домашнего Стола: 8 Популярных Блюд"
+    },
+    "description": {
+      "ko": "매일 먹어도 질리지 않는 밥상 위의 감초. 가장 대중적인 한국 가정식 반찬 8선",
+      "en": "Side dishes you can eat every day without getting tired. 8 most popular Korean home meal classics.",
+      "ja": "毎日食べても飽きない食卓の名脇役。最も大衆的な韓国の家庭料理おかず8選",
+      "zh": "每天吃也不会腻的餐桌甘草。8款最受欢迎的韩国传统家常菜伴餐",
+      "es": "Platos para disfrutar todos los días sin cansarse. Los 8 clásicos de comida casera coreana más populares.",
+      "ar": "أطباق جانية يمكنك تناولها يومياً دون ملل. 8 من أشهر كلاسيكيات المائدة الكورية.",
+      "ru": "Блюда, которые никогда не надоедят. 8 самых любимых повседневных домашних банчанов."
+    },
+    "colorHex": "#FFD700",
+    "banchanRanks": [1, 2, 4, 7, 10, 15, 20, 30]
+  }
+]
