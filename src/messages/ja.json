@@ -84,5 +84,66 @@
     "general_desc": "韓国料理レシピの誤りの報告、サイト利用時の不具合、その他の一般的なフィードバック",
     "response_time": "応答時間: 営業日基準3〜5日",
     "notice_desc": "Hangyeol Mediaの担当部署にて内容を確認の上、営業日基準で3〜5日以内にご入力いただいたメールアドレス宛にご返信いたします。メールアドレスを正確に入力し、迷惑メールフォルダもご確認ください。"
+  },
+  "banchan": {
+    "title": "K-おかず50選",
+    "search_placeholder": "おかずの名前や材料を入力して検索...",
+    "filter": {
+      "all": "全体",
+      "volkkeum": "炒め物",
+      "jorim": "煮物",
+      "muchim": "和え物",
+      "namul": "ナムル",
+      "gita": "その他"
+    },
+    "detail": {
+      "ingredients": "主な材料",
+      "seasoning": "調味料",
+      "cooking_summary": "作り方の要約",
+      "cultural_note": "文化的背景と特徴",
+      "related_banchan": "こちらのおかずはいかがですか？",
+      "spicy": "辛さ",
+      "vegan": "ビーガン",
+      "vegan_note": "ビーガンの注意書き",
+      "rank_suffix": "位",
+      "back_to_list": "リストに戻る"
+    }
+  },
+  "hero": {
+    "title": "THE SECRET CODE OF KOREAN CUISINE",
+    "subtitle": "韓国料理 of 5つの秘密のコードを発見してください",
+    "cta_banchan": "おかず50選を見る",
+    "cta_articles": "5大特性を読む"
+  },
+  "articles": {
+    "title": "韓国料理の秘密のコード (The Secret Code)",
+    "subtitle": "五方色の方位と哲学で出会う韓国料理の5大特性",
+    "read_more": "詳細を読む",
+    "direction": "方位",
+    "element": "五行",
+    "color": "色",
+    "back_to_list": "リストに戻る",
+    "related_banchan": "関連するおすすめおかず",
+    "next_article": "次の秘密のコード",
+    "yaksik": {
+      "title": "薬食同源 (薬食同源)",
+      "summary": "食と薬は源が同じであるというウェルネス哲学"
+    },
+    "yukmi": {
+      "title": "六味 (六味)",
+      "summary": "一つの料理で出会う6つの調和のとれた味"
+    },
+    "obangsaek": {
+      "title": "五方色 (五方色)",
+      "summary": "5つの基本色を通じた栄養のバランス"
+    },
+    "nanum": {
+      "title": "分かち合い (Sharing)",
+      "summary": "おかずを通じて温かい情（チョン）を分かち合う文化"
+    },
+    "ingredients_terroir": {
+      "title": "食材と風土 (Terroir)",
+      "summary": "四季と三面の海が育んだ新鮮さと発酵の技術"
+    }
   }
 }

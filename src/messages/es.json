@@ -84,5 +84,66 @@
     "general_desc": "Informes sobre errores en recetas de comida coreana, informes de inconvenientes en el sitio y comentarios generales",
     "response_time": "Tiempo de Respuesta: 3-5 Días Hábiles",
     "notice_desc": "Tras la revisión por parte del departamento correspondiente de Hangyeol Media, responderemos a su dirección de correo electrónico registrada en un plazo de 3 a 5 días hábiles. Escriba su dirección de correo electrónico con precisión y verifique su carpeta de correo no deseado."
+  },
+  "banchan": {
+    "title": "K-BanChan Top 50",
+    "search_placeholder": "Buscar banchan por nombre o ingredientes...",
+    "filter": {
+      "all": "Todo",
+      "volkkeum": "Salteado",
+      "jorim": "Guisado",
+      "muchim": "Sazonado",
+      "namul": "Namul",
+      "gita": "Otros"
+    },
+    "detail": {
+      "ingredients": "Ingredientes principales",
+      "seasoning": "Condimento",
+      "cooking_summary": "Método de cocción",
+      "cultural_note": "Nota cultural y características",
+      "related_banchan": "También podría gustarte",
+      "spicy": "Picante",
+      "vegan": "Vegano",
+      "vegan_note": "Nota vegana",
+      "rank_suffix": "º",
+      "back_to_list": "Volver a la lista"
+    }
+  },
+  "hero": {
+    "title": "THE SECRET CODE OF KOREAN CUISINE",
+    "subtitle": "Descubra los 5 Códigos Secretos de la Cocina Coreana",
+    "cta_banchan": "Ver 50 Banchan",
+    "cta_articles": "Leer 5 Características"
+  },
+  "articles": {
+    "title": "El Código Secreto de K-Food",
+    "subtitle": "Descubra las cinco características de la comida coreana a través de la filosofía Obangsaek",
+    "read_more": "Leer más",
+    "direction": "Dirección",
+    "element": "Elemento",
+    "color": "Color",
+    "back_to_list": "Volver a la lista",
+    "related_banchan": "Banchan relacionados",
+    "next_article": "Siguiente código secreto",
+    "yaksik": {
+      "title": "Yaksik-dongwon (Medicina y Comida)",
+      "summary": "La filosofía del bienestar de que la medicina y la comida comparten el mismo origen"
+    },
+    "yukmi": {
+      "title": "Yukmi (Seis sabores)",
+      "summary": "Perfecta armonía de seis sabores distintos en una sola cocina"
+    },
+    "obangsaek": {
+      "title": "Obangsaek (Cinco colores)",
+      "summary": "Equilibrio nutricional representado por cinco colores cardinales"
+    },
+    "nanum": {
+      "title": "Nanum (Compartir y Hospitalidad)",
+      "summary": "La cálida cultura de compartir afecto (Jeong) a través de platos de acompañamiento"
+    },
+    "ingredients_terroir": {
+      "title": "Ingredientes y Terroir",
+      "summary": "Frescura y fermentación creadas por las cuatro estaciones y la geografía peninsular"
+    }
   }
 }

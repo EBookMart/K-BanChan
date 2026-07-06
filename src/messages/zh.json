@@ -84,5 +84,66 @@
     "general_desc": "反馈韩食食谱错误、网站使用不便问题以及其他一般反馈",
     "response_time": "响应时间：3至5个工作日",
     "notice_desc": "Hangyeol Media 相关部门在收到您的邮件后，将在3至5个工作日内回复您填写的邮箱。请准确填写邮箱地址，并检查您的垃圾邮件文件夹。"
+  },
+  "banchan": {
+    "title": "韩国小菜 50选",
+    "search_placeholder": "输入小菜名字或食材搜索...",
+    "filter": {
+      "all": "全部",
+      "volkkeum": "炒菜",
+      "jorim": "炖菜",
+      "muchim": "凉拌菜",
+      "namul": "野菜 (Namul)",
+      "gita": "其他"
+    },
+    "detail": {
+      "ingredients": "主要食材",
+      "seasoning": "调料",
+      "cooking_summary": "烹饪方法摘要",
+      "cultural_note": "文化背景与特点",
+      "related_banchan": "您可能也喜欢",
+      "spicy": "辣度",
+      "vegan": "纯素",
+      "vegan_note": "纯素备注",
+      "rank_suffix": "名",
+      "back_to_list": "返回列表"
+    }
+  },
+  "hero": {
+    "title": "THE SECRET CODE OF KOREAN CUISINE",
+    "subtitle": "探索韩国料理的五个秘密密码",
+    "cta_banchan": "查看50选伴餐",
+    "cta_articles": "阅读五大特性"
+  },
+  "articles": {
+    "title": "韩国料理的秘密密码 (The Secret Code)",
+    "subtitle": "通过五方色的方位与哲学领略韩国料理的五大特性",
+    "read_more": "阅读更多",
+    "direction": "方位",
+    "element": "五行",
+    "color": "颜色",
+    "back_to_list": "返回列表",
+    "related_banchan": "相关推荐伴餐",
+    "next_article": "下一个秘密密码",
+    "yaksik": {
+      "title": "药食同源 (药食同源)",
+      "summary": "药与食同源的养生哲学"
+    },
+    "yukmi": {
+      "title": "六味 (六味)",
+      "summary": "在一道菜中完美融合的六种和谐味道"
+    },
+    "obangsaek": {
+      "title": "五方色 (五方色)",
+      "summary": "通过五种基本色实现的营养均衡"
+    },
+    "nanum": {
+      "title": "分享 (Sharing)",
+      "summary": "通过小菜分享温暖情谊的款待文化"
+    },
+    "ingredients_terroir": {
+      "title": "食材与风土 (Terroir)",
+      "summary": "四季和三面环海孕育的鲜活风味与发酵技术"
+    }
   }
 }

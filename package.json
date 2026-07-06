@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "convert-data": "node scripts/convert-excel.js",
+    "predev": "npm run convert-data",
     "dev": "next dev",
+    "prebuild": "npm run convert-data",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -13,7 +16,8 @@
     "next": "14.2.22",
     "next-intl": "^4.13.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/node": "^20",

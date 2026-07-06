@@ -86,5 +86,66 @@
     "general_desc": "Reports on Korean food recipe errors, site inconvenience reports, and general feedback",
     "response_time": "Response Time: 3-5 Business Days",
     "notice_desc": "After review by the relevant department of Hangyeol Media, we will respond to your registered email address within 3 to 5 business days. Please write your email address accurately and check your spam folder."
+  },
+  "banchan": {
+    "title": "K-BanChan Top 50",
+    "search_placeholder": "Search banchan by name or ingredients...",
+    "filter": {
+      "all": "All",
+      "volkkeum": "Stir-fried",
+      "jorim": "Braised",
+      "muchim": "Seasoned",
+      "namul": "Namul",
+      "gita": "Others"
+    },
+    "detail": {
+      "ingredients": "Main Ingredients",
+      "seasoning": "Seasoning",
+      "cooking_summary": "Cooking Method",
+      "cultural_note": "Cultural Note & Features",
+      "related_banchan": "You might also like",
+      "spicy": "Spiciness",
+      "vegan": "Vegan",
+      "vegan_note": "Vegan Note",
+      "rank_suffix": "",
+      "back_to_list": "Back to List"
+    }
+  },
+  "hero": {
+    "title": "THE SECRET CODE OF KOREAN CUISINE",
+    "subtitle": "Discover the 5 Secret Codes of Korean Cuisine",
+    "cta_banchan": "View 50 Banchan",
+    "cta_articles": "Read 5 Secret Codes"
+  },
+  "articles": {
+    "title": "The Secret Code of K-Food",
+    "subtitle": "Discover the five characteristics of Korean food through Obangsaek philosophy",
+    "read_more": "Read More",
+    "direction": "Direction",
+    "element": "Element",
+    "color": "Color",
+    "back_to_list": "Back to List",
+    "related_banchan": "Related Banchan",
+    "next_article": "Next Secret Code",
+    "yaksik": {
+      "title": "Yaksik-dongwon (Medicine & Food)",
+      "summary": "The wellness philosophy that medicine and food share the same origin"
+    },
+    "yukmi": {
+      "title": "Yukmi (Six Tastes)",
+      "summary": "Perfect harmony of six distinct tastes in one cuisine"
+    },
+    "obangsaek": {
+      "title": "Obangsaek (Five Colors)",
+      "summary": "Nutritional balance represented by five cardinal colors"
+    },
+    "nanum": {
+      "title": "Nanum (Sharing & Hospitality)",
+      "summary": "The warm culture of sharing affection (Jeong) through side dishes"
+    },
+    "ingredients_terroir": {
+      "title": "Ingredients & Terroir",
+      "summary": "Freshness and fermentation crafted by four seasons and the peninsula geography"
+    }
   }
 }

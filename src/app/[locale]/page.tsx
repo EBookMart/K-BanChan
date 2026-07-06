@@ -2,17 +2,24 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
-import { Globe } from "lucide-react";
+import { ArrowRight, Award } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BanchanCard from "@/components/BanchanCard";
+import HeroSection from "@/components/HeroSection";
+import SecretCodeCards from "@/components/SecretCodeCards";
+import { getTopBanchan } from "@/lib/banchan";
 
 type Props = {
   params: { locale: string };
 };
 
 export default function HomePage({ params: { locale } }: Props) {
-  // 다국어 번역을 가져오는 함수를 선언합니다.
-  const t = useTranslations();
+  // 다국어 번역을 가져옵니다.
+  const tBanchan = useTranslations("banchan");
+
+  // 상위 인기 반찬 8개를 가져옵니다.
+  const topBanchans = getTopBanchan(8);
 
   // 우리가 지원하는 7개 언어의 정보 배열입니다.
   const languages = [
@@ -27,72 +34,98 @@ export default function HomePage({ params: { locale } }: Props) {
 
   return (
     <>
-      {/* 홈페이지 최상단에 헤더 추가 */}
+      {/* 헤더 */}
       <Header />
       
-      {/* 메인 홈페이지 콘텐츠 영역 (헤더 두께만큼 pt-16 md:pt-20 여백을 주어 겹치지 않게 합니다) */}
-      <main className="flex-grow flex flex-col items-center justify-center bg-gradient-to-br from-slate-950 via-slate-900 to-zinc-950 text-slate-100 px-4 relative overflow-hidden py-20">
+      {/* 웅장한 홈페이지 메인 컨텐츠 영역 */}
+      <main className="flex-grow flex flex-col items-center bg-slate-950 text-slate-100 min-h-screen">
         
-        {/* 배경에 아름다운 은은한 불빛(그라데이션 효과)을 줍니다. */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-emerald-500/10 rounded-full blur-[100px] pointer-events-none" />
-        <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-amber-500/5 rounded-full blur-[80px] pointer-events-none" />
+        {/* 1. Hero 섹션 */}
+        <HeroSection />
 
-        <div className="z-10 text-center max-w-xl w-full">
-          {/* 다국어 표시 미니 뱃지 */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-950/40 border border-emerald-500/20 text-emerald-400 text-sm font-medium mb-8">
-            <Globe className="w-4 h-4 animate-[spin_8s_linear_infinite]" />
-            <span>Multi-language Platform</span>
-          </div>
+        {/* 2. 한식의 5대 특성 카드 섹션 */}
+        <SecretCodeCards locale={locale} />
 
-          {/* 메인 타이틀 (K-Banchan.net) */}
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight bg-gradient-to-r from-emerald-400 via-teal-300 to-amber-300 bg-clip-text text-transparent mb-4">
-            {t("site.name")}
-          </h1>
-
-          {/* 부제 (한식과 반찬의 세계) */}
-          <p className="text-lg md:text-xl text-slate-400 font-light mb-10">
-            {t("site.tagline")}
-          </p>
-
-          {/* 준비 중(Coming Soon) 표시 박스 */}
-          <div className="bg-slate-900/60 backdrop-blur-md border border-slate-800/80 rounded-2xl p-6 mb-12 shadow-2xl">
-            <span className="text-xs uppercase tracking-widest text-slate-500 block mb-2 font-semibold">
-              Status
-            </span>
-            <span className="text-2xl font-bold text-slate-200 tracking-wide">
-              {t("home.coming_soon")}
-            </span>
-          </div>
-
-          {/* 언어 선택 영역 (기존 콘텐츠 유지) */}
-          <div className="border-t border-slate-800/50 pt-8">
-            <p className="text-xs text-slate-500 uppercase tracking-wider mb-5 font-semibold">
-              Language / 언어 선택
-            </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              {languages.map((lang) => {
-                const isActive = locale === lang.code;
-                return (
-                  <Link
-                    key={lang.code}
-                    href="/"
-                    locale={lang.code}
-                    className={`px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 border ${
-                      isActive
-                        ? "bg-emerald-500/10 border-emerald-500/40 text-emerald-300 shadow-lg shadow-emerald-950/30"
-                        : "bg-slate-900/30 border-slate-800/60 text-slate-400 hover:bg-slate-800/50 hover:text-slate-200 hover:border-slate-700"
-                    }`}
-                  >
-                    {lang.name}
-                  </Link>
-                );
-              })}
+        {/* 3. 인기 반찬 8개 섹션 */}
+        <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-900/80 text-left">
+          
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 border-b border-slate-800 pb-4">
+            <div>
+              <h2 className="text-2xl md:text-3xl font-black text-white flex items-center gap-2">
+                <Award className="w-6 h-6 text-amber-400 animate-pulse" />
+                {locale === "ko" ? "실시간 인기 반찬 Top 8" : "Popular Banchan Top 8"}
+              </h2>
+              <p className="text-sm text-slate-400 mt-1 font-light">
+                {locale === "ko" 
+                  ? "가장 많은 사랑을 받는 전통 한식 반찬의 영양 레시피를 소개합니다." 
+                  : "Discover recipes and instructions for the most beloved Korean side dishes."}
+              </p>
             </div>
+
+            {/* 전체 보기 링크 */}
+            <Link
+              href="/banchan"
+              className="mt-4 md:mt-0 inline-flex items-center gap-2 text-sm font-semibold text-amber-400 hover:text-amber-300 transition-colors group"
+            >
+              <span>{locale === "ko" ? "전체 50선 보기" : "View All 50 Dishes"}</span>
+              <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+
+          {/* 반찬 카드 그리드 (2열/3열/4열) */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+            {topBanchans.map((item) => (
+              <BanchanCard
+                key={item.id}
+                banchan={item}
+                locale={locale}
+                categoryLabel={tBanchan(`filter.${item.category}`)}
+              />
+            ))}
+          </div>
+
+          {/* 전체 50선으로 이동하는 중앙 강조형 버튼 */}
+          <div className="flex justify-center mt-12">
+            <Link
+              href="/banchan"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold shadow-xl shadow-amber-950/20 hover:shadow-amber-950/30 transform hover:-translate-y-0.5 transition-all text-sm md:text-base"
+            >
+              <span>{locale === "ko" ? "50선 레시피 전체 보기" : "Explore All 50 Recipes"}</span>
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+          </div>
+
+        </div>
+
+        {/* 4. 하단 언어 신속 선택 바 */}
+        <div className="w-full max-w-2xl px-4 text-center mt-6 mb-20 border-t border-slate-900/60 pt-10">
+          <p className="text-[10px] text-slate-500 uppercase tracking-wider mb-4 font-semibold">
+            Language / 언어 선택
+          </p>
+          <div className="flex flex-wrap justify-center gap-2.5">
+            {languages.map((lang) => {
+              const isActive = locale === lang.code;
+              return (
+                <Link
+                  key={lang.code}
+                  href="/"
+                  locale={lang.code}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-medium transition-all duration-200 border ${
+                    isActive
+                      ? "bg-emerald-500/10 border-emerald-500/40 text-emerald-300 shadow-md shadow-emerald-950/30"
+                      : "bg-slate-900/30 border-slate-800/60 text-slate-400 hover:bg-slate-800/50 hover:text-slate-200 hover:border-slate-700"
+                  }`}
+                >
+                  {lang.name}
+                </Link>
+              );
+            })}
           </div>
         </div>
+
       </main>
 
-      {/* 홈페이지 최하단에 푸터 추가 */}
+      {/* 푸터 */}
       <Footer />
     </>
   );
