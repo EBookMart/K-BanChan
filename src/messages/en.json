@@ -1,9 +1,90 @@
 {
   "site": {
     "name": "K-Banchan.net",
-    "tagline": "The World of Korean Food and Banchan"
+    "tagline": "The World of Korean Food and Banchan",
+    "slogan": "the Secret Code"
   },
   "home": {
     "coming_soon": "Coming Soon"
+  },
+  "header": {
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Select Language"
+  },
+  "footer": {
+    "company_intro": "Hangyeol Media is a K-Culture global media platform.",
+    "operated_by": "K-BanChan™ is operated by Hangyeol Media",
+    "sitemap": "Sitemap",
+    "home": "Home",
+    "banchan": "Banchan 50",
+    "philosophy": "Philosophy",
+    "contact": "Contact",
+    "legal": "Legal",
+    "copyright_policy": "Copyright Policy",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "copyright_inquiry": "Copyright Inquiry",
+    "all_rights_reserved": "© 2026 Hangyeol Media. All Rights Reserved.",
+    "trademark_notice": "K-BanChan™ is a registered trademark of Hangyeol Media.",
+    "unauthorized_notice": "Unauthorized reproduction, distribution, or AI training use is strictly prohibited."
+  },
+  "copyright_page": {
+    "title": "Copyright Policy",
+    "owner_section": "Copyright Owner",
+    "owner_section_desc": "All content published on this website (k-banchan.net) is copyrighted by Hangyeol Media. Hangyeol Media is the rightful copyright holder with registered trademarks and copyrights under the laws of the Republic of Korea.\n- Operator: Hangyeol Media\n- Email: copyright@k-banchan.net\n- Address: Seoul, Republic of Korea (Please contact for detailed address)",
+    "protected_content": "Protected Content",
+    "protected_content_desc": "Protected subjects include the following elements of the K-BanChan brand:\n- K-BanChan logo and brand designs\n- All text, images, and UI/UX design on the website\n- Banchan 50 database and explanatory materials\n- Unified Korean Standard Code (U-KSC) classification system\n- AI-generated images and creative design elements within the platform",
+    "permitted_use": "Permitted Use",
+    "permitted_use_desc": "Users may use the content solely for the following non-commercial purposes:\n- Personal study, research, and information lookup\n- Quotation with clear source citation (citing K-Banchan.net) in compliance with legal procedures\n- Free sharing and distribution of website links",
+    "prohibited_use": "Prohibited Use",
+    "prohibited_use_desc": "The following acts are prohibited by copyright laws of Korea and international treaties without prior written consent:\n- Unauthorized reproduction or commercial redistribution of all or parts of the site\n- Unauthorized collection (scraping, crawling, etc.) and use of site text, images, and database for artificial intelligence (AI) training data\n- Unauthorized use of trademarks and creation of similar brand names",
+    "report": "Copyright Infringement Report",
+    "report_desc": "If you find that our content infringes upon another's copyright, or if a third party infringes upon the rights of this website, please notify us via the email below.\n- Report Email: copyright@k-banchan.net\n- Information to Include: URL of the allegedly infringing content, owner information, and proof of infringement",
+    "dmca": "DMCA Procedure",
+    "dmca_desc": "K-Banchan.net complies with international copyright norms. Based on intellectual property laws of various countries, including the Digital Millennium Copyright Act (DMCA) of the United States, we will quickly review any infringement notices received and proceed with temporary suspension or removal of the relevant content."
+  },
+  "terms_page": {
+    "title": "Terms of Service",
+    "rules": "Service Use Rules",
+    "rules_desc": "These terms define the rights and duties of users in using the K-Banchan.net service provided by Hangyeol Media. By accessing this site, users are deemed to agree to these terms.",
+    "user_responsibility": "User Responsibility",
+    "user_responsibility_desc": "Users must use this site only within legally permitted boundaries and must not infringe upon the rights of others or disrupt the operation of the service.",
+    "affiliate": "Affiliate Link Policy",
+    "affiliate_desc": "K-Banchan.net participates in various affiliate marketing programs (Coupang Partners, Amazon Associates, Rakuten Advertising, etc.). If you buy products through our affiliate links, the platform may receive a minor commission. This supports stable maintenance of the site and promotion of Korean food.",
+    "ads": "Advertising Policy",
+    "ads_desc": "This site displays advertisements like Google AdSense to generate operating funds for providing smooth information services. Non-personally identifiable information (cookies, etc.) may be used for ad serving and targeting.",
+    "disclaimer": "Disclaimer",
+    "disclaimer_desc": "The Korean food and side dish information provided is for general reference only, and we do not guarantee its accuracy or completeness. Purchase decisions through affiliate links and all associated liabilities lie entirely with the user.",
+    "governing_law": "Governing Law & Jurisdiction",
+    "governing_law_desc": "These terms shall be governed by and construed in accordance with the laws of the Republic of Korea. Any disputes arising from the use of the service shall be subject to the exclusive jurisdiction of the Seoul Central District Court in Korea.",
+    "terms_change_title": "Changes to Terms",
+    "terms_change_desc": "Hangyeol Media may amend these terms in accordance with changes in service or amendments to relevant laws. Amended terms take effect immediately upon notice, so periodic review is recommended."
+  },
+  "privacy_page": {
+    "title": "Privacy Policy",
+    "minimal_collection": "Minimal Collection Principle",
+    "minimal_collection_desc": "K-Banchan.net does not require membership registration and, in principle, does not collect or store any unnecessary personal information (name, resident number, phone number, etc.).",
+    "cookies": "Cookie Policy",
+    "cookies_desc": "This site uses minimum cookies only to provide essential browser convenience functions, such as maintaining multi-language selection states. You can refuse cookie collection via browser settings, but some features may not function correctly.",
+    "analytics": "Google Analytics",
+    "analytics_desc": "We use Google Analytics to statistically analyze visitor behavior and improve the website. The data collected is anonymized and cannot identify specific individuals.",
+    "third_party": "Third-Party Services",
+    "third_party_desc": "For smooth site operation, we use trusted global infrastructure partner services, during which network data may be processed:\n- Vercel (hosting & serverless hosting)\n- Cloudflare (content delivery network & security enhancement)\n- Google (web analytics & advertising)",
+    "user_rights": "User Rights",
+    "user_rights_desc": "Users can reset information at any time by deleting their browser cookies. If you wish to block information collection and analysis, you can use browser add-ons like the Google Analytics Opt-out Browser Add-on.",
+    "officer": "Personal Information Protection Officer",
+    "officer_desc": "Hangyeol Media designates an officer to handle user inquiries and grievances regarding personal information.\n- Email: contact@k-banchan.net"
+  },
+  "contact_page": {
+    "title": "Contact",
+    "copyright_inquiry": "Copyright Inquiry",
+    "copyright_inquiry_desc": "Reports on unauthorized trademark use, unauthorized content scraping, and copyright licensing inquiries",
+    "partnership": "Partnership Inquiry",
+    "partnership_desc": "K-BanChan platform partnership, advertisement inquiries, and business collaboration proposals",
+    "general": "General Inquiry",
+    "general_desc": "Reports on Korean food recipe errors, site inconvenience reports, and general feedback",
+    "response_time": "Response Time: 3-5 Business Days",
+    "notice_desc": "After review by the relevant department of Hangyeol Media, we will respond to your registered email address within 3 to 5 business days. Please write your email address accurately and check your spam folder."
   }
 }

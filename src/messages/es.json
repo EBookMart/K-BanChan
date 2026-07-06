@@ -1,9 +1,88 @@
 {
   "site": {
     "name": "K-Banchan.net",
-    "tagline": "El mundo de la comida coreana y el Banchan"
+    "tagline": "El Mundo de la Comida Coreana y el Banchan",
+    "slogan": "the Secret Code"
   },
   "home": {
-    "coming_soon": "Próximamente"
+    "coming_soon": "Próximamente (En preparación)"
+  },
+  "header": {
+    "menu": "Menú",
+    "close": "Cerrar",
+    "language": "Seleccionar Idioma"
+  },
+  "footer": {
+    "company_intro": "Hangyeol Media es una plataforma de medios globales de K-Culture.",
+    "operated_by": "K-BanChan™ is operated by Hangyeol Media",
+    "sitemap": "Mapa del sitio",
+    "home": "Inicio",
+    "banchan": "50 Banchan",
+    "philosophy": "Filosofía",
+    "contact": "Contacto",
+    "legal": "Avisos Legales",
+    "copyright_policy": "Política de Copyright",
+    "terms": "Términos de Servicio",
+    "privacy": "Política de Privacidad",
+    "copyright_inquiry": "Consulta de Copyright",
+    "all_rights_reserved": "© 2026 Hangyeol Media. Todos los derechos reservados.",
+    "trademark_notice": "K-BanChan™ es una marca registrada de Hangyeol Media.",
+    "unauthorized_notice": "Queda estrictamente prohibida la reproducción, distribución o uso para entrenamiento de IA sin autorización."
+  },
+  "copyright_page": {
+    "title": "Política de Copyright",
+    "owner_section": "Propietario de los Derechos de Autor",
+    "owner_section_desc": "Todo el contenido publicado en este sitio web (k-banchan.net) es propiedad de Hangyeol Media. Hangyeol Media es el titular legítimo de los derechos con marcas y derechos de autor registrados bajo las leyes de la República de Corea.\n- Operador: Hangyeol Media\n- Correo electrónico: copyright@k-banchan.net\n- Dirección: Seúl, República de Corea (Póngase en contacto para obtener la dirección detallada)",
+    "protected_content": "Objeto de Protección",
+    "protected_content_desc": "Los elementos protegidos de la marca K-BanChan incluyen:\n- Logotipo y diseños de marca de K-BanChan\n- Todo el texto, imágenes y diseño de UI/UX en el sitio web\n- Base de datos de los 50 Banchan y materiales explicativos\n- Sistema de clasificación Unified Korean Standard Code (U-KSC)\n- Imágenes generadas por IA y elementos de diseño creativo dentro de la plataforma",
+    "permitted_use": "Ámbito de Uso Permitido",
+    "permitted_use_desc": "Los usuarios pueden utilizar el contenido únicamente para los siguientes fines no comerciales:\n- Estudio personal, investigación y consulta de información\n- Citación con mención clara de la fuente (citando K-Banchan.net) de acuerdo con los procedimientos legales\n- Compartir y distribuir libremente enlaces del sitio web",
+    "prohibited_use": "Prohibiciones",
+    "prohibited_use_desc": "Quedan prohibidos los siguientes actos sin el consentimiento previo por escrito de acuerdo con las leyes de propiedad intelectual de Corea y tratados internacionales:\n- Reproducción no autorizada o redistribución comercial de todo o parte del sitio\n- Recolección no autorizada (scraping, crawling, etc.) y uso de textos, imágenes y bases de datos del sitio como datos de entrenamiento para inteligencia artificial (IA)\n- Uso no autorizado de marcas comerciales y creación de marcas similares",
+    "report": "Reporte de Infracciones",
+    "report_desc": "Si encuentra que nuestro contenido infringe los derechos de autor de otra persona, o si un tercero infringe los derechos de este sitio web, notifíquenos a través del siguiente correo electrónico.\n- Correo de reporte: copyright@k-banchan.net\n- Información a incluir: URL del contenido presuntamente infractor, información del propietario y prueba de la infracción",
+    "dmca": "Procedimiento de la DMCA",
+    "dmca_desc": "K-Banchan.net cumple con las normas internacionales de derechos de autor. Basándose en las leyes de propiedad intelectual de varios países, incluida la Ley de Derechos de Autor del Milenio Digital (DMCA) de los Estados Unidos, revisaremos rápidamente cualquier aviso de infracción recibido y procederemos con la suspensión temporal o eliminación del contenido correspondiente."
+  },
+  "terms_page": {
+    "title": "Términos de Servicio",
+    "rules": "Reglas de Uso del Servicio",
+    "rules_desc": "Estos términos definen los derechos y deberes de los usuarios al utilizar el servicio K-Banchan.net proporcionado por Hangyeol Media. Al acceder a este sitio, se considera que los usuarios aceptan estos términos.",
+    "user_responsibility": "Responsabilidad del Usuario",
+    "user_responsibility_desc": "Los usuarios deben utilizar este sitio web únicamente dentro de los límites legalmente permitidos y no deben infringir los derechos de otros ni interrumpir la operación del servicio.",
+    "affiliate": "Política de Afiliados",
+    "affiliate_desc": "K-Banchan.net participa en varios programas de marketing de afiliados (Coupang Partners, Amazon Associates, Rakuten Advertising, etc.). Si compra productos a través de nuestros enlaces de afiliados, la plataforma puede recibir una pequeña comisión. Esto respalda el mantenimiento estable del sitio y la promoción de la comida coreana.",
+    "ads": "Política de Publicidad",
+    "ads_desc": "Este sitio muestra anuncios como Google AdSense para generar fondos operativos con el fin de proporcionar servicios de información fluidos. Se puede utilizar información no identificable personalmente (cookies, etc.) para el servicio de anuncios y su segmentación.",
+    "disclaimer": "Descargo de Responsabilidad",
+    "disclaimer_desc": "La información sobre comida coreana y platos de acompañamiento se proporciona únicamente para referencia general, y no garantizamos su exactitud o integridad. Las decisiones de compra a través de enlaces de afiliados y todas las responsabilidades asociadas recaen en el usuario.",
+    "governing_law": "Ley Aplicable y Jurisdicción",
+    "governing_law_desc": "Estos términos se regirán e interpretarán de acuerdo con las leyes de la República de Corea. Cualquier disputa derivada del uso del servicio estará sujeta a la jurisdicción exclusiva del Tribunal del Distrito Central de Seúl en Corea."
+  },
+  "privacy_page": {
+    "title": "Política de Privacidad",
+    "minimal_collection": "Principio de Recopilación Mínima",
+    "minimal_collection_desc": "K-Banchan.net no requiere registro de membresía y, en principio, no recopila ni almacena ninguna información personal innecesaria (nombre, número de identificación, número de teléfono, etc.).",
+    "cookies": "Política de Cookies",
+    "cookies_desc": "Este sitio utiliza cookies mínimas solo para proporcionar funciones esenciales de conveniencia del navegador, como mantener los estados de selección de idiomas. Puede rechazar la recopilación de cookies a través de la configuración de su navegador, pero es posible que algunas funciones no funcionen correctamente.",
+    "analytics": "Google Analytics",
+    "analytics_desc": "Utilizamos Google Analytics para analizar estadísticamente el comportamiento de los visitantes y mejorar el sitio web. Los datos recopilados son anónimos y no pueden identificar a personas específicas.",
+    "third_party": "Servicios de Terceros",
+    "third_party_desc": "Para un funcionamiento fluido del sitio, utilizamos servicios de socios de infraestructura global de confianza, durante los cuales se pueden procesar datos de red:\n- Vercel (alojamiento y hosting serverless)\n- Cloudflare (red de entrega de contenido y mejora de seguridad)\n- Google (análisis web y publicidad)",
+    "user_rights": "Derechos del Usuario",
+    "user_rights_desc": "Los usuarios pueden restablecer la información en cualquier momento eliminando las cookies de su navegador. Si desea bloquear la recopilación y el análisis de información, puede utilizar complementos del navegador como el Complemento de inhabilitación para navegadores de Google Analytics.",
+    "officer": "Responsable de Privacidad",
+    "officer_desc": "Hangyeol Media designa a un oficial para manejar las consultas y quejas de los usuarios sobre la información personal.\n- Correo electrónico: contact@k-banchan.net"
+  },
+  "contact_page": {
+    "title": "Contacto",
+    "copyright_inquiry": "Consulta de Copyright",
+    "copyright_inquiry_desc": "Informes sobre uso no autorizado de marcas registradas, raspado de contenido no autorizado y consultas de licencias de copyright",
+    "partnership": "Consulta de Asociación",
+    "partnership_desc": "Asociación con la plataforma K-BanChan, consultas sobre publicidad y propuestas de colaboración comercial",
+    "general": "Consulta General",
+    "general_desc": "Informes sobre errores en recetas de comida coreana, informes de inconvenientes en el sitio y comentarios generales",
+    "response_time": "Tiempo de Respuesta: 3-5 Días Hábiles",
+    "notice_desc": "Tras la revisión por parte del departamento correspondiente de Hangyeol Media, responderemos a su dirección de correo electrónico registrada en un plazo de 3 a 5 días hábiles. Escriba su dirección de correo electrónico con precisión y verifique su carpeta de correo no deseado."
   }
 }

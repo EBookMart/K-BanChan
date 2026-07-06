@@ -1,9 +1,88 @@
 {
   "site": {
     "name": "K-Banchan.net",
-    "tagline": "韩食与小菜的世界"
+    "tagline": "韩食与伴餐的世界",
+    "slogan": "the Secret Code"
   },
   "home": {
-    "coming_soon": "即将推出"
+    "coming_soon": "敬请期待（准备中）"
+  },
+  "header": {
+    "menu": "菜单",
+    "close": "关闭",
+    "language": "选择语言"
+  },
+  "footer": {
+    "company_intro": "韩结媒体（Hangyeol Media）是一个K-Culture全球媒体平台。",
+    "operated_by": "K-BanChan™ is operated by Hangyeol Media",
+    "sitemap": "网站地图",
+    "home": "首页",
+    "banchan": "伴餐50选",
+    "philosophy": "韩食哲学",
+    "contact": "联系我们",
+    "legal": "法律条款",
+    "copyright_policy": "版权政策",
+    "terms": "使用条款",
+    "privacy": "隐私政策",
+    "copyright_inquiry": "版权咨询",
+    "all_rights_reserved": "© 2026 Hangyeol Media. 保留所有权利。",
+    "trademark_notice": "K-BanChan™ 是 Hangyeol Media 的注册商标。",
+    "unauthorized_notice": "严禁未经授权的复制、分发或用于人工智能（AI）训练。"
+  },
+  "copyright_page": {
+    "title": "版权政策",
+    "owner_section": "版权所有者",
+    "owner_section_desc": "本网站（k-banchan.net）上发布的所有内容版权归 Hangyeol Media 所有。Hangyeol Media 是根据大韩民国法律合法完成商标和版权登记的版权所有者。\n- 运营商：Hangyeol Media\n- 电子邮箱：copyright@k-banchan.net\n- 地址：大韩民国首尔特别市（详细地址请咨询）",
+    "protected_content": "保护对象",
+    "protected_content_desc": "受保护的对象包括构成 K-BanChan 品牌的以下要素：\n- K-BanChan 标志和品牌设计\n- 网站上的所有文本、图像和 UI/UX 设计\n- 伴餐 50选数据库及说明资料\n- 统一韩国标准代码（U-KSC）分类系统\n- 平台内由人工智能（AI）生成的图像和原创设计元素",
+    "permitted_use": "允许的使用范围",
+    "permitted_use_desc": "用户仅出于以下非商业目的可以使用内容：\n- 个人学习、研究和检索信息\n- 在遵守合法引用程序并明确标明出处（注明 K-Banchan.net）的情况下进行引用\n- 自由分享和分发网站链接",
+    "prohibited_use": "禁止事项",
+    "prohibited_use_desc": "未经事先书面同意，大韩民国版权法和国际条约禁止以下行为：\n- 未经授权复制或商业性重新分发本网站的全部或部分内容\n- 未经授权收集（抓取、爬取等）并使用本网站的文本、图像和数据库作为人工智能（AI）训练数据\n- 未经授权使用商标和制作类似品牌",
+    "report": "版权侵权报告",
+    "report_desc": "如果您发现我们的内容侵犯了他人的版权，或者第三方侵犯了本网站的权利，请通过以下电子邮箱通知我们。\n- 报告邮箱：copyright@k-banchan.net\n- 应包含的信息：涉嫌侵权内容的 URL、所有者信息以及侵权证明材料",
+    "dmca": "DMCA程序",
+    "dmca_desc": "K-Banchan.net 遵守国际版权准则。根据包括美国《数字千年版权法》（DMCA）在内的各国的知识产权法律，我们在收到侵权通知时将迅速进行审查，并对相关内容采取临时下架或删除措施。"
+  },
+  "terms_page": {
+    "title": "使用条款",
+    "rules": "服务使用规则",
+    "rules_desc": "本条款规定了用户在便用 Hangyeol Media 提供的 K-Banchan.net 服务时的权利和义务。用户访问本网站即视为同意本条款。",
+    "user_responsibility": "用户责任",
+    "user_responsibility_desc": "用户必须仅在法律允许的范围内使用本网站，不得侵犯他人的权利或干扰服务的运行。",
+    "affiliate": "联盟营销政策",
+    "affiliate_desc": "K-Banchan.net 参与了各种联盟营销计划（Coupang Partners、Amazon Associates、Rakuten Advertising 等）。如果您通过本网站的链接购买商品，平台可能会收到少许佣金。这用于支持网站的稳定维护 and 韩食的推广。",
+    "ads": "广告政策",
+    "ads_desc": "本网站展示 Google AdSense 等广告，以筹集资金用于提供顺畅的信息服务。非个人身份识别信息（如 Cookie）可能用于广告展示和定向定位。",
+    "disclaimer": "免责声明",
+    "disclaimer_desc": "所提供的韩食和伴餐信息仅供一般参考，我们不保证其准确性或完整性。通过联盟链接购买商品的决定及所有相关责任完全由用户自行承担。",
+    "governing_law": "准据法及管辖",
+    "governing_law_desc": "本条款受大韩民国法律管辖并按其解释。因使用服务引起的任何争议，应由韩国首尔中央地方法院作为专属管辖法院。"
+  },
+  "privacy_page": {
+    "title": "隐私政策",
+    "minimal_collection": "最少化收集原则",
+    "minimal_collection_desc": "K-Banchan.net 不需要会员注册，原则上不收集或存储任何不必要的个人信息（姓名、身份证号、电话号码等）。",
+    "cookies": "Cookie政策",
+    "cookies_desc": "本网站仅使用最少限度的 Cookie 来提供必不可少的网页浏览器便利功能，例如保持多语言选择状态。您可以通过浏览器设置拒绝收集 Cookie，但这可能会导致部分服务无法正常使用。",
+    "analytics": "Google Analytics",
+    "analytics_desc": "我们使用 Google Analytics 统计分析访问者的使用行为并改进网站。所收集的数据均经过匿名化处理，无法识别特定个人。",
+    "third_party": "第三方服务",
+    "third_party_desc": "为保证网站的顺畅运营，我们使用经过验证的全球基础设施合作伙伴服务，在此过程中可能会处理网络数据：\n- Vercel (托管及无服务器提供)\n- Cloudflare (内容分发网络及安全增强)\n- Google (网站分析及广告发布)",
+    "user_rights": "用户权利",
+    "user_rights_desc": "用户可以随时通过删除浏览器 Cookie 来重置信息。如果您希望阻止信息收集和分析，可以使用 Google 提供的 GA 停用浏览器插件等。",
+    "officer": "个人信息保护责任人",
+    "officer_desc": "Hangyeol Media 指定了负责人以处理用户关于个人信息的咨询和投诉。\n- 电子邮箱：contact@k-banchan.net"
+  },
+  "contact_page": {
+    "title": "咨询",
+    "copyright_inquiry": "版权咨询",
+    "copyright_inquiry_desc": "举报未经授权使用商标、未经授权抓取内容以及版权许可咨询",
+    "partnership": "合作咨询",
+    "partnership_desc": "K-BanChan 平台合作、广告投放咨询以及商业合作提案",
+    "general": "一般咨询",
+    "general_desc": "反馈韩食食谱错误、网站使用不便问题以及其他一般反馈",
+    "response_time": "响应时间：3至5个工作日",
+    "notice_desc": "Hangyeol Media 相关部门在收到您的邮件后，将在3至5个工作日内回复您填写的邮箱。请准确填写邮箱地址，并检查您的垃圾邮件文件夹。"
   }
 }

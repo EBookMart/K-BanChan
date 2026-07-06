@@ -1,9 +1,88 @@
 {
   "site": {
     "name": "K-Banchan.net",
-    "tagline": "韓国料理とおかずの世界"
+    "tagline": "韓国料理とおかずの世界",
+    "slogan": "the Secret Code"
   },
   "home": {
-    "coming_soon": "カミングスーン（準備中）"
+    "coming_soon": "カミングスーン（準備중）"
+  },
+  "header": {
+    "menu": "メニュー",
+    "close": "閉じる",
+    "language": "言語選択"
+  },
+  "footer": {
+    "company_intro": "Hangyeol MediaはK-Cultureグローバルメディアプラットフォームです。",
+    "operated_by": "K-BanChan™ is operated by Hangyeol Media",
+    "sitemap": "サイトマップ",
+    "home": "ホーム",
+    "banchan": "おかず50選",
+    "philosophy": "韓国料理の哲学",
+    "contact": "お問い合わせ",
+    "legal": "法的告知",
+    "copyright_policy": "著作権ポリシー",
+    "terms": "利用規約",
+    "privacy": "個人情報保護方針",
+    "copyright_inquiry": "著作権のお問い合わせ",
+    "all_rights_reserved": "© 2026 Hangyeol Media. All Rights Reserved.",
+    "trademark_notice": "K-BanChan™はHangyeol Mediaの登録商標です。",
+    "unauthorized_notice": "無断転載、配布、およびAI学習用の無断データ利用を厳しく禁じます。"
+  },
+  "copyright_page": {
+    "title": "著作権ポリシー",
+    "owner_section": "著作権者",
+    "owner_section_desc": "本ウェブサイト（k-banchan.net）に掲載されているすべてのコンテンツの著作権は、Hangyeol Mediaに帰属します。Hangyeol Mediaは、大韓民国の法律に基づき、適法に商標登録および著作権登録を完了した著作権者です。\n- 運営会社: Hangyeol Media\n- メール: copyright@k-banchan.net\n- 住所: 大韓民国ソウル特別市（詳細な住所はお問い合わせください）",
+    "protected_content": "保護の対象",
+    "protected_content_desc": "保護の対象には、K-BanChanブランドを構成する以下の要素が含まれます:\n- K-BanChanのロゴおよびブランドデザイン\n- ウェブサイト内のすべてのテキスト、画像、UI/UXデザイン\n- おかず50選のデータベースおよび説明資料\n- Unified Korean Standard Code (U-KSC) 分類体系\n- プラットフォーム内でAIによって生成された画像および独創的なデザイン要素",
+    "permitted_use": "許容される利用範囲",
+    "permitted_use_desc": "利用者は、以下の非商業的な目的に限り、コンテンツを利用することができます:\n- 個人的な学習および情報閲覧目的の利用\n- 合法的な引用手続きを遵守した出所の明記（K-Banchan.netの明記）後の引用\n- ウェブサイトリンクの自由な共有および配布",
+    "prohibited_use": "禁止事項",
+    "prohibited_use_desc": "事前の書面による同意がない以下の行為は、大韓民国の著作権法および国際条約により禁止されています:\n- サイト全体または一部の無断複製および商業的再配布\n- サイトのテキスト、画像、データベースを人工知能（AI）の学習用データとして無断収集（スクレイピング、クローリングなど）および使用する行為\n- 商標権の無断盗用および類似ブランドの制作",
+    "report": "著作権侵害の報告",
+    "report_desc": "本サイトのコンテンツが他者の著作権を侵害している場合、または第三者が本サイトの権利を侵害していることを発見された場合は、以下のメールアドレスまでご連絡ください。\n- 報告メール: copyright@k-banchan.net\n- 記載事項: 侵害が主張されるコンテンツのURL、所有者情報、侵害の事実を示す資料",
+    "dmca": "DMCA手続き",
+    "dmca_desc": "K-Banchan.netは、国際的な著作権基準を遵守します。米国のデジタルミレニアム著作権法（DMCA）をはじめとする各国の知的財産権法に基づき、侵害報告の受付時には迅速に調査を行い、該当するコンテンツの一時的な停止または削除手続きを実施します。"
+  },
+  "terms_page": {
+    "title": "利用規約",
+    "rules": "サービス利用規則",
+    "rules_desc": "本規約は、利用者がHangyeol Mediaの提供するK-Banchan.netサービスを利用するにあたり、必要な権利と義務を規定するものです。利用者は本サイトにアクセスすることで、本規約に同意したものとみなされます。",
+    "user_responsibility": "利用者の責任",
+    "user_responsibility_desc": "利用者は、本サイトを法的に許容された範囲内でのみ使用する必要があり、他者の権利を侵害したり、サービスの運営を妨害する行為を行ってはなりません。",
+    "affiliate": "アフィリエイトポリシー",
+    "affiliate_desc": "K-Banchan.netは、様々なアフィリエイトマーケティングプログラム（Coupang Partners、Amazonアソシエイト、Rakuten Advertisingなど）に参加しています。利用者が本サイトのリンクを通じて商品を購入した場合、プラットフォームは所定の手数料を受け取ることがあります。これはサイトの安定的な維持管理および韓国料理の普及に活用されます。",
+    "ads": "広告ポリシー",
+    "ads_desc": "本サイトは、円滑な情報提供のためのサービス運営財源の確保を目的に、Google AdSenseなどの広告を掲載しています。広告の表示およびターゲティングのために、非個人識別情報（クッキーなど）が利用される場合があります。",
+    "disclaimer": "免責事項",
+    "disclaimer_desc": "プラットフォームが提供하는韓国料理およびおかずの情報は、一般的な参考用であり、その正確性や完全性を保証するものではありません。提携先リンクを通じた商品の購入決定およびそれに伴う責任は、すべて利用者ご自身に帰属します。",
+    "governing_law": "準拠法および管轄",
+    "governing_law_desc": "本規約は、大韓民国の法律に準拠し、同法に従って解釈されます。サービスの利用に関して紛争が生じた場合、大韓民国のソウル中央地方裁判所を第一審の合意管轄裁判所とします。"
+  },
+  "privacy_page": {
+    "title": "個人情報保護方針",
+    "minimal_collection": "最小収集原則",
+    "minimal_collection_desc": "K-Banchan.netは会員登録を必要とせず、原則として不要な個人情報（氏名、個人識別番号、電話番号など）を一切収集または保存しません。",
+    "cookies": "クッキーポリシー",
+    "cookies_desc": "本サイトは、多言語選択状態の維持など、必須のウェブブラウザの利便性機能の提供のためにのみ、必要最低限のクッキーを使用します。ブラウザの設定によりクッキーの受け入れを拒否できますが、一部の機能が正しく動作しない場合があります。",
+    "analytics": "Google Analytics",
+    "analytics_desc": "訪問者のサービスの利用状況を統計的に分析し、ウェブサイトを改善するためにGoogle Analyticsを使用しています。このプロセスで収集されるデータは匿名化されており、特定の個人を識別することはできません。",
+    "third_party": "第三者サービス",
+    "third_party_desc": "ウェブサイトの円滑な運営のために、以下の検証されたグローバルインフラパートナーのサービスを利用しており、その過程でネットワークデータが処理される場合があります:\n- Vercel (ホスティングおよびサーバーレスの提供)\n- Cloudflare (コンテンツ配信ネットワークおよびセキュリティ強化)\n- Google (ウェブ解析および広告掲載)",
+    "user_rights": "利用者の権利",
+    "user_rights_desc": "利用者はいつでも自身のブラウザのクッキーを削除して、情報を初期化することができます。情報の収集および分析のオプトアウトを希望される場合は、Googleが提供するGAオプトアウトブラウザアドオンなどを利用できます。",
+    "officer": "個人情報保護管理者",
+    "officer_desc": "Hangyeol Mediaは、利用者の個人情報に関するお問い合わせや苦情に対応するため、担当者を指定しています。\n- メール: contact@k-banchan.net"
+  },
+  "contact_page": {
+    "title": "お問い合わせ",
+    "copyright_inquiry": "著作権のお問い合わせ",
+    "copyright_inquiry_desc": "商標の無断使用の報告、コンテンツの無断スクレイピングの通報、著作権利用許諾に関するお問い合わせ",
+    "partnership": "提携のお問い合わせ",
+    "partnership_desc": "K-BanChanプラットフォームの提携、広告掲載に関するお問い合わせ、ビジネスコラボレーションのご提案",
+    "general": "一般のお問い合わせ",
+    "general_desc": "韓国料理レシピの誤りの報告、サイト利用時の不具合、その他の一般的なフィードバック",
+    "response_time": "応答時間: 営業日基準3〜5日",
+    "notice_desc": "Hangyeol Mediaの担当部署にて内容を確認の上、営業日基準で3〜5日以内にご入力いただいたメールアドレス宛にご返信いたします。メールアドレスを正確に入力し、迷惑メールフォルダもご確認ください。"
   }
 }
