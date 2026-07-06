@@ -139,11 +139,14 @@
   },
   "cycle": {
     "label": "Ciclo",
-    "description": "Ciclo de los Cinco Elementos: la Madera alimenta al Fuego, el Fuego crea Tierra, la Tierra produce Metal, el Metal recoge Agua, el Agua nutre a la Madera"
+    "description": "Ciclo de los Cinco Elementos: la Madera alimenta al Fuego, el Fuego crea Tierra, la Tierra produce Metal, el Metal recoge Agua, el Agua nutre a la Madera",
+    "current_element": "Elemento Actual"
   },
   "articles": {
     "title": "El Código Secreto de K-Food",
     "subtitle": "Descubra las cinco características de la comida coreana a través de la filosofía Obangsaek",
+    "index_title": "Filosofía y Origen Natural de la Cocina Coreana (The Secret Code)",
+    "index_subtitle": "",
     "read_more": "Leer más",
     "direction": "Dirección",
     "element": "Elemento",
@@ -156,15 +159,15 @@
       "subtitle": "La filosofía del bienestar de que la medicina y la comida comparten el mismo origen"
     },
     "yukmi": {
-      "title": "Yukmi (Seis sabores)",
+      "title": "Yukmi (六味): Seis Sabores y el Sabor de las Manos (Sonmat)",
       "subtitle": "Perfecta armonía de seis sabores distintos en una sola cocina"
     },
     "obangsaek": {
-      "title": "Obangsaek (Cinco colores)",
+      "title": "Obangsaek (五方色): Armonía Visual - Los Cinco Elementos",
       "subtitle": "Equilibrio nutricional representado por cinco colores cardinales"
     },
     "nanum": {
-      "title": "Nanum (Compartir y Hospitalidad)",
+      "title": "Nanum (Sharing) y Comunidad",
       "subtitle": "La cálida cultura de compartir afecto (Jeong) a través de platos de acompañamiento"
     },
     "ingredients-terroir": {

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { Link, usePathname } from "@/i18n/routing";
 import { useLocale, useTranslations } from "next-intl";
 import { Globe, ChevronDown, Check, Menu, X } from "lucide-react";
@@ -33,34 +32,13 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-900/80 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex items-center justify-between">
         
-        {/* 1. 좌측 로고 영역 */}
-        <div className="flex items-center gap-3">
-          <Link href="/" className="flex items-center transition-opacity hover:opacity-90">
-            {/* 데스크톱용 로고 */}
-            <div className="hidden md:block relative h-[60px] w-[180px]">
-              <Image
-                src="/logos/kbanchan-logo.png"
-                alt="K-BanChan Logo"
-                fill
-                priority
-                className="object-contain object-left"
-              />
-            </div>
-            {/* 모바일용 로고 */}
-            <div className="block md:hidden relative h-[40px] w-[120px]">
-              <Image
-                src="/logos/kbanchan-logo.png"
-                alt="K-BanChan Logo"
-                fill
-                priority
-                className="object-contain object-left"
-              />
-            </div>
-          </Link>
-        </div>
+        {/* 1. 좌측 로고 영역 삭제 (웹 접근성 준수를 위해 sr-only로 홈 링크만 보존) */}
+        <Link href="/" className="sr-only">
+          K-BanChan Home
+        </Link>
 
-        {/* 2. 중앙 네비게이션 링크 (데스크톱 전용) */}
-        <nav className="hidden md:flex items-center gap-8 font-semibold text-sm">
+        {/* 2. 네비게이션 링크 (데스크톱 전용, 좌측 정렬로 이동) */}
+        <nav className="hidden md:flex items-center gap-8 font-semibold text-sm mr-auto">
           <Link
             href="/banchan"
             className={`transition-colors ${

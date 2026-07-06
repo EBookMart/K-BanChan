@@ -141,11 +141,14 @@
   },
   "cycle": {
     "label": "循環",
-    "description": "오행상생(五行相生): 木生火 · 火生土 · 土生金 · 金生水 · 水生木"
+    "description": "오행상생(五행상생): 木生火 · 火生土 · 土生金 · 金生水 · 水生木",
+    "current_element": "현재 원소"
   },
   "articles": {
     "title": "한식의 비밀 코드 (The Secret Code)",
     "subtitle": "오방색 방위와 철학으로 만나는 한식의 5대 특성",
+    "index_title": "한식의 철학과 자연적 배경 (The Secret Code)",
+    "index_subtitle": "",
     "read_more": "자세히 읽기",
     "direction": "방위",
     "element": "오행",
@@ -158,15 +161,15 @@
       "subtitle": "음식과 약은 그 근원이 같다는 웰빙 철학"
     },
     "yukmi": {
-      "title": "육미 (六味)",
+      "title": "육미 (六味): 육미와 손맛",
       "subtitle": "여섯 가지 조화로운 맛의 완벽한 조화"
     },
     "obangsaek": {
-      "title": "오방색 (五方色)",
+      "title": "오방색 (五方色): 시각적 조화 - 오행",
       "subtitle": "다섯 가지 방위색을 통한 영양 균형"
     },
     "nanum": {
-      "title": "나눔 (Sharing)",
+      "title": "나눔(Sharing)과 공동체",
       "subtitle": "정(情)을 이웃과 함께 나누는 환대 문화"
     },
     "ingredients-terroir": {

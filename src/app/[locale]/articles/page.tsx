@@ -14,11 +14,11 @@ export async function generateMetadata({ params: { locale } }: Props) {
   const t = await getTranslations({ locale, namespace: "articles" });
   
   return {
-    title: `${t("title")} | K-BanChan`,
-    description: t("subtitle"),
+    title: `${t("index_title")} | K-BanChan`,
+    description: t("index_title"),
     openGraph: {
-      title: `${t("title")} | K-BanChan`,
-      description: t("subtitle"),
+      title: `${t("index_title")} | K-BanChan`,
+      description: t("index_title"),
       url: `https://k-banchan.net/${locale}/articles`,
       images: [
         {
@@ -54,12 +54,9 @@ export default async function ArticlesIndexPage({ params: { locale } }: Props) {
             <span className="text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-950/40 border border-emerald-500/20 px-3 py-1 rounded-full mb-4 inline-block">
               THE SECRET CODE
             </span>
-            <h1 className="text-3xl md:text-5xl font-black text-white tracking-tight mb-4">
-              {t("title")}
+            <h1 className="text-3xl md:text-5xl font-black text-white tracking-tight">
+              {t("index_title")}
             </h1>
-            <p className="text-sm md:text-base text-slate-400 font-light leading-relaxed">
-              {t("subtitle")}
-            </p>
           </div>
 
           {/* 아티클 가로 카드 리스트 (오방색 방위 순서대로 나열) */}

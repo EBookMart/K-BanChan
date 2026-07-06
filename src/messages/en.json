@@ -141,11 +141,14 @@
   },
   "cycle": {
     "label": "Cycle",
-    "description": "Five Elements Cycle: Wood feeds Fire, Fire creates Earth, Earth bears Metal, Metal collects Water, Water nourishes Wood"
+    "description": "Five Elements Cycle: Wood feeds Fire, Fire creates Earth, Earth bears Metal, Metal collects Water, Water nourishes Wood",
+    "current_element": "Current Element"
   },
   "articles": {
     "title": "The Secret Code of K-Food",
     "subtitle": "Discover the five characteristics of Korean food through Obangsaek philosophy",
+    "index_title": "Philosophy & Natural Origins of Korean Cuisine (The Secret Code)",
+    "index_subtitle": "",
     "read_more": "Read More",
     "direction": "Direction",
     "element": "Element",
@@ -158,15 +161,15 @@
       "subtitle": "The wellness philosophy that medicine and food share the same origin"
     },
     "yukmi": {
-      "title": "Yukmi (Six Tastes)",
+      "title": "Yukmi (六味): Six Tastes & the Hand-Touch Flavor (Sonmat)",
       "subtitle": "Perfect harmony of six distinct tastes in one cuisine"
     },
     "obangsaek": {
-      "title": "Obangsaek (Five Colors)",
+      "title": "Obangsaek (五方色): Visual Harmony - The Five Elements",
       "subtitle": "Nutritional balance represented by five cardinal colors"
     },
     "nanum": {
-      "title": "Nanum (Sharing & Hospitality)",
+      "title": "Nanum (Sharing) & Community",
       "subtitle": "The warm culture of sharing affection (Jeong) through side dishes"
     },
     "ingredients-terroir": {

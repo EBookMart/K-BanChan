@@ -21,25 +21,28 @@ export default function HeroSection() {
 
       {/* 컨텐츠 영역 */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 flex flex-col items-center">
-        {/* 대형 브랜드 로고 배치 */}
-        <div className="relative w-48 h-16 md:w-64 md:h-20 mb-6">
-          <Image
-            src="/logos/kbanchan-logo.png"
-            alt={t("logo_alt")}
-            fill
-            priority
-            className="object-contain"
-          />
-        </div>
-
         {/* 슬로건 뱃지 */}
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-widest mb-6">
           Premium K-Food Standard
         </span>
 
+        {/* 대형 브랜드 로고 배치 */}
+        <div className="mb-6">
+          <Image
+            src="/logos/logo-kbanchan-final.png"
+            alt={t("logo_alt")}
+            width={600}
+            height={600}
+            priority
+            className="w-[320px] md:w-[460px] lg:w-[600px] h-auto mx-auto"
+            style={{ 
+              filter: 'drop-shadow(0 16px 40px rgba(0,0,0,0.6))' 
+            }}
+          />
+        </div>
+
         {/* 대형 글로벌 메인 타이틀 */}
         <h1 className="text-4xl md:text-7xl font-black tracking-tight text-white mb-6 leading-tight max-w-3xl">
-          THE SECRET CODE OF <br />
           <span className="bg-gradient-to-r from-amber-400 via-emerald-300 to-blue-500 bg-clip-text text-transparent">
             KOREAN CUISINE
           </span>

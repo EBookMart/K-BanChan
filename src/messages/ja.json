@@ -138,11 +138,14 @@
   },
   "cycle": {
     "label": "循環",
-    "description": "五行相生: 木は火を生じ、火は土を生じ、土は金を生じ、金は水を生じ、水は木を生じる"
+    "description": "五行相生: 木は火を生じ、火は土を生じ、土は金を生じ、金は水を生じ、水は木を生じる",
+    "current_element": "現在の元素"
   },
   "articles": {
     "title": "韓国料理の秘密のコード (The Secret Code)",
     "subtitle": "五方色の方位と哲学で出会う韓国料理の5大特性",
+    "index_title": "韓国料理の哲学と自然的背景 (The Secret Code)",
+    "index_subtitle": "",
     "read_more": "詳細を読む",
     "direction": "方位",
     "element": "五行",
@@ -155,15 +158,15 @@
       "subtitle": "食と薬は源が同じであるというウェルネス哲学"
     },
     "yukmi": {
-      "title": "六味 (六味)",
+      "title": "六味 (六味): 六味と手の味 (Sonmat)",
       "subtitle": "一つの料理で出会う6つの調和のとれた味"
     },
     "obangsaek": {
-      "title": "五方色 (五方色)",
+      "title": "五方色 (五方色): 視覚적 조화 - 오행",
       "subtitle": "5つの基本色を通じた栄養のバランス"
     },
     "nanum": {
-      "title": "分かち合い (Sharing)",
+      "title": "ナヌム (Sharing) と共同体",
       "subtitle": "おかずを通じて温かい情（チョン）を分かち合う文化"
     },
     "ingredients-terroir": {

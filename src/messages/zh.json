@@ -138,11 +138,14 @@
   },
   "cycle": {
     "label": "循环",
-    "description": "五行相生：木生火，火生土，土生金，金生水，水生木"
+    "description": "五行相生：木生火，火生土，土生金，金生水，水生木",
+    "current_element": "当前元素"
   },
   "articles": {
     "title": "韩国料理的秘密密码 (The Secret Code)",
     "subtitle": "通过五方色的方位与哲学领略韩国料理的五大特性",
+    "index_title": "韩国料理的哲学与自然背景 (The Secret Code)",
+    "index_subtitle": "",
     "read_more": "阅读更多",
     "direction": "方位",
     "element": "五行",
@@ -155,15 +158,15 @@
       "subtitle": "药与食同源的养生哲学"
     },
     "yukmi": {
-      "title": "六味 (六味)",
+      "title": "六味 (六味): 六味与手味 (Sonmat)",
       "subtitle": "在一道菜中完美融合的六种和谐味道"
     },
     "obangsaek": {
-      "title": "五方色 (五方色)",
+      "title": "五方色 (五方色): 视觉和谐 - 五行",
       "subtitle": "通过五种基本色实现的营养均衡"
     },
     "nanum": {
-      "title": "分享 (Sharing)",
+      "title": "分享 (Sharing) 与共同体",
       "subtitle": "通过小菜分享温暖情谊的款待文化"
     },
     "ingredients-terroir": {

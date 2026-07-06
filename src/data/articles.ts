@@ -82,13 +82,13 @@ export const articles: Article[] = [
       ko: "적색 (Red)", en: "Red", ja: "赤", zh: "红", es: "Rojo", ar: "الأحمر", ru: "Красный"
     },
     title: {
-      ko: "육미 (六味): 여섯 가지 맛",
-      en: "Yukmi: The Six Tastes",
-      ja: "六味 (ろくみ): 六つの味",
-      zh: "六味 (Yukmi): 六种味道",
-      es: "Yukmi: Los Seis Sabores",
-      ar: "يوكمي: النكهات الست",
-      ru: "Юкми: Шесть вкусов"
+      ko: "육미 (六味): 육미와 손맛",
+      en: "Yukmi (六味): Six Tastes & the Hand-Touch Flavor (Sonmat)",
+      ja: "六味 (六味): 六味と手の味 (Sonmat)",
+      zh: "六味 (六味): 六味与手味 (Sonmat)",
+      es: "Yukmi (六味): Seis Sabores y el Sabor de las Manos (Sonmat)",
+      ar: "يوكمي (六味): الأذواق الستة ونكهة اللمسة (Sonmat)",
+      ru: "Юкми (六味): Шесть вкусов и вкус рук (Sonmat)"
     },
     summary: {
       ko: "단맛, 짠맛, 신맛, 쓴맛, 매운맛에 감칠맛을 더한 여섯 가지 맛의 깊은 조화를 다룹니다.",
@@ -127,13 +127,13 @@ export const articles: Article[] = [
       ko: "황색 (Yellow)", en: "Yellow", ja: "黄", zh: "黄", es: "Amarillo", ar: "الأصفر", ru: "Желтый"
     },
     title: {
-      ko: "오방색 (五方色): 다섯 방위색",
-      en: "Obangsaek: Five Cardinal Colors",
-      ja: "五方色: 五つの色",
-      zh: "五方色: 五种方位色",
-      es: "Obangsaek: Cinco Colores Cardinales",
-      ar: "أوبانغ سيك: الألوان الخمسة",
-      ru: "Обансэк: Пять основных цветов"
+      ko: "오방색 (五方色): 시각적 조화 - 오행",
+      en: "Obangsaek (五方色): Visual Harmony - The Five Elements",
+      ja: "五方色 (五方色): 視覚的調和 - 五行",
+      zh: "五方色 (五方色): 视觉和谐 - 五行",
+      es: "Obangsaek (五方色): Armonía Visual - Los Cinco Elementos",
+      ar: "أوبانغساك (五方色): الانسجام البصري - العناصر الخمسة",
+      ru: "Обансэк (五方色): Визуальная гармония - Пять элементов"
     },
     summary: {
       ko: "청, 적, 황, 백, 흑 다섯 가지 색상으로 조화롭고 건강한 영양 균형을 추구합니다.",
@@ -172,13 +172,13 @@ export const articles: Article[] = [
       ko: "백색 (White)", en: "White", ja: "白", zh: "白", es: "Blanco", ar: "الأبيض", ru: "Белый"
     },
     title: {
-      ko: "나눔 (Sharing): 나눔과 공동체",
-      en: "Nanum: The Spirit of Sharing",
-      ja: "分かち合い: 温かい情",
-      zh: "分享: 分享与共同体",
-      es: "Nanum: El Espíritu de Compartir",
-      ar: "نانوم: روح المشاركة",
-      ru: "Нанум: Дух щедрости"
+      ko: "나눔(Sharing)과 공동체",
+      en: "Nanum (Sharing) & Community",
+      ja: "ナヌム (Sharing) と共同体",
+      zh: "分享 (Sharing) 与共同体",
+      es: "Nanum (Sharing) y Comunidad",
+      ar: "نانوم (Sharing) والمجتمع",
+      ru: "Нанум (Sharing) и Общность"
     },
     summary: {
       ko: "정(情)과 반찬을 이웃과 넉넉히 나누어 먹는 상생과 환대의 식문화를 다룹니다.",
