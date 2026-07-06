@@ -4,7 +4,7 @@ import React from "react";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { articles, Article } from "@/data/articles";
-import { Compass, Sparkles, Heart, RefreshCw, Leaf, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 interface SecretCodeCardsProps {
   locale: string;
@@ -12,24 +12,6 @@ interface SecretCodeCardsProps {
 
 export default function SecretCodeCards({ locale }: SecretCodeCardsProps) {
   const t = useTranslations("articles");
-
-  // 각 slug에 매칭될 아이콘을 지정합니다.
-  const getIcon = (slug: string, className: string) => {
-    switch (slug) {
-      case "yaksik-dongwon":
-        return <Leaf className={className} />;
-      case "yukmi":
-        return <Sparkles className={className} />;
-      case "obangsaek":
-        return <Compass className={className} />;
-      case "nanum":
-        return <Heart className={className} />;
-      case "ingredients-terroir":
-        return <RefreshCw className={className} />;
-      default:
-        return <Compass className={className} />;
-    }
-  };
 
   // 각 slug에 어울리는 오방색 컬러칩 데코를 만듭니다.
   const getObangsaekBadge = (art: Article) => {
@@ -81,20 +63,18 @@ export default function SecretCodeCards({ locale }: SecretCodeCardsProps) {
     <section className="w-full py-16 md:py-24 bg-gradient-to-b from-slate-950 to-slate-900 px-4">
       <div className="max-w-7xl mx-auto">
         
-        {/* 섹션 헤더 */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight mb-4">
-            {t("title")}
+        {/* 섹션 헤더 - 서브카피는 요구사항에 따라 완전히 삭제 */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight">
+            {t("index_title")}
           </h2>
-          <p className="text-sm md:text-base text-slate-400 font-light">
-            {t("subtitle")}
-          </p>
         </div>
 
         {/* 5개 카드 그리드 (모바일 1열, 태블릿 2열, 데스크톱 5열) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {articles.map((art) => {
             const titleText = art.title[locale] || art.title["en"];
+            const subtitleText = art.subtitle[locale] || art.subtitle["en"];
             const summaryText = art.summary[locale] || art.summary["en"];
             
             // 호버 테두리 및 그림자 효과 지정
@@ -126,35 +106,38 @@ export default function SecretCodeCards({ locale }: SecretCodeCardsProps) {
                 className={`flex flex-col justify-between p-6 rounded-2xl border transition-all duration-300 transform hover:-translate-y-1 ${cardBg} ${hoverRing}`}
               >
                 <div>
-                  {/* 아이콘 헤더 */}
-                  <div className="mb-4">
-                    {getIcon(art.slug, `w-8 h-8 ${art.textClass}`)}
-                  </div>
-
-                  {/* 방위 뱃지 */}
+                  {/* 방위 뱃지 (상단) */}
                   <div className="mb-3">
                     {getObangsaekBadge(art)}
                   </div>
 
                   {/* 제목 */}
-                  <h3 className="text-lg md:text-xl font-bold text-white mb-3">
+                  <h3 className="text-base md:text-lg font-bold text-white mb-1 leading-snug">
                     {titleText}
                   </h3>
 
-                  {/* 요약 */}
-                  <p className="text-xs md:text-sm text-slate-400 font-light leading-relaxed mb-6">
+                  {/* 부제 (회색 톤 부제) */}
+                  <p className="text-xs text-slate-500 font-medium mb-3 leading-normal">
+                    {subtitleText}
+                  </p>
+
+                  {/* 요약 설명문 (3~4줄로 통일된 레이아웃) */}
+                  <p className="text-xs text-slate-400 font-light leading-relaxed mb-4">
                     {summaryText}
                   </p>
                 </div>
 
-                {/* 자세히 읽기 링크 */}
-                <Link
-                  href={`/articles/${art.slug}`}
-                  className={`inline-flex items-center gap-1.5 text-xs font-bold ${art.textClass} hover:opacity-80 transition-opacity`}
-                >
-                  <span>{t("read_more")}</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
+                {/* 구분선 및 전문 읽기 CTA 버튼 */}
+                <div>
+                  <hr className="border-t border-white/10 my-4" />
+                  <Link
+                    href={`/articles/${art.slug}`}
+                    className={`inline-flex items-center justify-center gap-2 text-xs font-semibold px-4 py-2 w-full rounded-full border border-white/20 hover:bg-white/5 transition-all ${art.textClass}`}
+                  >
+                    <span>{t("read_full_article")}</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
               </div>
             );
           })}

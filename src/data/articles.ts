@@ -12,8 +12,9 @@ export interface Article {
   element: Record<string, string>;
   color: Record<string, string>;
   
-  // 다국어 제목, 요약, 상세 본문
+  // 다국어 제목, 부제, 요약, 상세 본문
   title: Record<string, string>;
+  subtitle: Record<string, string>;
   summary: Record<string, string>;
   content: Record<string, string>;
 }
@@ -44,6 +45,15 @@ export const articles: Article[] = [
       es: "Yak-sik Dong-won: La Comida como Medicina",
       ar: "ياك-سيك دونغ-وون: الطعام كدواء",
       ru: "Як-сик Дон-вон: Еда как лекарство"
+    },
+    subtitle: {
+      ko: "음식과 약은 그 근원이 같다",
+      en: "Food and Medicine Share the Same Origin",
+      ja: "食と薬は源が同じである",
+      zh: "药食同源，食药同源",
+      es: "La comida y la medicina comparten el mismo origen",
+      ar: "الطعام والدواء يتشاركان نفس الأصل",
+      ru: "Еда и лекарства имеют одно происхождение"
     },
     summary: {
       ko: "음식과 약은 그 근원이 같다는 철학으로, 건강에 좋은 식재료의 조화로운 조리를 강조합니다.",
@@ -90,6 +100,15 @@ export const articles: Article[] = [
       ar: "يوكمي (六味): الأذواق الستة ونكهة اللمسة (Sonmat)",
       ru: "Юкми (六味): Шесть вкусов и вкус рук (Sonmat)"
     },
+    subtitle: {
+      ko: "여섯 가지 맛의 조화와 손맛의 예술",
+      en: "Harmony of Six Tastes and Art of Hand-Touch Flavor",
+      ja: "六つの味の調和と手の味の芸術",
+      zh: "六味和谐与手味艺术",
+      es: "Harmonía de seis sabores y el arte del sabor de las manos",
+      ar: "تناغم الأذواق الستة وفن نكهة اللمسة",
+      ru: "Гармония шести вкусов и искусство вкуса рук"
+    },
     summary: {
       ko: "단맛, 짠맛, 신맛, 쓴맛, 매운맛에 감칠맛을 더한 여섯 가지 맛의 깊은 조화를 다룹니다.",
       en: "Deals with the deep harmony of six tastes—sweet, salty, sour, bitter, spicy, and the deep savory umami flavor.",
@@ -134,6 +153,15 @@ export const articles: Article[] = [
       es: "Obangsaek (五方色): Armonía Visual - Los Cinco Elementos",
       ar: "أوبانغساك (五方色): الانسجام البصري - العناصر الخمسة",
       ru: "Обансэк (五方色): Визуальная гармония - Пять элементов"
+    },
+    subtitle: {
+      ko: "다섯 가지 전통 색채로 이루는 건강과 시각적 조화",
+      en: "Health and Visual Harmony through Five Traditional Colors",
+      ja: "五つの伝統色彩で成す健康と視覚적 조화",
+      zh: "五种传统色彩构成的健康与视觉和谐",
+      es: "Salud y armonía visual a través de cinco colores tradicionales",
+      ar: "الصحة والانسجام البصري من خلال الألوان التقليدية الخمسة",
+      ru: "Здоровье и визуальная гармония через пять традиционных цветов"
     },
     summary: {
       ko: "청, 적, 황, 백, 흑 다섯 가지 색상으로 조화롭고 건강한 영양 균형을 추구합니다.",
@@ -180,6 +208,15 @@ export const articles: Article[] = [
       ar: "نانوم (Sharing) والمجتمع",
       ru: "Нанум (Sharing) и Общность"
     },
+    subtitle: {
+      ko: "반찬을 함께 나누는 상생과 따뜻한 정",
+      en: "Warm Affection and Coexistence in Sharing Side Dishes",
+      ja: "おかずを分かち合う相生と温かい情",
+      zh: "分享小菜的共生与温情",
+      es: "Afecto cálido y coexistencia al compartir guarniciones",
+      ar: "العاطفة الدافئة والتعايش في مشاركة الأطباق الجانبية",
+      ru: "Теплая привязанность и сосуществование в совместном потреблении панчхана"
+    },
     summary: {
       ko: "정(情)과 반찬을 이웃과 넉넉히 나누어 먹는 상생과 환대의 식문화를 다룹니다.",
       en: "Explores the food culture of sharing side dishes and affection (Jeong) with neighbors in hospitality.",
@@ -224,6 +261,15 @@ export const articles: Article[] = [
       es: "Ingredientes y Terroir: Fermentación",
       ar: "المكونات والتربة المحلية: التخمير",
       ru: "Ингредиенты и Терруар: Ферментация"
+    },
+    subtitle: {
+      ko: "자연의 순환과 한반도 기후가 빚어낸 발효의 시간",
+      en: "Time of Fermentation Crafted by Nature's Cycle and Korean Climate",
+      ja: "自然の循環と韓半島の気候が醸し出した発酵の時間",
+      zh: "自然循环与朝鲜半岛气候酿造的发酵时间",
+      es: "El tiempo de la fermentación moldeado por el ciclo de la naturaleza",
+      ar: "وقت التخمير الذي يصنعه دورة الطبيعة والمناخ الكوري",
+      ru: "Время ферментации, созданное природным циклом и корейским климатом"
     },
     summary: {
       ko: "계절과 삼면의 바다가 빚어낸 신선함과 발효 기법의 깊은 과학을 소개합니다.",

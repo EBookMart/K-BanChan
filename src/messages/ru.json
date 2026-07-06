@@ -153,6 +153,18 @@
     "back_to_list": "Назад к списку",
     "related_banchan": "Похожие банчаны",
     "next_article": "Следующий секретный код",
+    "view_archive_title": "Хотите узнать больше?",
+    "view_archive_description": "Изучите научные статьи и ссылки по этой теме.",
+    "view_archive_cta": "Смотреть архив",
+    "archive_hero_title": "Академический архив литературы",
+    "archive_hero_badge": "Академический материал",
+    "back_to_article": "Назад к статье о философии",
+    "academic_essay": "Научное эссе",
+    "papers_list": "Научные статьи и литература",
+    "abstract_btn": "Показать аннотацию",
+    "link_btn": "Первоисточник",
+    "browse_other_archives": "Посмотреть другие архивы",
+    "read_full_article": "Читать полностью",
     "yaksik-dongwon": {
       "title": "Якшик-донвон (Лекарство и еда)",
       "subtitle": "Философия о том, что лекарства и еда имеют общее происхождение"

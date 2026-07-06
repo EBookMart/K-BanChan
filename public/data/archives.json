@@ -1,0 +1,504 @@
+{
+  "archives": [
+    {
+      "slug": "yaksik-dongwon",
+      "publishedAt": "2026-07-06",
+      "lastUpdated": "2026-07-06",
+      "papers": [
+        {
+          "id": "yaksik-001",
+          "title": {
+            "ko": "약식동원 사상의 현대적 해석과 한국 전통 식품의 기능성 연구",
+            "en": "Modern Interpretation of Yaksik-Dongwon Philosophy and Functional Research on Korean Traditional Foods",
+            "ja": "薬食同源思想の現代的解釈と韓国伝統食品の機能性研究",
+            "zh": "药食同源思想的现代解释与韩国传统食品的功能性研究",
+            "es": "Interpretación Moderna de la Filosofía Yaksik-Dongwon y la Investigación Funcional de los Alimentos Tradicionales Coreanos",
+            "ar": "التفسير الحديث لفلسفة ياك-سيك دونغ-وون والبحث الوظيفي في الأطبقة الكورية التقليدية",
+            "ru": "Современная интерпретация философии Як-сик Дон-вон и функциональные исследования корейских традиционных продуктов"
+          },
+          "authors": {
+            "ko": "김영진, 이수정",
+            "en": "Young-Jin Kim, Su-Jung Lee",
+            "ja": "金栄鎮, 李秀貞",
+            "zh": "金荣镇, 李秀贞",
+            "es": "Young-Jin Kim, Su-Jung Lee",
+            "ar": "يونغ-جين كيم، سو-جونغ لي",
+            "ru": "Ён Джин Ким, Су Чжон Ли"
+          },
+          "publication": {
+            "ko": "한국식품과학회지",
+            "en": "Korean Journal of Food Science and Technology",
+            "ja": "韓国食品科学会誌",
+            "zh": "韩国食品科学学会志",
+            "es": "Revista de Ciencia y Tecnología de Alimentos de Corea",
+            "ar": "المجلة الكورية لعلوم وتكنولوجيا الأغذية",
+            "ru": "Корейский журнал пищевой науки и технологии"
+          },
+          "year": 2023,
+          "type": "journal",
+          "url": "https://k-banchan.net/papers/yaksik-001",
+          "abstract": {
+            "ko": "본 연구는 '음식과 약은 근원이 같다'는 약식동원 사상을 바탕으로, 도라지와 더덕 등 한국 전통 약용 식재료의 항산화 및 면역 증진 기능성을 분석하였다.",
+            "en": "This study analyzes the antioxidant and immune-enhancing properties of traditional Korean medicinal ingredients like bellflower root and deodeok, based on the Yaksik-Dongwon philosophy.",
+            "ja": "本研究は「食と薬は源が同じである」という薬食同源思想に基づき、キキョウやツルニンジンなど韓国の伝統的な薬用食材の抗酸化および免疫増進機能を分析した。",
+            "zh": "本研究基于“药食同源”思想，分析了桔梗、沙参等韩国传统药用食材的抗氧化及免疫增强功能。",
+            "es": "Este estudio analiza las propiedades antioxidantes e inmunológicas de los ingredientes medicinales tradicionales coreanos, basados en la filosofía Yaksik-Dongwon.",
+            "ar": "تحلل هذه الدراسة الخصائص المضادة للأكسدة والمعززة للمناعة للمكونات الطبية الكورية التقليدية مثل جذور الجرس والديوديوك، بناءً على فلسفة ياك-سيك دونغ-وون.",
+            "ru": "В данном исследовании анализируются антиоксидантные и иммуностимулирующие свойства традиционных корейских лекарственных ингредиентов на основе философии Як-сик Дон-вон."
+          }
+        },
+        {
+          "id": "yaksik-002",
+          "title": {
+            "ko": "Traditional Korean Herbal Foods: Bridging Diet and Medicine",
+            "en": "Traditional Korean Herbal Foods: Bridging Diet and Medicine",
+            "ja": "韓国伝統ハーブ食品：食事と医学の架け橋",
+            "zh": "韩国传统草药食品：饮食与医学的桥梁",
+            "es": "Alimentos Herbales Tradicionales Coreanos: Puente entre Dieta y Medicina",
+            "ar": "الأطعمة العشبية الكورية التقليدية: الجسر بين النظام الغذائي والطب",
+            "ru": "Традиционные корейские травяные продукты: мост между диетой и медициной"
+          },
+          "authors": {
+            "ko": "박태호, 최지은",
+            "en": "Tae-Ho Park, Ji-Eun Choi",
+            "ja": "朴泰浩, 崔志恩",
+            "zh": "朴泰浩, 崔志恩",
+            "es": "Tae-Ho Park, Ji-Eun Choi",
+            "ar": "تاي-هو بارك، جي-أون تشوي",
+            "ru": "Тэ Хо Пак, Джи Ын Чхве"
+          },
+          "publication": {
+            "ko": "Journal of Ethnic Foods",
+            "en": "Journal of Ethnic Foods",
+            "ja": "Journal of Ethnic Foods",
+            "zh": "Journal of Ethnic Foods",
+            "es": "Journal of Ethnic Foods",
+            "ar": "Journal of Ethnic Foods",
+            "ru": "Journal of Ethnic Foods"
+          },
+          "year": 2022,
+          "type": "journal",
+          "url": "https://k-banchan.net/papers/yaksik-002",
+          "abstract": {
+            "ko": "한국의 일상적인 반찬 문화에서 한방 약재 식재료가 어떻게 식품으로 소비되며, 예방의학적 가치를 실현하고 있는지 다국적 관점에서 규명하였다.",
+            "en": "This research examines how traditional herbal ingredients are integrated into daily side dishes (banchan) in Korea, fulfilling preventive medicine purposes.",
+            "ja": "韓国の日常的なおかず文化において、韓方薬用食材がどのように食品として消費され、予防医学的価値を実現しているかを多角的な視点から究明した。",
+            "zh": "本研究从多国视角探讨了韩国日常小菜文化中，韩方药材食材如何作为食品被消费，并实现预防医学价值。",
+            "es": "Esta investigación examina cómo se integran los ingredientes herbales tradicionales en los platos de acompañamiento (banchan) diarios en Corea, cumpliendo propósitos de medicina preventiva.",
+            "ar": "تبحث هذه الدراسة في كيفية دمج المكونات العشبية التقليدية في أطباق البان تشان اليومية في كوريا، لتحقيق أغراض الطب الوقائي.",
+            "ru": "В этом исследовании с международной точки зрения изучается, как ингредиенты традиционной медицины потребляются в качестве повседневных панчханов в Корее."
+          }
+        }
+      ],
+      "essay": {
+        "ko": "약식동원(藥食同源) 사상은 '음식과 약은 그 근원이 같다'는 한국의 전통 식문화 철학이자 동아시아 자연의학의 핵심 사상입니다. 예로부터 한국인들은 질병을 예방하고 치료하는 첫 번째 단계로 평소 먹는 음식을 정성껏 다스리는 식료(食療)를 꼽았습니다. 약식동원은 단순히 맛있는 음식을 먹는 것을 넘어, 각 식재료가 가진 고유의 차갑고 따뜻한 성질을 이해하고, 몸의 음양 균형을 맞추는 예방의학적 접근을 취합니다. 한식의 대표적인 반찬인 도라지무침, 더덕구이, 연근조림 등은 한의학에서도 실제 약재로 널리 쓰이는 식재료들로, 일상의 밥상이 건강을 지키는 훌륭한 예방약 역할을 하고 있음을 과학적으로 증명합니다. 현대 식품영양학적 관점에서도 이러한 약용 채소와 허브류는 항산화 물질과 면역 활성 성분이 풍부하여 생활습관병의 예방과 신진대사 개선에 긍정적인 영향을 미치는 것으로 연구되고 있습니다.",
+        "en": "The philosophy of Yaksik-Dongwon, meaning 'medicine and food share the same origin,' is a cornerstone of traditional Korean food culture and East Asian natural medicine. Historically, Koreans prioritized 'dietary therapy' as the primary step to prevent and treat ailments. Yaksik-Dongwon goes beyond simple nutrition; it involves understanding the inherent cold or warm nature of each ingredient to regulate the body's Yin and Yang balance. Popular side dishes (banchan) like seasoned bellflower root (doraji-muchim), grilled deodeok (deodeok-gui), and braised lotus root (yeongeun-jorim) utilize ingredients highly valued in traditional medicine, illustrating how the daily dining table serves as preventive medicine. From a modern nutritional science perspective, these medicinal vegetables are rich in antioxidants and bioactive compounds, effectively reinforcing the immune system and promoting metabolic health.",
+        "ja": "薬食同源（やくしょくどうげん）思想は、「食と薬は源が同じである」という韓国の伝統的な食文化哲学であり、東アジア自然医学の中核をなす考え方です。古くから韓国人は、病気を予防し治療する第一段階として、日頃食べる食事を丁寧に整える「食療」を重視してきました。薬食同源は単に美味しいものを食べるだけでなく、各食材が持つ固有の冷たい性質や温かい性質を理解し、体内の陰陽のバランスを整える予防医学的なアプローチを取ります。代表的なおかずであるキキョウの和え物（トラジムチム）、ツルニンジンの焼き物（トドックイ）、レンコンの煮物（ヨングンジョリム）などは、韓医学でも実際に薬材として広く使われる食材であり、日常の食卓が健康を守る優れた予防薬の役割を果たしていることを科学的に証明しています。現代の食品栄養学的な観点からも、これらの薬用野菜やハーブ類は抗酸化物質や免疫活性成分が豊富で、生活習慣病の予防や新陳代謝の改善に大きく寄与していると報告されています。",
+        "zh": "药食同源（Yaksik-Dongwon）思想意为“药与食同宗同源”，是韩国传统饮食文化哲学及东亚自然医学的核心理念。自古以来，韩国人将调理日常饮食的“食疗”视为预防和治疗疾病的首要步骤。药食同源不仅关乎享用美味，更强调理解每种食材固有的寒热属性，从而调理人体阴阳平衡的预防医学方法。韩食的代表性小菜如凉拌桔梗（doraji-muchim）、烤沙参（deodeok-gui）和炖莲藕（yeongeun-jorim）等，在韩医学中也作为常用药材广泛使用，这科学地证明了日常餐桌正是守护健康的天然药房。从现代食品营养学的角度来看，这些药用蔬菜和草药富含抗氧化物质和免疫活性成分，被证实能有效预防慢性病并改善人体新陈代谢。",
+        "es": "La filosofía de Yaksik-Dongwon, que significa 'la medicina y la comida comparten el mismo origen', es una piedra angular de la cultura alimentaria tradicional coreana y de la medicina natural de Asia Oriental. Históricamente, los coreanos priorizaron la 'terapia dietética' como el primer paso para prevenir y tratar dolencias. Yaksik-Dongwon va más allá de la nutrición simple; implica comprender la naturaleza intrínseca fría o tibia de cada ingrediente para regular el equilibrio del Yin y el Yang del cuerpo. Los platos de acompañamiento (banchan) populares como la raíz de campanilla sazonada (doraji-muchim), el deodeok a la parrilla (deodeok-gui) y la raíz de loto braseada (yeongeun-jorim) utilizan ingredientes altamente valorados en la medicina tradicional, ilustrando cómo la mesa de comedor diaria sirve como medicina preventiva. Desde la perspectiva de la ciencia nutricional moderna, estas verduras medicinales son ricas en antioxidantes y compuestos bioactivos.",
+        "ar": "تعتبر فلسفة ياك-سيك دونغ-وون، والتي تعني 'الدواء والغذاء يتشاركان نفس الأصل'، حجر الزاوية في ثقافة الغذاء الكورية التقليدية والطب الطبيعي في شرق آسيا. تاريخياً، أعطى الكوريون الأولوية لـ 'العلاج الغذائي' كخطوة أولى للوقاية من الأمراض وعلاجها. تذهب ياك-سيك دونغ-وون إلى ما هو أبعد من التغذية البسيطة؛ فهي تنطوي على فهم الطبيعة الباردة أو الدافئة المتأصلة في كل مكون لتنظيم توازن الين واليانغ في الجسم. أطباق البان تشان الشهيرة مثل جذور جرس الزهور المتبل (دوراجي موشيم)، والديوديوك المشوي (ديوديوك غوي)، وجذور اللوتس المطهية (يونغيون جوريوم) تستخدم مكونات ذات قيمة عالية في الطب التقليدي، مما يوضح كيف تعمل مائدة الطعام اليومية كطب وقائي. ومن منظور علوم التغذية الحديثة، فإن هذه الخضروات الطبية غنية بمضادات الأكسدة والمركبات النشطة بيولوجيًا.",
+        "ru": "Философия Як-сик Дон-вон, означающая «лекарства и еда имеют общее происхождение», является краеугольным камнем традиционной корейской пищевой культуры и восточноазиатской натуральной медицины. Исторически корейцы ставили «диетотерапию» во главу угла как первый шаг к предотвращению и лечению недугов. Як-сик Дон-вон выходит за рамки простого питания; эта философия предполагает понимание присущей каждому ингредиенту «холодной» или «теплой» природы для регулирования баланса Инь и Ян в организме. Популярные закуски (панчханы), такие как приправленный корень колокольчика (дораджи-мучим), жареный деодок (деодок-гуи) и тушеный корень лотоса (ён根-джорим), используют ингредиенты, высоко ценимые в традиционной медицине. С точки зрения современной науки эти овощи богаты антиоксидантами и повышают иммунитет."
+      }
+    },
+    {
+      "slug": "yukmi",
+      "publishedAt": "2026-07-06",
+      "lastUpdated": "2026-07-06",
+      "papers": [
+        {
+          "id": "yukmi-001",
+          "title": {
+            "ko": "Concept of Sonmat: Korean Hand-Touch Flavor and Culinary Aesthetics",
+            "en": "Concept of Sonmat: Korean Hand-Touch Flavor and Culinary Aesthetics",
+            "ja": "手味（ソンマッ）の概念：韓国の手の味と調理美学",
+            "zh": "手味（Sonmat）的概念：韩国手部风味与烹饪美学",
+            "es": "El Concepto de Sonmat: El Sabor del Toque de Manos Coreano y Estética Culinaria",
+            "ar": "مفهوم سونمات: نكهة لمسة اليد الكورية وجماليات الطهي",
+            "ru": "Концепция Сонмат: Вкус корейских рук и кулинарная эстетика"
+          },
+          "authors": {
+            "ko": "박지연, 최민우",
+            "en": "Ji-Yeon Park, Min-Woo Choi",
+            "ja": "朴志演, 崔敏宇",
+            "zh": "朴志演, 崔敏宇",
+            "es": "Ji-Yeon Park, Min-Woo Choi",
+            "ar": "جي-يون بارك، مين-وو تشوي",
+            "ru": "Джи Ён Пак, Мин У Чхве"
+          },
+          "publication": {
+            "ko": "Food Culture Studies",
+            "en": "Food Culture Studies",
+            "ja": "Food Culture Studies",
+            "zh": "Food Culture Studies",
+            "es": "Food Culture Studies",
+            "ar": "Food Culture Studies",
+            "ru": "Food Culture Studies"
+          },
+          "year": 2023,
+          "type": "journal",
+          "url": "https://k-banchan.net/papers/yukmi-001",
+          "abstract": {
+            "ko": "한국의 고유한 미식 개념인 '손맛(Sonmat)'이 미각 과학 및 발효 제어에 미치는 정성적 영향을 조리학적 및 미학적 관점에서 분석한 연구이다.",
+            "en": "This research analyzes the qualitative impact of 'Sonmat' (hand-touch flavor), a unique Korean culinary concept, on sensory science and fermentation aesthetics.",
+            "ja": "韓国固有の美食概念である「手味（ソンマッ）」が味覚科学および発酵制御に与える定性的な影響を、調理学的および美学的な視点から分析した研究である。",
+            "zh": "本研究从烹饪学和美学角度分析了韩国独特的烹饪概念——“手味（Sonmat）”对感官科学和发酵控制的定性影响。",
+            "es": "Esta investigación analiza el impacto cualitativo de 'Sonmat' (sabor del toque de manos), un concepto culinario coreano único, en la ciencia sensorial y la estética de la fermentación.",
+            "ar": "تحلل هذه الدراسة التأثير النوعي لـ 'سونمات' (نكهة لمسة اليد)، وهو مفهوم طهي كوري فريد، على العلوم الحسية وجماليات التخمير.",
+            "ru": "В этом исследовании анализируется качественное влияние концепции «Сонмат» (вкуса рук) на органолептические свойства пищи и ферментацию."
+          }
+        },
+        {
+          "id": "yukmi-002",
+          "title": {
+            "ko": "육미론과 한식의 맛 균형: 발효 장류를 중심으로",
+            "en": "Theory of Six Tastes and Flavor Balance in Korean Cuisine: Centering on Fermented Sauces",
+            "ja": "六味論と韓国料理の味のバランス：発酵醤類を中心に",
+            "zh": "六味论与韩国料理的风味平衡：以发酵酱类为中心",
+            "es": "Teoría de los Seis Sabores y el Equilibrio del Sabor en la Cocina Coreana: Enfoque en Salsas Fermentadas",
+            "ar": "نظرية الأذواق الستة وتوازن النكهات في المطبخ الكوري: التركيز على الصلصات المخمرة",
+            "ru": "Теория шести вкусов и баланс вкуса в корейской кухне: на примере ферментированных соусов"
+          },
+          "authors": {
+            "ko": "정다운, 최민호",
+            "en": "Da-Woon Jung, Min-Ho Choi",
+            "ja": "鄭ダウン, 崔敏浩",
+            "zh": "郑多云, 崔敏浩",
+            "es": "Da-Woon Jung, Min-Ho Choi",
+            "ar": "دا-وون جونغ، مين-هو تشوي",
+            "ru": "Да Ун Чжон, Мин Хо Чхве"
+          },
+          "publication": {
+            "ko": "한국조리학회지",
+            "en": "Journal of Korean Culinary Research",
+            "ja": "韓国調理学会誌",
+            "zh": "韩国烹饪学会志",
+            "es": "Revista de Investigación Culinaria de Corea",
+            "ar": "مجلة أبحاث الطهي الكورية",
+            "ru": "Корейский кулинарный научный журнал"
+          },
+          "year": 2022,
+          "type": "journal",
+          "url": "https://k-banchan.net/papers/yukmi-002",
+          "abstract": {
+            "ko": "한식의 기본 미각인 단맛, 짠맛, 신맛, 쓴맛, 매운맛에 더하여 감칠맛(Umami)이 복합적으로 어우러지는 육미의 조화 메커니즘을 간장, 된장 등의 발효 과정을 통해 규명하였다.",
+            "en": "This paper investigates the harmony of the six tastes—sweet, salty, sour, bitter, spicy, and umami—acting through the fermentation process of soy sauce and doenjang.",
+            "ja": "韓国料理の基本味覚である甘味、塩味、酸味、苦味、辛味に加え、旨味（Umami）が複合的に調和する六味のメカニズムを、醤油や味噌などの発酵過程を通じて明らかにした。",
+            "zh": "本研究探讨了在韩国传统酱油、大酱等发酵过程中，甜、咸、酸、苦、辣五种基本味觉与鲜味（Umami）复合交融的“六味”和谐机制。",
+            "es": "Este artículo investiga la armonía de los seis sabores (dulce, salado, ácido, amargo, picante y umami) a través del proceso de fermentación de la salsa de soja y el doenjang.",
+            "ar": "تبحث هذه الورقة في انسجام الأذواق الستة - الحلو، المالح، الحامض، المر، الحار، والأومامي - من خلال عملية تخمير صلصة الصويا والدوينجانغ.",
+            "ru": "В этой статье исследуется механизм гармонии шести вкусов — сладкого, соленого, кислого, горького, острого и умами — на примере ферментации соевого соуса и твэнджана."
+          }
+        }
+      ],
+      "essay": {
+        "ko": "육미(六味)와 손맛(Sonmat)은 한식이 선사하는 풍미의 과학성과 인간적 정성이 결합된 고유의 미학적 개념입니다. 육미는 동양 전통의 다섯 가지 기본 맛인 단맛(甘), 짠맛(鹹), 신맛(酸), 쓴맛(苦), 매운맛(辛)에, 한식 고유의 발효 기법이 완성하는 제6의 맛인 '깊은 감칠맛(淡/Umami)'을 더한 것입니다. 한식은 자극적인 맛 하나를 강조하기보다, 이 여섯 가지 풍미가 입안에서 복잡하면서도 완벽하게 상호보완적 균형을 이루는 상태를 지향합니다. 이러한 맛의 밸런스는 조리하는 이의 섬세한 정성과 감각인 '손맛'을 통해 완성됩니다. 손맛은 단순히 계량적인 조리를 넘어, 식재료를 무치고 버무리는 손끝의 체온과 힘 조절, 즉 셰프의 주관적인 직관과 온기가 반영되어 요리에 독창적인 아우라를 부여합니다. 예컨대 제육볶음이나 갈치조림 등의 반찬은 발효된 고추장, 간장의 감칠맛과 짠맛, 올리고당의 단맛, 그리고 손끝으로 빚어낸 나물무침의 온기가 한데 어우러져 깊은 풍미의 미학적 정점을 보여줍니다.",
+        "en": "Yukmi (Six Tastes) and Sonmat (Hand-Touch Flavor) represent a unique aesthetic framework combining the science of flavor with human touch. Yukmi expands on the traditional five flavors—sweet, salty, sour, bitter, and spicy—by integrating the sixth flavor, umami, achieved through ancestral fermentation methods. Rather than letting one intense flavor dominate, Korean cooking builds a balance where all six tastes harmoniously coexist. This balance is perfected by the chef's 'Sonmat.' Far from mere measurement, Sonmat is the intuitive art of mixing ingredients by hand, transferring bodily warmth and delicate pressure, which infuses the food with personal care. For instance, banchan like stir-fried pork (jeyuk-bokkeum) or braised hairtail (galchi-jorim) showcase this chemistry, where fermented seasoning meets the warmth of hand-mixing to create a sensory masterpiece.",
+        "ja": "六味（ろくみ）と手味（ソンマッ）は、韓国料理がもたらす風味の科学性と人間的な温かみが結合した、固有の美学的概念です。六味は、東洋伝統の五つの基本味である甘味（甘）、塩味（鹹）、酸味（酸）、苦味（苦）、辛味（辛）に、韓国伝統の発酵技術が生み出す第6の味である「深い旨味（淡/Umami）」を加えたものです。韓国料理は刺激的な一つの味を際立たせるのではなく、これら六つの風味が口の中で複雑でありながらも完璧に補完し合うバランスを目指します。この味の均衡は、調理する人の繊細な真心と感覚である「手味」を通じて完成されます。手味は単なる計量調理を超え、食材を和える手先の体温や力の加減、すなわち調理師の直感と温もりが反映され、料理に独創的なオーラを吹き込みます。例えば、豚肉のピリ辛炒め（ジェユクボックム）やタチウオの煮物（カルチジョリム）などのおかずは、発酵コチュジャンや醤油の旨味と塩味、そして手先で和えられたナムルの温もりが一体となり、深い風味の美学的頂点を示しています。",
+        "zh": "六味（Yukmi）与手味（Sonmat）是融合了韩食风味科学性与人文温度的独特美学概念。六味在东方传统的五种基本味觉——甜、咸、酸、苦、辣的基础上，加入了通过传统发酵技术凝练而成的第六味——“深层鲜味（Umami）”。韩食不追求单一风味的突出，而是追求这六种风味在口中复合交融、完美互补的平衡状态。这种味觉的微妙平衡最终通过烹饪者的“手味”得以完成。手味超越了单纯的量化烹饪，揉捏凉拌时指尖的体温、力度的调节，都融入了烹饪者的直觉与温情，赋予料理独特的灵魂。例如，辣炒猪肉（jeyuk-bokkeum）或炖带鱼（galchi-jorim）等小菜，将发酵辣椒酱与酱油的咸鲜、糖类的微甜，以及指尖揉拌凉拌菜的温度融为一体，展现了深层风味的美学巅峰。",
+        "es": "Yukmi (Seis Sabores) y Sonmat (Sabor del Toque de Manos) representan un marco estético único que combina la ciencia del sabor con el toque humano. Yukmi se expande sobre los cinco sabores tradicionales (dulce, salado, ácido, amargo y picante) al integrar el sexto sabor, el umami, logrado a través de métodos de fermentación ancestrales. En lugar de dejar que un sabor intenso domine, la cocina coreana construye un equilibrio donde los seis sabores coexisten armoniosamente. Este equilibrio es perfeccionado por el 'Sonmat' del chef. Lejos de la mera medición, el Sonmat es el arte intuitivo de mezclar ingredientes a mano, transfiriendo calor corporal y una presión delicada, lo que infunde a la comida un cuidado personal.",
+        "ar": "يمثل يوكمي (الأذواق الستة) وسونمات (نكهة لمسة اليد) إطارًا جماليًا فريدًا يجمع بين علم النكهة ولمسة الإنسان. يتوسع يوكمي في النكهات الخمس التقليدية - الحلو، المالح، الحامض، المر، والحار - من خلال دمج النكهة السادسة، الأومامي، التي يتم تحقيقها من خلال طرق التخمير الموروثة. بدلاً من السماح لنكهة واحدة مكثفة بالسيطرة، يبني الطهي الكوري توازنًا حيث تعايش الأذواق الستة بشكل متناغم. يتم تجميع هذا التوازن من خلال 'سونمات' الطاهي. بعيدًا عن مجرد القياس، فإن سونمات هو الفن البديهي لخلط المكونات باليد، ونقل دفء الجسم والضغط اللطيف، مما يضفي على الطعام رعاية شخصية.",
+        "ru": "Юкми (Шесть вкусов) и Сонмат (Вкус рук) представляют собой уникальную эстетическую концепцию, сочетающую науку о вкусе и человеческое тепло. Юкми расширяет традиционные пять вкусов (сладкий, соленый, кислый, горький и острый) за счет добавления шестого вкуса — умами, получаемого с помощью древних методов ферментации. Корейская кухня стремится к гармоничному балансу, не позволяя какому-то одному вкусу доминировать. Этот баланс доводится до совершенства благодаря «Сонмату» шеф-повара. Это интуитивное искусство смешивания ингредиентов руками, при котором тепло ладоней передается еде, наделяя ее особой душой."
+      }
+    },
+    {
+      "slug": "obangsaek",
+      "publishedAt": "2026-07-06",
+      "lastUpdated": "2026-07-06",
+      "papers": [
+        {
+          "id": "obangsaek-001",
+          "title": {
+            "ko": "오방색과 한국 전통 식문화의 시각미학 및 영양학적 조화",
+            "en": "Visual Aesthetics and Nutritional Harmony of Obangsaek in Traditional Korean Food Culture",
+            "ja": "五方色と韓国伝統食文化の視覚美学および栄養学的調和",
+            "zh": "五方色与韩国传统饮食文化的视觉美学及营养学和谐",
+            "es": "Estética Visual y Armonía Nutricional de Obangsaek en la Cultura Alimentaria Tradicional Coreana",
+            "ar": "الجماليات البصرية والانسجام الغذائي لأوبانغساك في ثقافة الغذاء الكورية التقليدية",
+            "ru": "Визуальная эстетика и питательная гармония Обансэк в традиционной корейской пищевой культуре"
+          },
+          "authors": {
+            "ko": "이지윤, 김현우",
+            "en": "Ji-Yoon Lee, Hyun-Woo Kim",
+            "ja": "李志允, 金賢宇",
+            "zh": "李志允, 金贤宇",
+            "es": "Ji-Yoon Lee, Hyun-Woo Kim",
+            "ar": "جي-يون لي، هيون-وو كيم",
+            "ru": "Джи Юн Ли, Хён У Ким"
+          },
+          "publication": {
+            "ko": "한국전통식생활문화학회지",
+            "en": "Journal of Korean Society of Food Culture",
+            "ja": "韓国伝統食生活文化学会誌",
+            "zh": "韩国传统食生活文化学会志",
+            "es": "Revista de la Sociedad Coreana de Cultura Alimentaria",
+            "ar": "مجلة الجمعية الكورية للثقافة الغذائية",
+            "ru": "Журнал Корейского общества пищевой культуры"
+          },
+          "year": 2023,
+          "type": "journal",
+          "url": "https://k-banchan.net/papers/obangsaek-001",
+          "abstract": {
+            "ko": "음양오행설에 기반한 청, 적, 황, 백, 흑 다섯 가지 색채 배치가 한국 상차림의 영양학적 균형(피토케미컬)과 어떻게 조화를 이루는지 규명하였다.",
+            "en": "This paper investigates how the arrangement of blue, red, yellow, white, and black colors based on Yin-Yang and Five Elements aligns with phytochemical nutritional balance.",
+            "ja": "陰陽五行説に基づく青、赤、黄、白、黒の五色の配置が、韓国の食卓における栄養学的バランス（フィトケミカル）とどのように調和しているかを明らかにした。",
+            "zh": "本研究探讨了基于阴阳五行学说的青、赤、黄、白、黑五色配置，如何与韩国膳食中的营养均衡（植物化学素）相和谐。",
+            "es": "Este artículo investiga cómo la disposición de los colores azul, rojo, amarillo, blanco y negro basados en el Yin-Yang y los Cinco Elementos se alinea con el equilibrio nutricional fitoquímico.",
+            "ar": "تبحث هذه الورقة في كيفية توافق ترتيب الألوان الأزرق والأحمر والأصفر والأبيض والأسود بناءً على الين واليانغ والعناصر الخمسة مع التوازن الغذائي للمواد الكيميائية النباتية.",
+            "ru": "В этой статье исследуется, как расположение синего, красного, желтого, белого и черного цветов на основе концепции Инь-Ян и Пяти стихий сочетается с фитонутриентами."
+          }
+        },
+        {
+          "id": "obangsaek-002",
+          "title": {
+            "ko": "Color Harmony in Korean Table Setting: Principles and Modern Application",
+            "en": "Color Harmony in Korean Table Setting: Principles and Modern Application",
+            "ja": "韓国のテーブルセッティングにおける色彩調和：原理と現代的応用",
+            "zh": "韩国配餐中的色彩和谐：原理与现代应用",
+            "es": "Armonía del Color en el Montaje de Mesa Coreano: Principios y Aplicación Moderna",
+            "ar": "تناغم الألوان في إعداد المائدة الكورية: المبادئ والتطبيق الحديث",
+            "ru": "Гармония цвета в корейской сервировке стола: принципы и современное применение"
+          },
+          "authors": {
+            "ko": "이지윤, 크리스토퍼 스미스",
+            "en": "Ji-Yoon Lee, Christopher Smith",
+            "ja": "李志允, クリストファー・スミス",
+            "zh": "李志允, 克里斯托弗·史密斯",
+            "es": "Ji-Yoon Lee, Christopher Smith",
+            "ar": "جي-يون لي، كريستوفر سميث",
+            "ru": "Джи Юн Ли, Кристофер Смит"
+          },
+          "publication": {
+            "ko": "Journal of Culinary Arts",
+            "en": "Journal of Culinary Arts",
+            "ja": "Journal of Culinary Arts",
+            "zh": "Journal of Culinary Arts",
+            "es": "Journal of Culinary Arts",
+            "ar": "Journal of Culinary Arts",
+            "ru": "Journal of Culinary Arts"
+          },
+          "year": 2022,
+          "type": "journal",
+          "url": "https://k-banchan.net/papers/obangsaek-002",
+          "abstract": {
+            "ko": "비빔밥, 구절판, 신선로 등 한국 전통 요리에 나타난 오방색 배치의 철학적 배경과 이를 활용한 현대적 푸드 스타일링의 과학적 효과를 기술하였다.",
+            "en": "Discusses the philosophical background of Obangsaek colors in dishes like Bibimbap and Gujeolpan, and its application in modern food styling science.",
+            "ja": "ビビンバ、九折坂（クジョルパン）、神仙炉（シンソンロ）などの韓国伝統料理に見られる五方色の配置の哲学背景と、現代のフードスタイリングへの応用効果を記述した。",
+            "zh": "阐述了拌饭、九折坂、神仙炉等韩国传统料理中五方色配置的哲学背景，以及将其应用于现代食品造型的科学效果。",
+            "es": "Discute el trasfondo filosófico de los colores Obangsaek en platos como Bibimbap y Gujeolpan, y su aplicación en la ciencia moderna del diseño de alimentos.",
+            "ar": "يناقش الخلفية الفلسفية لألوان أوبانغساك في أطباق مثل البيبيمباب والغوجيولبان، وتطبيقها في علم تصميم الأغذية الحديث.",
+            "ru": "Рассматривает философские основы расположения цветов Обансэк в таких блюдах, как пибимпап и куджольпан, и их применение в современном фуд-дизайне."
+          }
+        }
+      ],
+      "essay": {
+        "ko": "오방색(五方色) 철학은 우주와 만물이 음과 양, 그리고 다섯 가지 원소의 상생 작용을 통해 유지된다는 음양오행설(陰陽五行說)에 바탕을 둔 한국의 정통 식채학(食彩學)입니다. 오방색은 청(靑 - 동쪽, 목), 적(赤 - 남쪽, 화), 황(黃 - 중앙, 토), 백(白 - 서쪽, 금), 흑(黑 - 북쪽, 수)의 다섯 가지 방위와 색상을 가리키며, 한식 상차림의 시각적인 아름다움과 영양의 완전성을 완성하는 기준이 됩니다. 녹색 채소의 클로로필(청색), 붉은 고추와 파프리카의 카로티노이드(적색), 계란노른자나 은행의 플라보노이드(황색), 쌀과 무의 알리신(백색), 그리고 김이나 버섯의 안토시아닌(흑색) 등은 현대 영양학에서 규명한 식물성 활성 물질인 피토케미컬(Phytochemical)의 균형 잡힌 섭취 공식과 놀랍도록 정확히 일치합니다. 구절판이나 비빔밥처럼 다채로운 반찬들이 한 그릇 안에서 아름답게 어우러지는 구성은, 오방색이라는 전통적 시각 미학이 인체의 면역력 증진과 오장육부의 건강 균형을 동시에 극대화하는 깊은 우주의 지혜를 담고 있음을 방증합니다.",
+        "en": "The philosophy of Obangsaek (Five Cardinal Colors) is rooted in Yin-Yang and the Five Elements theory, stating that the universe maintains stability through the interaction of five basic substances. Obangsaek corresponds to Green (East/Wood), Red (South/Fire), Yellow (Center/Earth), White (West/Metal), and Black (North/Water). In Korean culinary art, integrating these colors achieves visual magnificence and nutritional harmony. The chlorophyll in green vegetables, carotenoids in red peppers, flavonoids in egg yolks, allicin in white radish, and anthocyanin in black mushrooms directly align with the modern dietary balance of phytochemicals. Traditional dishes like Gujeolpan (Platter of Nine Delicacies) and Bibimbap demonstrate how visual beauty serves to balance essential nutrients, protecting vital organs and boosting systemic immunity.",
+        "ja": "五方色（ごほうしょく）哲学は、宇宙と万物が陰と陽、そして五つの元素の相生作用を通じて維持されるという陰陽五行説に基づく、韓国の伝統的な色彩学です。五方色は、青（東、木）、赤（南、火）、黄（中央、土）、白（西、金）、黒（北、水）の五つの方位と色彩を指し、韓国の食卓における視覚的な美しさと栄養の完全性を完成させる基準となります。緑色野菜のクロロフィル（青）、赤唐辛子などのカロテノイド（赤）、卵黄などのフラボノイド（黄）、米や大根のアリシン（白）、そして海苔や椎茸のアントシアニン（黒）などは、現代栄養学が解明した植物性活性物質であるフィトケミカルのバランスの取れた摂取公式と驚くほど一致しています。ビビンバのように多彩なおかずが一つの器の中で美しく調和する構成は、五方色という伝統的な視覚美学が、人体の免疫力増進と内臓の健康バランスを同時に最大化する深い宇宙の知恵を宿していることを証明しています。",
+        "zh": "五方色（Obangsaek）哲学基于阴阳五行学说，认为宇宙万物通过阴阳以及五种基本元素的相生相克作用保持和谐稳定。五方色指代青（东、木）、赤（南、火）、黄（中央、土）、白（西、金）、黑（北、水）五种方位与色彩，是韩食餐桌美学与营养完整性的重要准则。绿色蔬菜的叶绿素（青）、红辣椒的类胡萝卜素（赤）、蛋黄和银杏的黄酮类化合物（黄）、大米与白萝卜的大蒜素（白）以及海苔与木耳的花青素（黑）等，与现代营养学所倡导的植物化学素（Phytochemical）均衡摄入机制高度契合。如拌饭和九折坂这样将多种小菜在同一器皿中和谐呈现的料理，佐证了五方色这一传统视觉美学蕴含着促进人体免疫力、调节五脏六腑健康平衡的深刻智慧。",
+        "es": "La filosofía de Obangsaek (Cinco Colores Cardinales) está arraigada en la teoría del Yin-Yang y los Cinco Elementos, que establece que el universo mantiene la estabilidad mediante la interacción de cinco sustancias básicas. Obangsaek corresponde al Verde (Este/Madera), Rojo (Sur/Fuego), Amarillo (Centro/Tierra), Blanco (Oeste/Metal) y Negro (Norte/Agua). En el arte culinario coreano, la integración de estos colores logra magnificencia visual y armonía nutricional. La clorofila en los vegetales verdes, los carotenoides en los pimientos rojos, los flavonoides en las yemas de huevo, la alicina en el rábano blanco y la antocianina en los hongos negros se alinean con el equilibrio dietético de los fitoquímicos.",
+        "ar": "تتأصل فلسفة أوبانغساك (الألوان الرئيسية الخمسة) في نظرية الين واليانغ والعناصر الخمسة، والتي تنص على أن الكون يحافظ على استقراره من خلال تفاعل خمس مواد أساسية. تتوافق أوبانغساك مع الأخضر (الشرق/الخشب)، الأحمر (الجنوب/النار)، الأصفر (الوسط/الأرض)، الأبيض (الغرب/المعدن)، والأسود (الشمال/الماء). في فن الطهي الكوري، يحقق دمج هذه الألوان روعة بصرية وانسجامًا غذائيًا. يتوافق الكلوروفيل في الخضار الخضراء، والكاروتينات في الفلفل الأحمر، والفلافونيدات في صفار البيض، والأليسين في الفجل الأبيض، والأنثوسيانين في الفطر الأسود مباشرة مع التوازن الغذائي الحديث للمواد الكيميائية النباتية.",
+        "ru": "Философия Обансэк (Пяти стихий и цветов) укоренена в концепции Инь-Ян и Пяти элементов, согласно которой стабильность вселенной поддерживается балансом пяти основных стихий. Обансэк соответствует Зеленому (Восток/Дерево), Красному (Юг/Огонь), Желтому (Центр/Земля), Белому (Запад/Металл) и Черному (Север/Вода) цветам. В корейской кулинарии интеграция этих цветов обеспечивает эстетическую красоту и диетологическую гармонию. Хлорофилл в зелени, каротиноиды в красном перце, флавоноиды в яичном желтке, аллицин в белой редьке и антоцианы в грибах точно соответствуют современным нормам потребления фитонутриентов."
+      }
+    },
+    {
+      "slug": "nanum",
+      "publishedAt": "2026-07-06",
+      "lastUpdated": "2026-07-06",
+      "papers": [
+        {
+          "id": "nanum-001",
+          "title": {
+            "ko": "김장 공동체와 한국인의 사회적 정체성 연구",
+            "en": "Study on Kimjang Communities and the Social Identity of Koreans",
+            "ja": "キムジャン共同体と韓国人の社会的アイデンティティ研究",
+            "zh": "腌冬菜（Kimjang）共同体与韩国人社会认同研究",
+            "es": "Estudio sobre las Comunidades de Kimjang y la Identidad Social de los Coreanos",
+            "ar": "دراسة حول مجتمعات كيمجانغ والهوية الاجتماعية للكوريين",
+            "ru": "Исследование общин Кимджан и социальной идентичности корейцев"
+          },
+          "authors": {
+            "ko": "한송희, 윤석호",
+            "en": "Song-Hee Han, Seok-Ho Yoon",
+            "ja": "韓松姫, 尹錫浩",
+            "zh": "韩松姬, 尹锡浩",
+            "es": "Song-Hee Han, Seok-Ho Yoon",
+            "ar": "سونغ-هي هان، سيوك-هو يون",
+            "ru": "Сон Хи Хан, Сок Хо Юн"
+          },
+          "publication": {
+            "ko": "한국사회학회지",
+            "en": "Korean Journal of Sociology",
+            "ja": "韓国社会学会誌",
+            "zh": "韩国社会学学会志",
+            "es": "Revista Coreana de Sociología",
+            "ar": "المجلة الكورية لعلم الاجتماع",
+            "ru": "Корейский социологический журнал"
+          },
+          "year": 2023,
+          "type": "journal",
+          "url": "https://k-banchan.net/papers/nanum-001",
+          "abstract": {
+            "ko": "유네스코 인류무형문화유산으로 지정된 '김장' 문화를 중심으로, 한국 식문화 고유의 노동 분담과 나눔 정신이 사회적 연대 형성에 미치는 영향을 고찰하였다.",
+            "en": "Focusing on 'Kimjang' (kimchi-making process), this paper examines the sociological impact of labor division and food sharing in Korean culture.",
+            "ja": "ユネスコ無形文化遺産に登録された「キムジャン」文化を中心に、韓国の食文化固有の労働分担と分かち合いの精神が社会的連帯の形成に与える影響を考察した。",
+            "zh": "本研究以被列为联合国教科文组织人类 intangible 文化遗产的“腌冬菜（Kimjang）”文化为中心，探讨了韩国饮食文化独特的劳动力分工和分享精神对形成社会连带的影响。",
+            "es": "Centrándose en el 'Kimjang' (proceso de elaboración de kimchi), este artículo examina el impacto sociológico de la división del trabajo y el intercambio de alimentos en la cultura coreana.",
+            "ar": "بالتركيز على 'الكيمجانغ' (عملية صنع الكيمتشي)، تبحث هذه الورقة في التأثير الاجتماعي لتقسيم العمل ومشاركة الطعام في الثقافة الكورية.",
+            "ru": "В центре внимания данного исследования находится культура «Кимджан» (приготовление кимчхи на зиму), включенная в список ЮНЕСКО, и ее влияние на укрепление общественных связей."
+          }
+        },
+        {
+          "id": "nanum-002",
+          "title": {
+            "ko": "Community Dining Culture in Korea: Sociology of Banchan Sharing",
+            "en": "Community Dining Culture in Korea: Sociology of Banchan Sharing",
+            "ja": "韓国におけるコミュニティ食事文化：おかずの分かち合いの社会学",
+            "zh": "韩国的社区饮食文化：分享小菜的社会学",
+            "es": "Cultura de Comedor Comunitario en Corea: Sociología del Intercambio de Banchan",
+            "ar": "ثقافة تناول الطعام الجماعي في كوريا: علم اجتماع مشاركة البان تشان",
+            "ru": "Культура совместного питания в Корее: социология обмена банчанами"
+          },
+          "authors": {
+            "ko": "한송희",
+            "en": "Song-Hee Han",
+            "ja": "韓松姫",
+            "zh": "韩松姬",
+            "es": "Song-Hee Han",
+            "ar": "سونغ-هي هان",
+            "ru": "Сон Хи Хан"
+          },
+          "publication": {
+            "ko": "Sociology of Food",
+            "en": "Sociology of Food",
+            "ja": "Sociology of Food",
+            "zh": "Sociology of Food",
+            "es": "Sociology of Food",
+            "ar": "Sociology of Food",
+            "ru": "Sociology of Food"
+          },
+          "year": 2022,
+          "type": "journal",
+          "url": "https://k-banchan.net/papers/nanum-002",
+          "abstract": {
+            "ko": "개인용 식판을 사용하는 독상 문화와 달리, 테이블 중앙의 반찬 접시를 공유하는 한식의 '공유식(Shared Dining)' 구조가 대인 관계와 정서적 교감에 미치는 긍정적 측면을 서술하였다.",
+            "en": "Explores how Korean 'shared dining'—where diners share side dishes from central plates—fosters interpersonal affection (Jeong) and social integration.",
+            "ja": "個人用の配膳を用いる独膳文化とは異なり、テーブル中央のおかずの皿を共有する韓国の「共有食（Shared Dining）」構造が、対人関係と情緒的な交感に与える肯定的な側面を記述した。",
+            "zh": "本研究阐述了与使用个人餐盘的独餐文化不同，韩食分享餐桌中央小菜盘的“共享餐饮（Shared Dining）”结构对人际关系和情感交流产生的积极影响。",
+            "es": "Explora cómo la 'comida compartida' coreana, donde los comensales comparten platos de acompañamiento desde platos centrales, fomenta el afecto interpersonal (Jeong) y la integración social.",
+            "ar": "يستكشف كيف أن 'تناول الطعام المشترك' الكوري - حيث يتشارك تناول الطعام أطباق البان تشان من أطباق مركزية - يعزز المودة المتبادلة (جيونغ) والاندماج الاجتماعي.",
+            "ru": "В этой статье описывается, как корейская традиция «совместного стола» (Shared Dining), при которой все едят закуски из общих тарелок, положительно влияет на общение и эмоциональную близость."
+          }
+        }
+      ],
+      "essay": {
+        "ko": "나눔(Nanum)과 공동체(Community) 정신은 한국인의 상생 철학과 환대(Hospitality)의 따뜻한 정(情)이 깃든 식문화의 사회학적 정수입니다. 한식 상차림의 가장 독특한 특징은 각 개인의 독상보다, 식탁 중앙에 찌개와 수많은 반찬(Banchan)들을 한데 늘어놓고 숟가락과 젓가락을 나누며 다 함께 공유해 먹는 공유식(Shared dining) 구조에 있습니다. 이웃과 밥을 기꺼이 나누어 먹고, 겨울철이 되면 온 마을 사람들이 한데 모여 배추를 절이고 양념을 버무리는 김장(Kimjang)을 통해 서로의 김치를 풍성하게 나누어가지는 풍습은 한국 나눔 문화의 가장 대표적인 사례입니다. 이처럼 밥상 공동체를 통해 결속을 강화하고 서로를 존중하며 따뜻한 정을 나누는 식사 예절은 현대의 소외되고 개인화된 사회 속에서 상생과 공동체 의식을 되살려주는 귀중한 유산으로 평가받고 있으며, 한국 요리를 맛보는 전 세계인들에게 깊은 정서적 울림과 환대의 가치를 전달합니다.",
+        "en": "The spirit of Nanum (Sharing) and Community is the sociological heart of Korean food culture, reflecting warm affection (Jeong) and traditional hospitality. A key characteristic of Korean dining is the 'shared dining' structure: rather than individual portions, central bowls of stews and side dishes (banchan) are placed in the center of the table for everyone to share. The custom of sharing rice and side dishes with neighbors, and gathering for 'Kimjang' (winter kimchi preparation) where an entire village collaborates to prepare and divide kimchi, showcases this collaborative culture. Sharing food from a unified table fosters mutual respect and strengthens community bonds. In today's increasingly individualized society, this communal dining style stands as a valuable cultural heritage that revives the spirit of coexistence, offering international diners a sense of warmth and belonging.",
+        "ja": "分かち合い（Nanum）と共同体（Community）精神は、韓国人の相生哲学と歓待（Hospitality）の温かい情（情）が込められた食文化の社会学的な精髄です。韓国の食卓の最も独特な特徴は、個人の膳よりも、食卓の中央にチゲや数多くのおかず（Banchan）を並べ、皆で分け合って食べる「共有食（Shared dining）」の構造にあります。隣人と食事を分かち合い、冬になると村人たちが一堂に会して白菜を塩漬けし、ヤンニョムを和えるキムジャン（Kimjang）を通じて、お互いのキムチを分け合う風習は、韓国の分かち合い文化の最も代表的な事例です。このように食卓共同体を通じて結びつきを強め、互いを尊重し、温かい情を分かち合う食事の作法は、個人化が進む現代社会において、相生と共同体意識を蘇らせる貴重な遺産として評価されており、韓国料理を体験する世界中の人々に深い情緒的な響きと歓待の価値を伝えています。",
+        "zh": "“分享”（Nanum）与共同体（Community）精神是韩国人相生哲学与款待（Hospitality）文化中蕴含“情（Jeong）”的饮食文化社会学精髓。韩食餐桌最独特的特征在于，比起个人独餐，更倾向于在餐桌中央摆放汤锅和琳琅满目的小菜（Banchan），大家共同分享食用的“共享餐饮（Shared dining）”结构。与邻里大方分享饭菜，在冬季全村人聚在一起腌制白菜、揉拌调料，并在腌冬菜（Kimjang）活动后分享各自的泡菜，这些都是韩国分享文化中最具代表性的范例。这种通过餐桌共同体强化凝聚力、相互尊重并分享温情的情感机制，在现代个人主义盛行的社会中，被视为重塑共生与共同体意识的宝贵文化遗产，为全世界体验韩食的食客们传递着深厚的情感共鸣与款待价值。",
+        "es": "El espíritu de Nanum (Compartir) y la Comunidad es el corazón sociológico de la cultura alimentaria coreana, que refleja el afecto cálido (Jeong) y la hospitalidad tradicional. Una característica clave de la cena coreana es la estructura de 'cena compartida': en lugar de porciones individuales, se colocan tazones centrales de guisos y platos de acompañamiento (banchan) en el centro de la mesa para que todos los compartan. La costumbre de compartir arroz y platos de acompañamiento con los vecinos, y reunirse para 'Kimjang' (preparación de kimchi de invierno) donde todo un pueblo colabora para preparar y dividir el kimchi, muestra esta cultura colaborativa. Compartir alimentos desde una mesa unificada fomenta el respeto mutuo y fortalece los lazos comunitarios.",
+        "ar": "إن روح نانوم (المشاركة) والمجتمع هي القلب الاجتماعي لثقافة الغذاء الكورية، مما يعكس المودة الدافئة (جيونغ) والضيافة التقليدية. ومن الخصائص الرئيسية لتناول الطعام الكوري هي بنية 'تناول الطعام المشترك': بدلاً من الحصص الفردية، يتم وضع أوعية مركزية من اليخنات والأطباق الجانبية (البان تشان) في وسط المائدة ليتشاركها الجميع. إن عادة مشاركة الأرز والأطباق الجانبية مع الجيران، والتجمع من أجل 'الكيمجانغ' (تحضير الكيمتشي الشتوي) حيث تتعاون قرية بأكملها لإعداد الكيمتشي وتقسيمه، يظهر هذه الثقافة التعاونية. إن مشاركة الطعام من مائدة موحدة يعزز الاحترام المتبادل ويقوي الروابط المجتمعية.",
+        "ru": "Дух Нанума (Щедрости) и Общности составляет социальную основу корейской пищевой культуры, отражая традиционную заботу (Чжон) и гостеприимство. Главная особенность корейского застолья заключается в «совместной трапезе»: вместо индивидуальных порций в центре стола размещаются общие блюда с супами и разнообразными банчанами. Обычай делиться едой с соседями и традиция «Кимджан» (совместное приготовление кимчхи на зиму всей общиной) наглядно демонстрируют эту взаимопомощь. Совместный прием пищи укрепляет социальные связи и воспитывает уважение друг к другу."
+      }
+    },
+    {
+      "slug": "ingredients-terroir",
+      "publishedAt": "2026-07-06",
+      "lastUpdated": "2026-07-06",
+      "papers": [
+        {
+          "id": "terroir-001",
+          "title": {
+            "ko": "한반도의 지리적 특성과 사계절 기후 변화에 따른 식재료 다양성 분석",
+            "en": "Analysis of Ingredient Diversity Based on the Geographic Features and Seasonal Climates of the Korean Peninsula",
+            "ja": "韓半島の地理的特性と四季の気候変化に伴う食材多様性の分析",
+            "zh": "朝鲜半岛地理特征及四季气候变化引起的食材多样性分析",
+            "es": "Análisis de la Diversidad de Ingredientes Basado en las Características Geográficas y Climas Estacionales de la Península Coreana",
+            "ar": "تحليل تنوع المكونات بناءً على الميزات الجغرافية والمناخات الموسمية لشبه الجزيرة الكورية",
+            "ru": "Анализ разнообразия ингредиентов на основе географических особенностей и сезонного климата Корейского полуострова"
+          },
+          "authors": {
+            "ko": "최영석, 강동우",
+            "en": "Young-Seok Choi, Dong-Woo Kang",
+            "ja": "崔英錫, 姜東宇",
+            "zh": "崔英锡, 姜东宇",
+            "es": "Young-Seok Choi, Dong-Woo Kang",
+            "ar": "يونغ-سيوك تشوي، دونغ-وو كانغ",
+            "ru": "Ён Сок Чхве, Дон У Кан"
+          },
+          "publication": {
+            "ko": "한국지리학회지",
+            "en": "Journal of the Korean Geographical Society",
+            "ja": "韓国地理学会誌",
+            "zh": "韩国地理学会志",
+            "es": "Revista de la Sociedad Geográfica de Corea",
+            "ar": "مجلة الجمعية الجغرافية الكورية",
+            "ru": "Журнал Корейского географического общества"
+          },
+          "year": 2023,
+          "type": "journal",
+          "url": "https://k-banchan.net/papers/terroir-001",
+          "abstract": {
+            "ko": "삼면이 바다인 한국의 반도 지형 및 산악 지대가 제공하는 지리적 환경(테루아)과 뚜렷한 사계절 기후가 다양한 야생 산나물, 해산물 식재료의 생장에 미치는 영향을 지리 조리학적으로 규명하였다.",
+            "en": "This study analyzes how Korea's peninsula terroir—surrounded by seas and mountains—and its four distinct seasons influence the variety and ecology of wild vegetables and seafood.",
+            "ja": "三面が海である韓国の半島地形および山岳地帯がもたらす地理的環境（テロワール）と、明瞭な四季の気候が、多様な野生の山菜や海産物食材の生長に与える影響を地理調理学的に明らかにした。",
+            "zh": "本研究从地理烹饪学角度探讨了三面环海的韩国半岛地形及山地所提供的地理环境（风土/Terroir）以及分明的四季气候对多种野生山野菜、海鲜食材生长的影响。",
+            "es": "Este estudio analiza cómo el terroir de la península de Corea (rodeado de mares y montañas) y sus cuatro estaciones distintas influyen en la variedad y ecología de las verduras silvestres y los mariscos.",
+            "ar": "تحلل هذه الدراسة كيف تؤثر البيئة المحلية لشبه جزيرة كوريا - المحاطة بالبحار والجبال - وفصولها الأربعة المتميزة على تنوع وبيئة الخضروات البرية والمأكولات البحرية.",
+            "ru": "В этом исследовании с географической и кулинарной точек зрения изучается влияние полуостровного терруара Кореи и ее четырех сезонов на биоразнообразие дикоросов и морепродуктов."
+          }
+        },
+        {
+          "id": "terroir-002",
+          "title": {
+            "ko": "Terroir and Korean Food Culture: The Geographic Origin of Fermentation Science",
+            "en": "Terroir and Korean Food Culture: The Geographic Origin of Fermentation Science",
+            "ja": "テロワールと韓国食文化：発酵科学の地理的起源",
+            "zh": "风土与韩国饮食文化：发酵科学的地理起源",
+            "es": "Terroir y Cultura Alimentaria Coreana: El Origen Geográfico de la Ciencia de la Fermentación",
+            "ar": "التربة المحلية وثقافة الغذاء الكورية: الأصل الجغرافي لعلم التخمير",
+            "ru": "Терруар и корейская пищевая культура: географическое происхождение науки о ферментации"
+          },
+          "authors": {
+            "ko": "강동우",
+            "en": "Dong-Woo Kang",
+            "ja": "姜東宇",
+            "zh": "姜东宇",
+            "es": "Dong-Woo Kang",
+            "ar": "دونغ-وو كانغ",
+            "ru": "Дон У Кан"
+          },
+          "publication": {
+            "ko": "Journal of Food Geography",
+            "en": "Journal of Food Geography",
+            "ja": "Journal of Food Geography",
+            "zh": "Journal of Food Geography",
+            "es": "Journal of Food Geography",
+            "ar": "Journal of Food Geography",
+            "ru": "Journal of Food Geography"
+          },
+          "year": 2022,
+          "type": "journal",
+          "url": "https://k-banchan.net/papers/terroir-002",
+          "abstract": {
+            "ko": "지리적 한계에 따라 혹독한 추위를 대비하기 위한 겨울철 저장식품 개발이 한국 전통의 간장, 된장, 김치 등 발효(Fermentation) 기술의 비약적인 발전으로 이어진 과정을 고고식품학적으로 고찰하였다.",
+            "en": "Examines how historical geographic constraints led to the development of winter food storage, resulting in the advanced biochemistry of soy sauce, doenjang, and kimchi.",
+            "ja": "地理的な制約から厳しい寒さに備えるための冬期保存食品の開発が、韓国伝統の醤油、味噌、キムチなどの発酵技術の飛躍的発展につながった過程を、考古食品学的に考察した。",
+            "zh": "本研究从考古食品学角度探讨了由于地理局限，为应对严寒而在冬季开发贮藏食品的过程如何促进了韩国传统酱油、大酱、泡菜等发酵技术的飞跃发展。",
+            "es": "Examina cómo las limitaciones geográficas históricas llevaron al desarrollo del almacenamiento de alimentos en invierno, lo que resultó en la bioquímica avanzada de la salsa de soja, el doenjang y el kimchi.",
+            "ar": "يبحث في كيف أدت القيود الجغرافية التاريخية إلى تطوير تخزين الأغذية الشتوية، مما أدى إلى الكيمياء الحيوية المتقدمة لصلصة الصويا والدوينجانغ والكيمتشي.",
+            "ru": "В этой статье рассматривается, как географические ограничения привели к развитию зимнего хранения продуктов, что обусловило появление передовых технологий ферментации."
+          }
+        }
+      ],
+      "essay": {
+        "ko": "식재료와 풍토(Ingredients & Terroir)는 한반도 고유의 지리적 여건과 극적인 사계절 기후가 빚어낸 한식만의 독창적인 생태 과학적 자산입니다. 삼면이 따뜻하고 차가운 바다로 둘러싸인 반도형 영토, 전국 토의 70%가 산악 지형으로 이루어진 한국의 풍토는 산과 바다, 들녘에서 제철마다 완전히 다른 신선한 제철 해산물과 풍성한 야생 채소를 선사합니다. 특히 영하로 떨어지는 춥고 긴 겨울을 나기 위해 발달한 김치(Kimchi), 간장(Ganjang), 된장(Doenjang), 고추장(Gochujang) 등의 발효(Fermentation) 기술은 오랜 시간과 자연의 순환이 서서히 빚어낸 발효 과학의 정수입니다. 계절의 온습도 흐름에 적응하며 옹기 속에서 오랜 시간 숙성된 미생물들의 상호 작용은 식재료 고유의 유해균을 억제하고 몸에 이로운 대사 산물과 천연 양념의 풍미를 깊게 완성합니다. 이처럼 풍토적 제약을 기회로 바꾸어낸 한식의 식재료와 지혜는 자연과의 합일을 지향하는 한국 식문화의 강인한 생명력과 건강한 깊이를 상징합니다.",
+        "en": "Ingredients and Terroir emphasize the ecological and scientific characteristics of K-food shaped by the Korean Peninsula's climate and geographical topography. Surrounded by the sea on three sides with mountainous landscapes covering 70% of the territory, Korea harvests diverse seasonal crops, wild herbs, and marine life. To prepare for the long, freezing winters, Koreans developed complex fermentation technologies, producing staples like Kimchi, Ganjang (soy sauce), and Doenjang (soybean paste). Aged inside earthen jars (Onggi), these foods undergo metabolic transformations driven by beneficial microflora that preserve nutrition and cultivate deep savory notes (umami). This adaptive chemistry showcases how Koreans turned environmental constraints into culinary innovation, defining a food culture in perfect alignment with natural rhythms.",
+        "ja": "食材と風土（Ingredients & Terroir）は、韓半島固有の地理的条件と劇的な四季の気候が生み出した、韓国料理ならではの独創的な生態科学的資産です。三面が温かい海と冷たい海に囲まれた半島型の領土、全国土の70%が山岳地帯で構成された韓国の風土は、山、海、野原から季節ごとに全く異なる新鮮な旬の海産物や豊富な野生の山菜をもたらします。特に氷点下に下がる厳しい冬を越すために発達したキムチ（Kimchi）や、醤油（Ganjang）、味噌（Doenjang）、コチュジャン（Gochujang）などの発酵（Fermentation）技術は、長い歳月と自然の循環がゆっくりと醸し出した発酵科学の精髄です。季節の温湿度の変化に適応し、オンギ（甕器）の中で長期間熟成された微生物たちの相互作用は、食材固有の有害菌を抑制し、体に有益な代謝産物と天然調味料の風味を深く完成させます。このように風土的な制約を機会に変えた韓国の食材と知恵は、自然との調和を目指す韓国食文化の強靭な生命力と健康的な深みを象徴しています。",
+        "zh": "“食材与风土”（Ingredients & Terroir）是朝鲜半岛独特的地理环境与剧烈的四季气候变化所孕育的韩食生态科学资产。韩国三面环海（交汇温带与寒带海流），全国70%的国土为山地地形，这种特殊的风土使得人们在每个季节都能从山川、海洋和原野中收获截然不同的新鲜时令海鲜和丰富的野生野菜。特别是为了度过零度以下严寒而漫长的冬季，发展起来的泡菜（Kimchi）、酱油（Ganjang）、大酱（Doenjang）、辣椒酱（Gochujang）等发酵（Fermentation）技术，是时间与自然循环慢慢酿造的发酵科学结晶。微生物适应着季节的温湿度变化，在 Onggi（陶缸）内经年累月成熟，它们相互作用并抑制有害菌的滋生，深层凝练出有益的代谢产物与天然调味风味。这种将自然环境的局限转化为创新机遇的膳食智慧，象征着韩食与自然和谐统一的顽强生命力与健康深度。",
+        "es": "Los ingredientes y el terroir enfatizan las características ecológicas y científicas de la comida coreana, moldeadas por el clima y la topografía geográfica de la península de Corea. Rodeada de mar por tres lados y con paisajes montañosos que cubren el 70% del territorio, Corea cosecha diversos cultivos de temporada, hierbas silvestres y vida marina. Para prepararse para los largos inviernos helados, los coreanos desarrollaron tecnologías complejas de fermentación, produciendo alimentos básicos como el kimchi, el ganjang (salsa de soja) y el doenjang (pasta de soja). Envejecidos dentro de jarras de barro (Onggi), estos alimentos sufren transformaciones metabólicas impulsadas por microflora beneficiosa que preserva la nutrición.",
+        "ar": "تؤكد المكونات والتربة المحلية على الخصائص البيئية والعلمية للطعام الكوري التي شكلها مناخ شبه الجزيرة الكورية وتضاريسها الجغرافية. محاطة بالبحر من ثلاث جهات مع مناظر طبيعية جبلية تغطي 70٪ من الأراضي، تحصد كوريا محاصيل موسمية متنوعة وأعشاب برية وحياة بحرية. للاستعداد لفصول الشتاء الطويلة والمتجمدة، طور الكوريون تقنيات تخمير معقدة، وأنتجوا أطعمة أساسية مثل الكيمتشي والغانجانغ (صلصة الصويا) والدوينجانغ (معجون فول الصويا). ومع تقدم العمر داخل الجرار الفخارية (أونغي)، تخضع هذه الأطعمة لتحولات استقلابية تحركها النباتات الدقيقة المفيدة التي تحافظ على التغذية وتزرع نكهات عميقة ولذيذة (أومامي).",
+        "ru": "Ингредиенты и Терруар подчеркивают экологические и научные особенности корейской кухни, обусловленные географией полуострова. Будучи окруженной морями с трех сторон и покрытой горами на 70%, Корея богата сезонными продуктами, горными травами и дарами моря. Чтобы пережить долгую и суровую зиму, корейцы создали уникальные методы ферментации, подарив миру кимчхи, соевый соус (канджан) и соевую пасту (твэнджан). Выдерживаемые в глиняных чанах (онги) продукты проходят процесс метаболической трансформации под влиянием полезных микроорганизмов."
+      }
+    }
+  ]
+}

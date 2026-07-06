@@ -183,10 +183,31 @@ export default async function ArticleDetailPage({ params: { locale, slug } }: Pr
             </div>
 
             {/* 우측: 학술 상세 에세이 본문 */}
-            <div className="md:col-span-2 bg-slate-900/20 border border-slate-900/60 p-6 md:p-8 rounded-2xl">
-              <p className="text-slate-300 font-light leading-loose text-sm md:text-base whitespace-pre-line">
-                {contentText}
-              </p>
+            <div className="md:col-span-2 space-y-6">
+              <div className="bg-slate-900/20 border border-slate-900/60 p-6 md:p-8 rounded-2xl">
+                <p className="text-slate-300 font-light leading-loose text-sm md:text-base whitespace-pre-line">
+                  {contentText}
+                </p>
+              </div>
+
+              {/* 학술 아카이브 연결 CTA */}
+              <div className="p-6 rounded-2xl border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-950 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-full blur-2xl" />
+                <div className="space-y-1 relative z-10 text-center sm:text-left">
+                  <h4 className="text-sm md:text-base font-bold text-white">
+                    {t("view_archive_title")}
+                  </h4>
+                  <p className="text-xs text-slate-400 font-light">
+                    {t("view_archive_description")}
+                  </p>
+                </div>
+                <Link
+                  href={`/articles/${slug}/archive`}
+                  className="px-5 py-2.5 rounded-full text-xs font-bold bg-slate-850 hover:bg-slate-800 text-emerald-400 border border-emerald-900/40 hover:border-emerald-500/40 transition-all shadow-md shrink-0"
+                >
+                  {t("view_archive_cta")}
+                </Link>
+              </div>
             </div>
 
           </div>

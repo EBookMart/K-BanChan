@@ -156,6 +156,18 @@
     "back_to_list": "목록으로 돌아가기",
     "related_banchan": "관련 추천 반찬",
     "next_article": "다음 비밀 코드",
+    "view_archive_title": "더 깊이 알고 싶으신가요?",
+    "view_archive_description": "이 특성에 대한 학술 논문과 참고 문헌을 확인해보세요.",
+    "view_archive_cta": "문헌 아카이브",
+    "archive_hero_title": "학술 문헌 아카이브",
+    "archive_hero_badge": "학술 자료",
+    "back_to_article": "철학 기사로 돌아가기",
+    "academic_essay": "학술 에세이",
+    "papers_list": "논문 및 참고 문헌",
+    "abstract_btn": "초록 보기",
+    "link_btn": "원문 링크",
+    "browse_other_archives": "다른 아카이브 둘러보기",
+    "read_full_article": "전문 읽기",
     "yaksik-dongwon": {
       "title": "약식동원 (藥食同源)",
       "subtitle": "음식과 약은 그 근원이 같다는 웰빙 철학"

@@ -143,7 +143,7 @@
   },
   "articles": {
     "title": "韓国料理の秘密のコード (The Secret Code)",
-    "subtitle": "五方色の方位と哲学で出会う韓国料理の5大特性",
+    "subtitle": "五方色の方位と哲学で出会う韓国料理의 5대 특성",
     "index_title": "韓国料理の哲学と自然的背景 (The Secret Code)",
     "index_subtitle": "",
     "read_more": "詳細を読む",
@@ -153,6 +153,18 @@
     "back_to_list": "リストに戻る",
     "related_banchan": "関連するおすすめおかず",
     "next_article": "次の秘密のコード",
+    "view_archive_title": "もっと深く知りたいですか？",
+    "view_archive_description": "この特性に関する学術論文と参考文献をご覧ください。",
+    "view_archive_cta": "文献アーカイブ",
+    "archive_hero_title": "学術文献アーカイブ",
+    "archive_hero_badge": "学術資料",
+    "back_to_article": "哲学記事に戻る",
+    "academic_essay": "学術エッセイ",
+    "papers_list": "論文と参考文献",
+    "abstract_btn": "抄録を見る",
+    "link_btn": "原文リンク",
+    "browse_other_archives": "他のアーカイブを見る",
+    "read_full_article": "全文を読む",
     "yaksik-dongwon": {
       "title": "薬食同源: 食は薬なり",
       "subtitle": "食と薬は源が同じであるというウェルネス哲学"
@@ -162,12 +174,12 @@
       "subtitle": "一つの料理で出会う6つの調和のとれた味"
     },
     "obangsaek": {
-      "title": "五方色 (五方色): 視覚적 조화 - 오행",
+      "title": "五方色 (五方色): 視覚的調和 - 五行",
       "subtitle": "5つの基本色を通じた栄養のバランス"
     },
     "nanum": {
       "title": "ナヌム (Sharing) と共同体",
-      "subtitle": "おかずを通じて温かい情（チョン）を分かち合う文化"
+      "subtitle": "おかずを通じて温かい情（チョン）を分か치合う文化"
     },
     "ingredients-terroir": {
       "title": "食材と風土 (Terroir)",
