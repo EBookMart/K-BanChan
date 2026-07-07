@@ -17,6 +17,7 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
     ja: "🔥 HOT 8 DISHES - 韓国料理特別キュレーション | K-BanChan",
     zh: "🔥 HOT 8 DISHES - 韩食特别推荐 | K-BanChan",
     es: "🔥 HOT 8 DISHES - Curadurías Especiales de Comida Coreana | K-BanChan",
+    fr: "🔥 HOT 8 PLATS - Sélections Spéciales de Cuisine Coréenne | K-BanChan",
     ar: "🔥 HOT 8 DISHES - تنظيمات الطعام الكوري الخاصة | K-BanChan",
     ru: "🔥 HOT 8 DISHES - Специальные Корейские Подборки | K-BanChan",
   };
@@ -27,6 +28,7 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
     ja: "五方色の哲学とテーマで厳選されたK-おかず8選特別キュレーションチャンネルをご覧ください。",
     zh: "查看基于五方色哲学和主题精心挑选的8款韩国伴餐特别推荐频道。",
     es: "Descubra los canales especiales de curaduría de K-BanChan seleccionados bajo la filosofía de Obangsaek.",
+    fr: "Découvrez les canaux de curation spéciaux Hot 8 K-BanChan sélectionnés selon la philosophie Obangsaek.",
     ar: "اكتشف قنوات التقييم الخاصة بـ K-BanChan المختارة بعناية وفقًا لفلسفة أوبانغ سيك.",
     ru: "Откройте для себя особые подборки из 8 лучших корейских банчанов, вдохновленные традиционной философией.",
   };
@@ -53,6 +55,7 @@ export default function HotIndexPage({ params: { locale } }: Props) {
     ja: "HOT 8 DISHES",
     zh: "HOT 8 DISHES",
     es: "HOT 8 DISHES",
+    fr: "HOT 8 PLATS",
     ar: "HOT 8 DISHES",
     ru: "HOT 8 DISHES",
   };
@@ -63,6 +66,7 @@ export default function HotIndexPage({ params: { locale } }: Props) {
     ja: "韓国料理ならではの哲学とテーマ別に厳選した、最もホットなおかず8選の特別コレクション",
     zh: "根据韩食特有哲学与主题精心挑选的最热门伴餐8选特别系列",
     es: "Una colección especial de los 8 platos de acompañamiento más populares seleccionados por filosofía y temas de la cocina coreana",
+    fr: "Une collection spéciale des 8 plats d'accompagnement les plus populaires, sélectionnés selon la philosophie et les thèmes de la cuisine coréenne",
     ar: "مجموعة خاصة من أكثر 8 أطباق جانية تم اختيارها بعناية بناءً على فلسفة المطبخ الكوري والمواضيع المتنوعة",
     ru: "Специальная коллекция из 8 самых популярных закусок, отобранных по темам и философии корейской кухни",
   };
@@ -73,6 +77,7 @@ export default function HotIndexPage({ params: { locale } }: Props) {
     ja: "コレクションを見る",
     zh: "查看系列",
     es: "Ver Colección",
+    fr: "Voir la Collection",
     ar: "عرض المجموعة",
     ru: "Посмотреть подборку",
   };

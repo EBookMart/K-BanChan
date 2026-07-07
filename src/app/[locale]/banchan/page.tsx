@@ -39,7 +39,7 @@ export default async function BanchanListPage({ params: { locale } }: Props) {
             {t("title")}
           </h1>
           <p className="text-center text-slate-400 text-sm md:text-base font-light mb-12 max-w-xl mx-auto leading-relaxed">
-            Discover the secret code of 50 traditional Korean side dishes, systematically cataloged for global culinary enthusiasts.
+            {t("subtitle")}
           </p>
 
           {/* 목록 검색 및 그리드 */}
@@ -48,7 +48,7 @@ export default async function BanchanListPage({ params: { locale } }: Props) {
             locale={locale}
             categories={categories}
             placeholder={t("search_placeholder")}
-            noResultsText={locale === "ko" ? "검색 결과가 없습니다." : "No results found."}
+            noResultsText={t("no_results")}
           />
         </div>
       </main>

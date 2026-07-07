@@ -87,7 +87,9 @@
   },
   "banchan": {
     "title": "K-BanChan Top 50",
+    "subtitle": "Descubra el código secreto de 50 platos tradicionales coreanos (banchan), catalogados sistemáticamente para los entusiastas de la gastronomía mundial.",
     "search_placeholder": "Buscar banchan por nombre o ingredientes...",
+    "no_results": "No se encontraron resultados.",
     "filter": {
       "all": "Todo",
       "volkkeum": "Salteado",
@@ -118,6 +120,7 @@
   },
   "nav": {
     "banchan": "50 Banchan",
+    "banchan_guide": "Comprender el Banchan",
     "articles": "THE SECRET CODE",
     "hot": "HOT 8 DISHES",
     "previous": "Anterior",

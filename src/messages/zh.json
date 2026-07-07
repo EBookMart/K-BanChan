@@ -86,7 +86,9 @@
   },
   "banchan": {
     "title": "韩国小菜 50选",
+    "subtitle": "探索为全球美食爱好者系统分类的50种传统韩国小菜的秘密密码。",
     "search_placeholder": "输入小菜名字或食材搜索...",
+    "no_results": "未找到搜索结果。",
     "filter": {
       "all": "全部",
       "volkkeum": "炒菜",
@@ -117,6 +119,7 @@
   },
   "nav": {
     "banchan": "伴餐50选",
+    "banchan_guide": "理解伴餐",
     "articles": "THE SECRET CODE",
     "hot": "HOT 8 DISHES",
     "previous": "上一页",

@@ -86,7 +86,9 @@
   },
   "banchan": {
     "title": "K-おかず50選",
+    "subtitle": "世界中の美食家のために体系的に分類された50種の伝統的な韓国のおかずの秘密コードを発見してください。",
     "search_placeholder": "おかずの名前や材料を入力して検索...",
+    "no_results": "検索結果が見つかりません。",
     "filter": {
       "all": "全体",
       "volkkeum": "炒め物",
@@ -117,6 +119,7 @@
   },
   "nav": {
     "banchan": "おかず50選",
+    "banchan_guide": "バンチャンの理解",
     "articles": "THE SECRET CODE",
     "hot": "HOT 8 DISHES",
     "previous": "前へ",

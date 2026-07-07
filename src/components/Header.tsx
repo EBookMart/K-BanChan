@@ -43,12 +43,22 @@ export default function Header() {
           <Link
             href="/banchan"
             className={`transition-colors ${
-              pathname.startsWith("/banchan")
+              pathname.startsWith("/banchan") && !pathname.startsWith("/banchan-guide")
                 ? "text-amber-400"
                 : "text-slate-300 hover:text-white"
             }`}
           >
             {tNav("banchan")}
+          </Link>
+          <Link
+            href="/banchan-guide"
+            className={`transition-colors ${
+              pathname.startsWith("/banchan-guide")
+                ? "text-amber-400"
+                : "text-slate-300 hover:text-white"
+            }`}
+          >
+            {tNav("banchan_guide")}
           </Link>
           <Link
             href="/articles"
@@ -86,7 +96,7 @@ export default function Header() {
               <span>{activeLang.label}</span>
               <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${isLangOpen ? "rotate-180" : ""}`} />
             </button>
-
+ 
             {isLangOpen && (
               <>
                 <div className="fixed inset-0 z-10" onClick={() => setIsLangOpen(false)} />
@@ -141,12 +151,23 @@ export default function Header() {
               href="/banchan"
               onClick={() => setIsMenuOpen(false)}
               className={`p-2 rounded-lg transition-colors ${
-                pathname.startsWith("/banchan")
+                pathname.startsWith("/banchan") && !pathname.startsWith("/banchan-guide")
                   ? "bg-amber-500/10 text-amber-400"
                   : "text-slate-300 hover:bg-slate-900/50"
               }`}
             >
               {tNav("banchan")}
+            </Link>
+            <Link
+              href="/banchan-guide"
+              onClick={() => setIsMenuOpen(false)}
+              className={`p-2 rounded-lg transition-colors ${
+                pathname.startsWith("/banchan-guide")
+                  ? "bg-amber-500/10 text-amber-400"
+                  : "text-slate-300 hover:bg-slate-900/50"
+              }`}
+            >
+              {tNav("banchan_guide")}
             </Link>
             <Link
               href="/articles"

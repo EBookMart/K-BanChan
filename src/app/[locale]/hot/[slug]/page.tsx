@@ -1,7 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Link } from "@/i18n/routing";
+import { Link, routing } from "@/i18n/routing";
 import { getCurationBySlug, getBanchansForCuration, getAllCurations } from "@/data/hot-curations";
 import { getTranslations } from "next-intl/server";
 import BanchanCard from "@/components/BanchanCard";
@@ -14,14 +14,12 @@ interface Props {
   };
 }
 
-// 1. 빌드 타임 정적 생성을 위한 generateStaticParams 구현 (7개 언어 * 3개 슬러그)
+// 1. 빌드 타임 정적 생성을 위한 generateStaticParams 구현 (8개 언어 * 3개 슬러그)
 export async function generateStaticParams() {
-  const locales = ["ko", "en", "ja", "zh", "es", "ar", "ru"];
   const curations = getAllCurations();
-  
   const params: { locale: string; slug: string }[] = [];
   
-  locales.forEach((locale) => {
+  routing.locales.forEach((locale) => {
     curations.forEach((curation) => {
       params.push({
         locale,

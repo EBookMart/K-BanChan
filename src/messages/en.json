@@ -89,7 +89,9 @@
   },
   "banchan": {
     "title": "K-BanChan Top 50",
+    "subtitle": "Discover the secret code of 50 traditional Korean side dishes, systematically cataloged for global culinary enthusiasts.",
     "search_placeholder": "Search banchan by name or ingredients...",
+    "no_results": "No results found.",
     "filter": {
       "all": "All",
       "volkkeum": "Stir-fried",
@@ -120,6 +122,7 @@
   },
   "nav": {
     "banchan": "50 Banchan",
+    "banchan_guide": "Understanding Banchan",
     "articles": "THE SECRET CODE",
     "hot": "HOT 8 DISHES",
     "previous": "Previous",

@@ -85,7 +85,9 @@
   },
   "banchan": {
     "title": "Top 50 des K-Banchans",
+    "subtitle": "Découvrez le code secret de 50 banchans traditionnels coréens, systématiquement catalogués pour les passionnés de gastronomie mondiale.",
     "search_placeholder": "Rechercher un banchan par nom ou ingrédients...",
+    "no_results": "Aucun résultat trouvé.",
     "filter": {
       "all": "Tous",
       "volkkeum": "Sautés",
@@ -116,6 +118,7 @@
   },
   "nav": {
     "banchan": "50 Banchans",
+    "banchan_guide": "Comprendre le Banchan",
     "articles": "LE CODE SECRET",
     "hot": "HOT 8 PLATS",
     "previous": "Précédent",

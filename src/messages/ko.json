@@ -89,7 +89,9 @@
   },
   "banchan": {
     "title": "K-반찬 50선",
+    "subtitle": "글로벌 미식가들을 위해 체계적으로 분류된 50가지 전통 한국 반찬의 비밀 코드를 발견해 보세요.",
     "search_placeholder": "반찬 이름이나 재료를 입력해 검색해보세요...",
+    "no_results": "검색 결과가 없습니다.",
     "filter": {
       "all": "전체",
       "volkkeum": "볶음",
@@ -120,6 +122,7 @@
   },
   "nav": {
     "banchan": "반찬 50선",
+    "banchan_guide": "반찬의 이해",
     "articles": "THE SECRET CODE",
     "hot": "HOT 8 DISHES",
     "previous": "이전 창",
