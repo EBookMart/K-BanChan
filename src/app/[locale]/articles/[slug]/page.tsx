@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -10,6 +11,16 @@ import BanchanCard from "@/components/BanchanCard";
 import ObangsaekCircleNav from "@/components/ObangsaekCircleNav";
 import { Link } from "@/i18n/routing";
 import { Compass, Sparkles, Heart, RefreshCw, Leaf, ArrowLeft } from "lucide-react";
+import { getAIImage, AIImageKey } from "@/data/ai-images";
+
+const getArticleImageKey = (slug: string): AIImageKey | null => {
+  if (slug === "yaksik-dongwon") return "yaksikDongwon";
+  if (slug === "yukmi") return "yukmi";
+  if (slug === "obangsaek") return "obangsaek";
+  if (slug === "nanum") return "nanum";
+  if (slug === "ingredients-terroir") return "ingredientsTerroir";
+  return null;
+};
 
 type Props = {
   params: { locale: string; slug: string };
@@ -37,6 +48,11 @@ export async function generateMetadata({ params: { locale, slug } }: Props) {
   const titleText = art.title[locale] || art.title["en"];
   const summaryText = art.summary[locale] || art.summary["en"];
 
+  const imageKey = getArticleImageKey(slug);
+  const aiImageObj = imageKey ? getAIImage(imageKey) : null;
+  const imageUrl = aiImageObj ? aiImageObj.src : "/logos/kbanchan-logo.png";
+  const imageAlt = aiImageObj ? (aiImageObj.alt[locale as keyof typeof aiImageObj.alt] || aiImageObj.alt.en) : "K-BanChan Logo";
+
   return {
     title: `${titleText} | THE SECRET CODE`,
     description: summaryText,
@@ -46,10 +62,10 @@ export async function generateMetadata({ params: { locale, slug } }: Props) {
       url: `https://k-banchan.net/${locale}/articles/${slug}`,
       images: [
         {
-          url: "/logos/kbanchan-logo.png",
-          width: 1200,
-          height: 630,
-          alt: "K-BanChan Logo",
+          url: imageUrl,
+          width: 800,
+          height: 600,
+          alt: imageAlt,
         },
       ],
     },
@@ -135,35 +151,40 @@ export default async function ArticleDetailPage({ params: { locale, slug } }: Pr
 
       <main className="flex-grow bg-slate-950 text-slate-100 min-h-screen pb-20 relative overflow-hidden" dir={isRtl ? "rtl" : "ltr"}>
         
-        {/* 1. 화려한 오방색 그라디언트 Hero 영역 */}
-        <section className={`relative w-full py-20 md:py-28 bg-gradient-to-br ${art.gradientClass} text-slate-950 overflow-hidden`}>
-          {/* 빛 바램 효과 */}
-          <div className="absolute inset-0 bg-slate-950/20 backdrop-blur-[1px] z-0" />
-          <div className="absolute -bottom-1 left-0 right-0 h-16 bg-gradient-to-t from-slate-950 to-transparent z-10" />
+        {/* 1. 세련되고 가독성이 확보된 상단 헤더 영역 (텍스트와 이미지를 분리) */}
+        <section className="relative w-full pt-20 pb-10 bg-slate-950 overflow-hidden">
+          {/* 오방색/오행 철학을 반영하는 배경 조명 효과 */}
+          <div className={`absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-gradient-to-b ${art.gradientClass} opacity-[0.08] rounded-full blur-[80px] pointer-events-none`} />
+          <div className="absolute bottom-0 left-0 right-0 h-px bg-slate-900/60" />
 
           <div className="max-w-4xl mx-auto px-4 relative z-10 flex flex-col items-center text-center">
             
             {/* 뒤로가기 버튼 */}
             <Link
               href="/articles"
-              className="inline-flex items-center gap-2 text-xs font-bold text-slate-950/80 hover:text-slate-950 bg-white/20 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-black/10 transition-all mb-8 hover:bg-white/30"
+              className="inline-flex items-center gap-2 text-xs font-bold text-slate-400 hover:text-white bg-slate-900/80 border border-slate-800 px-3.5 py-1.5 rounded-full transition-all mb-8"
             >
               <ArrowLeft className="w-3.5 h-3.5" />
               <span>{t("back_to_list")}</span>
             </Link>
 
-            {/* 대형 아이콘 */}
-            <div className="p-4 rounded-2xl bg-white/20 border border-white/30 mb-6 backdrop-blur-sm">
-              {getIcon(slug, "w-10 h-10 text-slate-950")}
+            {/* 대형 아이콘과 뱃지 */}
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-slate-900 border border-slate-800/80 shadow-md">
+                {getIcon(slug, "w-6 h-6 text-amber-400")}
+              </div>
+              <span className="px-3 py-1 rounded-full text-xs font-bold bg-slate-900 border border-slate-850 text-slate-300 uppercase tracking-widest">
+                {slug === "obangsaek" ? "시각적 조화: 오행" : "K-BanChan Philosophy"}
+              </span>
             </div>
 
             {/* 타이틀 */}
-            <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-4 text-slate-950">
+            <h1 className="text-3xl md:text-5xl font-black tracking-tight text-white mb-6 leading-tight max-w-3xl">
               {titleText}
             </h1>
 
             {/* 한 줄 요약 */}
-            <p className="text-sm md:text-lg font-medium text-slate-900 max-w-2xl bg-white/35 backdrop-blur-sm px-5 py-2.5 rounded-2xl border border-white/20 shadow-md">
+            <p className="text-base md:text-lg font-light text-slate-300 max-w-2xl leading-relaxed">
               &ldquo;{summaryText}&rdquo;
             </p>
 
@@ -172,6 +193,31 @@ export default async function ArticleDetailPage({ params: { locale, slug } }: Pr
 
         {/* 2. 본문 및 원형 오행 내비게이션 배치 */}
         <section className="max-w-4xl mx-auto px-4 mt-8 md:mt-12 relative z-10">
+          
+          {/* 아티클 고유 AI 히어로 이미지 배치 */}
+          {(() => {
+            const imageKey = getArticleImageKey(slug);
+            const aiImageObj = imageKey ? getAIImage(imageKey) : null;
+            if (!aiImageObj) return null;
+            const altVal = aiImageObj.alt[locale as keyof typeof aiImageObj.alt] || aiImageObj.alt.en;
+            return (
+              <div className="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-3xl overflow-hidden border border-slate-900/80 shadow-[0_20px_50px_rgba(0,0,0,0.8)] mb-8 md:mb-12">
+                <Image
+                  src={aiImageObj.src}
+                  alt={altVal}
+                  fill
+                  priority
+                  className="object-cover responsive-object-fit"
+                  style={{
+                    "--object-position-mobile": aiImageObj.objectPositionMobile || "center",
+                    "--object-position-desktop": aiImageObj.objectPositionDesktop || "center",
+                  } as React.CSSProperties}
+                  sizes="(max-w-768px) 100vw, 768px"
+                />
+              </div>
+            );
+          })()}
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-start">
             
             {/* 좌측: 원형 오행 내비게이션 */}

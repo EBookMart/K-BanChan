@@ -8,13 +8,22 @@ const banchans = banchanData as Banchan[];
 export function getAllBanchan(): Banchan[] {
   return banchans;
 }
-
-// 2. 특정 반찬을 영문 식별 주소(slug)로 조회합니다.
+// 2. 특정 반찬을 영문 식별 주소(slug)로 조회합니다. (kimchi, japchae 별칭 대응)
 export function getBanchanBySlug(slug: string): Banchan | undefined {
+  if (slug === "kimchi") {
+    const item = banchans.find((b) => b.slug === "baechu-geotjeori-26");
+    if (item) {
+      return { ...item, slug: "kimchi" };
+    }
+  }
+  if (slug === "japchae") {
+    const item = banchans.find((b) => b.slug === "japchae-32");
+    if (item) {
+      return { ...item, slug: "japchae" };
+    }
+  }
   return banchans.find((b) => b.slug === slug);
-}
-
-// 3. 카테고리별로 반찬 목록을 분류하여 필터링합니다. (예: 'volkkeum', 'jorim' 등)
+}// 3. 카테고리별로 반찬 목록을 분류하여 필터링합니다. (예: 'volkkeum', 'jorim' 등)
 export function getBanchanByCategory(category: string): Banchan[] {
   return banchans.filter((b) => b.category === category);
 }

@@ -24,4 +24,14 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .responsive-object-fit {
+    object-fit: cover;
+    object-position: var(--object-position-mobile, center);
+  }
+}
+
+@media (min-width: 768px) {
+  .responsive-object-fit {
+    object-position: var(--object-position-desktop, center) !important;
+  }
 }

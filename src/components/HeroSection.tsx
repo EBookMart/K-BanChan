@@ -3,11 +3,15 @@
 import React from "react";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { ArrowRight, BookOpen, Utensils } from "lucide-react";
+import { aiImages } from "@/data/ai-images";
 
 export default function HeroSection() {
   const t = useTranslations("hero");
+  const locale = useLocale();
+
+  const altText = aiImages.homeHero.alt[locale as keyof typeof aiImages.homeHero.alt] || aiImages.homeHero.alt.en;
 
   return (
     <section className="relative w-full py-20 md:py-32 bg-slate-950 flex flex-col items-center justify-center overflow-hidden border-b border-slate-900/80">
@@ -20,7 +24,7 @@ export default function HeroSection() {
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-96 h-96 bg-amber-500/5 rounded-full blur-[100px] pointer-events-none" />
 
       {/* 컨텐츠 영역 */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 flex flex-col items-center">
+      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 flex flex-col items-center mb-12">
         {/* 슬로건 뱃지 */}
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-widest mb-6">
           Premium K-Food Standard
@@ -73,6 +77,24 @@ export default function HeroSection() {
             <BookOpen className="w-4 h-4 md:w-5 md:h-5 text-emerald-400" />
             <span>{t("cta_articles")}</span>
           </Link>
+        </div>
+      </div>
+
+      {/* 메인 히어로 이미지 블록 */}
+      <div className="relative z-10 w-full max-w-5xl px-4">
+        <div className="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-3xl overflow-hidden border border-slate-900/80 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
+          <Image
+            src={aiImages.homeHero.src}
+            alt={altText}
+            fill
+            priority
+            className="object-cover responsive-object-fit"
+            style={{
+              "--object-position-mobile": aiImages.homeHero.objectPositionMobile || "center",
+              "--object-position-desktop": aiImages.homeHero.objectPositionDesktop || "center",
+            } as React.CSSProperties}
+            sizes="(max-w-1024px) 100vw, 1024px"
+          />
         </div>
       </div>
     </section>

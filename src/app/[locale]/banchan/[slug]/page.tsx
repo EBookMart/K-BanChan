@@ -6,9 +6,28 @@ import { routing } from "@/i18n/routing";
 import { getAllBanchan, getBanchanBySlug } from "@/lib/banchan";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import BanchanDetailImage from "@/components/BanchanDetailImage";
 import BanchanCard from "@/components/BanchanCard";
-import { ArrowLeft, BookOpen, Flame, Leaf, Eye, Award } from "lucide-react";
+import { ArrowLeft, BookOpen } from "lucide-react";
+import { getAIImage } from "@/data/ai-images";
+import BanchanDetailHero from "@/components/banchan/BanchanDetailHero";
+
+function getPremiumBanchanImage(slug: string, locale: string) {
+  if (slug === "kimchi" || slug === "baechu-geotjeori-26") {
+    const aiImageObj = getAIImage("kimchi");
+    return {
+      src: aiImageObj.src,
+      alt: aiImageObj.alt[locale as keyof typeof aiImageObj.alt] || aiImageObj.alt.en
+    };
+  }
+  if (slug === "japchae" || slug === "japchae-32") {
+    const aiImageObj = getAIImage("japchae");
+    return {
+      src: aiImageObj.src,
+      alt: aiImageObj.alt[locale as keyof typeof aiImageObj.alt] || aiImageObj.alt.en
+    };
+  }
+  return null;
+}
 
 type Props = {
   params: { locale: string; slug: string };
@@ -47,6 +66,10 @@ export async function generateMetadata({ params: { locale, slug } }: Props) {
   const title = `${name} (${rankText}) | K-BanChan Recipe`;
   const description = `${name} recipe & detailed information. Ingredients: ${banchan.ingredients.main}. Cultural context: ${banchan.summary}`;
 
+  const premiumImg = getPremiumBanchanImage(slug, locale);
+  const imageUrl = premiumImg ? premiumImg.src : banchan.image_url;
+  const imageAlt = premiumImg ? premiumImg.alt : name;
+
   return {
     title,
     description,
@@ -55,14 +78,14 @@ export async function generateMetadata({ params: { locale, slug } }: Props) {
       description,
       url: `https://k-banchan.net/${locale}/banchan/${slug}`,
       siteName: "K-BanChan",
-      images: [{ url: banchan.image_url, width: 800, height: 600 }],
+      images: [{ url: imageUrl, width: 800, height: 600, alt: imageAlt }],
       locale: locale,
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [banchan.image_url],
+      images: [imageUrl],
     },
   };
 }
@@ -92,6 +115,10 @@ export default async function BanchanDetailPage({ params: { locale, slug } }: Pr
     }
   };
   const displayName = getNameByLocale();
+
+  const premiumImg = getPremiumBanchanImage(slug, locale);
+  const imageUrl = premiumImg ? premiumImg.src : banchan.image_url;
+  const imageAlt = premiumImg ? premiumImg.alt : displayName;
 
   // 매운맛 표현 🌶️
   const spicyString = banchan.spicy_level > 0 ? "🌶️".repeat(banchan.spicy_level) : "";
@@ -135,94 +162,23 @@ export default async function BanchanDetailPage({ params: { locale, slug } }: Pr
             <span>{t("detail.back_to_list")}</span>
           </Link>
 
-          {/* Hero 영역: 레이아웃 (Grid 1열 -> md:2열) */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center mb-12">
-            {/* 좌측: 반찬 이미지 */}
-            <div className="md:col-span-5 w-full">
-              <BanchanDetailImage src={banchan.image_url} alt={displayName} />
-            </div>
-
-            {/* 우측: 요약 타이틀 및 주요 메타 */}
-            <div className="md:col-span-7 space-y-6">
-              <div className="flex flex-wrap items-center gap-3">
-                {/* 랭킹 표시 */}
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold">
-                  <Award className="w-3.5 h-3.5" />
-                  Rank {banchan.rank}
-                </span>
-
-                {/* 카테고리 뱃지 */}
-                <span className="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold">
-                  {getCategoryLabel(banchan.category)}
-                </span>
-
-                {/* 비건 뱃지 */}
-                {banchan.vegan && (
-                  <span className="px-3 py-1 rounded-full bg-teal-600/20 border border-teal-500/40 text-teal-300 text-xs font-bold flex items-center gap-1">
-                    <Leaf className="w-3 h-3" />
-                    Vegan
-                  </span>
-                )}
-              </div>
-
-              <div>
-                {/* 메인 명칭 */}
-                <h1 className="text-3xl md:text-5xl font-black tracking-tight text-white mb-2 leading-tight">
-                  {displayName}
-                </h1>
-                
-                {/* 한국어 서브 명칭 (다국어일 때 보조 출력) */}
-                {locale !== "ko" && (
-                  <p className="text-lg text-slate-400 font-medium tracking-wide mb-1">{banchan.name_ko}</p>
-                )}
-                
-                {/* 영문 서브 명칭 (한국어일 때 보조 출력) */}
-                {locale === "ko" && (
-                  <p className="text-lg text-slate-400 font-medium tracking-wide mb-1">{banchan.name_en}</p>
-                )}
-              </div>
-
-              {/* 매운맛 & 비건 메모 & 조회수 정보 요약 패널 */}
-              <div className="grid grid-cols-2 gap-4 py-4 px-5 rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-sm">
-                <div>
-                  <span className="text-[10px] text-slate-500 uppercase tracking-wider block mb-1 font-bold">
-                    {t("detail.spicy")}
-                  </span>
-                  <span className="text-sm font-semibold text-slate-200">
-                    {spicyString ? (
-                      <span className="text-red-500 flex items-center gap-1">
-                        <Flame className="w-4 h-4 text-red-500 fill-red-500" />
-                        {spicyString}
-                      </span>
-                    ) : (
-                      <span className="text-slate-500 text-xs">Mild (안 매움)</span>
-                    )}
-                  </span>
-                </div>
-
-                <div>
-                  <span className="text-[10px] text-slate-500 uppercase tracking-wider block mb-1 font-bold">
-                    Popularity
-                  </span>
-                  <span className="text-sm font-semibold text-slate-200 flex items-center gap-1.5">
-                    <Eye className="w-4 h-4 text-slate-400" />
-                    {banchan.views_weekly} views/wk
-                  </span>
-                </div>
-
-                {banchan.vegan_note && (
-                  <div className="col-span-2 border-t border-slate-800/80 pt-3 mt-1">
-                    <span className="text-[10px] text-teal-400 uppercase tracking-wider block mb-1 font-bold">
-                      {t("detail.vegan_note")}
-                    </span>
-                    <span className="text-xs text-teal-300/90 font-medium bg-teal-950/30 px-2 py-0.5 rounded border border-teal-900/40">
-                      {banchan.vegan_note}
-                    </span>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
+          {/* Hero 영역: 공통 반찬 상세 히어로 컴포넌트 연동 */}
+          <BanchanDetailHero
+            imageUrl={imageUrl}
+            imageAlt={imageAlt}
+            displayName={displayName}
+            subName={locale !== "ko" ? banchan.name_ko : banchan.name_en}
+            rank={banchan.rank}
+            categoryLabel={getCategoryLabel(banchan.category)}
+            vegan={banchan.vegan}
+            spicyLevel={banchan.spicy_level}
+            spicyLabel={t("detail.spicy")}
+            spicyString={spicyString}
+            locale={locale}
+            viewsWeekly={banchan.views_weekly}
+            veganNote={banchan.vegan_note}
+            veganNoteLabel={t("detail.vegan_note")}
+          />
 
           {/* 콘텐츠 상세 영역 (Grid 1열 -> md:12열) */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16">
