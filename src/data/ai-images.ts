@@ -138,6 +138,8 @@ export const aiImages = {
   },
   kimchi: {
     src: "/images/ai/banchan/kimchi.webp",
+    objectPositionMobile: "center",
+    objectPositionDesktop: "center 45%",
     alt: {
       ko: "장인의 손길이 닿은 고품격 프리미엄 전통 한국 김치",
       en: "High-quality premium traditional Korean kimchi crafted with care",
@@ -151,6 +153,8 @@ export const aiImages = {
   },
   japchae: {
     src: "/images/ai/banchan/japchae.webp",
+    objectPositionMobile: "center",
+    objectPositionDesktop: "center 45%",
     alt: {
       ko: "오색 오행의 시각적 아름다움을 담은 명품 잡채",
       en: "Premium masterwork Korean japchae showing five-color visual beauty",

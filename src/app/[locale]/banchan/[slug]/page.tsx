@@ -16,14 +16,18 @@ function getPremiumBanchanImage(slug: string, locale: string) {
     const aiImageObj = getAIImage("kimchi");
     return {
       src: aiImageObj.src,
-      alt: aiImageObj.alt[locale as keyof typeof aiImageObj.alt] || aiImageObj.alt.en
+      alt: aiImageObj.alt[locale as keyof typeof aiImageObj.alt] || aiImageObj.alt.en,
+      objectPositionMobile: aiImageObj.objectPositionMobile,
+      objectPositionDesktop: aiImageObj.objectPositionDesktop
     };
   }
   if (slug === "japchae" || slug === "japchae-32") {
     const aiImageObj = getAIImage("japchae");
     return {
       src: aiImageObj.src,
-      alt: aiImageObj.alt[locale as keyof typeof aiImageObj.alt] || aiImageObj.alt.en
+      alt: aiImageObj.alt[locale as keyof typeof aiImageObj.alt] || aiImageObj.alt.en,
+      objectPositionMobile: aiImageObj.objectPositionMobile,
+      objectPositionDesktop: aiImageObj.objectPositionDesktop
     };
   }
   return null;
@@ -119,6 +123,8 @@ export default async function BanchanDetailPage({ params: { locale, slug } }: Pr
   const premiumImg = getPremiumBanchanImage(slug, locale);
   const imageUrl = premiumImg ? premiumImg.src : banchan.image_url;
   const imageAlt = premiumImg ? premiumImg.alt : displayName;
+  const objectPositionMobile = premiumImg ? premiumImg.objectPositionMobile : undefined;
+  const objectPositionDesktop = premiumImg ? premiumImg.objectPositionDesktop : undefined;
 
   // 매운맛 표현 🌶️
   const spicyString = banchan.spicy_level > 0 ? "🌶️".repeat(banchan.spicy_level) : "";
@@ -178,6 +184,8 @@ export default async function BanchanDetailPage({ params: { locale, slug } }: Pr
             viewsWeekly={banchan.views_weekly}
             veganNote={banchan.vegan_note}
             veganNoteLabel={t("detail.vegan_note")}
+            objectPositionMobile={objectPositionMobile}
+            objectPositionDesktop={objectPositionDesktop}
           />
 
           {/* 콘텐츠 상세 영역 (Grid 1열 -> md:12열) */}

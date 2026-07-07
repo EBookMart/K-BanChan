@@ -17,6 +17,8 @@ interface Props {
   viewsWeekly?: number;
   veganNote?: string;
   veganNoteLabel?: string;
+  objectPositionMobile?: string;
+  objectPositionDesktop?: string;
 }
 
 export default function BanchanDetailHero({
@@ -31,13 +33,20 @@ export default function BanchanDetailHero({
   spicyString,
   viewsWeekly,
   veganNote,
-  veganNoteLabel
+  veganNoteLabel,
+  objectPositionMobile,
+  objectPositionDesktop
 }: Props) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center mb-12">
       {/* 좌측: 반찬 이미지 */}
       <div className="md:col-span-5 w-full">
-        <BanchanDetailImage src={imageUrl} alt={imageAlt} />
+        <BanchanDetailImage
+          src={imageUrl}
+          alt={imageAlt}
+          objectPositionMobile={objectPositionMobile}
+          objectPositionDesktop={objectPositionDesktop}
+        />
       </div>
 
       {/* 우측: 요약 타이틀 및 주요 메타 */}

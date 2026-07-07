@@ -6,9 +6,16 @@ import Image from "next/image";
 interface BanchanDetailImageProps {
   src: string;
   alt: string;
+  objectPositionMobile?: string;
+  objectPositionDesktop?: string;
 }
 
-export default function BanchanDetailImage({ src, alt }: BanchanDetailImageProps) {
+export default function BanchanDetailImage({
+  src,
+  alt,
+  objectPositionMobile,
+  objectPositionDesktop
+}: BanchanDetailImageProps) {
   const [imgError, setImgError] = useState(false);
 
   return (
@@ -20,7 +27,11 @@ export default function BanchanDetailImage({ src, alt }: BanchanDetailImageProps
           fill
           priority
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-cover"
+          className="object-cover responsive-object-fit"
+          style={{
+            "--object-position-mobile": objectPositionMobile || "center",
+            "--object-position-desktop": objectPositionDesktop || "center",
+          } as React.CSSProperties}
           onError={() => setImgError(true)}
         />
       ) : (
