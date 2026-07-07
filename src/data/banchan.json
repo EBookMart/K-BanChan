@@ -29,7 +29,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/gyeran-mari.jpg",
     "featured": true,
-    "views_weekly": 40,
+    "views_weekly": 13,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -68,7 +68,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/myeolchi-bokkeum.jpg",
     "featured": true,
-    "views_weekly": 31,
+    "views_weekly": 25,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -107,7 +107,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/dubu-jorim.jpg",
     "featured": true,
-    "views_weekly": 57,
+    "views_weekly": 53,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -146,7 +146,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/jinmichae-muchim.jpg",
     "featured": true,
-    "views_weekly": 25,
+    "views_weekly": 13,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -185,7 +185,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/sogogi-jangjorim.jpg",
     "featured": true,
-    "views_weekly": 56,
+    "views_weekly": 23,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -224,7 +224,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/kongnamul-muchim.jpg",
     "featured": true,
-    "views_weekly": 45,
+    "views_weekly": 38,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -263,7 +263,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/sigeumchi-namul.jpg",
     "featured": true,
-    "views_weekly": 53,
+    "views_weekly": 45,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -302,7 +302,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/gamjachae-bokkeum.jpg",
     "featured": true,
-    "views_weekly": 43,
+    "views_weekly": 16,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -341,7 +341,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/eomuk-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 36,
+    "views_weekly": 32,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -380,7 +380,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/oi-muchim.jpg",
     "featured": false,
-    "views_weekly": 11,
+    "views_weekly": 14,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -419,7 +419,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/aehobak-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 15,
+    "views_weekly": 57,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -458,7 +458,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/gaji-namul.jpg",
     "featured": false,
-    "views_weekly": 57,
+    "views_weekly": 45,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -497,7 +497,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/kimchi-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 42,
+    "views_weekly": 46,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -536,7 +536,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/mechurial-jorim.jpg",
     "featured": false,
-    "views_weekly": 22,
+    "views_weekly": 31,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -575,7 +575,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/sosiji-yachae-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 44,
+    "views_weekly": 36,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -614,7 +614,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/musaengchae.jpg",
     "featured": false,
-    "views_weekly": 50,
+    "views_weekly": 53,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -653,7 +653,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/kkaennip-jangajji.jpg",
     "featured": false,
-    "views_weekly": 19,
+    "views_weekly": 37,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -692,7 +692,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/miyeokjulgi-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 43,
+    "views_weekly": 22,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -731,7 +731,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/gosari-namul.jpg",
     "featured": false,
-    "views_weekly": 25,
+    "views_weekly": 47,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -770,7 +770,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/doraji-muchim.jpg",
     "featured": false,
-    "views_weekly": 44,
+    "views_weekly": 51,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -809,7 +809,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/gamja-jorim.jpg",
     "featured": false,
-    "views_weekly": 23,
+    "views_weekly": 54,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -848,7 +848,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/kwarigochu-myeolchi-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 56,
+    "views_weekly": 48,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -887,7 +887,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/maneuljong-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 51,
+    "views_weekly": 26,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -926,7 +926,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/mumallangi-muchim.jpg",
     "featured": false,
-    "views_weekly": 26,
+    "views_weekly": 37,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -965,7 +965,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/pa-kimchi.jpg",
     "featured": false,
-    "views_weekly": 25,
+    "views_weekly": 31,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1004,7 +1004,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/baechu-geotjeori.jpg",
     "featured": false,
-    "views_weekly": 52,
+    "views_weekly": 18,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1043,7 +1043,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/yangpa-jangajji.jpg",
     "featured": false,
-    "views_weekly": 27,
+    "views_weekly": 24,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1082,7 +1082,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/kkomak-muchim.jpg",
     "featured": false,
-    "views_weekly": 36,
+    "views_weekly": 54,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1121,7 +1121,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/beoseot-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 50,
+    "views_weekly": 23,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1160,7 +1160,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/jeyuk-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 45,
+    "views_weekly": 36,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1199,7 +1199,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/ojingeo-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 29,
+    "views_weekly": 37,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1238,7 +1238,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/japchae.jpg",
     "featured": false,
-    "views_weekly": 21,
+    "views_weekly": 14,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1277,7 +1277,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/kimchijeon.jpg",
     "featured": false,
-    "views_weekly": 46,
+    "views_weekly": 35,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1316,7 +1316,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/gyeranjjim.jpg",
     "featured": false,
-    "views_weekly": 42,
+    "views_weekly": 39,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1355,7 +1355,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/danmuji-muchim.jpg",
     "featured": false,
-    "views_weekly": 57,
+    "views_weekly": 31,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1394,7 +1394,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/uong-jorim.jpg",
     "featured": false,
-    "views_weekly": 18,
+    "views_weekly": 54,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1433,7 +1433,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/yeongeun-jorim.jpg",
     "featured": false,
-    "views_weekly": 17,
+    "views_weekly": 27,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1472,7 +1472,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/bugeopo-muchim.jpg",
     "featured": false,
-    "views_weekly": 13,
+    "views_weekly": 20,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1511,7 +1511,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/totnamul-muchim.jpg",
     "featured": false,
-    "views_weekly": 43,
+    "views_weekly": 14,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1550,7 +1550,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/kongjaban.jpg",
     "featured": false,
-    "views_weekly": 51,
+    "views_weekly": 54,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1589,7 +1589,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/myeongranjeot-muchim.jpg",
     "featured": false,
-    "views_weekly": 34,
+    "views_weekly": 46,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1628,7 +1628,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/cheonggyeongchae-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 13,
+    "views_weekly": 53,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1667,7 +1667,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/tangpyeongchae.jpg",
     "featured": false,
-    "views_weekly": 27,
+    "views_weekly": 21,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1706,7 +1706,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/deodeok-gui.jpg",
     "featured": false,
-    "views_weekly": 28,
+    "views_weekly": 22,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1745,7 +1745,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/gochu-jangajji.jpg",
     "featured": false,
-    "views_weekly": 51,
+    "views_weekly": 27,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1784,7 +1784,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/chwinamul-muchim.jpg",
     "featured": false,
-    "views_weekly": 10,
+    "views_weekly": 26,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1823,7 +1823,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/maneul-jangajji.jpg",
     "featured": false,
-    "views_weekly": 25,
+    "views_weekly": 41,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1862,7 +1862,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/sangchu-geotjeori.jpg",
     "featured": false,
-    "views_weekly": 58,
+    "views_weekly": 32,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1901,7 +1901,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/dotorimuk-muchim.jpg",
     "featured": false,
-    "views_weekly": 14,
+    "views_weekly": 29,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
@@ -1940,7 +1940,7 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/minari-namul.jpg",
     "featured": false,
-    "views_weekly": 57,
+    "views_weekly": 31,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",

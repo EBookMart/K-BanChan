@@ -14,7 +14,7 @@ export default function HeroSection() {
   const altText = aiImages.homeHero.alt[locale as keyof typeof aiImages.homeHero.alt] || aiImages.homeHero.alt.en;
 
   return (
-    <section className="relative w-full py-20 md:py-32 bg-slate-950 flex flex-col items-center justify-center overflow-hidden border-b border-slate-900/80">
+    <section className="relative w-full py-12 md:py-32 bg-slate-950 flex flex-col items-center justify-center overflow-hidden border-b border-slate-900/80">
       {/* 백그라운드 오방색 그라디언트 및 조명 효과 */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900/60 via-slate-950 to-slate-950 z-0" />
       
@@ -24,21 +24,21 @@ export default function HeroSection() {
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-96 h-96 bg-amber-500/5 rounded-full blur-[100px] pointer-events-none" />
 
       {/* 컨텐츠 영역 */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 flex flex-col items-center mb-12">
+      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 flex flex-col items-center mb-8 md:mb-12">
         {/* 슬로건 뱃지 */}
-        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-widest mb-6">
+        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-widest mb-4 md:mb-6">
           Premium K-Food Standard
         </span>
 
         {/* 대형 브랜드 로고 배치 */}
-        <div className="mb-6">
+        <div className="mb-4 md:mb-6">
           <Image
             src="/logos/logo-kbanchan-final.png"
             alt={t("logo_alt")}
             width={600}
             height={600}
             priority
-            className="w-[320px] md:w-[460px] lg:w-[600px] h-auto mx-auto"
+            className="w-[280px] md:w-[460px] lg:w-[600px] h-auto mx-auto"
             style={{ 
               filter: 'drop-shadow(0 16px 40px rgba(0,0,0,0.6))' 
             }}
@@ -46,14 +46,14 @@ export default function HeroSection() {
         </div>
 
         {/* 대형 글로벌 메인 타이틀 */}
-        <h1 className="text-4xl md:text-7xl font-black tracking-tight text-white mb-6 leading-tight max-w-3xl">
+        <h1 className="text-3xl md:text-7xl font-black tracking-tight text-white mb-4 md:mb-6 leading-tight max-w-3xl">
           <span className="bg-gradient-to-r from-amber-400 via-emerald-300 to-blue-500 bg-clip-text text-transparent">
             KOREAN CUISINE
           </span>
         </h1>
 
         {/* 로케일별 다국어 서브 카피 */}
-        <p className="text-base md:text-xl text-slate-300 font-light mb-12 max-w-2xl leading-relaxed">
+        <p className="text-sm md:text-xl text-slate-300 font-light mb-8 md:mb-12 max-w-2xl leading-relaxed">
           {t("subtitle")}
         </p>
 
