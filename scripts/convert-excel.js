@@ -2,8 +2,7 @@ const XLSX = require("xlsx");
 const fs = require("fs");
 const path = require("path");
 
-// 50선 반찬의 7개 국어 번역 명칭 및 로마자(slug용) 사전을 정의합니다.
-// 한국어(ko), 영어(en), 일본어(ja), 중국어(zh), 스페인어(es), 아랍어(ar), 러시아어(ru) 번역을 온전히 내장합니다.
+// 50선 반찬의 8개 국어 번역 명칭 및 로마자(slug용) 사전을 정의합니다.
 const banchanDictionary = {
   "계란말이": {
     slug: "gyeran-mari",
@@ -13,6 +12,7 @@ const banchanDictionary = {
       ja: "卵焼き",
       zh: "鸡蛋卷",
       es: "Tortilla de huevo enrollada",
+      fr: "Omelette roulée coréenne (Gyeran-mari)",
       ar: "أومليت ملفوف",
       ru: "Рулет из яиц"
     }
@@ -25,6 +25,7 @@ const banchanDictionary = {
       ja: "カタクチイワシ의炒め物",
       zh: "炒鳀鱼",
       es: "Boquerones salteados",
+      fr: "Anchois sautés (Myeolchi-bokkeum)",
       ar: "أنشوجة مقلية",
       ru: "Жареные анчоусы"
     }
@@ -34,9 +35,10 @@ const banchanDictionary = {
     names: {
       ko: "두부조림",
       en: "Braised Tofu",
-      ja: "豆腐の煮物",
+      ja: "豆腐の煮물",
       zh: "炖豆腐",
       es: "Tofu guisado",
+      fr: "Tofu braisé (Dubu-jorim)",
       ar: "توفو مطهي",
       ru: "Тушеный тофу"
     }
@@ -49,6 +51,7 @@ const banchanDictionary = {
       ja: "さきイカの和え物",
       zh: "辣拌鱿鱼丝",
       es: "Calamar rallado picante",
+      fr: "Calamar séché effiloché piquant (Jinmichae-muchim)",
       ar: "حبار مبشور حار",
       ru: "Острый сушеный кальмар"
     }
@@ -61,6 +64,7 @@ const banchanDictionary = {
       ja: "牛肉의醤油煮",
       zh: "酱牛肉",
       es: "Ternera guisada en salsa de soja",
+      fr: "Bœuf braisé à la sauce soja (Sogogi-jangjorim)",
       ar: "لحم بقري مطهو في صلصة الصويا",
       ru: "Говядина в соевом соусе"
     }
@@ -73,6 +77,7 @@ const banchanDictionary = {
       ja: "豆もやしの和え物",
       zh: "凉拌豆芽",
       es: "Brotes de soja sazonados",
+      fr: "Pousses de soja assaisonnées (Kongnamul-muchim)",
       ar: "براعم الصويا المتبلة",
       ru: "Салат из пророщенной сои"
     }
@@ -85,6 +90,7 @@ const banchanDictionary = {
       ja: "ほうれん草のナムル",
       zh: "凉拌菠菜",
       es: "Espinacas sazonadas",
+      fr: "Épinards assaisonnés (Sigeumchi-namul)",
       ar: "سبانخ متبلة",
       ru: "Намуль из шпината"
     }
@@ -97,6 +103,7 @@ const banchanDictionary = {
       ja: "じゃがいも千切り炒め",
       zh: "炒土豆丝",
       es: "Patatas ralladas salteadas",
+      fr: "Pommes de terre râpées sautées (Gamjachae-bokkeum)",
       ar: "بطاطس مقطعة مقلية",
       ru: "Жареный тертый картофель"
     }
@@ -109,6 +116,7 @@ const banchanDictionary = {
       ja: "練り物炒め",
       zh: "炒鱼饼",
       es: "Pastel de pescado salteado",
+      fr: "Gâteaux de poisson sautés (Eomuk-bokkeum)",
       ar: "كعك السمك المقلي",
       ru: "Жареные рыбные кексы"
     }
@@ -121,6 +129,7 @@ const banchanDictionary = {
       ja: "きゅうりの和え物",
       zh: "凉拌黄瓜",
       es: "Ensalada de pepino picante",
+      fr: "Salade de concombre piquante (Oi-muchim)",
       ar: "سلطة الخيار الحارة",
       ru: "Острый салат из огурцов"
     }
@@ -130,9 +139,10 @@ const banchanDictionary = {
     names: {
       ko: "애호박볶음",
       en: "Stir-fried Zucchini",
-      ja: "韓国ズッキーニ의炒め物",
+      ja: "韓国ズッキーニ의炒め물",
       zh: "炒西葫芦",
       es: "Calabacín salteado",
+      fr: "Courgette coréenne sautée (Aehobak-bokkeum)",
       ar: "كوسة مقلية",
       ru: "Жареный кабачок"
     }
@@ -145,6 +155,7 @@ const banchanDictionary = {
       ja: "蒸しナスのナムル",
       zh: "蒸茄子",
       es: "Berenjena al vapor",
+      fr: "Aubergines à la vapeur assaisonnées (Gaji-namul)",
       ar: "باذنجان على البخار",
       ru: "Намуль из баклажанов"
     }
@@ -157,8 +168,9 @@ const banchanDictionary = {
       ja: "キムチ炒め",
       zh: "炒泡菜",
       es: "Kimchi salteado",
+      fr: "Kimchi sauté (Kimchi-bokkeum)",
       ar: "كيمتشي مقلي",
-      ru: "Жареное ким치"
+      ru: "Жареное кимчи"
     }
   },
   "메추리알조림": {
@@ -169,6 +181,7 @@ const banchanDictionary = {
       ja: "うずらの卵의醤油煮",
       zh: "酱鹌鹑蛋",
       es: "Huevos de codorniz guisados",
+      fr: "Œufs de caille braisés à la sauce soja (Mechurial-jorim)",
       ar: "بيض السمان المطهي",
       ru: "Тушеные перепелиные яйца"
     }
@@ -178,9 +191,10 @@ const banchanDictionary = {
     names: {
       ko: "소시지야채볶음",
       en: "Stir-fried Sausage and Vegetables",
-      ja: "ソーセージ와野菜의炒め物",
+      ja: "ソーセージ와野菜의炒め물",
       zh: "炒肠衣和蔬菜",
       es: "Salchichas salteadas con verduras",
+      fr: "Saucisses sautées aux légumes (Sosiji-yachae-bokkeum)",
       ar: "سجق مقلي مع خضار",
       ru: "Жареные сосиски с овощами"
     }
@@ -193,6 +207,7 @@ const banchanDictionary = {
       ja: "大根의細切り甘酢和え",
       zh: "凉拌萝卜丝",
       es: "Ensalada de rábano rallado picante",
+      fr: "Salade de radis blanc râpé piquant (Musaengchae)",
       ar: "سلطة الفجل المبشور الحارة",
       ru: "Острый салат из тертой редьки"
     }
@@ -205,6 +220,7 @@ const banchanDictionary = {
       ja: "エゴマ의葉의醤油漬け",
       zh: "酱腌苏子叶",
       es: "Hojas de perilla encurtidas",
+      fr: "Feuilles de pérille marinées (Kkaennip-jangajji)",
       ar: "أوراق بيريلا مخللة",
       ru: "Маринованные листья периллы"
     }
@@ -214,9 +230,10 @@ const banchanDictionary = {
     names: {
       ko: "미역줄기볶음",
       en: "Stir-fried Seaweed Stems",
-      ja: "茎わかめ의炒め物",
+      ja: "茎わかめ의炒め물",
       zh: "炒海带丝",
       es: "Tallos de algas salteados",
+      fr: "Tiges de wakamé sautées (Miyeokjulgi-bokkeum)",
       ar: "ساق الأعشاب البحرية المقلية",
       ru: "Жареные стебли морской капусты"
     }
@@ -229,6 +246,7 @@ const banchanDictionary = {
       ja: "わらび의ナムル",
       zh: "炒蕨菜",
       es: "Helecho sazonado",
+      fr: "Pousses de fougère assaisonnées (Gosari-namul)",
       ar: "سرخس متبل",
       ru: "Намуль из папоротника"
     }
@@ -238,9 +256,10 @@ const banchanDictionary = {
     names: {
       ko: "도라지무침",
       en: "Seasoned Bellflower Root",
-      ja: "桔梗의根의和え物",
+      ja: "桔梗의根의和え물",
       zh: "凉拌桔梗",
       es: "Raíz de campanilla sazonada",
+      fr: "Racines de campanule assaisonnées piquantes (Doraji-muchim)",
       ar: "جذر زهرة الجرس المتبل",
       ru: "Салат из корней колокольчика"
     }
@@ -250,9 +269,10 @@ const banchanDictionary = {
     names: {
       ko: "감자조림",
       en: "Braised Potatoes",
-      ja: "じゃがいも의煮物",
+      ja: "じゃがいも의煮물",
       zh: "酱土豆",
       es: "Patatas guisadas",
+      fr: "Pommes de terre braisées (Gamja-jorim)",
       ar: "بطاطس مطهية",
       ru: "Тушенный картофель"
     }
@@ -262,9 +282,10 @@ const banchanDictionary = {
     names: {
       ko: "꽈리고추멸치볶음",
       en: "Stir-fried Anchovies with Shishito Peppers",
-      ja: "しし唐와カタクチイワシ의炒め物",
+      ja: "しし唐와カタクチイワシ의炒め물",
       zh: "尖椒炒鳀鱼",
       es: "Boquerones salteados con pimientos shishito",
+      fr: "Anchois sautés aux piments shishito (Kwarigochu-myeolchi-bokkeum)",
       ar: "أنشوجة مقلية مع فلفل شيشيتو",
       ru: "Жареные анчоусы с перцем с꽈리"
     }
@@ -274,9 +295,10 @@ const banchanDictionary = {
     names: {
       ko: "마늘종볶음",
       en: "Stir-fried Garlic Scapes",
-      ja: "ニンニク의芽의炒め物",
+      ja: "ニンニク의芽의炒め물",
       zh: "炒蒜苔",
       es: "Tallos de ajo salteados",
+      fr: "Tiges d'ail sautées (Maneuljong-bokkeum)",
       ar: "سيقان الثوم المقلية",
       ru: "Жареные стрелки чеснока"
     }
@@ -286,9 +308,10 @@ const banchanDictionary = {
     names: {
       ko: "무말랭이무침",
       en: "Spicy Dried Radish Salad",
-      ja: "切り干し大根의和え物",
+      ja: "切り干し大根의和え물",
       zh: "凉拌萝卜干",
       es: "Ensalada de rábano deshidratado picante",
+      fr: "Salade de radis séché piquant (Mumallangi-muchim)",
       ar: "سلطة الفجل المجفف الحارة",
       ru: "Острая сушеная редька"
     }
@@ -301,6 +324,7 @@ const banchanDictionary = {
       ja: "ネギキムチ",
       zh: "小葱泡菜",
       es: "Kimchi de cebolleta",
+      fr: "Kimchi d'oignons verts (Pa-kimchi)",
       ar: "كيمتشي البصل الأخضر",
       ru: "Кимчи из зеленого лука"
     }
@@ -313,6 +337,7 @@ const banchanDictionary = {
       ja: "白菜의浅漬けキムチ",
       zh: "白菜生拌菜",
       es: "Kimchi de col fresca",
+      fr: "Kimchi frais de chou chinois (Baechu-geotjeori)",
       ar: "كيمتشي الكرنب الطازج",
       ru: "Свежее кимчи из пекинской капусты"
     }
@@ -325,6 +350,7 @@ const banchanDictionary = {
       ja: "玉ねぎ의醤油漬け",
       zh: "酱腌洋葱",
       es: "Cebollas encurtidas",
+      fr: "Oignons marinés à la sauce soja (Yangpa-jangajji)",
       ar: "بصل مخلل",
       ru: "Маринованный лук"
     }
@@ -334,9 +360,10 @@ const banchanDictionary = {
     names: {
       ko: "꼬막무침",
       en: "Seasoned Cockles",
-      ja: "ハイガイ의和え物",
+      ja: "ハイガイ의和え물",
       zh: "凉拌泥蚶",
       es: "Berberechos sazonados",
+      fr: "Coques assaisonnées (Kkomak-muchim)",
       ar: "محار متبل",
       ru: "Острые маринованные ракушки"
     }
@@ -349,6 +376,7 @@ const banchanDictionary = {
       ja: "キノコ炒め",
       zh: "炒蘑菇",
       es: "Setas salteadas",
+      fr: "Champignons sautés (Beoseot-bokkeum)",
       ar: "فطر مقلي",
       ru: "Жареные грибы"
     }
@@ -361,6 +389,7 @@ const banchanDictionary = {
       ja: "豚肉의辛口炒め",
       zh: "辣炒猪肉",
       es: "Cerdo picante salteado",
+      fr: "Porc sauté épicé (Jeyuk-bokkeum)",
       ar: "لحم خنزير حار مقلي",
       ru: "Острая жареная свинина"
     }
@@ -370,9 +399,10 @@ const banchanDictionary = {
     names: {
       ko: "오징어볶음",
       en: "Spicy Stir-fried Squid",
-      ja: "イカ의辛口炒め",
+      ja: "イка의辛口炒め",
       zh: "辣炒鱿鱼",
       es: "Calamar picante salteado",
+      fr: "Calamar sauté épicé (Ojingeo-bokkeum)",
       ar: "حبار حار مقلي",
       ru: "Острый жареный кальмар"
     }
@@ -385,6 +415,7 @@ const banchanDictionary = {
       ja: "チャプチェ",
       zh: "杂菜",
       es: "Fideos de celofán con verduras",
+      fr: "Vermicelles de patate douce sautés aux légumes (Japchae)",
       ar: "جاب تشي",
       ru: "Чапче (корейская лапша)"
     }
@@ -397,6 +428,7 @@ const banchanDictionary = {
       ja: "キムチチヂミ",
       zh: "泡菜饼",
       es: "Panqueque de kimchi",
+      fr: "Crêpe au kimchi (Kimchijeon)",
       ar: "فطيرة الكيمتشي",
       ru: "Блины с кимчи"
     }
@@ -409,6 +441,7 @@ const banchanDictionary = {
       ja: "韓国風蒸し卵",
       zh: "蒸鸡蛋糕",
       es: "Huevo al vapor al estilo coreano",
+      fr: "Œufs au cuiseur-vapeur (Gyeranjjim)",
       ar: "بيض مخفوق مطهو على البخار",
       ru: "Паровой омлет"
     }
@@ -418,9 +451,10 @@ const banchanDictionary = {
     names: {
       ko: "단무지무침",
       en: "Seasoned Pickled Radish",
-      ja: "たくあん의和え物",
+      ja: "たくあん의和え물",
       zh: "凉拌腌黄萝卜",
       es: "Rábano encurtido sazonado",
+      fr: "Radis jaune saumuré assaisonné (Danmuji-muchim)",
       ar: "فجل أصفر مخلل متبل",
       ru: "Салат из маринованной редьки"
     }
@@ -433,8 +467,9 @@ const banchanDictionary = {
       ja: "ゴボウ의醤油煮",
       zh: "酱牛蒡",
       es: "Raíz de barda guisada",
+      fr: "Racines de bardane braisées (Uong-jorim)",
       ar: "جذر أرقطيون مطهي",
-      ru: "Тушеный корень лопуха"
+      ru: "Тушеные корень лопуха"
     }
   },
   "연근조림": {
@@ -445,8 +480,9 @@ const banchanDictionary = {
       ja: "蓮根의醤油煮",
       zh: "酱莲藕",
       es: "Raíz de loto guisada",
+      fr: "Racines de lotus braisées (Yeongeun-jorim)",
       ar: "جذر اللوتس المطهي",
-      ru: "Тушеный корень лотоса"
+      ru: "Тушеные корень лотоса"
     }
   },
   "북어포무침": {
@@ -454,9 +490,10 @@ const banchanDictionary = {
     names: {
       ko: "북어포무침",
       en: "Spicy Shredded Dried Pollack",
-      ja: "干しタラ細切り의和え物",
+      ja: "干しタラ細切り의和え물",
       zh: "拌干明太鱼丝",
       es: "Abadejo seco desmenuzado picante",
+      fr: "Colin séché effiloché piquant (Bugeopo-muchim)",
       ar: "سمك قد مجفف مبشور حار",
       ru: "Острый сушеный минтай"
     }
@@ -469,6 +506,7 @@ const banchanDictionary = {
       ja: "ヒジキ의ナムル",
       zh: "凉拌羊栖菜",
       es: "Algas hijiki sazonadas",
+      fr: "Algue hijiki assaisonnée (Totnamul-muchim)",
       ar: "أعشاب هجيكي البحرية المتبلة",
       ru: "Салат из водорослей хидзики"
     }
@@ -481,6 +519,7 @@ const banchanDictionary = {
       ja: "黒豆의甘醤油煮",
       zh: "酱黑豆",
       es: "Habas negras guisadas dulces",
+      fr: "Haricots noirs braisés sucrés-salés (Kongjaban)",
       ar: "فاصوليا سوداء مطهية حلوة",
       ru: "Тушеная черная соя"
     }
@@ -490,9 +529,10 @@ const banchanDictionary = {
     names: {
       ko: "명란젓무침",
       en: "Seasoned Pollock Roe",
-      ja: "明太子의和え物",
+      ja: "明太子의和え물",
       zh: "凉拌明太鱼子",
       es: "Huevas de abadejo sazonadas",
+      fr: "Œufs de colin marinés et assaisonnés (Myeongranjeot-muchim)",
       ar: "بطارخ سمك القد المتبلة",
       ru: "Острая соленая икра минтая"
     }
@@ -502,9 +542,10 @@ const banchanDictionary = {
     names: {
       ko: "청경채볶음",
       en: "Stir-fried Bok Choy",
-      ja: "チンゲンサイ의炒め物",
+      ja: "チンゲンサイ의炒め물",
       zh: "炒青梗菜",
       es: "Bok choy salteado",
+      fr: "Bok choy sauté (Cheonggyeongchae-bokkeum)",
       ar: "بوك تشوي مقلي",
       ru: "Жареный бок-чой"
     }
@@ -514,9 +555,10 @@ const banchanDictionary = {
     names: {
       ko: "탕평채",
       en: "Mung Bean Jelly Salad",
-      ja: "緑豆의ムク의和え物",
+      ja: "緑豆의ムク의和え물",
       zh: "荡平菜",
       es: "Ensalada de gelatina de judía mungo",
+      fr: "Salade de gelée de haricot mungo (Tangpyeongchae)",
       ar: "سلطة هلام الفاصوليا",
       ru: "Салат с желе из мунга"
     }
@@ -526,9 +568,10 @@ const banchanDictionary = {
     names: {
       ko: "더덕구이",
       en: "Grilled Deodeok",
-      ja: "ツルニンジン의焼き物",
+      ja: "ツルニンジン의焼き물",
       zh: "烤沙参",
       es: "Deodeok a la parrilla",
+      fr: "Racines de deodeok grillées (Deodeok-gui)",
       ar: "شواء ديدوك",
       ru: "Жареный корень кодонопсиса"
     }
@@ -541,6 +584,7 @@ const banchanDictionary = {
       ja: "唐辛子의醤油漬け",
       zh: "酱腌辣椒",
       es: "Chiles encurtidos",
+      fr: "Piments marinés (Gochu-jangajji)",
       ar: "فلفل حار مخلل",
       ru: "Маринованный острый перец"
     }
@@ -553,6 +597,7 @@ const banchanDictionary = {
       ja: "シラヤマギク의ナムル",
       zh: "凉拌山野菜",
       es: "Aster scaber sazonado",
+      fr: "Chwinamul assaisonné (Chwinamul-muchim)",
       ar: "أوراق أستر متبلة",
       ru: "Намуль из калистерии"
     }
@@ -565,6 +610,7 @@ const banchanDictionary = {
       ja: "ニンニク의醤油漬け",
       zh: "酱腌大蒜",
       es: "Ajos encurtidos",
+      fr: "Gousses d'ail marinées (Maneul-jangajji)",
       ar: "ثوم مخلل",
       ru: "Маринованный чеснок"
     }
@@ -574,9 +620,10 @@ const banchanDictionary = {
     names: {
       ko: "상추겉절이",
       en: "Fresh Lettuce Salad",
-      ja: "サニーレタス의和え物",
+      ja: "サニーレタス의和え물",
       zh: "生菜拌菜",
       es: "Ensalada de lechuga fresca",
+      fr: "Salade de laitue fraîche assaisonnée (Sangchu-geotjeori)",
       ar: "سلطة الخس الطازجة",
       ru: "Свежий салат из листьев салата"
     }
@@ -586,9 +633,10 @@ const banchanDictionary = {
     names: {
       ko: "도토리묵무침",
       en: "Seasoned Acorn Jelly",
-      ja: "どんぐり寒天의和え物",
+      ja: "どんぐり寒天의和え물",
       zh: "凉拌橡子凉粉",
       es: "Gelatina de bellota sazonada",
+      fr: "Gelée de glands assaisonnée (Dotorimuk-muchim)",
       ar: "هلام البلوط المتبل",
       ru: "Салат из желудевого желе"
     }
@@ -601,6 +649,7 @@ const banchanDictionary = {
       ja: "セリ의ナムル",
       zh: "凉拌水芹",
       es: "Berro de agua sazonado",
+      fr: "Oenanthe piquante assaisonnée (Minari-namul)",
       ar: "بقدونس الماء المتبل",
       ru: "Намуль из омежника"
     }
@@ -675,6 +724,7 @@ try {
         ja: nameKo,
         zh: nameKo,
         es: nameKo,
+        fr: nameKo,
         ar: nameKo,
         ru: nameKo
       }
@@ -738,6 +788,7 @@ try {
       name_ja: mapping.names.ja,
       name_zh: mapping.names.zh,
       name_es: mapping.names.es,
+      name_fr: mapping.names.fr,
       name_ar: mapping.names.ar,
       name_ru: mapping.names.ru,
       spicy_level: spicyLevel,

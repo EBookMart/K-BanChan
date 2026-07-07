@@ -7,6 +7,7 @@ export interface Banchan {
   name_ja: string;
   name_zh: string;
   name_es: string;
+  name_fr: string;
   name_ar: string;
   name_ru: string;
   spicy_level: number;

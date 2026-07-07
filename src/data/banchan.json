@@ -8,6 +8,7 @@
     "name_ja": "卵焼き",
     "name_zh": "鸡蛋卷",
     "name_es": "Tortilla de huevo enrollada",
+    "name_fr": "Omelette roulée coréenne (Gyeran-mari)",
     "name_ar": "أومليت ملفوف",
     "name_ru": "Рулет из яиц",
     "spicy_level": 0,
@@ -28,14 +29,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/gyeran-mari.jpg",
     "featured": true,
-    "views_weekly": 36,
+    "views_weekly": 58,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-02",
@@ -46,6 +47,7 @@
     "name_ja": "カタクチイワシ의炒め物",
     "name_zh": "炒鳀鱼",
     "name_es": "Boquerones salteados",
+    "name_fr": "Anchois sautés (Myeolchi-bokkeum)",
     "name_ar": "أنشوجة مقلية",
     "name_ru": "Жареные анчоусы",
     "spicy_level": 0,
@@ -66,14 +68,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/myeolchi-bokkeum.jpg",
     "featured": true,
-    "views_weekly": 29,
+    "views_weekly": 55,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-03",
@@ -81,9 +83,10 @@
     "slug": "dubu-jorim-03",
     "name_ko": "두부조림",
     "name_en": "Braised Tofu",
-    "name_ja": "豆腐の煮物",
+    "name_ja": "豆腐の煮물",
     "name_zh": "炖豆腐",
     "name_es": "Tofu guisado",
+    "name_fr": "Tofu braisé (Dubu-jorim)",
     "name_ar": "توفو مطهي",
     "name_ru": "Тушеный тофу",
     "spicy_level": 2,
@@ -104,14 +107,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/dubu-jorim.jpg",
     "featured": true,
-    "views_weekly": 31,
+    "views_weekly": 20,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-04",
@@ -122,6 +125,7 @@
     "name_ja": "さきイカの和え物",
     "name_zh": "辣拌鱿鱼丝",
     "name_es": "Calamar rallado picante",
+    "name_fr": "Calamar séché effiloché piquant (Jinmichae-muchim)",
     "name_ar": "حبار مبشور حار",
     "name_ru": "Острый сушеный кальмар",
     "spicy_level": 1,
@@ -142,14 +146,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/jinmichae-muchim.jpg",
     "featured": true,
-    "views_weekly": 27,
+    "views_weekly": 50,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-05",
@@ -160,6 +164,7 @@
     "name_ja": "牛肉의醤油煮",
     "name_zh": "酱牛肉",
     "name_es": "Ternera guisada en salsa de soja",
+    "name_fr": "Bœuf braisé à la sauce soja (Sogogi-jangjorim)",
     "name_ar": "لحم بقري مطهو في صلصة الصويا",
     "name_ru": "Говядина в соевом соусе",
     "spicy_level": 0,
@@ -180,14 +185,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/sogogi-jangjorim.jpg",
     "featured": true,
-    "views_weekly": 49,
+    "views_weekly": 37,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-06",
@@ -198,6 +203,7 @@
     "name_ja": "豆もやしの和え物",
     "name_zh": "凉拌豆芽",
     "name_es": "Brotes de soja sazonados",
+    "name_fr": "Pousses de soja assaisonnées (Kongnamul-muchim)",
     "name_ar": "براعم الصويا المتبلة",
     "name_ru": "Салат из пророщенной сои",
     "spicy_level": 0,
@@ -218,14 +224,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/kongnamul-muchim.jpg",
     "featured": true,
-    "views_weekly": 26,
+    "views_weekly": 16,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-07",
@@ -236,6 +242,7 @@
     "name_ja": "ほうれん草のナムル",
     "name_zh": "凉拌菠菜",
     "name_es": "Espinacas sazonadas",
+    "name_fr": "Épinards assaisonnés (Sigeumchi-namul)",
     "name_ar": "سبانخ متبلة",
     "name_ru": "Намуль из шпината",
     "spicy_level": 0,
@@ -256,14 +263,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/sigeumchi-namul.jpg",
     "featured": true,
-    "views_weekly": 53,
+    "views_weekly": 48,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-08",
@@ -274,6 +281,7 @@
     "name_ja": "じゃがいも千切り炒め",
     "name_zh": "炒土豆丝",
     "name_es": "Patatas ralladas salteadas",
+    "name_fr": "Pommes de terre râpées sautées (Gamjachae-bokkeum)",
     "name_ar": "بطاطس مقطعة مقلية",
     "name_ru": "Жареный тертый картофель",
     "spicy_level": 0,
@@ -294,14 +302,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/gamjachae-bokkeum.jpg",
     "featured": true,
-    "views_weekly": 58,
+    "views_weekly": 45,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-09",
@@ -312,6 +320,7 @@
     "name_ja": "練り物炒め",
     "name_zh": "炒鱼饼",
     "name_es": "Pastel de pescado salteado",
+    "name_fr": "Gâteaux de poisson sautés (Eomuk-bokkeum)",
     "name_ar": "كعك السمك المقلي",
     "name_ru": "Жареные рыбные кексы",
     "spicy_level": 0,
@@ -332,14 +341,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/eomuk-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 47,
+    "views_weekly": 48,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-10",
@@ -350,6 +359,7 @@
     "name_ja": "きゅうりの和え物",
     "name_zh": "凉拌黄瓜",
     "name_es": "Ensalada de pepino picante",
+    "name_fr": "Salade de concombre piquante (Oi-muchim)",
     "name_ar": "سلطة الخيار الحارة",
     "name_ru": "Острый салат из огурцов",
     "spicy_level": 1,
@@ -370,14 +380,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/oi-muchim.jpg",
     "featured": false,
-    "views_weekly": 25,
+    "views_weekly": 48,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-11",
@@ -385,9 +395,10 @@
     "slug": "aehobak-bokkeum-11",
     "name_ko": "애호박볶음",
     "name_en": "Stir-fried Zucchini",
-    "name_ja": "韓国ズッキーニ의炒め物",
+    "name_ja": "韓国ズッキーニ의炒め물",
     "name_zh": "炒西葫芦",
     "name_es": "Calabacín salteado",
+    "name_fr": "Courgette coréenne sautée (Aehobak-bokkeum)",
     "name_ar": "كوسة مقلية",
     "name_ru": "Жареный кабачок",
     "spicy_level": 0,
@@ -408,14 +419,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/aehobak-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 47,
+    "views_weekly": 33,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-12",
@@ -426,6 +437,7 @@
     "name_ja": "蒸しナスのナムル",
     "name_zh": "蒸茄子",
     "name_es": "Berenjena al vapor",
+    "name_fr": "Aubergines à la vapeur assaisonnées (Gaji-namul)",
     "name_ar": "باذنجان على البخار",
     "name_ru": "Намуль из баклажанов",
     "spicy_level": 0,
@@ -446,14 +458,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/gaji-namul.jpg",
     "featured": false,
-    "views_weekly": 39,
+    "views_weekly": 55,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-13",
@@ -464,8 +476,9 @@
     "name_ja": "キムチ炒め",
     "name_zh": "炒泡菜",
     "name_es": "Kimchi salteado",
+    "name_fr": "Kimchi sauté (Kimchi-bokkeum)",
     "name_ar": "كيمتشي مقلي",
-    "name_ru": "Жареное ким치",
+    "name_ru": "Жареное кимчи",
     "spicy_level": 1,
     "category": "volkkeum",
     "category_ko": "볶음",
@@ -484,14 +497,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/kimchi-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 27,
+    "views_weekly": 17,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-14",
@@ -502,6 +515,7 @@
     "name_ja": "うずらの卵의醤油煮",
     "name_zh": "酱鹌鹑蛋",
     "name_es": "Huevos de codorniz guisados",
+    "name_fr": "Œufs de caille braisés à la sauce soja (Mechurial-jorim)",
     "name_ar": "بيض السمان المطهي",
     "name_ru": "Тушеные перепелиные яйца",
     "spicy_level": 0,
@@ -522,14 +536,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/mechurial-jorim.jpg",
     "featured": false,
-    "views_weekly": 23,
+    "views_weekly": 14,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-15",
@@ -537,9 +551,10 @@
     "slug": "sosiji-yachae-bokkeum-15",
     "name_ko": "소시지야채볶음",
     "name_en": "Stir-fried Sausage and Vegetables",
-    "name_ja": "ソーセージ와野菜의炒め物",
+    "name_ja": "ソーセージ와野菜의炒め물",
     "name_zh": "炒肠衣和蔬菜",
     "name_es": "Salchichas salteadas con verduras",
+    "name_fr": "Saucisses sautées aux légumes (Sosiji-yachae-bokkeum)",
     "name_ar": "سجق مقلي مع خضار",
     "name_ru": "Жареные сосиски с овощами",
     "spicy_level": 2,
@@ -560,14 +575,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/sosiji-yachae-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 48,
+    "views_weekly": 10,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-16",
@@ -578,6 +593,7 @@
     "name_ja": "大根의細切り甘酢和え",
     "name_zh": "凉拌萝卜丝",
     "name_es": "Ensalada de rábano rallado picante",
+    "name_fr": "Salade de radis blanc râpé piquant (Musaengchae)",
     "name_ar": "سلطة الفجل المبشور الحارة",
     "name_ru": "Острый салат из тертой редьки",
     "spicy_level": 1,
@@ -598,14 +614,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/musaengchae.jpg",
     "featured": false,
-    "views_weekly": 49,
+    "views_weekly": 53,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-17",
@@ -616,6 +632,7 @@
     "name_ja": "エゴマ의葉의醤油漬け",
     "name_zh": "酱腌苏子叶",
     "name_es": "Hojas de perilla encurtidas",
+    "name_fr": "Feuilles de pérille marinées (Kkaennip-jangajji)",
     "name_ar": "أوراق بيريلا مخللة",
     "name_ru": "Маринованные листья периллы",
     "spicy_level": 1,
@@ -636,14 +653,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/kkaennip-jangajji.jpg",
     "featured": false,
-    "views_weekly": 24,
+    "views_weekly": 21,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-18",
@@ -651,9 +668,10 @@
     "slug": "miyeokjulgi-bokkeum-18",
     "name_ko": "미역줄기볶음",
     "name_en": "Stir-fried Seaweed Stems",
-    "name_ja": "茎わかめ의炒め物",
+    "name_ja": "茎わかめ의炒め물",
     "name_zh": "炒海带丝",
     "name_es": "Tallos de algas salteados",
+    "name_fr": "Tiges de wakamé sautées (Miyeokjulgi-bokkeum)",
     "name_ar": "ساق الأعشاب البحرية المقلية",
     "name_ru": "Жареные стебли морской капусты",
     "spicy_level": 0,
@@ -674,14 +692,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/miyeokjulgi-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 42,
+    "views_weekly": 47,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-19",
@@ -692,6 +710,7 @@
     "name_ja": "わらび의ナムル",
     "name_zh": "炒蕨菜",
     "name_es": "Helecho sazonado",
+    "name_fr": "Pousses de fougère assaisonnées (Gosari-namul)",
     "name_ar": "سرخس متبل",
     "name_ru": "Намуль из папоротника",
     "spicy_level": 0,
@@ -712,14 +731,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/gosari-namul.jpg",
     "featured": false,
-    "views_weekly": 53,
+    "views_weekly": 54,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-20",
@@ -727,9 +746,10 @@
     "slug": "doraji-muchim-20",
     "name_ko": "도라지무침",
     "name_en": "Seasoned Bellflower Root",
-    "name_ja": "桔梗의根의和え物",
+    "name_ja": "桔梗의根의和え물",
     "name_zh": "凉拌桔梗",
     "name_es": "Raíz de campanilla sazonada",
+    "name_fr": "Racines de campanule assaisonnées piquantes (Doraji-muchim)",
     "name_ar": "جذر زهرة الجرس المتبل",
     "name_ru": "Салат из корней колокольчика",
     "spicy_level": 1,
@@ -756,8 +776,8 @@
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-21",
@@ -765,9 +785,10 @@
     "slug": "gamja-jorim-21",
     "name_ko": "감자조림",
     "name_en": "Braised Potatoes",
-    "name_ja": "じゃがいも의煮物",
+    "name_ja": "じゃがいも의煮물",
     "name_zh": "酱土豆",
     "name_es": "Patatas guisadas",
+    "name_fr": "Pommes de terre braisées (Gamja-jorim)",
     "name_ar": "بطاطس مطهية",
     "name_ru": "Тушенный картофель",
     "spicy_level": 0,
@@ -788,14 +809,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/gamja-jorim.jpg",
     "featured": false,
-    "views_weekly": 41,
+    "views_weekly": 54,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-22",
@@ -803,9 +824,10 @@
     "slug": "kwarigochu-myeolchi-bokkeum-22",
     "name_ko": "꽈리고추멸치볶음",
     "name_en": "Stir-fried Anchovies with Shishito Peppers",
-    "name_ja": "しし唐와カタクチイワシ의炒め物",
+    "name_ja": "しし唐와カタクチイワシ의炒め물",
     "name_zh": "尖椒炒鳀鱼",
     "name_es": "Boquerones salteados con pimientos shishito",
+    "name_fr": "Anchois sautés aux piments shishito (Kwarigochu-myeolchi-bokkeum)",
     "name_ar": "أنشوجة مقلية مع فلفل شيشيتو",
     "name_ru": "Жареные анчоусы с перцем с꽈리",
     "spicy_level": 0,
@@ -826,14 +848,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/kwarigochu-myeolchi-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 42,
+    "views_weekly": 23,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-23",
@@ -841,9 +863,10 @@
     "slug": "maneuljong-bokkeum-23",
     "name_ko": "마늘종볶음",
     "name_en": "Stir-fried Garlic Scapes",
-    "name_ja": "ニンニク의芽의炒め物",
+    "name_ja": "ニンニク의芽의炒め물",
     "name_zh": "炒蒜苔",
     "name_es": "Tallos de ajo salteados",
+    "name_fr": "Tiges d'ail sautées (Maneuljong-bokkeum)",
     "name_ar": "سيقان الثوم المقلية",
     "name_ru": "Жареные стрелки чеснока",
     "spicy_level": 0,
@@ -864,14 +887,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/maneuljong-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 45,
+    "views_weekly": 24,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-24",
@@ -879,9 +902,10 @@
     "slug": "mumallangi-muchim-24",
     "name_ko": "무말랭이무침",
     "name_en": "Spicy Dried Radish Salad",
-    "name_ja": "切り干し大根의和え物",
+    "name_ja": "切り干し大根의和え물",
     "name_zh": "凉拌萝卜干",
     "name_es": "Ensalada de rábano deshidratado picante",
+    "name_fr": "Salade de radis séché piquant (Mumallangi-muchim)",
     "name_ar": "سلطة الفجل المجفف الحارة",
     "name_ru": "Острая сушеная редька",
     "spicy_level": 1,
@@ -902,14 +926,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/mumallangi-muchim.jpg",
     "featured": false,
-    "views_weekly": 54,
+    "views_weekly": 52,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-25",
@@ -920,6 +944,7 @@
     "name_ja": "ネギキムチ",
     "name_zh": "小葱泡菜",
     "name_es": "Kimchi de cebolleta",
+    "name_fr": "Kimchi d'oignons verts (Pa-kimchi)",
     "name_ar": "كيمتشي البصل الأخضر",
     "name_ru": "Кимчи из зеленого лука",
     "spicy_level": 1,
@@ -946,8 +971,8 @@
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-26",
@@ -958,6 +983,7 @@
     "name_ja": "白菜의浅漬けキムチ",
     "name_zh": "白菜生拌菜",
     "name_es": "Kimchi de col fresca",
+    "name_fr": "Kimchi frais de chou chinois (Baechu-geotjeori)",
     "name_ar": "كيمتشي الكرنب الطازج",
     "name_ru": "Свежее кимчи из пекинской капусты",
     "spicy_level": 2,
@@ -978,14 +1004,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/baechu-geotjeori.jpg",
     "featured": false,
-    "views_weekly": 23,
+    "views_weekly": 24,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-27",
@@ -996,6 +1022,7 @@
     "name_ja": "玉ねぎ의醤油漬け",
     "name_zh": "酱腌洋葱",
     "name_es": "Cebollas encurtidas",
+    "name_fr": "Oignons marinés à la sauce soja (Yangpa-jangajji)",
     "name_ar": "بصل مخلل",
     "name_ru": "Маринованный лук",
     "spicy_level": 0,
@@ -1016,14 +1043,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/yangpa-jangajji.jpg",
     "featured": false,
-    "views_weekly": 11,
+    "views_weekly": 10,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-28",
@@ -1031,9 +1058,10 @@
     "slug": "kkomak-muchim-28",
     "name_ko": "꼬막무침",
     "name_en": "Seasoned Cockles",
-    "name_ja": "ハイガイ의和え物",
+    "name_ja": "ハイガイ의和え물",
     "name_zh": "凉拌泥蚶",
     "name_es": "Berberechos sazonados",
+    "name_fr": "Coques assaisonnées (Kkomak-muchim)",
     "name_ar": "محار متبل",
     "name_ru": "Острые маринованные ракушки",
     "spicy_level": 1,
@@ -1054,14 +1082,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/kkomak-muchim.jpg",
     "featured": false,
-    "views_weekly": 53,
+    "views_weekly": 57,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-29",
@@ -1072,6 +1100,7 @@
     "name_ja": "キノコ炒め",
     "name_zh": "炒蘑菇",
     "name_es": "Setas salteadas",
+    "name_fr": "Champignons sautés (Beoseot-bokkeum)",
     "name_ar": "فطر مقلي",
     "name_ru": "Жареные грибы",
     "spicy_level": 0,
@@ -1092,14 +1121,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/beoseot-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 42,
+    "views_weekly": 22,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-30",
@@ -1110,6 +1139,7 @@
     "name_ja": "豚肉의辛口炒め",
     "name_zh": "辣炒猪肉",
     "name_es": "Cerdo picante salteado",
+    "name_fr": "Porc sauté épicé (Jeyuk-bokkeum)",
     "name_ar": "لحم خنزير حار مقلي",
     "name_ru": "Острая жареная свинина",
     "spicy_level": 3,
@@ -1130,14 +1160,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/jeyuk-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 20,
+    "views_weekly": 28,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-31",
@@ -1145,9 +1175,10 @@
     "slug": "ojingeo-bokkeum-31",
     "name_ko": "오징어볶음",
     "name_en": "Spicy Stir-fried Squid",
-    "name_ja": "イカ의辛口炒め",
+    "name_ja": "イка의辛口炒め",
     "name_zh": "辣炒鱿鱼",
     "name_es": "Calamar picante salteado",
+    "name_fr": "Calamar sauté épicé (Ojingeo-bokkeum)",
     "name_ar": "حبار حار مقلي",
     "name_ru": "Острый жареный кальмар",
     "spicy_level": 3,
@@ -1168,14 +1199,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/ojingeo-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 32,
+    "views_weekly": 44,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-32",
@@ -1186,6 +1217,7 @@
     "name_ja": "チャプチェ",
     "name_zh": "杂菜",
     "name_es": "Fideos de celofán con verduras",
+    "name_fr": "Vermicelles de patate douce sautés aux légumes (Japchae)",
     "name_ar": "جاب تشي",
     "name_ru": "Чапче (корейская лапша)",
     "spicy_level": 0,
@@ -1206,14 +1238,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/japchae.jpg",
     "featured": false,
-    "views_weekly": 37,
+    "views_weekly": 13,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-33",
@@ -1224,6 +1256,7 @@
     "name_ja": "キムチチヂミ",
     "name_zh": "泡菜饼",
     "name_es": "Panqueque de kimchi",
+    "name_fr": "Crêpe au kimchi (Kimchijeon)",
     "name_ar": "فطيرة الكيمتشي",
     "name_ru": "Блины с кимчи",
     "spicy_level": 1,
@@ -1244,14 +1277,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/kimchijeon.jpg",
     "featured": false,
-    "views_weekly": 10,
+    "views_weekly": 58,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-34",
@@ -1262,6 +1295,7 @@
     "name_ja": "韓国風蒸し卵",
     "name_zh": "蒸鸡蛋糕",
     "name_es": "Huevo al vapor al estilo coreano",
+    "name_fr": "Œufs au cuiseur-vapeur (Gyeranjjim)",
     "name_ar": "بيض مخفوق مطهو على البخار",
     "name_ru": "Паровой омлет",
     "spicy_level": 0,
@@ -1282,14 +1316,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/gyeranjjim.jpg",
     "featured": false,
-    "views_weekly": 59,
+    "views_weekly": 45,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-35",
@@ -1297,9 +1331,10 @@
     "slug": "danmuji-muchim-35",
     "name_ko": "단무지무침",
     "name_en": "Seasoned Pickled Radish",
-    "name_ja": "たくあん의和え物",
+    "name_ja": "たくあん의和え물",
     "name_zh": "凉拌腌黄萝卜",
     "name_es": "Rábano encurtido sazonado",
+    "name_fr": "Radis jaune saumuré assaisonné (Danmuji-muchim)",
     "name_ar": "فجل أصفر مخلل متبل",
     "name_ru": "Салат из маринованной редьки",
     "spicy_level": 1,
@@ -1320,14 +1355,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/danmuji-muchim.jpg",
     "featured": false,
-    "views_weekly": 16,
+    "views_weekly": 45,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-36",
@@ -1338,8 +1373,9 @@
     "name_ja": "ゴボウ의醤油煮",
     "name_zh": "酱牛蒡",
     "name_es": "Raíz de barda guisada",
+    "name_fr": "Racines de bardane braisées (Uong-jorim)",
     "name_ar": "جذر أرقطيون مطهي",
-    "name_ru": "Тушеный корень лопуха",
+    "name_ru": "Тушеные корень лопуха",
     "spicy_level": 0,
     "category": "jorim",
     "category_ko": "조림",
@@ -1358,14 +1394,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/uong-jorim.jpg",
     "featured": false,
-    "views_weekly": 20,
+    "views_weekly": 26,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-37",
@@ -1376,8 +1412,9 @@
     "name_ja": "蓮根의醤油煮",
     "name_zh": "酱莲藕",
     "name_es": "Raíz de loto guisada",
+    "name_fr": "Racines de lotus braisées (Yeongeun-jorim)",
     "name_ar": "جذر اللوتس المطهي",
-    "name_ru": "Тушеный корень лотоса",
+    "name_ru": "Тушеные корень лотоса",
     "spicy_level": 0,
     "category": "jorim",
     "category_ko": "조림",
@@ -1396,14 +1433,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/yeongeun-jorim.jpg",
     "featured": false,
-    "views_weekly": 35,
+    "views_weekly": 26,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-38",
@@ -1411,9 +1448,10 @@
     "slug": "bugeopo-muchim-38",
     "name_ko": "북어포무침",
     "name_en": "Spicy Shredded Dried Pollack",
-    "name_ja": "干しタラ細切り의和え物",
+    "name_ja": "干しタラ細切り의和え물",
     "name_zh": "拌干明太鱼丝",
     "name_es": "Abadejo seco desmenuzado picante",
+    "name_fr": "Colin séché effiloché piquant (Bugeopo-muchim)",
     "name_ar": "سمك قد مجفف مبشور حار",
     "name_ru": "Острый сушеный минтай",
     "spicy_level": 1,
@@ -1434,14 +1472,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/bugeopo-muchim.jpg",
     "featured": false,
-    "views_weekly": 38,
+    "views_weekly": 54,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-39",
@@ -1452,6 +1490,7 @@
     "name_ja": "ヒジキ의ナムル",
     "name_zh": "凉拌羊栖菜",
     "name_es": "Algas hijiki sazonadas",
+    "name_fr": "Algue hijiki assaisonnée (Totnamul-muchim)",
     "name_ar": "أعشاب هجيكي البحرية المتبلة",
     "name_ru": "Салат из водорослей хидзики",
     "spicy_level": 0,
@@ -1472,14 +1511,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/totnamul-muchim.jpg",
     "featured": false,
-    "views_weekly": 13,
+    "views_weekly": 55,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-40",
@@ -1490,6 +1529,7 @@
     "name_ja": "黒豆의甘醤油煮",
     "name_zh": "酱黑豆",
     "name_es": "Habas negras guisadas dulces",
+    "name_fr": "Haricots noirs braisés sucrés-salés (Kongjaban)",
     "name_ar": "فاصوليا سوداء مطهية حلوة",
     "name_ru": "Тушеная черная соя",
     "spicy_level": 0,
@@ -1510,14 +1550,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/kongjaban.jpg",
     "featured": false,
-    "views_weekly": 38,
+    "views_weekly": 57,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-41",
@@ -1525,9 +1565,10 @@
     "slug": "myeongranjeot-muchim-41",
     "name_ko": "명란젓무침",
     "name_en": "Seasoned Pollock Roe",
-    "name_ja": "明太子의和え物",
+    "name_ja": "明太子의和え물",
     "name_zh": "凉拌明太鱼子",
     "name_es": "Huevas de abadejo sazonadas",
+    "name_fr": "Œufs de colin marinés et assaisonnés (Myeongranjeot-muchim)",
     "name_ar": "بطارخ سمك القد المتبلة",
     "name_ru": "Острая соленая икра минтая",
     "spicy_level": 0,
@@ -1548,14 +1589,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/myeongranjeot-muchim.jpg",
     "featured": false,
-    "views_weekly": 47,
+    "views_weekly": 39,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-42",
@@ -1563,9 +1604,10 @@
     "slug": "cheonggyeongchae-bokkeum-42",
     "name_ko": "청경채볶음",
     "name_en": "Stir-fried Bok Choy",
-    "name_ja": "チンゲンサイ의炒め物",
+    "name_ja": "チンゲンサイ의炒め물",
     "name_zh": "炒青梗菜",
     "name_es": "Bok choy salteado",
+    "name_fr": "Bok choy sauté (Cheonggyeongchae-bokkeum)",
     "name_ar": "بوك تشوي مقلي",
     "name_ru": "Жареный бок-чой",
     "spicy_level": 0,
@@ -1586,14 +1628,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/cheonggyeongchae-bokkeum.jpg",
     "featured": false,
-    "views_weekly": 46,
+    "views_weekly": 38,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-43",
@@ -1601,9 +1643,10 @@
     "slug": "tangpyeongchae-43",
     "name_ko": "탕평채",
     "name_en": "Mung Bean Jelly Salad",
-    "name_ja": "緑豆의ムク의和え物",
+    "name_ja": "緑豆의ムク의和え물",
     "name_zh": "荡平菜",
     "name_es": "Ensalada de gelatina de judía mungo",
+    "name_fr": "Salade de gelée de haricot mungo (Tangpyeongchae)",
     "name_ar": "سلطة هلام الفاصوليا",
     "name_ru": "Салат с желе из мунга",
     "spicy_level": 0,
@@ -1624,14 +1667,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/tangpyeongchae.jpg",
     "featured": false,
-    "views_weekly": 14,
+    "views_weekly": 45,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-44",
@@ -1639,9 +1682,10 @@
     "slug": "deodeok-gui-44",
     "name_ko": "더덕구이",
     "name_en": "Grilled Deodeok",
-    "name_ja": "ツルニンジン의焼き物",
+    "name_ja": "ツルニンジン의焼き물",
     "name_zh": "烤沙参",
     "name_es": "Deodeok a la parrilla",
+    "name_fr": "Racines de deodeok grillées (Deodeok-gui)",
     "name_ar": "شواء ديدوك",
     "name_ru": "Жареный корень кодонопсиса",
     "spicy_level": 1,
@@ -1662,14 +1706,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/deodeok-gui.jpg",
     "featured": false,
-    "views_weekly": 57,
+    "views_weekly": 19,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-45",
@@ -1680,6 +1724,7 @@
     "name_ja": "唐辛子의醤油漬け",
     "name_zh": "酱腌辣椒",
     "name_es": "Chiles encurtidos",
+    "name_fr": "Piments marinés (Gochu-jangajji)",
     "name_ar": "فلفل حار مخلل",
     "name_ru": "Маринованный острый перец",
     "spicy_level": 0,
@@ -1700,14 +1745,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/gochu-jangajji.jpg",
     "featured": false,
-    "views_weekly": 16,
+    "views_weekly": 48,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-46",
@@ -1718,6 +1763,7 @@
     "name_ja": "シラヤマギク의ナムル",
     "name_zh": "凉拌山野菜",
     "name_es": "Aster scaber sazonado",
+    "name_fr": "Chwinamul assaisonné (Chwinamul-muchim)",
     "name_ar": "أوراق أستر متبلة",
     "name_ru": "Намуль из калистерии",
     "spicy_level": 0,
@@ -1738,14 +1784,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/chwinamul-muchim.jpg",
     "featured": false,
-    "views_weekly": 12,
+    "views_weekly": 44,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-47",
@@ -1756,6 +1802,7 @@
     "name_ja": "ニンニク의醤油漬け",
     "name_zh": "酱腌大蒜",
     "name_es": "Ajos encurtidos",
+    "name_fr": "Gousses d'ail marinées (Maneul-jangajji)",
     "name_ar": "ثوم مخلل",
     "name_ru": "Маринованный чеснок",
     "spicy_level": 0,
@@ -1776,14 +1823,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/maneul-jangajji.jpg",
     "featured": false,
-    "views_weekly": 11,
+    "views_weekly": 47,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-48",
@@ -1791,9 +1838,10 @@
     "slug": "sangchu-geotjeori-48",
     "name_ko": "상추겉절이",
     "name_en": "Fresh Lettuce Salad",
-    "name_ja": "サニーレタス의和え物",
+    "name_ja": "サニーレタス의和え물",
     "name_zh": "生菜拌菜",
     "name_es": "Ensalada de lechuga fresca",
+    "name_fr": "Salade de laitue fraîche assaisonnée (Sangchu-geotjeori)",
     "name_ar": "سلطة الخس الطازجة",
     "name_ru": "Свежий салат из листьев салата",
     "spicy_level": 1,
@@ -1814,14 +1862,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/sangchu-geotjeori.jpg",
     "featured": false,
-    "views_weekly": 18,
+    "views_weekly": 26,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-49",
@@ -1829,9 +1877,10 @@
     "slug": "dotorimuk-muchim-49",
     "name_ko": "도토리묵무침",
     "name_en": "Seasoned Acorn Jelly",
-    "name_ja": "どんぐり寒天의和え物",
+    "name_ja": "どんぐり寒天의和え물",
     "name_zh": "凉拌橡子凉粉",
     "name_es": "Gelatina de bellota sazonada",
+    "name_fr": "Gelée de glands assaisonnée (Dotorimuk-muchim)",
     "name_ar": "هلام البلوط المتبل",
     "name_ru": "Салат из желудевого желе",
     "spicy_level": 1,
@@ -1852,14 +1901,14 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/dotorimuk-muchim.jpg",
     "featured": false,
-    "views_weekly": 10,
+    "views_weekly": 39,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   },
   {
     "id": "banchan-50",
@@ -1870,6 +1919,7 @@
     "name_ja": "セリ의ナムル",
     "name_zh": "凉拌水芹",
     "name_es": "Berro de agua sazonado",
+    "name_fr": "Oenanthe piquante assaisonnée (Minari-namul)",
     "name_ar": "بقدونس الماء المتبل",
     "name_ru": "Намуль из омежника",
     "spicy_level": 0,
@@ -1890,13 +1940,13 @@
     "u_ksc_notes": "",
     "image_url": "/images/banchan/minari-namul.jpg",
     "featured": false,
-    "views_weekly": 46,
+    "views_weekly": 23,
     "affiliate": {
       "coupang": "",
       "amazon_us": "",
       "rakuten_jp": ""
     },
-    "created_at": "2026-07-06",
-    "updated_at": "2026-07-06"
+    "created_at": "2026-07-07",
+    "updated_at": "2026-07-07"
   }
 ]

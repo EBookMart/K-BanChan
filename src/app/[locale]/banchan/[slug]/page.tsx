@@ -36,7 +36,12 @@ export async function generateMetadata({ params: { locale, slug } }: Props) {
   const banchan = getBanchanBySlug(slug);
   if (!banchan) return {};
 
-  const name = locale === "ko" ? banchan.name_ko : banchan.name_en;
+  let name = banchan.name_en;
+  if (locale === "ko") {
+    name = banchan.name_ko;
+  } else if (locale === "fr") {
+    name = banchan.name_fr;
+  }
   const rankText = locale === "ko" ? `${banchan.rank}위` : `Rank #${banchan.rank}`;
   
   const title = `${name} (${rankText}) | K-BanChan Recipe`;
@@ -77,6 +82,7 @@ export default async function BanchanDetailPage({ params: { locale, slug } }: Pr
     switch (locale) {
       case "ko": return banchan.name_ko;
       case "en": return banchan.name_en;
+      case "fr": return banchan.name_fr || banchan.name_en;
       case "ru": return banchan.name_ru;
       case "ja": return banchan.name_ja || banchan.name_en;
       case "zh": return banchan.name_zh || banchan.name_en;

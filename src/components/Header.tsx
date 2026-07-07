@@ -14,13 +14,14 @@ export default function Header() {
   const [isLangOpen, setIsLangOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // 지원하는 7개 언어 목록
+  // 지원하는 8개 언어 목록
   const languages = [
     { code: "ko", label: "KO", name: "한국어" },
     { code: "en", label: "EN", name: "English" },
     { code: "ja", label: "JA", name: "日本語" },
     { code: "zh", label: "ZH", name: "中文" },
     { code: "es", label: "ES", name: "Español" },
+    { code: "fr", label: "FR", name: "Français" },
     { code: "ar", label: "AR", name: "العربية" },
     { code: "ru", label: "RU", name: "Русский" },
   ];

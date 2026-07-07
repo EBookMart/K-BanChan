@@ -30,6 +30,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     ja: "K-BanChan - 韓国料理とおかずの世界",
     zh: "K-BanChan - 韩食与伴餐的世界",
     es: "K-BanChan - El Mundo de la Comida Coreana y el Banchan",
+    fr: "K-BanChan - Le monde de la cuisine et du banchan coréens",
     ar: "K-BanChan - عالم الطعام الكوري والبانشان",
     ru: "K-BanChan - Мир корейской еды и банчана",
   };
@@ -40,6 +41,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     ja: "Hangyeol Mediaが運営するグローバル韓国料理おかず分類標準プラットフォームK-BanChanです。最高水準の韓国料理を紹介します。",
     zh: "K-BanChan 是韩结媒体（Hangyeol Media）运营的全球韩食伴餐分类标准平台。发现最好的韩食。",
     es: "K-BanChan es una plataforma estándar global de clasificación de platos de acompañamiento coreanos operada por Hangyeol Media.",
+    fr: "K-BanChan est la plateforme mondiale standardisée de classification des plats d'accompagnement coréens (banchans) gérée par Hangyeol Media. Découvrez le meilleur de la cuisine coréenne.",
     ar: "K-BanChan هي منصة عالمية لتصنيف الأطباق الجانبية الكورية تشغلها Hangyeol Media.",
     ru: "K-BanChan — это глобальная платформа стандартизации корейских закусок, управляемая Hangyeol Media.",
   };

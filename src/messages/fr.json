@@ -1,0 +1,188 @@
+{
+  "site": {
+    "name": "K-Banchan.net",
+    "tagline": "Le monde de la cuisine coréenne et du banchan",
+    "slogan": "le Code Secret"
+  },
+  "home": {
+    "coming_soon": "Bientôt disponible"
+  },
+  "header": {
+    "menu": "Menu",
+    "close": "Fermer",
+    "language": "Choisir la langue"
+  },
+  "footer": {
+    "company_intro": "Hangyeol Media est une plateforme médiatique mondiale de la K-Culture.",
+    "operated_by": "K-BanChan™ est exploité par Hangyeol Media",
+    "sitemap": "Plan du site",
+    "home": "Accueil",
+    "banchan": "Banchan 50",
+    "philosophy": "Philosophie",
+    "contact": "Contact",
+    "legal": "Mentions Légales",
+    "copyright_policy": "Politique de Droit d'Auteur",
+    "terms": "Conditions d'Utilisation",
+    "privacy": "Politique de Confidentialité",
+    "copyright_inquiry": "Demande de Droit d'Auteur",
+    "all_rights_reserved": "© 2026 Hangyeol Media. Tous droits réservés.",
+    "trademark_notice": "K-BanChan™ est une marque déposée de Hangyeol Media.",
+    "unauthorized_notice": "Toute reproduction, distribution ou utilisation pour l'entraînement d'IA non autorisée est strictement interdite."
+  },
+  "copyright_page": {
+    "title": "Politique de Droit d'Auteur",
+    "owner_section": "Titulaire du Droit d'Auteur",
+    "owner_section_desc": "Tout le contenu publié sur ce site web (k-banchan.net) est la propriété exclusive de Hangyeol Media. Hangyeol Media est le titulaire légitime du droit d'auteur, avec des marques et des droits d'auteur enregistrés conformément aux lois de la République de Corée.\n- Exploitant : Hangyeol Media\n- E-mail : copyright@k-banchan.net\n- Adresse : Séoul, République de Corée (Veuillez nous contacter pour l'adresse détaillée)",
+    "protected_content": "Contenu Protégé",
+    "protected_content_desc": "Les éléments protégés comprennent les composants suivants de la marque K-BanChan :\n- Le logo et les designs de marque de K-BanChan\n- Tous les textes, images et la conception UI/UX du site web\n- La base de données Banchan 50 et les documents explicatifs\n- Le système de classification Unified Korean Standard Code (U-KSC)\n- Les images générées par IA et les éléments de design créatif de la plateforme",
+    "permitted_use": "Utilisation Autorisée",
+    "permitted_use_desc": "Les utilisateurs peuvent utiliser le contenu uniquement aux fins non commerciales suivantes :\n- Étude personnelle, recherche et recherche d'informations\n- Citation avec mention claire de la source (citant K-Banchan.net) conformément aux procédures légales\n- Partage et distribution gratuits des liens du site web",
+    "prohibited_use": "Utilisation Interdite",
+    "prohibited_use_desc": "Les actes suivants sont interdits par les lois sur le droit d'auteur de la Corée et les traités internationaux sans consentement écrit préalable :\n- La reproduction non autorisée ou la redistribution commerciale de tout ou partie du site\n- La collecte non autorisée (scraping, crawling, etc.) et l'utilisation des textes, des images et de la base de données du site pour les données d'entraînement de l'intelligence artificielle (IA)\n- L'utilisation non autorisée des marques et la création de noms de marque similaires",
+    "report": "Signalement d'Atteinte aux Droits d'Auteur",
+    "report_desc": "Si vous constatez que notre contenu enfreint le droit d'auteur d'un tiers, ou si un tiers porte atteinte aux droits de ce site web, veuillez nous en informer via l'e-mail ci-dessous.\n- E-mail de signalement : copyright@k-banchan.net\n- Informations à inclure : URL du contenu prétendument contrefait, informations sur le propriétaire et preuve de l'infraction",
+    "dmca": "Procédure DMCA",
+    "dmca_desc": "K-Banchan.net respecte les normes internationales du droit d'auteur. Conformément aux lois sur la propriété intellectuelle de divers pays, y compris la loi américaine sur le droit d'auteur (DMCA - Digital Millennium Copyright Act), nous examinerons rapidement les avis d'infraction reçus et procéderons à la suspension temporaire ou à la suppression du contenu concerné."
+  },
+  "terms_page": {
+    "title": "Conditions d'Utilisation",
+    "rules": "Règles d'Utilisation du Service",
+    "rules_desc": "Ces conditions définissent les droits et obligations des utilisateurs lors de l'utilisation du service K-Banchan.net fourni par Hangyeol Media. En accédant à ce site, les utilisateurs sont réputés accepter ces conditions.",
+    "user_responsibility": "Responsabilité de l'Utilisateur",
+    "user_responsibility_desc": "Les utilisateurs doivent utiliser ce site uniquement dans les limites légalement autorisées et ne doivent pas porter atteinte aux droits d'autrui ni perturber le fonctionnement du service.",
+    "affiliate": "Politique des Liens d'Affiliation",
+    "affiliate_desc": "K-Banchan.net participe à divers programmes de marketing d'affiliation (Coupang Partners, Amazon Associates, Rakuten Advertising, etc.). Si vous achetez des produits via nos liens d'affiliation, la plateforme peut recevoir une petite commission. Cela permet de soutenir la maintenance stable du site et la promotion de la cuisine coréenne.",
+    "ads": "Politique Publicitaire",
+    "ads_desc": "Ce site affiche des publicités comme Google AdSense afin de générer des fonds de fonctionnement pour fournir des services d'information fluides. Des informations non personnellement identifiables (cookies, etc.) may be used for ad serving and targeting.",
+    "disclaimer": "Avis de Non-responsabilité",
+    "disclaimer_desc": "Les informations fournies sur la cuisine et les plats d'accompagnement coréens le sont à titre de référence générale uniquement, et nous ne garantissons pas leur exactitude ni leur exhaustivité. Les décisions d'achat via les liens d'affiliation et toutes les responsabilités associées incombent entièrement à l'utilisateur.",
+    "governing_law": "Loi Applicable et Juridiction",
+    "governing_law_desc": "Ces conditions sont régies et interprétées conformément aux lois de la République de Corée. Tout litige découlant de l'utilisation du service sera soumis à la juridiction exclusive du tribunal de district central de Séoul en Corée.",
+    "terms_change_title": "Modification des Conditions",
+    "terms_change_desc": "Hangyeol Media peut modifier ces conditions en fonction des changements de service ou des modifications des lois applicables. Les conditions modifiées prennent effet immédiatement après leur publication, une révision périodique est donc recommandée."
+  },
+  "privacy_page": {
+    "title": "Politique de Confidentialité",
+    "minimal_collection": "Principe de Collecte Minimale",
+    "minimal_collection_desc": "K-Banchan.net ne requiert pas d'inscription et, en principe, ne collecte ni ne stocke aucune information personnelle inutile (nom, numéro d'identité, numéro de téléphone, etc.).",
+    "cookies": "Politique relative aux Cookies",
+    "cookies_desc": "Ce site utilise un minimum de cookies uniquement pour fournir des fonctions essentielles de commodité du navigateur, telles que le maintien de l'état de sélection de la langue. Vous pouvez refuser la collecte de cookies via les paramètres de votre navigateur, mais certaines fonctionnalités risquent de ne pas fonctionner correctement.",
+    "analytics": "Google Analytics",
+    "analytics_desc": "We use Google Analytics to statistically analyze visitor behavior and improve the website. The data collected is anonymized and cannot identify specific individuals.",
+    "third_party": "Services Tiers",
+    "third_party_desc": "Pour le bon fonctionnement du site, nous utilisons des services de partenaires d'infrastructure mondiaux de confiance, au cours desquels des données réseau peuvent être traitées :\n- Vercel (hébergement et hébergement serverless)\n- Cloudflare (réseau de diffusion de contenu et amélioration de la sécurité)\n- Google (analyse web et publicité)"
+  },
+  "contact_page": {
+    "title": "Contact",
+    "copyright_inquiry": "Demande de Droit d'Auteur",
+    "copyright_inquiry_desc": "Signalements d'utilisation non autorisée de marque, de scraping de contenu non autorisé et demandes de licence de droit d'auteur",
+    "partnership": "Demande de Partenariat",
+    "partnership_desc": "Partenariats avec la plateforme K-BanChan, demandes de publicité et propositions de collaboration commerciale",
+    "general": "Demande Générale",
+    "general_desc": "Signalements d'erreurs dans les recettes de cuisine coréenne, rapports d'inconvénients sur le site et commentaires généraux",
+    "response_time": "Délai de réponse : 3 à 5 jours ouvrables",
+    "notice_desc": "Après examen par le département concerné de Hangyeol Media, nous vous répondrons à l'adresse e-mail enregistrée dans un délai de 3 à 5 jours ouvrables. Veuillez écrire votre adresse e-mail avec précision et vérifier votre dossier de courrier indésirable."
+  },
+  "banchan": {
+    "title": "Top 50 des K-Banchans",
+    "search_placeholder": "Rechercher un banchan par nom ou ingrédients...",
+    "filter": {
+      "all": "Tous",
+      "volkkeum": "Sautés",
+      "jorim": "Braisés",
+      "muchim": "Assaisonnés",
+      "namul": "Namuls",
+      "gita": "Autres"
+    },
+    "detail": {
+      "ingredients": "Ingrédients Principaux",
+      "seasoning": "Assaisonnement",
+      "cooking_summary": "Méthode de Préparation",
+      "cultural_note": "Note Culturelle & Spécificités",
+      "related_banchan": "Vous aimerez aussi",
+      "spicy": "Niveau de Piquant",
+      "vegan": "Végan",
+      "vegan_note": "Note Végan",
+      "rank_suffix": "",
+      "back_to_list": "Retour à la liste"
+    }
+  },
+  "hero": {
+    "title": "LE CODE SECRET DE LA CUISINE CORÉENNE",
+    "subtitle": "Découvrez les 5 codes secrets de la cuisine coréenne",
+    "cta_banchan": "Voir les 50 Banchans",
+    "cta_articles": "Lire les 5 Codes Secrets",
+    "logo_alt": "K-BanChan - Le Code Secret de la Cuisine Coréenne"
+  },
+  "nav": {
+    "banchan": "50 Banchans",
+    "articles": "LE CODE SECRET",
+    "hot": "HOT 8 PLATS",
+    "previous": "Précédent",
+    "next": "Suivant"
+  },
+  "directions": {
+    "yaksik-dongwon": "Est",
+    "yukmi": "Sud",
+    "obangsaek": "Centre",
+    "nanum": "Ouest",
+    "ingredients-terroir": "Nord"
+  },
+  "elements": {
+    "yaksik-dongwon": "Bois (木)",
+    "yukmi": "Feu (火)",
+    "obangsaek": "Terre (土)",
+    "nanum": "Métal (金)",
+    "ingredients-terroir": "Eau (水)"
+  },
+  "cycle": {
+    "label": "Cycle",
+    "description": "Cycle des cinq éléments : le Bois nourrit le Feu, le Feu crée la Terre, la Terre engendre le Métal, le Métal recueille l'Eau, l'Eau nourrit le Bois",
+    "current_element": "Élément Actuel"
+  },
+  "articles": {
+    "title": "Le Code Secret du K-Food",
+    "subtitle": "Découvrez les cinq caractéristiques de la cuisine coréenne à travers la philosophie d'Obangsaek",
+    "index_title": "Philosophie & Origines Naturelles de la Cuisine Coréenne (Le Code Secret)",
+    "index_subtitle": "",
+    "read_more": "Lire la Suite",
+    "direction": "Direction",
+    "element": "Élément",
+    "color": "Couleur",
+    "back_to_list": "Retour à la liste",
+    "related_banchan": "Banchans Associés",
+    "next_article": "Code Secret Suivant",
+    "view_archive_title": "Vous souhaitez approfondir ?",
+    "view_archive_description": "Explorez les articles de recherche et les références académiques sur ce sujet.",
+    "view_archive_cta": "Voir l'Archive",
+    "archive_hero_title": "Archive des Références Académiques",
+    "archive_hero_badge": "Matériel Académique",
+    "back_to_article": "Retour à l'article de philosophie",
+    "academic_essay": "Essai Académique",
+    "papers_list": "Articles de Recherche & Références",
+    "abstract_btn": "Voir le Résumé",
+    "link_btn": "Source Originale",
+    "browse_other_archives": "Parcourir d'autres archives",
+    "read_full_article": "Lire l'article complet",
+    "yaksik-dongwon": {
+      "title": "Yaksik-Dongwon : La Nourriture comme Médicament",
+      "subtitle": "La philosophie du bien-être selon laquelle la médecine et la nourriture partagent la même origine"
+    },
+    "yukmi": {
+      "title": "Yukmi (六味) : Six Saveurs & le Goût de la Main (Sonmat)",
+      "subtitle": "L'harmonie parfaite de six saveurs distinctes dans une même cuisine"
+    },
+    "obangsaek": {
+      "title": "Obangsaek (五方色) : L'Harmonie Visuelle - Les Cinq Éléments",
+      "subtitle": "L'équilibre nutritionnel représenté par cinq couleurs cardinales"
+    },
+    "nanum": {
+      "title": "Nanum (Partage) & Communauté",
+      "subtitle": "La chaleureuse culture du partage de l'affection (Jeong) à travers les plats d'accompagnement"
+    },
+    "ingredients-terroir": {
+      "title": "Ingrédients & Terroir",
+      "subtitle": "La fraîcheur et la fermentation façonnées par les quatre saisons et la géographie de la péninsule"
+    }
+  }
+}
