@@ -306,13 +306,13 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {summerKoreanFoods10Content.cta.map((link, idx) => {
               const labelText = link.label[lang] || link.label.en;
-              // 언어 프리픽스 지원 링크 생성
-              const hrefWithLocale = `/${lang}${link.href.replace(/^\/[a-z]{2}/, "")}`;
+              // 로케일 접두사를 안전하게 제거하여 next-intl Link가 현재 로케일을 알아서 붙이도록 합니다.
+              const pureHref = link.href.replace(/^\/(ko|en|ja|zh|es|fr|ar|ru)(?=\/|$)/, "") || "/";
 
               return (
                 <Link
                   key={idx}
-                  href={hrefWithLocale}
+                  href={pureHref}
                   className="flex items-center justify-between p-5 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-rose-500/40 hover:bg-slate-900/60 transition-all duration-300 group shadow-md"
                 >
                   <span className="text-sm font-bold text-slate-200 group-hover:text-rose-400 transition-colors">
