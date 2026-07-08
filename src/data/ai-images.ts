@@ -136,6 +136,19 @@ export const aiImages = {
       ru: "Истории о корейской кухне и теплоте, представленные в популярных медиа"
     }
   },
+  summerFoodsHero: {
+    src: "/images/ai/hot/summer-foods-hero.png",
+    alt: {
+      ko: "삼계탕, 냉면, 화채 등 다채롭고 정갈한 한국 여름 음식들",
+      en: "Various traditional Korean summer dishes including Samgyetang, Naengmyeon, and Hwachae",
+      ja: "サムゲタン、冷麺、花菜など、多様で端正な韓国の夏の料理",
+      zh: "参鸡汤、冷面、花菜等丰富多样的韩国夏日传统美食",
+      es: "Varios platos tradicionales coreanos de verano, incluidos Samgyetang, Naengmyeon y Hwachae",
+      fr: "Divers plats d'été traditionnels coréens, dont le Samgyetang, le Naengmyeon et le Hwachae",
+      ar: "الأطباق الصيفية الكورية التقليدية المتنوعة بما في ذلك سامغيتانغ، ناينغميون، وهواشي",
+      ru: "Разнообразные традиционные корейские летние блюда, включая самгетхан, нэнмён и хваче"
+    }
+  },
   kimchi: {
     src: "/images/ai/banchan/kimchi.webp",
     objectPositionMobile: "center",

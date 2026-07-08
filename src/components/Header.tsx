@@ -71,6 +71,16 @@ export default function Header() {
             {tNav("articles")}
           </Link>
           <Link
+            href="/ingredients"
+            className={`transition-colors ${
+              pathname.startsWith("/ingredients")
+                ? "text-emerald-400"
+                : "text-slate-300 hover:text-white"
+            }`}
+          >
+            {tNav("ingredients")}
+          </Link>
+          <Link
             href="/hot"
             className={`transition-colors flex items-center gap-1.5 ${
               pathname.startsWith("/hot")
@@ -179,6 +189,17 @@ export default function Header() {
               }`}
             >
               {tNav("articles")}
+            </Link>
+            <Link
+              href="/ingredients"
+              onClick={() => setIsMenuOpen(false)}
+              className={`p-2 rounded-lg transition-colors ${
+                pathname.startsWith("/ingredients")
+                  ? "bg-emerald-500/10 text-emerald-400"
+                  : "text-slate-300 hover:bg-slate-900/50"
+              }`}
+            >
+              {tNav("ingredients")}
             </Link>
             <Link
               href="/hot"

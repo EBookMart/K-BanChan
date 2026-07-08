@@ -94,6 +94,28 @@ export default function HotIndexPage({ params: { locale } }: Props) {
     ru: "✨ Специальные Тематические Подборки",
   };
 
+  const summerFoodsTitles: Record<string, string> = {
+    ko: "여름철 한국음식 10선 (Summer Curation)",
+    en: "Summer Korean Foods 10",
+    ja: "夏の韓国料理 10選",
+    zh: "夏日韩食10选",
+    es: "10 comidas de verano",
+    fr: "10 Plats Coréens d'Été",
+    ar: "10 أطباق صيفية كورية",
+    ru: "10 летних корейских блюд"
+  };
+
+  const summerFoodsDescs: Record<string, string> = {
+    ko: "삼복더위를 이겨내기 위해 뜨거운 보양과 시원한 냉식의 지혜를 유기적으로 결합한 한국 여름 음식 10선을 소개합니다.",
+    en: "Discover the 10 traditional Korean summer dishes blending the wisdom of hot nourishment and cold refreshment.",
+    ja: "猛暑を乗り切るための温かい補養と冷たい食事の知恵を有機的に結びつけた、韓国の夏の料理10選を紹介します。",
+    zh: "为您介绍将温热滋补与清凉冷食智慧有机结合、旨在度过三伏暑天的10款夏季美食。",
+    es: "Descubra las 10 comidas tradicionales de verano que combinan la sabiduría del calor nutritivo y el frío refrescante.",
+    fr: "Découvrez 10 plats d'été traditionnels alliant la sagesse du réconfort chaud et du rafraîchissement glacé.",
+    ar: "اكتشف 10 أطباق كورية صيفية تجمع بين حكمة الغذاء الساخن المغذي والانتعاش البارد للتغلب على الحر.",
+    ru: "Откройте для себя 10 летних блюд, сочетающих пользу горячего бульона и прохладу холодных закусок."
+  };
+
   const seasonalTitles: Record<string, string> = {
     ko: "절기별 제철 반찬 (Seasonal Curation)",
     en: "Seasonal Curation",
@@ -230,7 +252,8 @@ export default function HotIndexPage({ params: { locale } }: Props) {
             {specialCurationSectionTitles[locale] || specialCurationSectionTitles["en"]}
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* 1. 절기별 제철 반찬 */}
             <div className="group flex flex-col justify-between p-6 rounded-3xl bg-slate-900/30 border border-slate-800/80 hover:bg-slate-900/50 transition-all duration-300 shadow-2xl">
               <div>
                 <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-6 border border-slate-800/80">
@@ -251,6 +274,7 @@ export default function HotIndexPage({ params: { locale } }: Props) {
               </div>
             </div>
 
+            {/* 2. 미디어 속 한식 */}
             <div className="group flex flex-col justify-between p-6 rounded-3xl bg-slate-900/30 border border-slate-800/80 hover:bg-slate-900/50 transition-all duration-300 shadow-2xl">
               <div>
                 <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-6 border border-slate-800/80">
@@ -270,6 +294,34 @@ export default function HotIndexPage({ params: { locale } }: Props) {
                 </p>
               </div>
             </div>
+
+            {/* 3. 신규 추가: 여름철 한국음식 10선 */}
+            <Link
+              href={`/hot/summer-korean-foods-10`}
+              className="group flex flex-col justify-between p-6 rounded-3xl bg-slate-900/30 border border-slate-800/80 hover:bg-slate-900/50 hover:border-rose-500/30 transition-all duration-300 shadow-2xl"
+            >
+              <div>
+                <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-6 border border-slate-800/80">
+                  <Image
+                    src={aiImages.summerFoodsHero.src}
+                    alt={aiImages.summerFoodsHero.alt[locale as keyof typeof aiImages.summerFoodsHero.alt] || aiImages.summerFoodsHero.alt.en}
+                    fill
+                    className="object-cover group-hover:scale-[1.02] transition-transform duration-500"
+                    sizes="(max-width: 600px) 100vw, 600px"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-rose-400 transition-colors">
+                  {summerFoodsTitles[locale] || summerFoodsTitles["en"]}
+                </h3>
+                <p className="text-slate-400 text-sm leading-relaxed font-light">
+                  {summerFoodsDescs[locale] || summerFoodsDescs["en"]}
+                </p>
+              </div>
+              <div className="flex items-center gap-2 text-xs font-bold text-slate-300 group-hover:text-rose-400 transition-colors mt-6">
+                <span>{viewText}</span>
+                <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
           </div>
         </div>
       </div>
