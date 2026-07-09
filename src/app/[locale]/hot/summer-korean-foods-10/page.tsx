@@ -6,7 +6,9 @@ import Footer from "@/components/Footer";
 import { Link } from "@/i18n/routing";
 import { summerFoodsList } from "@/data/summer-foods";
 import { Flame, ShieldAlert, Sparkles, ArrowRight } from "lucide-react";
-import { summerKoreanFoods10Content } from "@/data/summer-foods";
+import { summerKoreanFoods10I18n, summerFoodsUiI18n } from "@/data/i18n";
+import { SupportedLocale } from "@/data/i18n/types";
+import SummerFoodNavigation from "@/components/SummerFoodNavigation";
 
 type Props = {
   params: { locale: string };
@@ -16,69 +18,11 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-// 간단하고 견고한 커스텀 마크다운 렌더러 함수
-function renderMarkdownSection(content: string) {
-  if (!content) return null;
-  const lines = content.split("\n");
-  
-  return (
-    <div className="space-y-6">
-      {lines.map((line, idx) => {
-        const trimmed = line.trim();
-        if (!trimmed) return null;
-
-        // ## H2
-        if (trimmed.startsWith("## ")) {
-          return (
-            <h2
-              key={idx}
-              className="text-2xl md:text-3xl font-bold font-serif text-white border-b border-slate-800 pb-2 mt-12 mb-4"
-            >
-              {trimmed.substring(3)}
-            </h2>
-          );
-        }
-
-        // ### H3
-        if (trimmed.startsWith("### ")) {
-          return (
-            <h3
-              key={idx}
-              className="text-xl font-bold font-serif text-white mt-8 mb-3"
-            >
-              {trimmed.substring(4)}
-            </h3>
-          );
-        }
-
-        // List item "- " or "* "
-        if (trimmed.startsWith("- ") || trimmed.startsWith("* ")) {
-          return (
-            <div key={idx} className="flex items-start gap-2 text-slate-300 ml-4 mb-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-rose-500 mt-2.5 shrink-0" />
-              <span className="text-base md:text-lg leading-relaxed font-light">{trimmed.substring(2)}</span>
-            </div>
-          );
-        }
-
-        // Normal paragraph
-        return (
-          <p
-            key={idx}
-            className="text-slate-300 text-base md:text-lg leading-relaxed font-light font-sans"
-          >
-            {trimmed}
-          </p>
-        );
-      })}
-    </div>
-  );
-}
-
 export async function generateMetadata({ params: { locale } }: Props) {
-  const lang = routing.locales.includes(locale as typeof routing.locales[number]) ? locale : "en";
-  const title = `${summerKoreanFoods10Content.title[lang] || summerKoreanFoods10Content.title.en} | K-BanChan`;
-  const description = summerKoreanFoods10Content.excerpt[lang] || summerKoreanFoods10Content.excerpt.en;
+  const contentLocale = (locale in summerKoreanFoods10I18n.locales ? locale : "en") as SupportedLocale;
+  const content = summerKoreanFoods10I18n.locales[contentLocale];
+  const title = `${content.title} | K-BanChan`;
+  const description = content.excerpt;
   
   return {
     title,
@@ -102,58 +46,26 @@ export async function generateMetadata({ params: { locale } }: Props) {
 }
 
 export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
-  const lang = routing.locales.includes(locale as typeof routing.locales[number]) ? locale : "en";
-  const isRtl = lang === "ar";
+  const contentLocale = (locale in summerKoreanFoods10I18n.locales ? locale : "en") as SupportedLocale;
+  const isRtl = contentLocale === "ar";
 
-  const titleText = summerKoreanFoods10Content.title[lang] || summerKoreanFoods10Content.title.en;
-  const excerptText = summerKoreanFoods10Content.excerpt[lang] || summerKoreanFoods10Content.excerpt.en;
-  const bodyText = summerKoreanFoods10Content.body[lang] || summerKoreanFoods10Content.body.en || "";
+  const content = summerKoreanFoods10I18n.locales[contentLocale];
+  const titleText = content.title;
+  const excerptText = content.excerpt;
+  const { intro, sections, conclusion } = content.body;
+  const cta = content.cta;
 
-  // 본문을 서론 부분과 결론 부분으로 나누어 카드리스트 앞뒤에 배치
-  const splitIndicator1 = "## 여름철 한국음식 10선";
-  const splitIndicator2 = "## 계절에 응답하는 음식 문화";
-
-  const parts = bodyText.split(splitIndicator1);
-  const introPart = parts[0] || "";
-  const rest = parts[1] || "";
-
-  const restParts = rest.split(splitIndicator2);
-  const conclusionPart = restParts[1] ? splitIndicator2 + restParts[1] : "";
-
-  // 다국어 라벨 매핑들
-  const CAUTION_BOX_TITLE: Record<string, string> = {
-    ko: "⚠️ 이런 분들은 특히 유의하세요 (건강상 주의점)",
-    en: "⚠️ Dietary Cautions & Health Warnings",
-    ja: "⚠️ 健康上の注意点 (要確認)",
-    zh: "⚠️ 食用注意事项 (健康提醒)",
-    es: "⚠️ Precauciones de salud",
-    fr: "⚠️ Précautions et Avertissements de Santé",
-    ar: "⚠️ تحذيرات صحية واحتياطات غذائية",
-    ru: "⚠️ Меры предосторожности (О здоровье)"
-  };
-
-  const AD_PLACEMENT_TEXT: Record<string, string> = {
-    ko: "💡 추천 파트너 마케팅 영역 (한국 정통 식재료 밀키트 구매처)",
-    en: "💡 Recommended Affiliate Partner (Premium K-Food Meal-kits & Ingredients)",
-    ja: "💡 おすすめ提携パートナー領域（プレミアム韓国食材ミールキット購入先）",
-    zh: "💡 推荐推广合作区域（优质韩国食材及半成品包购买渠道）",
-    es: "💡 Espacio patrocinado (Ingredientes coreanos premium)",
-    fr: "💡 Partenaire Recommandé (Kits Recettes & Ingrédients K-Food Premium)",
-    ar: "💡 مساحة تسويقية مقترحة (مكونات كورية ووجبات جاهزة)",
-    ru: "💡 Партнерская зона (Премиальные наборы ингредиентов K-Food)"
-  };
-
-  const CTA_HEADER_TITLE: Record<string, string> = {
-    ko: "💡 더 알아보기", en: "💡 Learn More", ja: "💡 もっと知る", zh: "💡 了解更多",
-    es: "💡 Saber más", fr: "💡 En savoir plus", ar: "💡 اقرأ المزيد", ru: "💡 Узнать больше"
-  };
+  const navItems = summerFoodsList.map((food) => ({
+    id: food.id,
+    label: food.name[contentLocale] || food.name.en,
+  }));
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-950 text-slate-100 transition-colors duration-300">
       <Header />
 
-      {/* 프리미엄 에디토리얼 히어로 배너 */}
-      <div className="relative w-full h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden border-b border-slate-900">
+      {/* 프리미엄 에디토리얼 히어로 배너 (과도한 세로 여백 축소: py-8 md:py-12) */}
+      <div className="relative w-full py-8 md:py-12 flex items-center justify-center overflow-hidden border-b border-slate-900">
         <Image
           src="/images/ai/hot/summer-foods-hero.png"
           alt={titleText}
@@ -164,33 +76,50 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
         
-        <div className="relative max-w-5xl mx-auto px-4 text-center z-10 space-y-4">
+        <div className="relative max-w-5xl mx-auto px-4 text-center z-10 space-y-3">
           <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-rose-500/10 border border-rose-500/25 text-rose-400 text-xs md:text-sm font-bold uppercase tracking-wider">
             <Sparkles size={14} className="animate-pulse" />
             <span>Special Seasonal Edition</span>
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold text-white tracking-tight font-serif drop-shadow-lg">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-extrabold text-white tracking-tight font-serif drop-shadow-lg">
             {titleText}
           </h1>
-          <p className="max-w-3xl mx-auto text-base md:text-lg lg:text-xl text-slate-350 font-normal drop-shadow">
+          <p className="max-w-3xl mx-auto text-sm md:text-base lg:text-lg text-slate-300 font-normal drop-shadow">
             {excerptText}
           </p>
         </div>
       </div>
 
-      {/* 메인 에디토리얼 본문 */}
-      <main className="flex-grow max-w-5xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-16 space-y-16" dir={isRtl ? "rtl" : "ltr"}>
+      {/* 메인 에디토리얼 본문 (상단 여백 축소 및 조밀도 고도화) */}
+      <main className="flex-grow max-w-5xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-4 pb-16 space-y-10" dir={isRtl ? "rtl" : "ltr"}>
         
-        {/* 서론 섹션 */}
-        {introPart && (
-          <section className="prose prose-invert max-w-none">
-            {renderMarkdownSection(introPart)}
-          </section>
-        )}
+        {/* 10대 여름철 음식 퀵점프 내비게이션 바 */}
+        <SummerFoodNavigation items={navItems} locale={contentLocale} />
+
+        {/* 서론 섹션 및 상부 에디토리얼 */}
+        <section className="prose prose-invert max-w-none">
+          <p className="text-slate-355 text-base md:text-lg leading-relaxed font-light font-sans mb-8">
+            {intro}
+          </p>
+          <div className="space-y-12">
+            {sections.slice(0, 2).map((section, sIdx) => (
+              <div key={sIdx} className="space-y-6">
+                <h2 className="text-2xl md:text-3xl font-bold font-serif text-white border-b border-slate-800 pb-2 mt-12 mb-4">
+                  {section.heading}
+                </h2>
+                {section.paragraphs.map((p, pIdx) => (
+                  <p key={pIdx} className="text-slate-300 text-base md:text-lg leading-relaxed font-light font-sans">
+                    {p}
+                  </p>
+                ))}
+              </div>
+            ))}
+          </div>
+        </section>
 
         {/* 2. 미래 수익화 광고 Clean Zone - 상부 배너 */}
         <section className="w-full py-6 px-8 rounded-2xl bg-slate-900/20 border border-dashed border-slate-800 text-center text-xs font-semibold text-slate-500 hover:border-slate-700 transition-colors">
-          {AD_PLACEMENT_TEXT[lang] || AD_PLACEMENT_TEXT.en}
+          {summerFoodsUiI18n.adPlacementText[contentLocale] || summerFoodsUiI18n.adPlacementText.en}
         </section>
 
         {/* 3. 10대 여름철 음식 리스트 카드 영역 */}
@@ -198,32 +127,20 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
           {summerFoodsList.map((food, idx) => {
             const numLabel = String(idx + 1).padStart(2, "0");
             const isHot = food.categoryType === "hot";
-            const foodName = food.name[lang] || food.name.en;
-            const categoryName = food.category[lang] || food.category.en;
-            const summary = food.summary[lang] || food.summary.en;
-            const culture = food.culture[lang] || food.culture.en;
-            const caution = food.caution[lang] || food.caution.en;
+            const foodName = food.name[contentLocale] || food.name.en;
+            const categoryName = food.category[contentLocale] || food.category.en;
+            const summary = food.summary[contentLocale] || food.summary.en;
+            const culture = food.culture[contentLocale] || food.culture.en;
+            const caution = food.caution[contentLocale] || food.caution.en;
 
-            // 라벨 매핑 (이열치열, 보양식, 면요리 등)
-            let labelsKo = "보양식";
-            let labelsEn = "Nourishment";
-            if (food.id === "summer-01") { labelsKo = "이열치열 · 보양식"; labelsEn = "Iyeol-chiyeol · Nourishment"; }
-            else if (food.id === "summer-02") { labelsKo = "이열치열 · 매운 국물"; labelsEn = "Iyeol-chiyeol · Spicy Stew"; }
-            else if (food.id === "summer-03") { labelsKo = "이냉치냉 · 냉보양식"; labelsEn = "Inaeng-chineg · Chilled Restoration"; }
-            else if (food.id === "summer-04") { labelsKo = "이냉치냉 · 궁중 냉보양식"; labelsEn = "Inaeng-chineg · Royal Chilled Nourishment"; }
-            else if (food.id === "summer-05") { labelsKo = "이냉치냉 · 면 요리"; labelsEn = "Inaeng-chineg · Buckwheat Noodles"; }
-            else if (food.id === "summer-06") { labelsKo = "이냉치냉 · 향토 면 요리"; labelsEn = "Inaeng-chineg · Local Wheat Noodles"; }
-            else if (food.id === "summer-07") { labelsKo = "이냉치냉 · 식물성 보양식"; labelsEn = "Inaeng-chineg · Plant Protein"; }
-            else if (food.id === "summer-08") { labelsKo = "제철 냉국 · 생활 음식"; labelsEn = "Seasonal Cold Soup · Daily Dish"; }
-            else if (food.id === "summer-09") { labelsKo = "전통 음청류 · 계절 디저트"; labelsEn = "Traditional Beverage · Seasonal Dessert"; }
-            else if (food.id === "summer-10") { labelsKo = "전통 음청류 · 대용식"; labelsEn = "Traditional Shake · Meal Replacement"; }
-
-            const labelStr = lang === "ko" ? labelsKo : labelsEn;
+            const foodTags = summerFoodsUiI18n.foodTags[contentLocale] || summerFoodsUiI18n.foodTags.en;
+            const labelStr = foodTags[food.id as keyof typeof foodTags] || "";
 
             return (
               <article 
                 key={food.id}
-                className="group relative bg-slate-900/30 border border-slate-800/60 rounded-3xl p-8 md:p-10 hover:border-slate-700 transition-all duration-300"
+                id={food.id}
+                className="group relative bg-slate-900/30 border border-slate-800/60 rounded-3xl p-8 md:p-10 hover:border-slate-700 transition-all duration-300 scroll-mt-20 md:scroll-mt-24"
               >
                 {/* 상단 헤더 데코레이션 */}
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
@@ -270,7 +187,7 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
                     <summary className="flex items-center justify-between cursor-pointer p-4 text-xs md:text-sm font-bold text-rose-400 hover:bg-rose-950/20 select-none">
                       <div className="flex items-center gap-2">
                         <ShieldAlert size={16} />
-                        <span>{CAUTION_BOX_TITLE[lang] || CAUTION_BOX_TITLE.en}</span>
+                        <span>{summerFoodsUiI18n.cautionBoxTitle[contentLocale] || summerFoodsUiI18n.cautionBoxTitle.en}</span>
                       </div>
                       <span className="transition-transform duration-300 group-open:rotate-180">👇</span>
                     </summary>
@@ -284,36 +201,56 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
           })}
         </section>
 
-        {/* 결론 섹션 */}
-        {conclusionPart && (
+        {/* 하부 에디토리얼 섹션 */}
+        {sections.length > 2 && (
           <section className="prose prose-invert max-w-none">
-            {renderMarkdownSection(conclusionPart)}
+            <div className="space-y-12">
+              {sections.slice(2).map((section, sIdx) => (
+                <div key={sIdx} className="space-y-6">
+                  <h2 className="text-2xl md:text-3xl font-bold font-serif text-white border-b border-slate-800 pb-2 mt-12 mb-4">
+                    {section.heading}
+                  </h2>
+                  {section.paragraphs.map((p, pIdx) => (
+                    <p key={pIdx} className="text-slate-355 text-base md:text-lg leading-relaxed font-light font-sans">
+                      {p}
+                    </p>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* 결론 섹션 */}
+        {conclusion && (
+          <section className="prose prose-invert max-w-none border-t border-slate-900 pt-12">
+            <p className="text-slate-355 text-base md:text-lg leading-relaxed font-light font-sans">
+              {conclusion}
+            </p>
           </section>
         )}
 
         {/* 4. 미래 수익화 광고 Clean Zone - 하부 배너 */}
         <section className="w-full py-6 px-8 rounded-2xl bg-slate-900/20 border border-dashed border-slate-800 text-center text-xs font-semibold text-slate-500 hover:border-slate-700 transition-colors">
-          {AD_PLACEMENT_TEXT[lang] || AD_PLACEMENT_TEXT.en}
+          {summerFoodsUiI18n.adPlacementText[contentLocale] || summerFoodsUiI18n.adPlacementText.en}
         </section>
 
         {/* 5. 하단 CTA 링크 버튼 섹션 */}
         <section className="border-t border-slate-900 pt-12 space-y-6">
           <h3 className="text-xl font-bold text-white flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-rose-500" />
-            <span>{CTA_HEADER_TITLE[lang] || CTA_HEADER_TITLE.en}</span>
+            <span>{summerFoodsUiI18n.ctaHeaderTitle[contentLocale] || summerFoodsUiI18n.ctaHeaderTitle.en}</span>
           </h3>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {summerKoreanFoods10Content.cta.map((link, idx) => {
-              const labelText = link.label[lang] || link.label.en;
-              // 로케일 접두사를 안전하게 제거하여 next-intl Link가 현재 로케일을 알아서 붙이도록 합니다.
-              const pureHref = link.href.replace(/^\/(ko|en|ja|zh|es|fr|ar|ru)(?=\/|$)/, "") || "/";
+          <div>
+            {(() => {
+              const labelText = cta.label;
+              const pureHref = cta.href.replace(/^\/(ko|en|ja|zh|es|fr|ar|ru)(?=\/|$)/, "") || "/";
 
               return (
                 <Link
-                  key={idx}
                   href={pureHref}
-                  className="flex items-center justify-between p-5 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-rose-500/40 hover:bg-slate-900/60 transition-all duration-300 group shadow-md"
+                  className="flex items-center justify-between p-5 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-rose-500/40 hover:bg-slate-900/60 transition-all duration-300 group shadow-md max-w-md mx-auto"
                 >
                   <span className="text-sm font-bold text-slate-200 group-hover:text-rose-400 transition-colors">
                     {labelText}
@@ -326,7 +263,7 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
                   />
                 </Link>
               );
-            })}
+            })()}
           </div>
         </section>
 

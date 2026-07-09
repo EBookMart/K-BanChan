@@ -1,4 +1,4 @@
-export type SupportedLocale = 'ko' | 'en' | 'fr' | 'ar';
+export type SupportedLocale = 'ko' | 'en' | 'fr' | 'ar' | 'ja' | 'zh' | 'es' | 'ru';
 
 export interface ContentSection {
   heading: string;
