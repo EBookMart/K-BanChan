@@ -125,10 +125,40 @@
     "hot": "Top 8 Platos",
     "ingredients": "Ingredientes coreanos",
     "experience": "Experiencia de K-Food",
-    "experience_status": "Próximamente",
-    "experience_alert": "Esta sección estará disponible pronto.",
     "previous": "Anterior",
     "next": "Siguiente"
+  },
+  "experience": {
+    "title": "Experiencia de K-Food",
+    "intro": "Experimente profundamente la cultura gastronómica coreana a través de varios festivales, eventos y recorridos culinarios.",
+    "festivals": {
+      "title": "Festivales de K-Food",
+      "description": "Descubra vibrantes festivales gastronómicos celebrados en todo el país."
+    },
+    "academic": {
+      "title": "Eventos Académicos y de Marketing",
+      "description": "Explore el discurso gastronómico coreano y las tendencias de la industria a través de información sobre eventos académicos y de la industria."
+    },
+    "tours": {
+      "title": "Recorridos Culinarios",
+      "description": "Presentamos lugares representativos de experiencias de K-Food que puede visitar directamente."
+    },
+    "status": {
+      "upcoming": "Próximo",
+      "ongoing": "En curso",
+      "archived": "Archivado",
+      "seasonal": "Estacional",
+      "tbd": "Por determinar"
+    },
+    "labels": {
+      "featured": "Destacado",
+      "visit_website": "Sitio web oficial",
+      "organizer": "Organizador",
+      "host": "Anfitrión",
+      "location": "Ubicación",
+      "why_visit": "Por qué visitar",
+      "category": "Categoría"
+    }
   },
   "directions": {
     "yaksik-dongwon": "Este",

@@ -120,14 +120,14 @@ export default function HotIndexPage({ params: { locale } }: Props) {
   };
 
   const seasonalTitles: Record<string, string> = {
-    ko: "절기별 제철 반찬 (Seasonal Curation)",
-    en: "Seasonal Curation",
-    ja: "二十四節気の季節のおかず",
-    zh: "节气时令伴餐",
-    es: "Curaduría Estacional",
-    fr: "Curation Saisonnière de Banchans",
-    ar: "تنظيم الأطباق الجانبية الموسمية",
-    ru: "Сезонный Подбор Закусок"
+    ko: "계절별 반찬 (Seasonal Banchan)",
+    en: "Seasonal Banchan",
+    ja: "季節のおかず",
+    zh: "季节性伴餐",
+    es: "Guarniciones de Temporada",
+    fr: "Banchans de Saison",
+    ar: "أطباق جانبية موسمية",
+    ru: "Сезонные закуски"
   };
 
   const seasonalDescs: Record<string, string> = {
@@ -162,6 +162,86 @@ export default function HotIndexPage({ params: { locale } }: Props) {
     ar: "استكشف الدفء الثقافي والروايات الكامنة وراء الأطباق الجانبية الكورية الشهيرة المعروضة في وسائل الإعلام الشعبية والتلفزيون.",
     ru: "Исследуйте культурное тепло и истории, стоящие за культовыми корейскими закусками в популярных медиа."
   };
+
+  const feastTitles: Record<string, string> = {
+    ko: "잔치와 명절음식 (Feast & Holidays)",
+    en: "Feast & Holidays",
+    ja: "宴会と名節料理",
+    zh: "节日与宴会美食",
+    es: "Banquete y Comidas Navideñas",
+    fr: "Fêtes et Plats de Célébration",
+    ar: "أطعمة الأعياد والولائم",
+    ru: "Праздничные блюда"
+  };
+
+  const feastDescs: Record<string, string> = {
+    ko: "돌잔치, 생일상, 회갑연부터 추석과 설날까지, 특별한 날을 기념하는 다채로운 명절음식을 소개합니다.",
+    en: "From birthdays to major holidays like Chuseok and Seollal, discover colorful festive foods that celebrate special occasions.",
+    ja: "お誕生日や還暦のお祝いから秋夕やお正月まで、特別な日を記念する多彩な名節料理を紹介します。",
+    zh: "从周岁宴、生日宴到中秋节和春节，为您介绍庆祝特别日子的丰富节日美食。",
+    es: "Desde cumpleaños hasta días festivos importantes, descubra comidas festivas que celebran ocasiones especiales.",
+    fr: "Des anniversaires aux grandes fêtes, découvrez les plats de fête colorés qui célèbrent les occasions spéciales.",
+    ar: "من أعياد الميلاد إلى العطلات الكبرى، اكتشف الأطعمة الاحتفالية الملونة التي تحتفل بالمناسبات الخاصة.",
+    ru: "От дней рождения до главных праздников, откройте для себя красочные праздничные блюда."
+  };
+
+  const seasonLabels: Record<string, Record<string, string>> = {
+    spring: { ko: "봄", en: "Spring", ja: "春", zh: "春", es: "Primavera", fr: "Printemps", ar: "ربيع", ru: "Весна" },
+    summer: { ko: "여름", en: "Summer", ja: "夏", zh: "夏", es: "Verano", fr: "Été", ar: "صيف", ru: "Лето" },
+    autumn: { ko: "가을", en: "Autumn", ja: "秋", zh: "秋", es: "Otoño", fr: "Automne", ar: "خريف", ru: "Осень" },
+    winter: { ko: "겨울", en: "Winter", ja: "冬", zh: "冬", es: "Invierno", fr: "Hiver", ar: "شتاء", ru: "Зима" },
+  };
+
+  const feastTags: Record<string, Record<string, string>> = {
+    dol: { ko: "돌잔치", en: "Doljanchi", ja: "トルジャンチ", zh: "周岁宴", es: "Doljanchi", fr: "Doljanchi", ar: "دولجانشي", ru: "Дольджанчи" },
+    birthday: { ko: "생일상", en: "Birthday", ja: "誕生日の膳", zh: "生日宴", es: "Cumpleaños", fr: "Anniversaire", ar: "عيد ميلاد", ru: "День рождения" },
+    hoegap: { ko: "회갑연", en: "Hoegap", ja: "還暦祝い", zh: "花甲宴", es: "Hoegap", fr: "Hoegap", ar: "هويجاب", ru: "Хвегап" },
+    chuseok: { ko: "추석", en: "Chuseok", ja: "秋夕(チュソク)", zh: "中秋节", es: "Chuseok", fr: "Chuseok", ar: "تشوسوك", ru: "Чусок" },
+    daeboreum: { ko: "정월대보름", en: "Daeboreum", ja: "正月大満月", zh: "正月十五", es: "Daeboreum", fr: "Daeboreum", ar: "دايبوريوم", ru: "Тэборым" },
+    seollal: { ko: "설날", en: "Seollal", ja: "旧正月(ソルラル)", zh: "春节", es: "Seollal", fr: "Seollal", ar: "سيولال", ru: "Соллаль" },
+    seollal: { ko: "설날", en: "Seollal", ja: "旧正月(ソルラル)", zh: "春节", es: "Seollal", fr: "Seollal", ar: "سيولال", ru: "Соллаль" },
+  };
+
+  interface SeasonalCurationItem {
+    slug: string;
+    season: 'spring' | 'summer' | 'autumn' | 'winter';
+    title: Record<string, string>;
+    summary: Record<string, string>;
+    status: 'ready' | 'planned' | 'placeholder';
+    linkedPath?: string;
+  }
+
+  const seasonalCurationsData: SeasonalCurationItem[] = [
+    {
+      slug: 'spring-curation',
+      season: 'spring',
+      title: { ko: "봄내음 가득한 제철 반찬", en: "Spring Seasonal Banchan", ja: "春の旬のおかず", zh: "春季时令伴餐", es: "Banchan de Primavera", fr: "Banchan de Printemps", ar: "أطباق الربيع", ru: "Весенние закуски" },
+      summary: { ko: "봄철 입맛을 돋우는 신선한 큐레이션 준비중입니다.", en: "Spring curation coming soon.", ja: "春のキュレーション準備中", zh: "春季推荐准备中", es: "Curaduría de primavera pronto", fr: "Curation de printemps bientôt", ar: "تنسيق الربيع قريباً", ru: "Весенняя подборка скоро" },
+      status: 'planned'
+    },
+    {
+      slug: 'summer-korean-foods-10',
+      season: 'summer',
+      title: summerFoodsTitles,
+      summary: summerFoodsDescs,
+      status: 'ready',
+      linkedPath: '/hot/summer-korean-foods-10'
+    },
+    {
+      slug: 'autumn-curation',
+      season: 'autumn',
+      title: { ko: "가을 추수 제철 반찬", en: "Autumn Seasonal Banchan", ja: "秋の旬のおかず", zh: "秋季时令伴餐", es: "Banchan de Otoño", fr: "Banchan d'Automne", ar: "أطباق الخريف", ru: "Осенние закуски" },
+      summary: { ko: "가을철 풍성한 영양을 담은 큐레이션 준비중입니다.", en: "Autumn curation coming soon.", ja: "秋のキュレーション準備中", zh: "秋季推荐准备中", es: "Curaduría de otoño pronto", fr: "Curation d'automne bientôt", ar: "تنسيق الخريف قريباً", ru: "Осенняя подборка скоро" },
+      status: 'planned'
+    },
+    {
+      slug: 'winter-curation',
+      season: 'winter',
+      title: { ko: "겨울 보양 제철 반찬", en: "Winter Seasonal Banchan", ja: "冬の旬のおかず", zh: "冬季时令伴餐", es: "Banchan de Invierno", fr: "Banchan d'Hiver", ar: "أطباق الشتاء", ru: "Зимние закуски" },
+      summary: { ko: "겨울철 깊은 맛을 내는 큐레이션 준비중입니다.", en: "Winter curation coming soon.", ja: "冬のキュレーション準備中", zh: "冬季推荐准备中", es: "Curaduría de invierno pronto", fr: "Curation d'hiver bientôt", ar: "تنسيق الشتاء قريباً", ru: "Зимняя подборка скоро" },
+      status: 'planned'
+    }
+  ];
 
   const title = pageTitles[locale] || pageTitles["en"];
   const subtitle = pageSubtitles[locale] || pageSubtitles["en"];
@@ -258,76 +338,132 @@ export default function HotIndexPage({ params: { locale } }: Props) {
             {specialCurationSectionTitles[locale] || specialCurationSectionTitles["en"]}
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* 1. 절기별 제철 반찬 */}
-            <div className="group flex flex-col justify-between p-6 rounded-3xl bg-slate-900/30 border border-slate-800/80 hover:bg-slate-900/50 transition-all duration-300 shadow-2xl">
-              <div>
-                <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-6 border border-slate-800/80">
+          <div className="flex flex-col gap-8">
+            {/* 1. 계절별 반찬 (Full Width) */}
+            <div className="col-span-full group flex flex-col p-6 rounded-3xl bg-slate-900/30 border border-slate-800/80 hover:bg-slate-900/50 transition-all duration-300 shadow-2xl">
+              <div className="flex flex-col md:flex-row md:items-end gap-6 mb-8 border-b border-slate-800 pb-6">
+                <div className="relative aspect-[16/9] w-full md:w-1/3 max-w-[300px] rounded-2xl overflow-hidden border border-slate-800/80 shrink-0">
                   <Image
                     src={aiImages.seasonalCuration.src}
                     alt={aiImages.seasonalCuration.alt[locale as keyof typeof aiImages.seasonalCuration.alt] || aiImages.seasonalCuration.alt.en}
                     fill
                     className="object-cover group-hover:scale-[1.02] transition-transform duration-500"
-                    sizes="(max-width: 600px) 100vw, 600px"
+                    sizes="(max-width: 600px) 100vw, 300px"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-rose-400 transition-colors">
-                  {seasonalTitles[locale] || seasonalTitles["en"]}
-                </h3>
-                <p className="text-slate-400 text-sm leading-relaxed font-light">
-                  {seasonalDescs[locale] || seasonalDescs["en"]}
-                </p>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-rose-400 transition-colors">
+                    {seasonalTitles[locale] || seasonalTitles["en"]}
+                  </h3>
+                  <p className="text-slate-400 text-sm leading-relaxed font-light">
+                    {seasonalDescs[locale] || seasonalDescs["en"]}
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {seasonalCurationsData.map((season) => {
+                  const title = season.title[locale] || season.title["en"];
+                  const summary = season.summary[locale] || season.summary["en"];
+                  const isReady = season.status === 'ready';
+
+                  if (isReady && season.linkedPath) {
+                    return (
+                      <Link
+                        key={season.slug}
+                        href={season.linkedPath}
+                        className="flex flex-col p-5 rounded-2xl bg-blue-500/10 border border-blue-500/30 hover:bg-blue-500/20 hover:border-blue-400/50 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] transition-all duration-300 relative overflow-hidden group/card"
+                      >
+                        <div className="absolute top-0 left-0 w-full h-1 bg-blue-500/50" />
+                        <span className="inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-blue-500/20 text-blue-400 border border-blue-500/30 mb-3 w-fit">
+                          {seasonLabels[season.season][locale] || seasonLabels[season.season]["en"]}
+                        </span>
+                        <h4 className="text-base font-bold text-white mb-2 group-hover/card:text-blue-400 transition-colors">
+                          {title}
+                        </h4>
+                        <p className="text-xs text-slate-400 line-clamp-3 mb-4 flex-grow">
+                          {summary}
+                        </p>
+                        <div className="flex items-center gap-1.5 text-xs font-bold text-blue-400 mt-auto">
+                          <span>{viewText}</span>
+                          <ArrowRight className="w-3 h-3 transform group-hover/card:translate-x-1 transition-transform" />
+                        </div>
+                      </Link>
+                    );
+                  }
+
+                  return (
+                    <div
+                      key={season.slug}
+                      className="flex flex-col p-5 rounded-2xl bg-slate-950/50 border border-slate-800/80 transition-all duration-300 relative"
+                    >
+                      <span className="inline-block px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-slate-800 text-slate-400 border border-slate-700 mb-3 w-fit">
+                        {seasonLabels[season.season][locale] || seasonLabels[season.season]["en"]}
+                      </span>
+                      <h4 className="text-base font-bold text-slate-300 mb-2">
+                        {title}
+                      </h4>
+                      <p className="text-xs text-slate-500 line-clamp-3 mb-4 flex-grow italic">
+                        {summary}
+                      </p>
+                      <div className="mt-auto pt-4 border-t border-slate-800/50">
+                         <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+                           Curated Soon
+                         </span>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
 
-            {/* 2. 미디어 속 한식 */}
-            <div className="group flex flex-col justify-between p-6 rounded-3xl bg-slate-900/30 border border-slate-800/80 hover:bg-slate-900/50 transition-all duration-300 shadow-2xl">
-              <div>
-                <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-6 border border-slate-800/80">
-                  <Image
-                    src={aiImages.mediaLinkedCuration.src}
-                    alt={aiImages.mediaLinkedCuration.alt[locale as keyof typeof aiImages.mediaLinkedCuration.alt] || aiImages.mediaLinkedCuration.alt.en}
-                    fill
-                    className="object-cover group-hover:scale-[1.02] transition-transform duration-500"
-                    sizes="(max-width: 600px) 100vw, 600px"
-                  />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* 2. 미디어 속 한식 */}
+              <div className="group flex flex-col justify-between p-6 rounded-3xl bg-slate-900/30 border border-slate-800/80 hover:bg-slate-900/50 transition-all duration-300 shadow-2xl">
+                <div>
+                  <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-6 border border-slate-800/80">
+                    <Image
+                      src={aiImages.mediaLinkedCuration.src}
+                      alt={aiImages.mediaLinkedCuration.alt[locale as keyof typeof aiImages.mediaLinkedCuration.alt] || aiImages.mediaLinkedCuration.alt.en}
+                      fill
+                      className="object-cover group-hover:scale-[1.02] transition-transform duration-500"
+                      sizes="(max-width: 600px) 100vw, 600px"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-rose-400 transition-colors">
+                    {mediaTitles[locale] || mediaTitles["en"]}
+                  </h3>
+                  <p className="text-slate-400 text-sm leading-relaxed font-light mb-6">
+                    {mediaDescs[locale] || mediaDescs["en"]}
+                  </p>
+                  <div className="p-4 bg-slate-950/50 border border-slate-800/50 rounded-xl flex items-center justify-center gap-2 text-slate-400 mt-auto">
+                    <span className="text-sm font-semibold tracking-wide">AI Curation Coming Soon</span>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-rose-400 transition-colors">
-                  {mediaTitles[locale] || mediaTitles["en"]}
-                </h3>
-                <p className="text-slate-400 text-sm leading-relaxed font-light">
-                  {mediaDescs[locale] || mediaDescs["en"]}
-                </p>
+              </div>
+
+              {/* 3. 잔치와 명절음식 */}
+              <div className="group flex flex-col justify-between p-6 rounded-3xl bg-slate-900/30 border border-slate-800/80 hover:bg-slate-900/50 transition-all duration-300 shadow-2xl">
+                <div>
+                  <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-6 border border-slate-800/80 bg-slate-800 flex items-center justify-center">
+                     <span className="text-slate-600 font-bold tracking-widest uppercase">Coming Soon</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-rose-400 transition-colors">
+                    {feastTitles[locale] || feastTitles["en"]}
+                  </h3>
+                  <p className="text-slate-400 text-sm leading-relaxed font-light mb-6">
+                    {feastDescs[locale] || feastDescs["en"]}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-auto">
+                    {Object.values(feastTags).map((tag, idx) => (
+                      <span key={idx} className="px-2.5 py-1 text-[10px] font-bold text-slate-400 bg-slate-950/80 border border-slate-800/50 rounded-md">
+                        {tag[locale] || tag["en"]}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
-
-            {/* 3. 신규 추가: 여름철 한국음식 10선 */}
-            <Link
-              href={`/hot/summer-korean-foods-10`}
-              className="group flex flex-col justify-between p-6 rounded-3xl bg-slate-900/30 border border-slate-800/80 hover:bg-slate-900/50 hover:border-rose-500/30 transition-all duration-300 shadow-2xl"
-            >
-              <div>
-                <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden mb-6 border border-slate-800/80">
-                  <Image
-                    src={aiImages.summerFoodsHero.src}
-                    alt={aiImages.summerFoodsHero.alt[locale as keyof typeof aiImages.summerFoodsHero.alt] || aiImages.summerFoodsHero.alt.en}
-                    fill
-                    className="object-cover group-hover:scale-[1.02] transition-transform duration-500"
-                    sizes="(max-width: 600px) 100vw, 600px"
-                  />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-rose-400 transition-colors">
-                  {summerFoodsTitles[locale] || summerFoodsTitles["en"]}
-                </h3>
-                <p className="text-slate-400 text-sm leading-relaxed font-light">
-                  {summerFoodsDescs[locale] || summerFoodsDescs["en"]}
-                </p>
-              </div>
-              <div className="flex items-center gap-2 text-xs font-bold text-slate-300 group-hover:text-rose-400 transition-colors mt-6">
-                <span>{viewText}</span>
-                <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
-              </div>
-            </Link>
           </div>
         </div>
       </div>

@@ -124,10 +124,40 @@
     "hot": "人气伴餐8选",
     "ingredients": "韩食食材",
     "experience": "韩食体验",
-    "experience_status": "即将推出",
-    "experience_alert": "该内容正在准备中。",
     "previous": "上一页",
     "next": "下一页"
+  },
+  "experience": {
+    "title": "韩食体验",
+    "intro": "通过各种庆典、活动和游记，深入体验韩食文化。",
+    "festivals": {
+      "title": "韩食相关庆典",
+      "description": "了解在全国各地举办的生动美食庆典。"
+    },
+    "academic": {
+      "title": "学术及营销活动",
+      "description": "通过学术和产业活动信息，共同了解韩食讨论和产业趋势。"
+    },
+    "tours": {
+      "title": "韩食游记",
+      "description": "介绍您可以亲自拜访体验的代表性韩食景点。"
+    },
+    "status": {
+      "upcoming": "即将举行",
+      "ongoing": "进行中",
+      "archived": "已结束",
+      "seasonal": "季节性活动",
+      "tbd": "待定"
+    },
+    "labels": {
+      "featured": "推荐",
+      "visit_website": "官方网站",
+      "organizer": "主办/承办",
+      "host": "主办",
+      "location": "地点",
+      "why_visit": "推荐理由",
+      "category": "分类"
+    }
   },
   "directions": {
     "yaksik-dongwon": "东",

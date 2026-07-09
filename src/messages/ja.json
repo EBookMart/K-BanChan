@@ -109,10 +109,40 @@
     "hot": "人気おかず8選",
     "ingredients": "韓国の食材",
     "experience": "韓国料理体験",
-    "experience_status": "準備中",
-    "experience_alert": "準備中です。",
     "previous": "前へ",
     "next": "次へ"
+  },
+  "experience": {
+    "title": "韓国料理体験",
+    "intro": "韓国料理の多様なお祭り、行事、そして紀行を通じて韓国の食文化を深く体験してください。",
+    "festivals": {
+      "title": "韓国料理関連のお祭り",
+      "description": "全国各地で開催される生き生きとした美食のお祭りに会いましょう。"
+    },
+    "academic": {
+      "title": "学術およびマーケティングイベント",
+      "description": "学術/産業イベント情報を通じて韓国料理の談論と産業の流れを共に読み解きます。"
+    },
+    "tours": {
+      "title": "韓国料理紀行",
+      "description": "直接訪問して経験できる代表的な韓国料理体験スポットを紹介します。"
+    },
+    "status": {
+      "upcoming": "予定",
+      "ongoing": "進行中",
+      "archived": "終了",
+      "seasonal": "シーズン行事",
+      "tbd": "未定"
+    },
+    "labels": {
+      "featured": "おすすめ",
+      "visit_website": "公式ウェブサイト",
+      "organizer": "主催/主管",
+      "host": "主催",
+      "location": "場所",
+      "why_visit": "おすすめの理由",
+      "category": "分類"
+    }
   },
   "directions": {
     "yaksik-dongwon": "東",

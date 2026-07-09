@@ -127,10 +127,40 @@
     "hot": "인기 반찬 8선",
     "ingredients": "한식의 식재료",
     "experience": "한식 체험",
-    "experience_status": "준비중",
-    "experience_alert": "준비중입니다.",
     "previous": "이전 창",
     "next": "다음 창"
+  },
+  "experience": {
+    "title": "한식 체험",
+    "intro": "한식의 다양한 축제, 행사, 그리고 기행을 통해 한식 문화를 깊이 있게 체험하세요.",
+    "festivals": {
+      "title": "한식 관련 축제",
+      "description": "전국 곳곳에서 열리는 생생한 미식 축제를 만나보세요."
+    },
+    "academic": {
+      "title": "학술 및 마케팅 행사",
+      "description": "학술/산업 행사 정보를 통해 한식 담론과 산업 흐름을 함께 봅니다."
+    },
+    "tours": {
+      "title": "한식 기행 (Culinary Tour)",
+      "description": "직접 방문하여 경험할 수 있는 대표 한식 체험 명소를 소개합니다."
+    },
+    "status": {
+      "upcoming": "예정",
+      "ongoing": "진행중",
+      "archived": "종료",
+      "seasonal": "시즌행사",
+      "tbd": "미정"
+    },
+    "labels": {
+      "featured": "추천",
+      "visit_website": "공식 웹사이트",
+      "organizer": "주최/주관",
+      "host": "주최",
+      "location": "장소",
+      "why_visit": "추천 이유",
+      "category": "분류"
+    }
   },
   "directions": {
     "yaksik-dongwon": "동쪽",

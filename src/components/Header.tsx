@@ -91,15 +91,16 @@ export default function Header() {
             <span className="animate-pulse">🔥</span>
             <span>{tNav("hot")}</span>
           </Link>
-          <button
-            onClick={() => alert(tNav("experience_alert"))}
-            className="flex items-center gap-1 text-slate-500 hover:text-slate-400 transition-colors cursor-pointer font-semibold text-sm"
+          <Link
+            href="/experience"
+            className={`transition-colors flex items-center gap-1.5 ${
+              pathname.startsWith("/experience")
+                ? "text-emerald-400"
+                : "text-slate-300 hover:text-white"
+            }`}
           >
             <span>{tNav("experience")}</span>
-            <span className="text-[10px] bg-slate-900 border border-slate-800 text-slate-400 px-1.5 py-0.5 rounded font-bold">
-              {tNav("experience_status")}
-            </span>
-          </button>
+          </Link>
         </nav>
 
         {/* 3. 우측 다국어 선택기 & 모바일 햄버거 버튼 */}
@@ -222,18 +223,17 @@ export default function Header() {
               <span className="animate-pulse">🔥</span>
               <span>{tNav("hot")}</span>
             </Link>
-            <button
-              onClick={() => {
-                setIsMenuOpen(false);
-                alert(tNav("experience_alert"));
-              }}
-              className="p-2 rounded-lg text-slate-500 hover:bg-slate-900/50 transition-colors flex items-center justify-between text-left w-full font-semibold text-sm"
+            <Link
+              href="/experience"
+              onClick={() => setIsMenuOpen(false)}
+              className={`p-2 rounded-lg transition-colors flex items-center gap-1.5 ${
+                pathname.startsWith("/experience")
+                  ? "bg-emerald-500/10 text-emerald-400"
+                  : "text-slate-300 hover:bg-slate-900/50"
+              }`}
             >
               <span>{tNav("experience")}</span>
-              <span className="text-[10px] bg-slate-900 border border-slate-800 text-slate-400 px-1.5 py-0.5 rounded font-bold">
-                {tNav("experience_status")}
-              </span>
-            </button>
+            </Link>
           </nav>
         </div>
       )}
