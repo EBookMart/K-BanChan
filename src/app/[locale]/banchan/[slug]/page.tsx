@@ -10,6 +10,9 @@ import BanchanCard from "@/components/BanchanCard";
 import { ArrowLeft, BookOpen } from "lucide-react";
 import { getAIImage } from "@/data/ai-images";
 import BanchanDetailHero from "@/components/banchan/BanchanDetailHero";
+import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import MonetizationCTA from "@/components/MonetizationCTA";
+import { Download } from "lucide-react";
 
 function getPremiumBanchanImage(slug: string, locale: string) {
   if (slug === "kimchi" || slug === "baechu-geotjeori-26") {
@@ -188,6 +191,9 @@ export default async function BanchanDetailPage({ params: { locale, slug } }: Pr
             objectPositionDesktop={objectPositionDesktop}
           />
 
+          {/* Disclosure: 제휴 링크 안내 */}
+          <AffiliateDisclosure locale={locale} className="mb-8" />
+
           {/* 콘텐츠 상세 영역 (Grid 1열 -> md:12열) */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16">
             {/* 좌측: 재료 및 양념 (md:5열) */}
@@ -250,6 +256,27 @@ export default async function BanchanDetailPage({ params: { locale, slug } }: Pr
                 </p>
               </div>
             </div>
+          </div>
+
+          {/* 중간 CTA: 관련 식재료 및 가이드 북 다운로드 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+             <MonetizationCTA 
+               title="반찬 식재료 구매 가이드"
+               description="이 반찬을 만들 때 필요한 핵심 식재료와 양념의 올바른 선택법을 알아보세요."
+               buttonLabel="식재료 뷰어 열기"
+               href="/ingredients"
+               eventName="cta_click_related_ingredient"
+               variant="subtle"
+             />
+             <MonetizationCTA 
+               title="초보자를 위한 한식 반찬 레시피 북"
+               description="PDF 가이드북을 다운로드하고 K-BanChan의 베스트셀러 레시피 10가지를 평생 소장하세요."
+               buttonLabel="무료 다운로드"
+               href="/archive"
+               eventName="cta_click_guide_download"
+               variant="primary"
+               icon={Download}
+             />
           </div>
 
           {/* 하단: 관련 반찬 추천 3선 */}

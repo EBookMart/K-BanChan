@@ -5,7 +5,8 @@ import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import { ingredientCategories } from "@/data/ingredients";
 import banchanData from "@/data/banchan.json";
-import { ArrowRight, Leaf, Fish, Beef, Bean, Activity, LucideProps } from "lucide-react";
+import { ArrowRight, Leaf, Fish, Beef, Bean, Activity, LucideProps, Mail } from "lucide-react";
+import MonetizationCTA from "./MonetizationCTA";
 
 // Lucide 아이콘 매핑
 const categoryIcons: Record<string, React.ComponentType<LucideProps>> = {
@@ -147,6 +148,18 @@ export default function IngredientsClient({ locale, translations }: Props) {
             );
           })}
         </div>
+      </div>
+
+      <div className="mt-16">
+        <MonetizationCTA 
+          title="K-BanChan 뉴스레터 구독"
+          description="한국 제철 식재료 정보와 새로운 반찬 레시피를 이메일로 받아보세요."
+          buttonLabel="구독하기"
+          href="/newsletter"
+          eventName="cta_click_newsletter"
+          variant="secondary"
+          icon={Mail}
+        />
       </div>
     </div>
   );

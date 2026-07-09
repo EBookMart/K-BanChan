@@ -8,6 +8,9 @@ export interface ExperienceBase {
   sourceType?: SourceType;
   isVerified?: boolean;
   lastCheckedAt?: string;
+  partnerLinks?: { label: string; url: string }[];
+  hasNewsletterCTA?: boolean;
+  hasDownloadCTA?: boolean;
 }
 
 export type FestivalStatus = "upcoming" | "ongoing" | "archived" | "seasonal" | "tbd";

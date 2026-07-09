@@ -4,6 +4,8 @@ export interface IngredientCategory {
   description: { [key: string]: string };
   longDescription: { [key: string]: string };
   relatedBanchanIds: string[];
+  monetizationType?: "affiliate" | "newsletter" | "none";
+  partnerLinks?: { label: string; url: string }[];
 }
 
 export const ingredientCategories: IngredientCategory[] = [

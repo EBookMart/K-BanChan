@@ -34,6 +34,13 @@ export interface Banchan {
     amazon_us: string;
     rakuten_jp: string;
   };
+  monetization?: {
+    hasAffiliateLinks?: boolean;
+    hasNewsletterCTA?: boolean;
+    recommendedProducts?: string[];
+    recommendedTools?: string[];
+    partnerLinks?: { label: string; url: string }[];
+  };
   created_at: string;
   updated_at: string;
 }

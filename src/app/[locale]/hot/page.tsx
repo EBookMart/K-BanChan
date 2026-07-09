@@ -3,7 +3,8 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { getAllCurations } from "@/data/hot-curations";
-import { ArrowRight, Flame } from "lucide-react";
+import { ArrowRight, Flame, Download } from "lucide-react";
+import MonetizationCTA from "@/components/MonetizationCTA";
 import { aiImages } from "@/data/ai-images";
 import HotBannerNav from "@/components/HotBannerNav";
 import Header from "@/components/Header";
@@ -465,6 +466,20 @@ export default function HotIndexPage({ params: { locale } }: Props) {
             </div>
           </div>
         </div>
+
+        {/* 하단 구독/다운로드 CTA */}
+        <div className="mt-20 border-t border-slate-900 pt-16">
+          <MonetizationCTA 
+            title="계절별 반찬 큐레이션 북"
+            description="사계절 제철 식재료를 활용한 K-BanChan의 베스트 큐레이션을 PDF로 무료 다운로드하세요."
+            buttonLabel="다운로드 받기"
+            href="/archive"
+            eventName="cta_click_guide_download"
+            variant="primary"
+            icon={Download}
+          />
+        </div>
+
       </div>
       </main>
       <Footer />

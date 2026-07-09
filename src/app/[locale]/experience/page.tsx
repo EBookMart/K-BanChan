@@ -5,7 +5,8 @@ import { routing, Link } from "@/i18n/routing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { festivalsData, academicEventsData, culinaryToursData, getEventStatus } from "@/data/experience";
-import { Calendar, MapPin, Building, ChevronRight, GraduationCap, Map, PartyPopper, CheckCircle2 } from "lucide-react";
+import { Calendar, MapPin, Building, ChevronRight, GraduationCap, Map, PartyPopper, CheckCircle2, Bell } from "lucide-react";
+import MonetizationCTA from "@/components/MonetizationCTA";
 
 interface Props {
   params: {
@@ -249,6 +250,19 @@ export default async function ExperiencePage({ params: { locale } }: Props) {
               </Link>
             ))}
           </div>
+        </section>
+
+        {/* 하단 구독 CTA */}
+        <section className="mt-20 border-t border-slate-900 pt-16">
+          <MonetizationCTA 
+            title="한식 체험 업데이트 구독"
+            description="새로운 한식 축제, 학술 행사, 미식 투어 일정을 가장 먼저 받아보세요."
+            buttonLabel="알림 받기"
+            href="/newsletter"
+            eventName="cta_click_experience"
+            variant="secondary"
+            icon={Bell}
+          />
         </section>
 
       </main>
