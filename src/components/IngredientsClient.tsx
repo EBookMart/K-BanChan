@@ -158,7 +158,7 @@ export default function IngredientsClient({ locale, translations }: Props) {
           href="/newsletter"
           eventName="cta_click_newsletter"
           variant="secondary"
-          icon={Mail}
+          icon={<Mail size={24} />}
         />
       </div>
     </div>

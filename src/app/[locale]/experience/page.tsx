@@ -261,7 +261,7 @@ export default async function ExperiencePage({ params: { locale } }: Props) {
             href="/newsletter"
             eventName="cta_click_experience"
             variant="secondary"
-            icon={Bell}
+            icon={<Bell size={24} />}
           />
         </section>
 

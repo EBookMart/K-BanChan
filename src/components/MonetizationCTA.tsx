@@ -3,7 +3,7 @@
 import React from "react";
 import { Link } from "@/i18n/routing";
 import { trackEvent, TrackingPayload } from "@/lib/tracking";
-import { ChevronRight, ExternalLink, LucideIcon } from "lucide-react";
+import { ChevronRight, ExternalLink } from "lucide-react";
 
 export interface MonetizationCTAProps {
   title: string;
@@ -13,7 +13,7 @@ export interface MonetizationCTAProps {
   eventName: "cta_click_newsletter" | "cta_click_guide_download" | "cta_click_related_ingredient" | "cta_click_related_tool" | "cta_click_experience" | "cta_click_partner_link" | "cta_click_view_more";
   eventPayload?: TrackingPayload;
   variant?: "primary" | "secondary" | "subtle";
-  icon?: LucideIcon;
+  icon?: React.ReactNode;
   isExternal?: boolean;
 }
 
@@ -25,7 +25,7 @@ export default function MonetizationCTA({
   eventName,
   eventPayload,
   variant = "primary",
-  icon: Icon,
+  icon,
   isExternal = false,
 }: MonetizationCTAProps) {
   
@@ -54,9 +54,9 @@ export default function MonetizationCTA({
   const content = (
     <>
       <div className="flex items-start gap-4 flex-1">
-        {Icon && (
+        {icon && (
           <div className={`p-3 rounded-xl shrink-0 ${variant === 'primary' ? 'bg-rose-500/10 text-rose-400' : variant === 'secondary' ? 'bg-blue-500/10 text-blue-400' : 'bg-slate-800 text-slate-400'}`}>
-            <Icon size={24} />
+            {icon}
           </div>
         )}
         <div>

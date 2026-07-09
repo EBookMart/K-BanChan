@@ -476,7 +476,7 @@ export default function HotIndexPage({ params: { locale } }: Props) {
             href="/archive"
             eventName="cta_click_guide_download"
             variant="primary"
-            icon={Download}
+            icon={<Download size={24} />}
           />
         </div>
 

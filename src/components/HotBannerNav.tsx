@@ -1,9 +1,8 @@
 "use client";
 
 import React from "react";
-import { Link } from "@/i18n/routing";
+import { Link, usePathname } from "@/i18n/routing";
 import { ArrowRight, ArrowLeft, Flame, Sparkles } from "lucide-react";
-import { usePathname } from "next/navigation";
 
 interface HotBannerNavProps {
   locale: string;
@@ -11,7 +10,7 @@ interface HotBannerNavProps {
 
 export default function HotBannerNav({ locale }: HotBannerNavProps) {
   const pathname = usePathname();
-  const isSummerPage = pathname.includes("summer-korean-foods-10");
+  const isSummerPage = pathname?.includes("summer-korean-foods-10") ?? false;
   const isRtl = locale === "ar";
 
   const texts = {
