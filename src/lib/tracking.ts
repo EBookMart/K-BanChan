@@ -18,7 +18,14 @@ export interface TrackingPayload {
   category?: string;
   label?: string;
   value?: number;
-  [key: string]: any;
+  [key: string]: unknown;
+}
+
+declare global {
+  interface Window {
+    dataLayer?: unknown[];
+    gtag?: (...args: unknown[]) => void;
+  }
 }
 
 export function trackEvent(eventName: EventName, payload?: TrackingPayload) {
@@ -26,15 +33,15 @@ export function trackEvent(eventName: EventName, payload?: TrackingPayload) {
   if (typeof window === "undefined") return;
 
   // 2. dataLayer가 존재하면 GTM 방식으로 푸시
-  if (typeof window !== "undefined" && (window as any).dataLayer) {
-    (window as any).dataLayer.push({
+  if (typeof window !== "undefined" && window.dataLayer) {
+    window.dataLayer.push({
       event: eventName,
       ...payload,
     });
   } 
   // 3. gtag가 존재하면 GA4 직접 호출 방식 사용
-  else if (typeof window !== "undefined" && (window as any).gtag) {
-    (window as any).gtag("event", eventName, {
+  else if (typeof window !== "undefined" && window.gtag) {
+    window.gtag("event", eventName, {
       event_category: payload?.category,
       event_label: payload?.label,
       value: payload?.value,

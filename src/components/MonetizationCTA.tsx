@@ -86,6 +86,7 @@ export default function MonetizationCTA({
   }
 
   return (
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     <Link href={href as any} onClick={handleClick} className={`${baseClasses} ${variantClasses[variant]}`}>
       {content}
     </Link>
