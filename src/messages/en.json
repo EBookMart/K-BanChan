@@ -123,9 +123,12 @@
   "nav": {
     "banchan": "50 Banchan",
     "banchan_guide": "Understanding Banchan",
-    "articles": "THE SECRET CODE",
-    "hot": "HOT 8 DISHES",
+    "articles": "The Secret Code",
+    "hot": "Top 8 Dishes",
     "ingredients": "Korean Ingredients",
+    "experience": "K-Food Experience",
+    "experience_status": "Coming Soon",
+    "experience_alert": "This section is coming soon.",
     "previous": "Previous",
     "next": "Next"
   },
@@ -151,7 +154,7 @@
   "articles": {
     "title": "The Secret Code of K-Food",
     "subtitle": "Discover the five characteristics of Korean food through Obangsaek philosophy",
-    "index_title": "Philosophy & Natural Origins of Korean Cuisine (The Secret Code)",
+    "index_title": "Philosophy & Natural Origins of Korean Cuisine",
     "index_subtitle": "",
     "read_more": "Read More",
     "direction": "Direction",

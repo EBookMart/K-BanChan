@@ -121,11 +121,14 @@
     "logo_alt": "K-BanChan - 한식의 비밀 코드"
   },
   "nav": {
-    "banchan": "반찬 50선",
+    "banchan": "반찬50선",
     "banchan_guide": "반찬의 이해",
-    "articles": "THE SECRET CODE",
-    "hot": "HOT 8 DISHES",
+    "articles": "한식의 비밀",
+    "hot": "인기 반찬 8선",
     "ingredients": "한식의 식재료",
+    "experience": "한식 체험",
+    "experience_status": "준비중",
+    "experience_alert": "준비중입니다.",
     "previous": "이전 창",
     "next": "다음 창"
   },
@@ -149,9 +152,9 @@
     "current_element": "현재 원소"
   },
   "articles": {
-    "title": "한식의 비밀 코드 (The Secret Code)",
+    "title": "한식의 비밀 코드",
     "subtitle": "오방색 방위와 철학으로 만나는 한식의 5대 특성",
-    "index_title": "한식의 철학과 자연적 배경 (The Secret Code)",
+    "index_title": "한식의 철학과 자연적 배경",
     "index_subtitle": "",
     "read_more": "자세히 읽기",
     "direction": "방위",

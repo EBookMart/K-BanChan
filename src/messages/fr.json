@@ -119,9 +119,12 @@
   "nav": {
     "banchan": "50 Banchans",
     "banchan_guide": "Comprendre le Banchan",
-    "articles": "LE CODE SECRET",
-    "hot": "HOT 8 PLATS",
+    "articles": "Le Code Secret",
+    "hot": "Top 8 Plats",
     "ingredients": "Ingrédients",
+    "experience": "Expérience K-Food",
+    "experience_status": "Bientôt disponible",
+    "experience_alert": "Cette section sera bientôt disponible.",
     "previous": "Précédent",
     "next": "Suivant"
   },
@@ -147,7 +150,7 @@
   "articles": {
     "title": "Le Code Secret du K-Food",
     "subtitle": "Découvrez les cinq caractéristiques de la cuisine coréenne à travers la philosophie d'Obangsaek",
-    "index_title": "Philosophie & Origines Naturelles de la Cuisine Coréenne (Le Code Secret)",
+    "index_title": "Philosophie & Origines Naturelles de la Cuisine Coréenne",
     "index_subtitle": "",
     "read_more": "Lire la Suite",
     "direction": "Direction",

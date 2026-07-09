@@ -120,9 +120,12 @@
   "nav": {
     "banchan": "伴餐50选",
     "banchan_guide": "理解伴餐",
-    "articles": "THE SECRET CODE",
-    "hot": "HOT 8 DISHES",
+    "articles": "韩食的秘密",
+    "hot": "人气伴餐8选",
     "ingredients": "韩食食材",
+    "experience": "韩食体验",
+    "experience_status": "即将推出",
+    "experience_alert": "该内容正在准备中。",
     "previous": "上一页",
     "next": "下一页"
   },
@@ -148,7 +151,7 @@
   "articles": {
     "title": "韩国料理的秘密密码 (The Secret Code)",
     "subtitle": "通过五方色的方位与哲学领略韩国料理的五大特性",
-    "index_title": "韩国料理的哲学与自然背景 (The Secret Code)",
+    "index_title": "韩国料理的哲学与自然背景",
     "index_subtitle": "",
     "read_more": "阅读更多",
     "direction": "方位",

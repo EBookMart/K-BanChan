@@ -60,11 +60,11 @@ export default function SecretCodeCards({ locale }: SecretCodeCardsProps) {
   };
 
   return (
-    <section className="w-full py-16 md:py-24 bg-gradient-to-b from-slate-950 to-slate-900 px-4">
+    <section className="w-full py-8 md:py-12 bg-gradient-to-b from-slate-950 to-slate-900 px-4">
       <div className="max-w-7xl mx-auto">
         
         {/* 섹션 헤더 - 서브카피는 요구사항에 따라 완전히 삭제 */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-8">
           <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight">
             {t("index_title")}
           </h2>
@@ -106,10 +106,7 @@ export default function SecretCodeCards({ locale }: SecretCodeCardsProps) {
                 className={`flex flex-col justify-between p-6 rounded-2xl border transition-all duration-300 transform hover:-translate-y-1 ${cardBg} ${hoverRing}`}
               >
                 <div>
-                  {/* 방위 뱃지 (상단) */}
-                  <div className="mb-3">
-                    {getObangsaekBadge(art)}
-                  </div>
+
 
                   {/* 제목 */}
                   <h3 className="text-base md:text-lg font-bold text-white mb-1 leading-snug">

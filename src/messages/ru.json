@@ -120,9 +120,12 @@
   "nav": {
     "banchan": "50 банчанов",
     "banchan_guide": "Понимание банчана",
-    "articles": "THE SECRET CODE",
-    "hot": "HOT 8 DISHES",
+    "articles": "Секретный код",
+    "hot": "Топ-8 блюд",
     "ingredients": "Ингредиенты",
+    "experience": "Опыт K-Food",
+    "experience_status": "Скоро",
+    "experience_alert": "Этот раздел скоро появится.",
     "previous": "Назад",
     "next": "Вперед"
   },
@@ -148,7 +151,7 @@
   "articles": {
     "title": "Секретный код K-Food",
     "subtitle": "Откройте для себя пять характеристик корейской кухни через философию Обансэк",
-    "index_title": "Философия и природные истоки корейской кухни (The Secret Code)",
+    "index_title": "Философия и природные истоки корейской кухни",
     "index_subtitle": "",
     "read_more": "Читать далее",
     "direction": "Направление",

@@ -44,7 +44,7 @@ export default function HomePage({ params: { locale } }: Props) {
         <HeroSection />
 
         {/* 1.5. HOT 8 DISHES 특별 큐레이션 배너 */}
-        <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 mt-6">
+        <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 mt-4">
           <Link
             href="/hot"
             className="group flex flex-col sm:flex-row items-center justify-between p-4 sm:p-5 rounded-2xl bg-slate-900/30 border border-slate-800/80 hover:bg-slate-900/60 transition-all duration-300 hover:border-rose-500/20"
@@ -80,7 +80,7 @@ export default function HomePage({ params: { locale } }: Props) {
         <SecretCodeCards locale={locale} />
 
         {/* 3. 인기 반찬 8개 섹션 */}
-        <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-900/80 text-left">
+        <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 pt-8 pb-16 border-t border-slate-900/80 text-left">
           
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 border-b border-slate-800 pb-4">
             <div>

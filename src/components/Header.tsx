@@ -31,7 +31,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-900/80 transition-all duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 md:h-16 flex items-center justify-between">
         
         {/* 1. 좌측 로고 영역 삭제 (웹 접근성 준수를 위해 sr-only로 홈 링크만 보존) */}
         <Link href="/" className="sr-only">
@@ -39,16 +39,16 @@ export default function Header() {
         </Link>
 
         {/* 2. 네비게이션 링크 (데스크톱 전용, 좌측 정렬로 이동) */}
-        <nav className="hidden md:flex items-center gap-8 font-semibold text-sm mr-auto">
+        <nav className="hidden md:flex items-center gap-6 lg:gap-8 font-semibold text-sm mr-auto">
           <Link
-            href="/banchan"
-            className={`transition-colors ${
-              pathname.startsWith("/banchan") && !pathname.startsWith("/banchan-guide")
-                ? "text-amber-400"
+            href="/articles"
+            className={`tracking-wider transition-colors ${
+              pathname.startsWith("/articles")
+                ? "text-emerald-400"
                 : "text-slate-300 hover:text-white"
             }`}
           >
-            {tNav("banchan")}
+            {tNav("articles")}
           </Link>
           <Link
             href="/banchan-guide"
@@ -61,16 +61,6 @@ export default function Header() {
             {tNav("banchan_guide")}
           </Link>
           <Link
-            href="/articles"
-            className={`tracking-wider transition-colors ${
-              pathname.startsWith("/articles")
-                ? "text-emerald-400"
-                : "text-slate-300 hover:text-white"
-            }`}
-          >
-            {tNav("articles")}
-          </Link>
-          <Link
             href="/ingredients"
             className={`transition-colors ${
               pathname.startsWith("/ingredients")
@@ -79,6 +69,16 @@ export default function Header() {
             }`}
           >
             {tNav("ingredients")}
+          </Link>
+          <Link
+            href="/banchan"
+            className={`transition-colors ${
+              pathname.startsWith("/banchan") && !pathname.startsWith("/banchan-guide")
+                ? "text-amber-400"
+                : "text-slate-300 hover:text-white"
+            }`}
+          >
+            {tNav("banchan")}
           </Link>
           <Link
             href="/hot"
@@ -91,6 +91,15 @@ export default function Header() {
             <span className="animate-pulse">🔥</span>
             <span>{tNav("hot")}</span>
           </Link>
+          <button
+            onClick={() => alert(tNav("experience_alert"))}
+            className="flex items-center gap-1 text-slate-500 hover:text-slate-400 transition-colors cursor-pointer font-semibold text-sm"
+          >
+            <span>{tNav("experience")}</span>
+            <span className="text-[10px] bg-slate-900 border border-slate-800 text-slate-400 px-1.5 py-0.5 rounded font-bold">
+              {tNav("experience_status")}
+            </span>
+          </button>
         </nav>
 
         {/* 3. 우측 다국어 선택기 & 모바일 햄버거 버튼 */}
@@ -158,15 +167,15 @@ export default function Header() {
         <div className="md:hidden border-t border-slate-900/80 bg-slate-950/95 backdrop-blur-lg animate-in fade-in slide-in-from-top-3 duration-200">
           <nav className="flex flex-col p-4 gap-4 font-semibold text-sm">
             <Link
-              href="/banchan"
+              href="/articles"
               onClick={() => setIsMenuOpen(false)}
-              className={`p-2 rounded-lg transition-colors ${
-                pathname.startsWith("/banchan") && !pathname.startsWith("/banchan-guide")
-                  ? "bg-amber-500/10 text-amber-400"
+              className={`p-2 rounded-lg tracking-wider transition-colors ${
+                pathname.startsWith("/articles")
+                  ? "bg-emerald-500/10 text-emerald-400"
                   : "text-slate-300 hover:bg-slate-900/50"
               }`}
             >
-              {tNav("banchan")}
+              {tNav("articles")}
             </Link>
             <Link
               href="/banchan-guide"
@@ -180,17 +189,6 @@ export default function Header() {
               {tNav("banchan_guide")}
             </Link>
             <Link
-              href="/articles"
-              onClick={() => setIsMenuOpen(false)}
-              className={`p-2 rounded-lg tracking-wider transition-colors ${
-                pathname.startsWith("/articles")
-                  ? "bg-emerald-500/10 text-emerald-400"
-                  : "text-slate-300 hover:bg-slate-900/50"
-              }`}
-            >
-              {tNav("articles")}
-            </Link>
-            <Link
               href="/ingredients"
               onClick={() => setIsMenuOpen(false)}
               className={`p-2 rounded-lg transition-colors ${
@@ -200,6 +198,17 @@ export default function Header() {
               }`}
             >
               {tNav("ingredients")}
+            </Link>
+            <Link
+              href="/banchan"
+              onClick={() => setIsMenuOpen(false)}
+              className={`p-2 rounded-lg transition-colors ${
+                pathname.startsWith("/banchan") && !pathname.startsWith("/banchan-guide")
+                  ? "bg-amber-500/10 text-amber-400"
+                  : "text-slate-300 hover:bg-slate-900/50"
+              }`}
+            >
+              {tNav("banchan")}
             </Link>
             <Link
               href="/hot"
@@ -213,6 +222,18 @@ export default function Header() {
               <span className="animate-pulse">🔥</span>
               <span>{tNav("hot")}</span>
             </Link>
+            <button
+              onClick={() => {
+                setIsMenuOpen(false);
+                alert(tNav("experience_alert"));
+              }}
+              className="p-2 rounded-lg text-slate-500 hover:bg-slate-900/50 transition-colors flex items-center justify-between text-left w-full font-semibold text-sm"
+            >
+              <span>{tNav("experience")}</span>
+              <span className="text-[10px] bg-slate-900 border border-slate-800 text-slate-400 px-1.5 py-0.5 rounded font-bold">
+                {tNav("experience_status")}
+              </span>
+            </button>
           </nav>
         </div>
       )}

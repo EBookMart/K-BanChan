@@ -120,9 +120,12 @@
   "nav": {
     "banchan": "٥٠ بانشان",
     "banchan_guide": "فهم البانتشان",
-    "articles": "THE SECRET CODE",
-    "hot": "HOT 8 DISHES",
+    "articles": "الرمز السري",
+    "hot": "أفضل ٨ أطباق",
     "ingredients": "المكونات الكورية",
+    "experience": "تجربة الطعام الكوري",
+    "experience_status": "قريبًا",
+    "experience_alert": "هذا القسم قيد الإعداد.",
     "previous": "السابق",
     "next": "التالي"
   },
@@ -148,7 +151,7 @@
   "articles": {
     "title": "الرمز السري للطعام الكوري (The Secret Code)",
     "subtitle": "اكتشف الخصائص الخمس للمطبخ الكوري من خلال فلسفة أوبانغ سيك",
-    "index_title": "الفلسفة والأصول الطبيعية للمطبخ الكوري (The Secret Code)",
+    "index_title": "الفلسفة والأصول الطبيعية للمطبخ الكوري",
     "index_subtitle": "",
     "read_more": "اقرأ المزيد",
     "direction": "الاتجاه",
