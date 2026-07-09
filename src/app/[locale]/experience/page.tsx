@@ -1,7 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import { routing } from "@/i18n/routing";
+import { routing, Link } from "@/i18n/routing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { festivalsData, academicEventsData, culinaryToursData, getEventStatus } from "@/data/experience";
