@@ -3,7 +3,7 @@
 import React from "react";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import { articles, Article } from "@/data/articles";
+import { articles } from "@/data/articles";
 import { ArrowRight } from "lucide-react";
 
 interface SecretCodeCardsProps {
@@ -13,56 +13,10 @@ interface SecretCodeCardsProps {
 export default function SecretCodeCards({ locale }: SecretCodeCardsProps) {
   const t = useTranslations("articles");
 
-  // 각 slug에 어울리는 오방색 컬러칩 데코를 만듭니다.
-  const getObangsaekBadge = (art: Article) => {
-    const dir = art.direction[locale] || art.direction["en"];
-    const col = art.color[locale] || art.color["en"];
-    const elem = art.element[locale] || art.element["en"];
-
-    let badgeBg = "";
-    let badgeText = "";
-
-    switch (art.slug) {
-      case "yaksik-dongwon": // 청/녹
-        badgeBg = "bg-emerald-950/50 border-emerald-500/30";
-        badgeText = "text-emerald-400";
-        break;
-      case "yukmi": // 적
-        badgeBg = "bg-red-950/50 border-red-500/30";
-        badgeText = "text-red-400";
-        break;
-      case "obangsaek": // 황
-        badgeBg = "bg-amber-950/50 border-amber-500/30";
-        badgeText = "text-amber-400";
-        break;
-      case "nanum": // 백
-        badgeBg = "bg-slate-800/40 border-slate-400/30";
-        badgeText = "text-slate-200";
-        break;
-      case "ingredients-terroir": // 흑
-        badgeBg = "bg-neutral-900 border-neutral-700/50";
-        badgeText = "text-neutral-400";
-        break;
-      default:
-        badgeBg = "bg-slate-900 border-slate-800";
-        badgeText = "text-slate-400";
-    }
-
-    return (
-      <div className={`inline-flex flex-wrap items-center gap-1.5 px-2.5 py-1 rounded-md border text-xs font-semibold ${badgeBg} ${badgeText}`}>
-        <span>{dir}</span>
-        <span className="opacity-50">•</span>
-        <span>{elem}</span>
-        <span className="opacity-50">•</span>
-        <span>{col}</span>
-      </div>
-    );
-  };
-
   return (
     <section className="w-full py-8 md:py-12 bg-gradient-to-b from-slate-950 to-slate-900 px-4">
       <div className="max-w-7xl mx-auto">
-        
+
         {/* 섹션 헤더 - 서브카피는 요구사항에 따라 완전히 삭제 */}
         <div className="text-center max-w-3xl mx-auto mb-8">
           <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight">
@@ -76,7 +30,7 @@ export default function SecretCodeCards({ locale }: SecretCodeCardsProps) {
             const titleText = art.title[locale] || art.title["en"];
             const subtitleText = art.subtitle[locale] || art.subtitle["en"];
             const summaryText = art.summary[locale] || art.summary["en"];
-            
+
             // 호버 테두리 및 그림자 효과 지정
             let hoverRing = "";
             let cardBg = "bg-slate-900/40 border-slate-800/80";
