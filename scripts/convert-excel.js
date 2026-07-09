@@ -711,13 +711,18 @@ try {
   const currentDate = new Date().toISOString().split("T")[0];
 
   // 4. 데이터 가공 및 변환
+  const weeklyViewsOverrides = {
+    "gyeran-mari": 35,
+    "myeolchi-bokkeum": 52,
+    "dubu-jorim": 41
+  };
   const processedData = rawRows.map(row => {
     const rank = Number(row["순위"]);
     const nameKo = (row["반찬명"] || "").trim();
-    
+
     // 사전에서 다국어명 및 기본 로마자 슬러그 가져오기
-    const mapping = banchanDictionary[nameKo] || { 
-      slug: nameKo.toLowerCase().replace(/[^a-z0-9]/g, "-"), 
+    const mapping = banchanDictionary[nameKo] || {
+      slug: nameKo.toLowerCase().replace(/[^a-z0-9]/g, "-"),
       names: {
         ko: nameKo,
         en: nameKo,
@@ -740,7 +745,7 @@ try {
     // 비건 분석
     const veganRaw = String(row["비건 여부(H)"] || "X").trim();
     const vegan = veganRaw === "O";
-    
+
     let veganNote = "";
     if (!vegan && veganRaw.startsWith("X")) {
       const match = veganRaw.match(/X\s*\(([^)]+)\)/);
@@ -769,11 +774,11 @@ try {
     }
     // 1단계 매운 반찬: 약간 매운 양념(액젓, 고추, 고춧가루 약간)이 가볍게 들어간 무침류 및 기타 반찬
     else if (
-      seasoning.includes("고춧가루") || 
-      seasoning.includes("고추장") || 
-      seasoning.includes("고추") || 
-      seasoning.includes("액젓") || 
-      nameKo.includes("김치") || 
+      seasoning.includes("고춧가루") ||
+      seasoning.includes("고추장") ||
+      seasoning.includes("고추") ||
+      seasoning.includes("액젓") ||
+      nameKo.includes("김치") ||
       nameKo.includes("무생채")
     ) {
       spicyLevel = 1;
@@ -809,8 +814,9 @@ try {
       u_ksc_notes: "",
       image_url: `/images/banchan/${mapping.slug}.jpg`,
       featured: rank <= 8, // 상위 8개 반찬은 홈페이지에 Featured 반찬으로 매핑하기 쉽도록 featured 기본값을 true로 설정해 줍니다.
-      views_weekly: Math.floor(Math.random() * 50) + 10, // 임의의 가상 인기 조회수 주입
+      views_weekly: weeklyViewsOverrides[uniqueSlug] ?? Math.floor(Math.random() * 50) + 10,
       affiliate: {
+
         coupang: "",
         amazon_us: "",
         rakuten_jp: ""
