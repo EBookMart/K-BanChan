@@ -52,7 +52,7 @@ export default async function ArticlesIndexPage({ params: { locale } }: Props) {
           {/* 아티클 인덱스 헤더 */}
           <div className="text-center max-w-2xl mx-auto mb-10 md:mb-12">
             <span className="text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-950/40 border border-emerald-500/20 px-3 py-1 rounded-full mb-4 inline-block">
-              THE SECRET CODE
+              {t("title")}
             </span>
             <h1 className="text-3xl md:text-5xl font-black text-white tracking-tight">
               {t("index_title")}

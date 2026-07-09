@@ -2,7 +2,7 @@
   "site": {
     "name": "K-Banchan.net",
     "tagline": "El Mundo de la Comida Coreana y el Banchan",
-    "slogan": "the Secret Code"
+    "slogan": "Guía Premium de Comida Coreana"
   },
   "home": {
     "coming_soon": "Próximamente (En preparación)"
@@ -87,7 +87,7 @@
   },
   "banchan": {
     "title": "K-BanChan Top 50",
-    "subtitle": "Descubra el código secreto de 50 platos tradicionales coreanos (banchan), catalogados sistemáticamente para los entusiastas de la gastronomía mundial.",
+    "subtitle": "Descubra las 5 características de 50 platos tradicionales coreanos (banchan), catalogados sistemáticamente para los entusiastas de la gastronomía mundial.",
     "search_placeholder": "Buscar banchan por nombre o ingredientes...",
     "no_results": "No se encontraron resultados.",
     "filter": {
@@ -112,16 +112,16 @@
     }
   },
   "hero": {
-    "title": "THE SECRET CODE OF KOREAN CUISINE",
-    "subtitle": "Descubra los 5 Códigos Secretos de la Cocina Coreana",
+    "title": "THE 5 CORE CHARACTERISTICS OF KOREAN CUISINE",
+    "subtitle": "Descubra las 5 características de la cocina coreana",
     "cta_banchan": "Ver 50 Banchan",
     "cta_articles": "Leer 5 Características",
-    "logo_alt": "K-BanChan - El Código Secreto de la Cocina Coreana"
+    "logo_alt": "K-BanChan - Guía Premium de Comida Coreana"
   },
   "nav": {
     "banchan": "50 Banchan",
     "banchan_guide": "Comprender el Banchan",
-    "articles": "El Código Secreto",
+    "articles": "Las 5 características",
     "hot": "Top 8 Platos",
     "ingredients": "Ingredientes coreanos",
     "experience": "Experiencia de K-Food",
@@ -150,7 +150,7 @@
     "current_element": "Elemento Actual"
   },
   "articles": {
-    "title": "El Código Secreto de K-Food",
+    "title": "Las 5 características de K-Food",
     "subtitle": "Descubra las cinco características de la comida coreana a través de la filosofía Obangsaek",
     "index_title": "Filosofía y Origen Natural de la Cocina Coreana",
     "index_subtitle": "",
@@ -160,7 +160,7 @@
     "color": "Color",
     "back_to_list": "Volver a la lista",
     "related_banchan": "Banchan relacionados",
-    "next_article": "Siguiente código secreto",
+    "next_article": "Siguiente característica",
     "view_archive_title": "¿Quieres profundizar?",
     "view_archive_description": "Explora artículos académicos y referencias sobre este tema.",
     "view_archive_cta": "Ver Archivo",

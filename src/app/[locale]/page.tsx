@@ -58,14 +58,14 @@ export default function HomePage({ params: { locale } }: Props) {
                   Featured Curation
                 </span>
                 <p className="text-sm font-semibold text-slate-200 group-hover:text-white transition-colors">
-                  {locale === "ko" && "실시간 테마별 한식 큐레이션: [HOT 8 DISHES]를 만나보세요!"}
-                  {locale === "en" && "Discover Korean food by theme: Explore [HOT 8 DISHES] now!"}
-                  {locale === "ja" && "テーマ別韓国料理キュレーション: [HOT 8 DISHES] を今すぐ発見！"}
-                  {locale === "zh" && "主题韩食推荐：立即探索 [HOT 8 DISHES]！"}
-                  {locale === "es" && "Comida coreana por temas: ¡Explore [HOT 8 DISHES] ahora!"}
-                  {locale === "ar" && "اكتشف الأطباق الكورية حسب الموضوع: استكشف [HOT 8 DISHES] الآن!"}
-                  {locale === "ru" && "Корейская кухня по темам: откройте для себя [HOT 8 DISHES]!"}
-                  {!["ko", "en", "ja", "zh", "es", "ar", "ru"].includes(locale) && "Discover Korean food by theme: Explore [HOT 8 DISHES] now!"}
+                  {locale === "ko" && "실시간 테마별 한식 큐레이션: [인기 반찬 8선]을 만나보세요!"}
+                  {locale === "en" && "Discover Korean food by theme: Explore [Top 8 Dishes] now!"}
+                  {locale === "ja" && "テーマ別韓国料理キュレーション: [人気おかず8選] を今すぐ発見！"}
+                  {locale === "zh" && "主题韩食推荐：立即探索 [人气伴餐8选]！"}
+                  {locale === "es" && "Comida coreana por temas: ¡Explore [Los 8 mejores platos] ahora!"}
+                  {locale === "ar" && "اكتشف الأطباق الكورية حسب الموضوع: استكشف [أفضل ٨ أطباق] الآن!"}
+                  {locale === "ru" && "Корейская кухня по темам: откройте для себя [8 лучших блюд]!"}
+                  {!["ko", "en", "ja", "zh", "es", "ar", "ru"].includes(locale) && "Discover Korean food by theme: Explore [Top 8 Dishes] now!"}
                 </p>
               </div>
             </div>

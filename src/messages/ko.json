@@ -2,7 +2,7 @@
   "site": {
     "name": "K-Banchan.net",
     "tagline": "한식과 반찬의 세계",
-    "slogan": "the Secret Code"
+    "slogan": "프리미엄 한식 가이드"
   },
   "home": {
     "coming_soon": "커밍순 (준비 중)"
@@ -114,16 +114,16 @@
     }
   },
   "hero": {
-    "title": "THE SECRET CODE OF KOREAN CUISINE",
-    "subtitle": "한식의 5가지 비밀 코드를 발견하세요",
+    "title": "THE 5 CORE CHARACTERISTICS OF KOREAN CUISINE",
+    "subtitle": "한식의 5가지 고유 특성을 발견하세요",
     "cta_banchan": "반찬 50선 보기",
     "cta_articles": "5대 특성 읽기",
-    "logo_alt": "K-BanChan - 한식의 비밀 코드"
+    "logo_alt": "K-BanChan - 프리미엄 한식 가이드"
   },
   "nav": {
     "banchan": "반찬50선",
     "banchan_guide": "반찬의 이해",
-    "articles": "한식의 비밀",
+    "articles": "한식의 5대 특성",
     "hot": "인기 반찬 8선",
     "ingredients": "한식의 식재료",
     "experience": "한식 체험",
@@ -152,7 +152,7 @@
     "current_element": "현재 원소"
   },
   "articles": {
-    "title": "한식의 비밀 코드",
+    "title": "한식의 5대 특성",
     "subtitle": "오방색 방위와 철학으로 만나는 한식의 5대 특성",
     "index_title": "한식의 철학과 자연적 배경",
     "index_subtitle": "",
@@ -162,7 +162,7 @@
     "color": "색상",
     "back_to_list": "목록으로 돌아가기",
     "related_banchan": "관련 추천 반찬",
-    "next_article": "다음 비밀 코드",
+    "next_article": "다음 특성",
     "view_archive_title": "더 깊이 알고 싶으신가요?",
     "view_archive_description": "이 특성에 대한 학술 논문과 참고 문헌을 확인해보세요.",
     "view_archive_cta": "문헌 아카이브",

@@ -71,7 +71,7 @@
   },
   "banchan": {
     "title": "K-おかず50選",
-    "subtitle": "世界中の美食家のために体系的に分類された50種の伝統的な韓国のおかずの秘密コードを発見してください。",
+    "subtitle": "世界中の美食家のために体系的に分類された50種の伝統的な韓国のおかずの5大特性を発見してください。",
     "search_placeholder": "おかずの名前や材料を入力して検索...",
     "no_results": "検索結果が見つかりません。",
     "filter": {
@@ -96,16 +96,16 @@
     }
   },
   "hero": {
-    "title": "THE SECRET CODE OF KOREAN CUISINE",
-    "subtitle": "韓国料理の5つの秘密のコードを発見してください",
+    "title": "THE 5 CORE CHARACTERISTICS OF KOREAN CUISINE",
+    "subtitle": "韓国料理の5つの固有特性を発見してください",
     "cta_banchan": "おかず50選を見る",
     "cta_articles": "5大特性を読む",
-    "logo_alt": "K-BanChan - 韓国料理의 秘密의 コード"
+    "logo_alt": "K-BanChan - プレミアム韓国料理ガイド"
   },
   "nav": {
     "banchan": "おかず50選",
     "banchan_guide": "おかずの理解",
-    "articles": "韓食の秘密",
+    "articles": "韓食の5大特性",
     "hot": "人気おかず8選",
     "ingredients": "韓国の食材",
     "experience": "韓国料理体験",
@@ -134,7 +134,7 @@
     "current_element": "現在の元素"
   },
   "articles": {
-    "title": "韓国料理の秘密のコード",
+    "title": "韓国料理の5大特性",
     "subtitle": "五方色の方位と哲学で出会う韓国料理의 5大特性",
     "index_title": "韓国料理の哲学と自然的背景",
     "index_subtitle": "",
@@ -144,7 +144,7 @@
     "color": "色",
     "back_to_list": "リストに戻る",
     "related_banchan": "関連するおすすめおかず",
-    "next_article": "次の秘密のコード",
+    "next_article": "次の特性",
     "view_archive_title": "もっと深く知りたいですか？",
     "view_archive_description": "この特性に関する学術論文と参考文献をご覧ください。",
     "view_archive_cta": "文献アーカイブ",

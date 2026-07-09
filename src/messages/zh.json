@@ -2,7 +2,7 @@
   "site": {
     "name": "K-Banchan.net",
     "tagline": "韩食与伴餐的世界",
-    "slogan": "the Secret Code"
+    "slogan": "优质韩食指南"
   },
   "home": {
     "coming_soon": "敬请期待（准备中）"
@@ -86,7 +86,7 @@
   },
   "banchan": {
     "title": "韩国小菜 50选",
-    "subtitle": "探索为全球美食爱好者系统分类的50种传统韩国小菜的秘密密码。",
+    "subtitle": "探索为全球美食爱好者系统分类的50种传统韩国小菜的五大特性。",
     "search_placeholder": "输入小菜名字或食材搜索...",
     "no_results": "未找到搜索结果。",
     "filter": {
@@ -111,16 +111,16 @@
     }
   },
   "hero": {
-    "title": "THE SECRET CODE OF KOREAN CUISINE",
-    "subtitle": "探索韩国料理的五个秘密密码",
+    "title": "THE 5 CORE CHARACTERISTICS OF KOREAN CUISINE",
+    "subtitle": "探索韩国料理的五大特性",
     "cta_banchan": "查看50选伴餐",
     "cta_articles": "阅读五大特性",
-    "logo_alt": "K-BanChan - 探索韩国料理的五个秘密密码"
+    "logo_alt": "K-BanChan - 优质韩食指南"
   },
   "nav": {
     "banchan": "伴餐50选",
     "banchan_guide": "理解伴餐",
-    "articles": "韩食的秘密",
+    "articles": "韩食的五大特性",
     "hot": "人气伴餐8选",
     "ingredients": "韩食食材",
     "experience": "韩食体验",
@@ -149,7 +149,7 @@
     "current_element": "当前元素"
   },
   "articles": {
-    "title": "韩国料理的秘密密码 (The Secret Code)",
+    "title": "韩国料理的五大特性",
     "subtitle": "通过五方色的方位与哲学领略韩国料理的五大特性",
     "index_title": "韩国料理的哲学与自然背景",
     "index_subtitle": "",
@@ -159,7 +159,7 @@
     "color": "颜色",
     "back_to_list": "返回列表",
     "related_banchan": "相关推荐伴餐",
-    "next_article": "下一个秘密密码",
+    "next_article": "下一个特性",
     "view_archive_title": "想深入了解吗？",
     "view_archive_description": "查阅关于此特性的学术论文和参考文献。",
     "view_archive_cta": "文献档案",

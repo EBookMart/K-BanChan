@@ -9,6 +9,7 @@ import { Flame, ShieldAlert, Sparkles, ArrowRight } from "lucide-react";
 import { summerKoreanFoods10I18n, summerFoodsUiI18n } from "@/data/i18n";
 import { SupportedLocale } from "@/data/i18n/types";
 import SummerFoodNavigation from "@/components/SummerFoodNavigation";
+import HotBannerNav from "@/components/HotBannerNav";
 
 type Props = {
   params: { locale: string };
@@ -94,6 +95,7 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
       <main className="flex-grow max-w-5xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-4 pb-16 space-y-10" dir={isRtl ? "rtl" : "ltr"}>
         
         {/* 10대 여름철 음식 퀵점프 내비게이션 바 */}
+        <HotBannerNav locale={locale} />
         <SummerFoodNavigation items={navItems} locale={contentLocale} />
 
         {/* 서론 섹션 및 상부 에디토리얼 */}

@@ -2,7 +2,7 @@
   "site": {
     "name": "K-Banchan.net",
     "tagline": "The World of Korean Food and Banchan",
-    "slogan": "the Secret Code"
+    "slogan": "Premium K-Food Guide"
   },
   "home": {
     "coming_soon": "Coming Soon"
@@ -89,7 +89,7 @@
   },
   "banchan": {
     "title": "K-BanChan Top 50",
-    "subtitle": "Discover the secret code of 50 traditional Korean side dishes, systematically cataloged for global culinary enthusiasts.",
+    "subtitle": "Discover the 5 characteristics of 50 traditional Korean side dishes, systematically cataloged for global culinary enthusiasts.",
     "search_placeholder": "Search banchan by name or ingredients...",
     "no_results": "No results found.",
     "filter": {
@@ -114,16 +114,16 @@
     }
   },
   "hero": {
-    "title": "THE SECRET CODE OF KOREAN CUISINE",
-    "subtitle": "Discover the 5 Secret Codes of Korean Cuisine",
+    "title": "THE 5 CORE CHARACTERISTICS OF KOREAN CUISINE",
+    "subtitle": "Discover the 5 Core Characteristics of Korean Cuisine",
     "cta_banchan": "View 50 Banchan",
-    "cta_articles": "Read 5 Secret Codes",
-    "logo_alt": "K-BanChan - The Secret Code of Korean Cuisine"
+    "cta_articles": "Read 5 Characteristics",
+    "logo_alt": "K-BanChan - The 5 Characteristics of Korean Cuisine"
   },
   "nav": {
     "banchan": "50 Banchan",
     "banchan_guide": "Understanding Banchan",
-    "articles": "The Secret Code",
+    "articles": "Philosophy",
     "hot": "Top 8 Dishes",
     "ingredients": "Korean Ingredients",
     "experience": "K-Food Experience",
@@ -152,7 +152,7 @@
     "current_element": "Current Element"
   },
   "articles": {
-    "title": "The Secret Code of K-Food",
+    "title": "The Philosophy of K-Food",
     "subtitle": "Discover the five characteristics of Korean food through Obangsaek philosophy",
     "index_title": "Philosophy & Natural Origins of Korean Cuisine",
     "index_subtitle": "",
@@ -162,7 +162,7 @@
     "color": "Color",
     "back_to_list": "Back to List",
     "related_banchan": "Related Banchan",
-    "next_article": "Next Secret Code",
+    "next_article": "Next Characteristic",
     "view_archive_title": "Want to dive deeper?",
     "view_archive_description": "Explore academic papers and references on this topic.",
     "view_archive_cta": "View Archive",

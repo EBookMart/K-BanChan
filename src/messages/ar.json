@@ -2,7 +2,7 @@
   "site": {
     "name": "K-Banchan.net",
     "tagline": "عالم الطعام الكوري والبانشان",
-    "slogan": "the Secret Code"
+    "slogan": "دليل الطعام الكوري الممتاز"
   },
   "home": {
     "coming_soon": "قريباً (قيد التحضير)"
@@ -86,7 +86,7 @@
   },
   "banchan": {
     "title": "أفضل 50 بان تشان كوري",
-    "subtitle": "اكتشف الرمز السري لـ 50 طبقًا جانبيًا كوريًا تقليديًا، مصنفة بشكل منهجي لعشاق الطهي العالميين.",
+    "subtitle": "اكتشف الخصائص الخمس لـ 50 طبقًا جانبيًا كوريًا تقليديًا، مصنفة بشكل منهجي لعشاق الطهي العالميين.",
     "search_placeholder": "ابحث عن بان تشان بالاسم أو المكونات...",
     "no_results": "لم يتم العثور على نتائج.",
     "filter": {
@@ -111,16 +111,16 @@
     }
   },
   "hero": {
-    "title": "THE SECRET CODE OF KOREAN CUISINE",
-    "subtitle": "اكتشف الرموز السرية الخمسة للمطبخ الكوري",
+    "title": "THE 5 CORE CHARACTERISTICS OF KOREAN CUISINE",
+    "subtitle": "اكتشف الخصائص الخمس للمطبخ الكوري",
     "cta_banchan": "عرض 50 بان تشان",
     "cta_articles": "قراءة الخصائص الخمسة",
-    "logo_alt": "K-BanChan - الرمز السري للمطبخ الكوري"
+    "logo_alt": "K-BanChan - دليل الطعام الكوري الممتاز"
   },
   "nav": {
     "banchan": "٥٠ بانشان",
     "banchan_guide": "فهم البانتشان",
-    "articles": "الرمز السري",
+    "articles": "الخصائص الخمس",
     "hot": "أفضل ٨ أطباق",
     "ingredients": "المكونات الكورية",
     "experience": "تجربة الطعام الكوري",
@@ -149,7 +149,7 @@
     "current_element": "العنصر الحالي"
   },
   "articles": {
-    "title": "الرمز السري للطعام الكوري (The Secret Code)",
+    "title": "الخصائص الخمس للطعام الكوري",
     "subtitle": "اكتشف الخصائص الخمس للمطبخ الكوري من خلال فلسفة أوبانغ سيك",
     "index_title": "الفلسفة والأصول الطبيعية للمطبخ الكوري",
     "index_subtitle": "",
@@ -159,7 +159,7 @@
     "color": "اللون",
     "back_to_list": "العودة للقائمة",
     "related_banchan": "بان تشان ذات صلة",
-    "next_article": "الرمز السري التالي",
+    "next_article": "الخاصية التالية",
     "view_archive_title": "هل تريد الغوص أعمق؟",
     "view_archive_description": "استكشف الأوراق الأكاديمية والمراجع حول هذا الموضوع.",
     "view_archive_cta": "عرض الأرشيف",

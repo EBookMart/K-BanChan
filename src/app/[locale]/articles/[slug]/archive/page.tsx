@@ -37,10 +37,10 @@ export async function generateMetadata({ params: { locale, slug } }: Props) {
   const titleText = art.title[locale] || art.title["en"];
 
   return {
-    title: `${t("archive_hero_title")} - ${titleText} | THE SECRET CODE`,
+    title: `${t("archive_hero_title")} - ${titleText} | ${t("title")}`,
     description: `${titleText}에 관한 학술적 분석 에세이 및 참고 논문 아카이브입니다.`,
     openGraph: {
-      title: `${t("archive_hero_title")} - ${titleText} | THE SECRET CODE`,
+      title: `${t("archive_hero_title")} - ${titleText} | ${t("title")}`,
       description: `${titleText}에 관한 학술적 분석 에세이 및 참고 논문 아카이브입니다.`,
       url: `https://k-banchan.net/${locale}/articles/${slug}/archive`,
       images: [

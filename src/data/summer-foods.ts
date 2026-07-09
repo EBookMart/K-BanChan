@@ -1071,7 +1071,7 @@ Aunque los comensales modernos deben sopesar los detalles nutricionales y la sal
 بينما يجب على رواد المطعم المعاصرين مراعاة التفاصيل الغذائية والصحة الشخصية، فإن المشاعر الموسمية والقيم الثقافية لهذه الوجبات تظل خالدة. وعاء صيفي واحد يحتوي على أكثر من مجرد طعم؛ فهو يحتوي على حكمة قديمة حول التكيف مع المناخ ورعاية المجتمع.`
   },
   cta: [
-    { label: { ko: "HOT 8 DISHES 보기", en: "View HOT 8 DISHES", ja: "HOT 8 DISHESを見る", zh: "查看热门8款推荐", es: "Ver HOT 8 DISHES", fr: "Voir les HOT 8 PLATS", ar: "عرض HOT 8 DISHES", ru: "Посмотреть HOT 8 DISHES" }, href: "/hot" },
+    { label: { ko: "인기 반찬 8선 보기", en: "View Top 8 Dishes", ja: "人気おかず8選を見る", zh: "查看人气伴餐8选", es: "Ver los 8 mejores platos", fr: "Voir les 8 Meilleurs Plats", ar: "عرض أفضل ٨ أطباق", ru: "Посмотреть 8 лучших блюд" }, href: "/hot" },
     { label: { ko: "한식의 식재료 읽기", en: "Read Korean Ingredients Hub", ja: "韓国の食材ハブを読む", zh: "阅读韩食食材中心", es: "Leer centro de ingredientes", fr: "Lire les Ingrédients Coréens", ar: "قراءة مركز المكونات الكورية", ru: "Читать о корейских ингредиентах" }, href: "/ingredients" },
     { label: { ko: "식재료와 풍토 읽기", en: "Read Ingredients & Terroir", ja: "食材と風土を読む", zh: "阅读食材与风土", es: "Leer ingredientes y terruño", fr: "Lire Ingrédients & Terroir", ar: "قراءة المكونات والأرض", ru: "Читать об ingrediente-ah i terroir-e" }, href: "/articles/ingredients-terroir" },
     { label: { ko: "반찬의 이해 읽기", en: "Read Guide to Banchan", ja: "おかずの理解を読む", zh: "阅读小菜指南", es: "Leer guía del banchan", fr: "Lire le Guide du Banchan", ar: "قراءة دليل البان تشان", ru: "Читать руководство по банчанам" }, href: "/banchan-guide" }

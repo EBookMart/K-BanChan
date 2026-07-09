@@ -53,11 +53,13 @@ export async function generateMetadata({ params: { locale, slug } }: Props) {
   const imageUrl = aiImageObj ? aiImageObj.src : "/logos/kbanchan-logo.png";
   const imageAlt = aiImageObj ? (aiImageObj.alt[locale as keyof typeof aiImageObj.alt] || aiImageObj.alt.en) : "K-BanChan Logo";
 
+  const t = await getTranslations({ locale, namespace: "articles" });
+
   return {
-    title: `${titleText} | THE SECRET CODE`,
+    title: `${titleText} | ${t("title")}`,
     description: summaryText,
     openGraph: {
-      title: `${titleText} | THE SECRET CODE`,
+      title: `${titleText} | ${t("title")}`,
       description: summaryText,
       url: `https://k-banchan.net/${locale}/articles/${slug}`,
       images: [

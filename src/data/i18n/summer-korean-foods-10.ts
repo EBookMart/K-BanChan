@@ -28,7 +28,7 @@ export const summerKoreanFoods10I18n: LocalizedPageContent = {
         ],
         conclusion: '계절을 먹는다는 것은 단지 제철 재료를 소비하는 것이 아니라, 몸의 리듬에 맞게 한 끼를 고르는 일입니다. 여름 한식 10선은 그 감각을 가장 잘 보여 주는 출발점입니다.'
       },
-      cta: { label: 'HOT 8 DISHES로 이동', href: '/ko/hot' }
+      cta: { label: '인기 반찬 8선으로 이동', href: '/ko/hot' }
     },
     en: {
       title: '10 Korean Foods for Summer',
@@ -55,7 +55,7 @@ export const summerKoreanFoods10I18n: LocalizedPageContent = {
         ],
         conclusion: 'To eat with the season is not only to choose seasonal ingredients, but also to choose meals that fit the body’s rhythm. These ten dishes offer one of the clearest introductions to Korean summer cuisine.'
       },
-      cta: { label: 'Go to HOT 8 DISHES', href: '/en/hot' }
+      cta: { label: 'Go to Top 8 Dishes', href: '/en/hot' }
     },
     fr: {
       title: '10 plats coréens pour l’été',
@@ -82,7 +82,7 @@ export const summerKoreanFoods10I18n: LocalizedPageContent = {
         ],
         conclusion: 'Manger selon la saison, ce n’est pas seulement choisir des produits de saison, c’est aussi choisir des repas adaptés au rythme du corps. Ces dix plats constituent une excellente porte d’entrée vers la cuisine coréenne d’été.'
       },
-      cta: { label: 'Voir HOT 8 DISHES', href: '/fr/hot' }
+      cta: { label: 'Voir les 8 Meilleurs Plats', href: '/fr/hot' }
     },
     ar: {
       title: '10 أطعمة كورية لفصل الصيف',
@@ -109,7 +109,7 @@ export const summerKoreanFoods10I18n: LocalizedPageContent = {
         ],
         conclusion: 'إن الأكل وفق الموسم لا يعني اختيار المكوّنات الموسمية فقط، بل اختيار الوجبة التي تناسب إيقاع الجسد. وهذه الأطباق العشرة تمثل مدخلاً ممتازاً إلى المطبخ الكوري الصيفي.'
       },
-      cta: { label: 'الانتقال إلى HOT 8 DISHES', href: '/ar/hot' }
+      cta: { label: 'الانتقال إلى أفضل ٨ أطباق', href: '/ar/hot' }
     },
     ja: {
       title: '夏に食べたい韓国料理10選',
@@ -136,7 +136,7 @@ export const summerKoreanFoods10I18n: LocalizedPageContent = {
         ],
         conclusion: '季節を食べるということは、単に旬の食材を消費するだけでなく、体のリズムに合わせて食事を選ぶことです。この夏の韓国料理10選は、その感覚を最もよく伝える素晴らしい出発点です。'
       },
-      cta: { label: 'HOT 8 DISHESへ移動', href: '/ja/hot' }
+      cta: { label: '人気おかず8選へ移動', href: '/ja/hot' }
     },
     zh: {
       title: '夏季韩食10选',
@@ -163,7 +163,7 @@ export const summerKoreanFoods10I18n: LocalizedPageContent = {
         ],
         conclusion: '顺应季节享用美食，不仅是消费时令食材，更是选择契合身体律动的膳食。这十款夏季韩食是带您领略韩式夏日饮食风情的不二之选。'
       },
-      cta: { label: '前往 HOT 8 DISHES', href: '/zh/hot' }
+      cta: { label: '前往人气伴餐8选', href: '/zh/hot' }
     },
     es: {
       title: '10 Platillos Coreanos para el Verano',
@@ -190,7 +190,7 @@ export const summerKoreanFoods10I18n: LocalizedPageContent = {
         ],
         conclusion: 'Comer según la temporada no es solo consumir ingredientes de estación, sino elegir comidas que se adapten al ritmo del cuerpo. Estos diez platillos ofrecen una de las introducciones más claras a la cocina coreana de verano.'
       },
-      cta: { label: 'Ir a HOT 8 DISHES', href: '/es/hot' }
+      cta: { label: 'Ir a los 8 mejores platos', href: '/es/hot' }
     },
     ru: {
       title: '10 блюд корейской кухни для лета',
@@ -217,7 +217,7 @@ export const summerKoreanFoods10I18n: LocalizedPageContent = {
         ],
         conclusion: 'Питаться по сезону — значит не просто покупать сезонные продукты, но и выбирать блюда, созвучные естественным ритмам вашего тела. Эти десять блюд послужат идеальным проводником в мир летней корейской кухни.'
       },
-      cta: { label: 'Перейти к HOT 8 DISHES', href: '/ru/hot' }
+      cta: { label: 'Перейти к 8 лучшим блюдам', href: '/ru/hot' }
     }
   }
 };

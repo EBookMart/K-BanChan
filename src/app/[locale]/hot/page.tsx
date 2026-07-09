@@ -5,6 +5,9 @@ import { Link } from "@/i18n/routing";
 import { getAllCurations } from "@/data/hot-curations";
 import { ArrowRight, Flame } from "lucide-react";
 import { aiImages } from "@/data/ai-images";
+import HotBannerNav from "@/components/HotBannerNav";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 interface Props {
   params: {
@@ -14,14 +17,14 @@ interface Props {
 
 export async function generateMetadata({ params: { locale } }: Props): Promise<Metadata> {
   const titles: Record<string, string> = {
-    ko: "🔥 HOT 8 DISHES - 한식 특별 큐레이션 | K-BanChan",
-    en: "🔥 HOT 8 DISHES - Special Korean Food Curations | K-BanChan",
-    ja: "🔥 HOT 8 DISHES - 韓国料理特別キュレーション | K-BanChan",
-    zh: "🔥 HOT 8 DISHES - 韩食特别推荐 | K-BanChan",
-    es: "🔥 HOT 8 DISHES - Curadurías Especiales de Comida Coreana | K-BanChan",
-    fr: "🔥 HOT 8 PLATS - Sélections Spéciales de Cuisine Coréenne | K-BanChan",
-    ar: "🔥 HOT 8 DISHES - تنظيمات الطعام الكوري الخاصة | K-BanChan",
-    ru: "🔥 HOT 8 DISHES - Специальные Корейские Подборки | K-BanChan",
+    ko: "🔥 인기 반찬 8선 - 한식 특별 큐레이션 | K-BanChan",
+    en: "🔥 Top 8 Dishes - Special Korean Food Curations | K-BanChan",
+    ja: "🔥 人気おかず8選 - 韓国料理特別キュレーション | K-BanChan",
+    zh: "🔥 人气伴餐8选 - 韩食特别推荐 | K-BanChan",
+    es: "🔥 Los 8 mejores platos - Curadurías Especiales de Comida Coreana | K-BanChan",
+    fr: "🔥 8 Meilleurs Plats - Sélections Spéciales de Cuisine Coréenne | K-BanChan",
+    ar: "🔥 أفضل ٨ أطباق - تنظيمات الطعام الكوري الخاصة | K-BanChan",
+    ru: "🔥 8 лучших блюд - Специальные Корейские Подборки | K-BanChan",
   };
 
   const descriptions: Record<string, string> = {
@@ -51,14 +54,14 @@ export default function HotIndexPage({ params: { locale } }: Props) {
   const curations = getAllCurations();
 
   const pageTitles: Record<string, string> = {
-    ko: "HOT 8 DISHES",
-    en: "HOT 8 DISHES",
-    ja: "HOT 8 DISHES",
-    zh: "HOT 8 DISHES",
-    es: "HOT 8 DISHES",
-    fr: "HOT 8 PLATS",
-    ar: "HOT 8 DISHES",
-    ru: "HOT 8 DISHES",
+    ko: "인기 반찬 8선",
+    en: "Top 8 Dishes",
+    ja: "人気おかず8選",
+    zh: "人气伴餐8选",
+    es: "Los 8 mejores platos",
+    fr: "8 Meilleurs Plats",
+    ar: "أفضل ٨ أطباق",
+    ru: "8 лучших блюд",
   };
 
   const pageSubtitles: Record<string, string> = {
@@ -165,10 +168,13 @@ export default function HotIndexPage({ params: { locale } }: Props) {
   const viewText = viewCollectionText[locale] || viewCollectionText["en"];
 
   return (
-    <main className="min-h-screen bg-slate-950 text-slate-100 py-16 md:py-24 px-4 relative overflow-hidden">
+    <div className="min-h-screen flex flex-col bg-slate-950 text-slate-100 transition-colors duration-300">
+      <Header />
+      <main className="flex-grow py-16 md:py-24 px-4 relative overflow-hidden">
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-rose-500/5 rounded-full blur-[120px] pointer-events-none" />
       
       <div className="max-w-6xl mx-auto relative z-10">
+        <HotBannerNav locale={locale} />
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs font-bold uppercase tracking-widest mb-6 animate-pulse">
             <Flame className="w-3.5 h-3.5" />
@@ -325,6 +331,8 @@ export default function HotIndexPage({ params: { locale } }: Props) {
           </div>
         </div>
       </div>
-    </main>
+      </main>
+      <Footer />
+    </div>
   );
 }

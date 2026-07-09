@@ -93,9 +93,10 @@ export default function IngredientsClient({ locale, translations }: Props) {
             const spicy = banchan.spicy_level;
             
             return (
-              <div
+              <Link
+                href={`/banchan`}
                 key={banchan.id}
-                className="group relative flex flex-col justify-between bg-slate-900/35 border border-slate-800/70 rounded-2xl p-6 hover:border-emerald-500/50 hover:bg-slate-900/60 transition-all duration-300 transform hover:-translate-y-1 shadow-md hover:shadow-emerald-950/20"
+                className="group relative flex flex-col justify-between bg-slate-900/35 border border-slate-800/70 rounded-2xl p-6 hover:border-emerald-500/50 hover:bg-slate-900/60 transition-all duration-300 transform hover:-translate-y-1 shadow-md hover:shadow-emerald-950/20 cursor-pointer"
               >
                 <div>
                   {/* 카드 상단 이미지 혹은 장식 */}
@@ -130,20 +131,19 @@ export default function IngredientsClient({ locale, translations }: Props) {
                 </div>
 
                 <div className="border-t border-slate-800/80 pt-4">
-                  <Link
-                    href={`/banchan`}
-                    className="inline-flex items-center gap-1 text-xs font-extrabold text-emerald-400 hover:text-emerald-300 transition-colors group/link"
+                  <div
+                    className="inline-flex items-center gap-1 text-xs font-extrabold text-emerald-400 group-hover:text-emerald-300 transition-colors"
                   >
                     <span>{translations.viewDetail}</span>
                     <ArrowRight
                       size={14}
-                      className={`transition-transform duration-300 group-hover/link:translate-x-1 ${
-                        isRtl ? "rotate-180 group-hover/link:-translate-x-1" : ""
+                      className={`transition-transform duration-300 group-hover:translate-x-1 ${
+                        isRtl ? "rotate-180 group-hover:-translate-x-1" : ""
                       }`}
                     />
-                  </Link>
+                  </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>
