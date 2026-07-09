@@ -42,7 +42,7 @@ export default async function ArticlesIndexPage({ params: { locale } }: Props) {
       <Header />
 
       {/* 메인 영역 */}
-      <main className="flex-grow bg-slate-950 text-slate-100 min-h-screen py-16 md:py-24 px-4 relative overflow-hidden">
+      <main className="flex-grow bg-slate-950 text-slate-100 min-h-screen pt-8 pb-16 md:pt-12 md:pb-24 px-4 relative overflow-hidden">
         
         {/* 데코레이션 라이트 */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none" />
@@ -50,7 +50,7 @@ export default async function ArticlesIndexPage({ params: { locale } }: Props) {
         <div className="max-w-5xl mx-auto z-10 relative">
           
           {/* 아티클 인덱스 헤더 */}
-          <div className="text-center max-w-2xl mx-auto mb-16 md:mb-20">
+          <div className="text-center max-w-2xl mx-auto mb-10 md:mb-12">
             <span className="text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-950/40 border border-emerald-500/20 px-3 py-1 rounded-full mb-4 inline-block">
               THE SECRET CODE
             </span>
@@ -67,9 +67,6 @@ export default async function ArticlesIndexPage({ params: { locale } }: Props) {
                 art={art}
                 locale={locale}
                 readMoreLabel={t("read_more")}
-                dirLabel={t("direction")}
-                elemLabel={t("element")}
-                colorLabel={t("color")}
               />
             ))}
           </div>
