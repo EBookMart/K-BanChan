@@ -199,7 +199,6 @@ export default function HotIndexPage({ params: { locale } }: Props) {
     chuseok: { ko: "추석", en: "Chuseok", ja: "秋夕(チュソク)", zh: "中秋节", es: "Chuseok", fr: "Chuseok", ar: "تشوسوك", ru: "Чусок" },
     daeboreum: { ko: "정월대보름", en: "Daeboreum", ja: "正月大満月", zh: "正月十五", es: "Daeboreum", fr: "Daeboreum", ar: "دايبوريوم", ru: "Тэборым" },
     seollal: { ko: "설날", en: "Seollal", ja: "旧正月(ソルラル)", zh: "春节", es: "Seollal", fr: "Seollal", ar: "سيولال", ru: "Соллаль" },
-    seollal: { ko: "설날", en: "Seollal", ja: "旧正月(ソルラル)", zh: "春节", es: "Seollal", fr: "Seollal", ar: "سيولال", ru: "Соллаль" },
   };
 
   interface SeasonalCurationItem {
