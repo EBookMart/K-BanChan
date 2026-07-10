@@ -4,6 +4,7 @@ import { getAllBanchan } from "@/lib/banchan";
 import BanchanGrid from "@/components/BanchanGrid";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SeasonalThemeBanner from "@/components/SeasonalThemeBanner";
 
 type Props = {
   params: { locale: string };
@@ -28,7 +29,12 @@ export default async function BanchanListPage({ params: { locale } }: Props) {
       {/* 글로벌 공통 헤더 */}
       <Header />
 
-      <main className="flex-grow pt-24 pb-16 bg-slate-950 text-slate-100 min-h-screen relative overflow-hidden">
+      <main className="flex-grow pt-8 pb-16 bg-slate-950 text-slate-100 min-h-screen relative overflow-hidden">
+        {/* 상단 시즈널 테마 배너 */}
+        <div className="w-full max-w-5xl mx-auto px-4 mb-8 md:mb-12 relative z-20">
+          <SeasonalThemeBanner locale={locale} />
+        </div>
+
         {/* 아름다운 백그라운드 빛 효과 */}
         <div className="absolute top-10 left-1/4 w-96 h-96 bg-amber-500/5 rounded-full blur-[100px] pointer-events-none" />
         <div className="absolute bottom-10 right-1/4 w-96 h-96 bg-emerald-500/5 rounded-full blur-[100px] pointer-events-none" />

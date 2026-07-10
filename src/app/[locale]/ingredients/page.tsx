@@ -6,6 +6,7 @@ import IngredientsClient from "@/components/IngredientsClient";
 import SectionNavigation from "@/components/SectionNavigation";
 import { Leaf } from "lucide-react";
 import SectionAccordion from "@/components/SectionAccordion";
+import SeasonalThemeBanner from "@/components/SeasonalThemeBanner";
 import { ingredientsPageI18n } from "@/data/i18n";
 import { SupportedLocale } from "@/data/i18n/types";
 
@@ -95,6 +96,13 @@ export default function IngredientsPage({ params: { locale } }: Props) {
     <div className="min-h-screen flex flex-col bg-slate-950 text-slate-100 transition-colors duration-300">
       <Header />
       
+      {/* 상단 시즈널 테마 배너 */}
+      <div className="w-full bg-slate-950 pt-6 px-4">
+        <div className="max-w-5xl mx-auto">
+          <SeasonalThemeBanner locale={locale} />
+        </div>
+      </div>
+
       {/* 1. 히어로 배너 섹션 (위아래 패딩 과도한 여백 축소: py-20 md:py-28 -> pt-16 pb-12 md:pt-20 md:pb-16) */}
       <div className="relative w-full overflow-hidden border-b border-slate-900 bg-slate-950 pt-16 pb-12 md:pt-20 md:pb-16">
         <div className="absolute inset-0 bg-[url('/images/ai/articles/yaksik-dongwon.webp')] bg-cover bg-center opacity-15 blur-md scale-105 pointer-events-none" />
