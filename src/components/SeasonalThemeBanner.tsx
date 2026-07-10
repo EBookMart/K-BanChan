@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Link, usePathname } from "@/i18n/routing";
-import { ArrowRight, ArrowLeft, Sparkles, Flame, Leaf, Snowflake, Sun } from "lucide-react";
+import { ArrowRight, ArrowLeft, Sparkles, Flame, Leaf } from "lucide-react";
 
 interface SeasonalThemeBannerProps {
   locale: string;
