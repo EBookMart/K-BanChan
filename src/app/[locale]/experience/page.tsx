@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { festivalsData, academicEventsData, culinaryToursData, getEventStatus } from "@/data/experience";
 import { Calendar, MapPin, Building, ChevronRight, GraduationCap, Map, PartyPopper, CheckCircle2, Bell } from "lucide-react";
 import MonetizationCTA from "@/components/MonetizationCTA";
+import ExpandableList from "@/components/ExpandableList";
 
 interface Props {
   params: {
@@ -64,8 +65,15 @@ export default async function ExperiencePage({ params: { locale } }: Props) {
             </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {festivalsData.map((festival) => {
+          <ExpandableList loadMoreText={t("labels.load_more_festivals") || "더 보기"} gridClassName="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[...festivalsData]
+              .sort((a, b) => {
+                const statusOrder: Record<string, number> = { ongoing: 1, upcoming: 2, seasonal: 3, tbd: 4, archived: 5 };
+                const statusA = getEventStatus(a.startDate, a.endDate, a.status);
+                const statusB = getEventStatus(b.startDate, b.endDate, b.status);
+                return (statusOrder[statusA] || 99) - (statusOrder[statusB] || 99);
+              })
+              .map((festival) => {
               const currentStatus = getEventStatus(festival.startDate, festival.endDate, festival.status);
               return (
                 <Link href={`/experience/festivals/${festival.slug}`} key={festival.slug} className="group flex flex-col bg-slate-900/40 border border-slate-800 rounded-2xl p-6 hover:border-rose-500/50 hover:bg-slate-900/60 transition-all duration-300 shadow-md">
@@ -129,67 +137,11 @@ export default async function ExperiencePage({ params: { locale } }: Props) {
                 </Link>
               );
             })}
-          </div>
+          </ExpandableList>
           {/* TODO: 추후 외부 관광 API 연동 (한국관광공사 TourAPI 등) 시 페이징 또는 무한 스크롤 구현 */}
         </section>
 
-        {/* Section B: Academic & Marketing Events */}
-        <section id="academic" className="space-y-8">
-          <div className="flex items-center gap-3 border-b border-slate-800 pb-4">
-            <div className="p-2.5 rounded-xl bg-blue-500/10 text-blue-400">
-              <GraduationCap size={24} />
-            </div>
-            <div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white font-serif tracking-tight">
-                {t("academic.title")}
-              </h2>
-              <p className="text-sm text-slate-400 mt-1">{t("academic.description")}</p>
-            </div>
-          </div>
-          
-          <div className="flex flex-col gap-4">
-            {academicEventsData.map((event) => (
-              <Link href={`/experience/events/${event.slug}`} key={event.slug} className="group flex flex-col md:flex-row gap-6 bg-slate-900/40 border border-slate-800 rounded-2xl p-6 hover:border-blue-500/50 hover:bg-slate-900/60 transition-all duration-300">
-                <div className="flex-1 space-y-4">
-                  <div className="flex flex-wrap items-center gap-3">
-                    <span className="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md border bg-slate-800 text-blue-300 border-slate-700">
-                      {event.eventType.toUpperCase()}
-                    </span>
-                    <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-1">
-                      {getLocalText(event.title)}
-                    </h3>
-                  </div>
-                  
-                  <p className="text-sm text-slate-400 leading-relaxed max-w-3xl line-clamp-2">
-                    {getLocalText(event.summary)}
-                  </p>
-                  
-                  {event.note && (
-                    <p className="text-xs text-slate-500 italic line-clamp-1">
-                      * {getLocalText(event.note)}
-                    </p>
-                  )}
-                </div>
-                
-                <div className="md:w-64 flex flex-col justify-between border-t md:border-t-0 md:border-l border-slate-800/80 pt-4 md:pt-0 md:pl-6">
-                  <div className="space-y-3 mb-4">
-                    <div>
-                      <span className="block text-[10px] text-slate-500 font-bold uppercase mb-1">{t("labels.host")}</span>
-                      <span className="text-sm text-slate-300 font-semibold line-clamp-1">{getLocalText(event.hostOrganization)}</span>
-                    </div>
-                  </div>
-                  
-                  <div className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 group-hover:text-blue-400 transition-colors mt-auto">
-                    <span>상세 보기</span>
-                    <ChevronRight size={14} className={isRtl ? "rotate-180" : ""} />
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        {/* Section C: Culinary Tours */}
+        {/* Section B: Culinary Tours */}
         <section id="tours" className="space-y-8">
           <div className="flex items-center gap-3 border-b border-slate-800 pb-4">
             <div className="p-2.5 rounded-xl bg-emerald-500/10 text-emerald-400">
@@ -203,7 +155,7 @@ export default async function ExperiencePage({ params: { locale } }: Props) {
             </div>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <ExpandableList loadMoreText={t("labels.load_more_tours") || "더 보기"} gridClassName="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {culinaryToursData.map((tour) => (
               <Link href={`/experience/tours/${tour.slug}`} key={tour.slug} className="group relative flex flex-col justify-between bg-gradient-to-b from-slate-900/60 to-slate-900/20 border border-slate-800 rounded-2xl p-6 hover:border-emerald-500/50 hover:bg-slate-900/80 transition-all duration-300 shadow-md">
                 
@@ -249,7 +201,63 @@ export default async function ExperiencePage({ params: { locale } }: Props) {
                 </div>
               </Link>
             ))}
+          </ExpandableList>
+        </section>
+
+        {/* Section C: Academic & Marketing Events */}
+        <section id="academic" className="space-y-8">
+          <div className="flex items-center gap-3 border-b border-slate-800 pb-4">
+            <div className="p-2.5 rounded-xl bg-blue-500/10 text-blue-400">
+              <GraduationCap size={24} />
+            </div>
+            <div>
+              <h2 className="text-2xl md:text-3xl font-bold text-white font-serif tracking-tight">
+                {t("academic.title")}
+              </h2>
+              <p className="text-sm text-slate-400 mt-1">{t("academic.description")}</p>
+            </div>
           </div>
+          
+          <ExpandableList loadMoreText={t("labels.load_more_academic") || "더 보기"} gridClassName="flex flex-col gap-4">
+            {academicEventsData.map((event) => (
+              <Link href={`/experience/events/${event.slug}`} key={event.slug} className="group flex flex-col md:flex-row gap-6 bg-slate-900/40 border border-slate-800 rounded-2xl p-6 hover:border-blue-500/50 hover:bg-slate-900/60 transition-all duration-300">
+                <div className="flex-1 space-y-4">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md border bg-slate-800 text-blue-300 border-slate-700">
+                      {event.eventType.toUpperCase()}
+                    </span>
+                    <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors line-clamp-1">
+                      {getLocalText(event.title)}
+                    </h3>
+                  </div>
+                  
+                  <p className="text-sm text-slate-400 leading-relaxed max-w-3xl line-clamp-2">
+                    {getLocalText(event.summary)}
+                  </p>
+                  
+                  {event.note && (
+                    <p className="text-xs text-slate-500 italic line-clamp-1">
+                      * {getLocalText(event.note)}
+                    </p>
+                  )}
+                </div>
+                
+                <div className="md:w-64 flex flex-col justify-between border-t md:border-t-0 md:border-l border-slate-800/80 pt-4 md:pt-0 md:pl-6">
+                  <div className="space-y-3 mb-4">
+                    <div>
+                      <span className="block text-[10px] text-slate-500 font-bold uppercase mb-1">{t("labels.host")}</span>
+                      <span className="text-sm text-slate-300 font-semibold line-clamp-1">{getLocalText(event.hostOrganization)}</span>
+                    </div>
+                  </div>
+                  
+                  <div className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 group-hover:text-blue-400 transition-colors mt-auto">
+                    <span>상세 보기</span>
+                    <ChevronRight size={14} className={isRtl ? "rotate-180" : ""} />
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </ExpandableList>
         </section>
 
         {/* 하단 구독 CTA */}

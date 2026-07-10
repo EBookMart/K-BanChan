@@ -134,7 +134,7 @@
     "title": "한식 체험",
     "intro": "한식의 다양한 축제, 행사, 그리고 기행을 통해 한식 문화를 깊이 있게 체험하세요.",
     "festivals": {
-      "title": "한식 관련 축제",
+      "title": "한식 축제",
       "description": "전국 곳곳에서 열리는 생생한 미식 축제를 만나보세요."
     },
     "academic": {
@@ -159,7 +159,10 @@
       "host": "주최",
       "location": "장소",
       "why_visit": "추천 이유",
-      "category": "분류"
+      "category": "분류",
+      "load_more_festivals": "한식 축제 더 보기",
+      "load_more_tours": "한식 기행 더 보기",
+      "load_more_academic": "행사 더 보기"
     }
   },
   "directions": {
@@ -210,11 +213,11 @@
       "subtitle": "음식과 약은 그 근원이 같다는 웰빙 철학"
     },
     "yukmi": {
-      "title": "육미 (六味): 육미와 손맛",
+      "title": "육미 (六味)와 손맛",
       "subtitle": "여섯 가지 조화로운 맛의 완벽한 조화"
     },
     "obangsaek": {
-      "title": "오방색 (五方色): 시각적 조화 - 오행",
+      "title": "시각적 조화: 오방색 (五方色)과 오행",
       "subtitle": "다섯 가지 방위색을 통한 영양 균형"
     },
     "nanum": {

@@ -88,7 +88,7 @@ export const articles: Article[] = [
       ko: "적색 (Red)", en: "Red", ja: "赤", zh: "红", es: "Rojo", fr: "Rouge", ar: "الأحمر", ru: "Красный"
     },
     title: {
-      ko: "육미 (六味): 육미와 손맛",
+      ko: "육미 (六味)와 손맛",
       en: "Yukmi (六味): Six Tastes & the Hand-Touch Flavor (Sonmat)",
       ja: "六味 (六味): 六味と手の味 (Sonmat)",
       zh: "六味 (六味): 六味与手味 (Sonmat)",
@@ -134,7 +134,7 @@ export const articles: Article[] = [
       ko: "황색 (Yellow)", en: "Yellow", ja: "黄", zh: "黄", es: "Amarillo", fr: "Jaune", ar: "الأصفر", ru: "Желтый"
     },
     title: {
-      ko: "오방색 (五方色): 시각적 조화 - 오행",
+      ko: "시각적 조화: 오방색 (五方色)과 오행",
       en: "Obangsaek (五方色): Visual Harmony - The Five Elements",
       ja: "五方色 (五方色): 視覚的調和 - 五行",
       zh: "五方色 (五方色): 视觉和谐 - 五行",
