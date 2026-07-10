@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import AntiCopyGuard from "@/components/AntiCopyGuard";
 import "../globals.css";
 
 const geistSans = localFont({
@@ -50,6 +51,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const currentDesc = descriptions[locale] || descriptions.ko;
 
   return {
+    metadataBase: new URL("https://k-banchan.net"),
     title: currentTitle,
     description: currentDesc,
     keywords: ["한식", "반찬", "Korean cuisine", "banchan", "K-food", "Hangyeol Media", "U-KSC"],
@@ -99,8 +101,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={direction}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col bg-slate-950 text-slate-100`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col bg-slate-950 text-slate-100 select-none`}
       >
+        <AntiCopyGuard />
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
