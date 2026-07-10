@@ -6,7 +6,7 @@ import { getAllCurations } from "@/data/hot-curations";
 import { ArrowRight, Flame, Download } from "lucide-react";
 import MonetizationCTA from "@/components/MonetizationCTA";
 import { aiImages } from "@/data/ai-images";
-import HotBannerNav from "@/components/HotBannerNav";
+import SeasonalThemeBanner from "@/components/SeasonalThemeBanner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -250,11 +250,11 @@ export default function HotIndexPage({ params: { locale } }: Props) {
   return (
     <div className="min-h-screen flex flex-col bg-slate-950 text-slate-100 transition-colors duration-300">
       <Header />
-      <main className="flex-grow py-16 md:py-24 px-4 relative overflow-hidden">
+      <main className="flex-grow pt-6 pb-16 md:pt-10 md:pb-24 px-4 relative overflow-hidden">
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-rose-500/5 rounded-full blur-[120px] pointer-events-none" />
       
       <div className="max-w-6xl mx-auto relative z-10">
-        <HotBannerNav locale={locale} />
+        <SeasonalThemeBanner locale={locale} />
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs font-bold uppercase tracking-widest mb-6 animate-pulse">
             <Flame className="w-3.5 h-3.5" />

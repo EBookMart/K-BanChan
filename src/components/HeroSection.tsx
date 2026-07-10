@@ -6,6 +6,7 @@ import { Link } from "@/i18n/routing";
 import { useTranslations, useLocale } from "next-intl";
 import { ArrowRight, BookOpen, Utensils } from "lucide-react";
 import { aiImages } from "@/data/ai-images";
+import SeasonalThemeBanner from "@/components/SeasonalThemeBanner";
 
 export default function HeroSection() {
   const t = useTranslations("hero");
@@ -24,7 +25,12 @@ export default function HeroSection() {
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-96 h-96 bg-amber-500/5 rounded-full blur-[100px] pointer-events-none" />
 
       {/* 컨텐츠 영역 */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 flex flex-col items-center mb-4 md:mb-6">
+      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 flex flex-col items-center mb-4 md:mb-6 mt-2 md:mt-4">
+        {/* 관리자가 설정한 시즈널 테마 배너 (오프닝 페이지 최상단) */}
+        <div className="w-full max-w-2xl mx-auto mb-6 md:mb-10 text-left">
+          <SeasonalThemeBanner locale={locale} />
+        </div>
+
         {/* 슬로건 뱃지 */}
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-widest mb-3 md:mb-4">
           Premium K-Food Standard
