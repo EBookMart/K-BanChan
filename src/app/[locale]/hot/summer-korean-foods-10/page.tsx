@@ -92,10 +92,9 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
       </div>
 
       {/* 메인 에디토리얼 본문 (상단 여백 축소 및 조밀도 고도화) */}
-      <main className="flex-grow max-w-5xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-4 pb-16 space-y-10" dir={isRtl ? "rtl" : "ltr"}>
+      <main className="flex-grow max-w-5xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-4 pb-16 space-y-6" dir={isRtl ? "rtl" : "ltr"}>
         
         {/* 10대 여름철 음식 퀵점프 내비게이션 바 */}
-        <HotBannerNav locale={locale} />
         <SummerFoodNavigation items={navItems} locale={contentLocale} />
 
         {/* 서론 섹션 및 상부 에디토리얼 */}
@@ -125,7 +124,7 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
         </section>
 
         {/* 3. 10대 여름철 음식 리스트 카드 영역 */}
-        <section className="space-y-6">
+        <section className="space-y-3">
           {summerFoodsList.map((food, idx) => {
             const numLabel = String(idx + 1).padStart(2, "0");
             const isHot = food.categoryType === "hot";
@@ -142,7 +141,7 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
               <article 
                 key={food.id}
                 id={food.id}
-                className="group relative bg-slate-900/30 border border-slate-800/60 rounded-3xl p-8 md:p-10 hover:border-slate-700 transition-all duration-300 scroll-mt-20 md:scroll-mt-24"
+                className="group relative bg-slate-900/30 border border-slate-800/60 rounded-3xl p-4 md:p-6 hover:border-slate-700 transition-all duration-300 scroll-mt-20 md:scroll-mt-24"
               >
                 {/* 상단 헤더 데코레이션 */}
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
