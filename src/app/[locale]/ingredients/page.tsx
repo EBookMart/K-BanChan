@@ -134,7 +134,7 @@ export default function IngredientsPage({ params: { locale } }: Props) {
           numberLabel=""
           title={INTRO_NAV_LABEL[contentLocale] || INTRO_NAV_LABEL.en}
           paragraphs={[intro]}
-          detail={content.introDetail}
+          detail={content.body.introDetail}
           viewDetailLabel={clientTranslations.viewDetail}
         />
 
@@ -187,7 +187,7 @@ export default function IngredientsPage({ params: { locale } }: Props) {
             numberLabel=""
             title={CONCLUSION_NAV_LABEL[contentLocale] || CONCLUSION_NAV_LABEL.en}
             paragraphs={[conclusion]}
-            detail={content.conclusionDetail}
+            detail={content.body.conclusionDetail}
             viewDetailLabel={clientTranslations.viewDetail}
           />
         )}
