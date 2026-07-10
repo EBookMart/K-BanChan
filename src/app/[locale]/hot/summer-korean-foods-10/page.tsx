@@ -65,8 +65,8 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
     <div className="min-h-screen flex flex-col bg-slate-950 text-slate-100 transition-colors duration-300">
       <Header />
 
-      {/* 프리미엄 에디토리얼 히어로 배너 (과도한 세로 여백 축소: py-8 md:py-12) */}
-      <div className="relative w-full py-8 md:py-12 flex items-center justify-center overflow-hidden border-b border-slate-900">
+      {/* 프리미엄 에디토리얼 히어로 배너 (과도한 세로 여백 축소: pt-8 pb-4 md:pt-12 md:pb-6) */}
+      <div className="relative w-full pt-8 pb-4 md:pt-12 md:pb-6 flex items-center justify-center overflow-hidden border-b border-slate-900">
         <Image
           src="/images/ai/hot/summer-foods-hero.png"
           alt={titleText}
@@ -92,10 +92,15 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
       </div>
 
       {/* 메인 에디토리얼 본문 (상단 여백 축소 및 조밀도 고도화) */}
-      <main className="flex-grow max-w-5xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-4 pb-16 space-y-6" dir={isRtl ? "rtl" : "ltr"}>
+      <main className="flex-grow max-w-5xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-2 pb-16 space-y-6" dir={isRtl ? "rtl" : "ltr"}>
         
         {/* 10대 여름철 음식 퀵점프 내비게이션 바 */}
         <SummerFoodNavigation items={navItems} locale={contentLocale} />
+
+        {/* 2. 미래 수익화 광고 Clean Zone - 상부 배너 */}
+        <section className="w-full py-6 px-8 rounded-2xl bg-slate-900/20 border border-dashed border-slate-800 text-center text-xs font-semibold text-slate-500 hover:border-slate-700 transition-colors">
+          {summerFoodsUiI18n.adPlacementText[contentLocale] || summerFoodsUiI18n.adPlacementText.en}
+        </section>
 
         {/* 서론 섹션 및 상부 에디토리얼 */}
         <section className="prose prose-invert max-w-none">
@@ -116,11 +121,6 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
               </div>
             ))}
           </div>
-        </section>
-
-        {/* 2. 미래 수익화 광고 Clean Zone - 상부 배너 */}
-        <section className="w-full py-6 px-8 rounded-2xl bg-slate-900/20 border border-dashed border-slate-800 text-center text-xs font-semibold text-slate-500 hover:border-slate-700 transition-colors">
-          {summerFoodsUiI18n.adPlacementText[contentLocale] || summerFoodsUiI18n.adPlacementText.en}
         </section>
 
         {/* 3. 10대 여름철 음식 리스트 카드 영역 */}
