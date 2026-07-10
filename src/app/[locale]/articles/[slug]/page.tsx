@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -8,7 +7,6 @@ import { getAllBanchan } from "@/lib/banchan";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BanchanCard from "@/components/BanchanCard";
-import ObangsaekCircleNav from "@/components/ObangsaekCircleNav";
 import MonetizationCTA from "@/components/MonetizationCTA";
 import { Link } from "@/i18n/routing";
 import { ShoppingCart } from "lucide-react";
@@ -85,8 +83,6 @@ export default async function ArticleDetailPage({ params: { locale, slug } }: Pr
   const tBanchan = await getTranslations({ locale, namespace: "banchan" });
 
   const titleText = art.title[locale] || art.title["en"];
-  const summaryText = art.summary[locale] || art.summary["en"];
-  const contentText = art.content[locale] || art.content["en"];
 
   // RTL 언어(아랍어) 여부 검사
   const isRtl = locale === "ar";
