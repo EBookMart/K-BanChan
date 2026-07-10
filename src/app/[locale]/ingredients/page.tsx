@@ -5,8 +5,8 @@ import Footer from "@/components/Footer";
 import IngredientsClient from "@/components/IngredientsClient";
 import SectionNavigation from "@/components/SectionNavigation";
 import { Link } from "@/i18n/routing";
-import { Leaf, ArrowRight, ChevronDown } from "lucide-react";
-import SimpleMarkdown from "@/components/SimpleMarkdown";
+import { Leaf, ArrowRight } from "lucide-react";
+import SectionAccordion from "@/components/SectionAccordion";
 import { ingredientsPageI18n } from "@/data/i18n";
 import { SupportedLocale } from "@/data/i18n/types";
 
@@ -91,7 +91,7 @@ export default function IngredientsPage({ params: { locale } }: Props) {
     { id: "section-intro", label: INTRO_NAV_LABEL[contentLocale] || INTRO_NAV_LABEL.en },
     ...sections.map((sec, idx) => ({
       id: `section-${idx}`,
-      number: `0${idx + 1}.`,
+      number: `${idx + 1}.`,
       label: sec.heading
     })),
     { id: "section-conclusion", label: CONCLUSION_NAV_LABEL[contentLocale] || CONCLUSION_NAV_LABEL.en }
@@ -135,33 +135,16 @@ export default function IngredientsPage({ params: { locale } }: Props) {
           </p>
         </section>
 
-        {/* 첫 번째 섹션 (01. 채소와 나물) */}
+        {/* 첫 번째 섹션 */}
         {sections.length > 0 && (
-          <section id="section-0" className="scroll-mt-32 md:scroll-mt-40 space-y-6">
-            <h2 className="text-2xl md:text-3xl font-bold font-serif text-white border-b border-slate-800 pb-2 mt-12 mb-4 flex items-center gap-2">
-              <span className="text-emerald-500 font-mono">01.</span>
-              <span>{sections[0].heading}</span>
-            </h2>
-            {sections[0].paragraphs.map((p, idx) => (
-              <p key={idx} className="text-slate-300 text-base md:text-lg leading-relaxed font-light font-sans">
-                {p}
-              </p>
-            ))}
-            {sections[0].detail && (
-              <details className="mt-8 group border border-slate-800 rounded-2xl overflow-hidden bg-slate-900/30">
-                <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer select-none hover:bg-slate-800/50 transition-colors outline-none">
-                  <span className="text-base md:text-lg font-bold text-emerald-400 group-open:text-emerald-300 flex items-center gap-2">
-                    <span className="w-1.5 h-6 bg-emerald-500 rounded-full inline-block"></span>
-                    {clientTranslations.viewDetail}
-                  </span>
-                  <ChevronDown className="text-slate-400 group-open:rotate-180 transition-transform duration-300 w-5 h-5 md:w-6 md:h-6" />
-                </summary>
-                <div className="p-5 md:p-6 border-t border-slate-800 bg-slate-900/50">
-                  <SimpleMarkdown text={sections[0].detail} />
-                </div>
-              </details>
-            )}
-          </section>
+          <SectionAccordion
+            id="section-0"
+            numberLabel="1."
+            title={sections[0].heading}
+            paragraphs={sections[0].paragraphs}
+            detail={sections[0].detail}
+            viewDetailLabel={clientTranslations.viewDetail}
+          />
         )}
 
         {/* 4. 인터랙티브 식재료 및 반찬 매핑 탭 (중간 삽입) */}
@@ -177,38 +160,18 @@ export default function IngredientsPage({ params: { locale } }: Props) {
           <div className="space-y-12">
             {sections.slice(1).map((section, sIdx) => {
               const currentIdx = sIdx + 1; // 1번 인덱스부터 시작하므로 +1
-              const numLabel = `0${currentIdx + 1}.`;
+              const numLabel = `${currentIdx + 1}.`;
 
               return (
-                <section
+                <SectionAccordion
                   key={sIdx}
                   id={`section-${currentIdx}`}
-                  className="scroll-mt-32 md:scroll-mt-40 space-y-6"
-                >
-                  <h2 className="text-2xl md:text-3xl font-bold font-serif text-white border-b border-slate-800 pb-2 mt-12 mb-4 flex items-center gap-2">
-                    <span className="text-emerald-500 font-mono">{numLabel}</span>
-                    <span>{section.heading}</span>
-                  </h2>
-                  {section.paragraphs.map((p, pIdx) => (
-                    <p key={pIdx} className="text-slate-300 text-base md:text-lg leading-relaxed font-light font-sans">
-                      {p}
-                    </p>
-                  ))}
-                  {section.detail && (
-                    <details className="mt-8 group border border-slate-800 rounded-2xl overflow-hidden bg-slate-900/30">
-                      <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer select-none hover:bg-slate-800/50 transition-colors outline-none">
-                        <span className="text-base md:text-lg font-bold text-emerald-400 group-open:text-emerald-300 flex items-center gap-2">
-                          <span className="w-1.5 h-6 bg-emerald-500 rounded-full inline-block"></span>
-                          {clientTranslations.viewDetail}
-                        </span>
-                        <ChevronDown className="text-slate-400 group-open:rotate-180 transition-transform duration-300 w-5 h-5 md:w-6 md:h-6" />
-                      </summary>
-                      <div className="p-5 md:p-6 border-t border-slate-800 bg-slate-900/50">
-                        <SimpleMarkdown text={section.detail} />
-                      </div>
-                    </details>
-                  )}
-                </section>
+                  numberLabel={numLabel}
+                  title={section.heading}
+                  paragraphs={section.paragraphs}
+                  detail={section.detail}
+                  viewDetailLabel={clientTranslations.viewDetail}
+                />
               );
             })}
           </div>
