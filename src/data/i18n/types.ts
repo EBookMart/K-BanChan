@@ -16,8 +16,10 @@ export interface PageLocaleContent {
   excerpt: string;
   body: {
     intro: string;
+    introDetail?: string;
     sections: ContentSection[];
     conclusion: string;
+    conclusionDetail?: string;
   };
   cta: ContentCTA;
 }

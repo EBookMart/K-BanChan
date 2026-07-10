@@ -129,11 +129,14 @@ export default function IngredientsPage({ params: { locale } }: Props) {
       <main className="flex-grow pt-8 pb-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full space-y-16" dir={isRtl ? "rtl" : "ltr"}>
         
         {/* 본문 파트 1 (소개글) */}
-        <section id="section-intro" className="scroll-mt-32 md:scroll-mt-40 prose prose-invert max-w-none">
-          <p className="text-slate-350 text-base md:text-lg leading-relaxed font-light font-sans mb-8">
-            {intro}
-          </p>
-        </section>
+        <SectionAccordion
+          id="section-intro"
+          numberLabel=""
+          title={INTRO_NAV_LABEL[contentLocale] || INTRO_NAV_LABEL.en}
+          paragraphs={[intro]}
+          detail={content.introDetail}
+          viewDetailLabel={clientTranslations.viewDetail}
+        />
 
         {/* 첫 번째 섹션 */}
         {sections.length > 0 && (
@@ -179,11 +182,14 @@ export default function IngredientsPage({ params: { locale } }: Props) {
 
         {/* 결론 섹션 */}
         {conclusion && (
-          <section id="section-conclusion" className="scroll-mt-32 md:scroll-mt-40 prose prose-invert max-w-none border-t border-slate-900 pt-12">
-            <p className="text-slate-355 text-base md:text-lg leading-relaxed font-light font-sans">
-              {conclusion}
-            </p>
-          </section>
+          <SectionAccordion
+            id="section-conclusion"
+            numberLabel=""
+            title={CONCLUSION_NAV_LABEL[contentLocale] || CONCLUSION_NAV_LABEL.en}
+            paragraphs={[conclusion]}
+            detail={content.conclusionDetail}
+            viewDetailLabel={clientTranslations.viewDetail}
+          />
         )}
 
         {/* 5. 하단 CTA 링크 버튼 섹션 */}

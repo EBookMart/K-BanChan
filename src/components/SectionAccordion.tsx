@@ -32,7 +32,7 @@ export default function SectionAccordion({
       >
         <h2 className="text-2xl md:text-3xl font-bold font-serif text-white flex flex-col md:flex-row md:items-center justify-between gap-4 select-none">
           <div className="flex items-center gap-2">
-            <span className="text-emerald-500 font-mono">{numberLabel}</span>
+            {numberLabel && <span className="text-emerald-500 font-mono">{numberLabel}</span>}
             <span>{title}</span>
           </div>
           

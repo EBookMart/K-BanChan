@@ -8,9 +8,10 @@ export const ingredientsPageI18n: LocalizedPageContent = {
       excerpt: '한식의 맛은 양념만이 아니라 제철의 채소, 바다의 해조류와 생선, 곡물과 두류, 그리고 발효 식재료의 층위에서 완성됩니다.',
       body: {
         intro: '한식의 식재료는 자연의 순환과 지역의 기후, 저장과 발효의 지혜를 함께 담고 있습니다. 한 상의 반찬은 단순한 곁들임이 아니라 계절과 땅, 바다와 사람의 감각이 모인 결과입니다.',
+        introDetail: ``,
         sections: [
           {
-            heading: '채소와 과실',
+            heading: '채소, 버섯, 과실',
             paragraphs: ['채소는 한식 식탁의 중심을 이룹니다. 나물, 뿌리채소, 잎채소는 무침·볶음·절임 등 다양한 조리법을 통해 재료의 질감과 향을 섬세하게 드러냅니다.'],
             detail: ``
           },
@@ -30,7 +31,8 @@ export const ingredientsPageI18n: LocalizedPageContent = {
             detail: ``
           }
         ],
-        conclusion: '한식의 식재료를 이해하는 일은 한 끼를 읽는 일과 같습니다. 무엇이 자라고, 어떻게 저장되며, 어떤 방식으로 상에 오르는지를 알면 반찬 문화의 구조가 더 선명하게 보입니다.'
+        conclusion: '한식의 식재료를 이해하는 일은 한 끼를 읽는 일과 같습니다. 무엇이 자라고, 어떻게 저장되며, 어떤 방식으로 상에 오르는지를 알면 반찬 문화의 구조가 더 선명하게 보입니다.',
+        conclusionDetail: ``
       },
       cta: { label: '대표 반찬 더 보기', href: '/ko/banchan' }
     },
@@ -39,6 +41,7 @@ export const ingredientsPageI18n: LocalizedPageContent = {
       excerpt: 'The flavor of Korean food is shaped not only by seasoning, but also by seasonal vegetables, seafood and seaweed, grains and legumes, and the depth of fermented ingredients.',
       body: {
         intro: 'Korean ingredients reflect the cycle of nature, regional climate, and the wisdom of preservation and fermentation. A table of banchan is not a collection of side dishes alone, but a composition of season, land, sea, and human touch.',
+        introDetail: ``,
         sections: [
           {
             heading: 'Vegetables and Wild Greens',
@@ -61,7 +64,8 @@ export const ingredientsPageI18n: LocalizedPageContent = {
             detail: ``
           }
         ],
-        conclusion: 'To understand Korean ingredients is to read the structure of a meal. When you know what grows, how it is stored, and how it reaches the table, the culture of banchan becomes clearer.'
+        conclusion: 'To understand Korean ingredients is to read the structure of a meal. When you know what grows, how it is stored, and how it reaches the table, the culture of banchan becomes clearer.',
+        conclusionDetail: ``
       },
       cta: { label: 'Explore Signature Banchan', href: '/en/banchan' }
     },
@@ -70,6 +74,7 @@ export const ingredientsPageI18n: LocalizedPageContent = {
       excerpt: 'La saveur de la cuisine coréenne ne repose pas seulement sur l’assaisonnement, mais aussi sur les légumes de saison, les produits de la mer, les céréales, les légumineuses et la profondeur des ingrédients fermentés.',
       body: {
         intro: 'Les ingrédients coréens reflètent le cycle de la nature, les climats régionaux et le savoir-faire de la conservation et de la fermentation. Une table de banchan n’est pas un simple assemblage d’accompagnements, mais une composition de saison, de terroir, de mer et de gestes humains.',
+        introDetail: ``,
         sections: [
           {
             heading: 'Légumes et herbes sauvages',
@@ -92,7 +97,8 @@ export const ingredientsPageI18n: LocalizedPageContent = {
             detail: ``
           }
         ],
-        conclusion: 'Comprendre les ingrédients coréens, c’est comprendre la structure d’un repas. Savoir ce qui pousse, comment cela se conserve et comment cela arrive à table éclaire la culture du banchan.'
+        conclusion: 'Comprendre les ingrédients coréens, c’est comprendre la structure d’un repas. Savoir ce qui pousse, comment cela se conserve et comment cela arrive à table éclaire la culture du banchan.',
+        conclusionDetail: ``
       },
       cta: { label: 'Voir les banchan emblématiques', href: '/fr/banchan' }
     },
@@ -101,6 +107,7 @@ export const ingredientsPageI18n: LocalizedPageContent = {
       excerpt: 'لا تتكوّن نكهة الطعام الكوري من التتبيل فقط، بل من الخضروات الموسمية، والمأكولات البحرية والأعشاب البحرية، والحبوب والبقول، وعمق المكوّنات المخمّرة.',
       body: {
         intro: 'تعكس مكوّنات المطبخ الكوري دورة الطبيعة والمناخ المحلي وحكمة الحفظ والتخمير. ومائدة البانتشان ليست مجرد أطباق جانبية، بل بناء يجمع الموسم والأرض والبحر ولمسة الإنسان.',
+        introDetail: ``,
         sections: [
           {
             heading: 'الخضروات والأعشاب البرية',
@@ -123,7 +130,8 @@ export const ingredientsPageI18n: LocalizedPageContent = {
             detail: ``
           }
         ],
-        conclusion: 'إن فهم مكوّنات الطعام الكوري هو فهم لبنية الوجبة نفسها. فعندما نعرف ما الذي ينمو، وكيف يُحفَظ، وكيف يصل إلى المائدة، تصبح ثقافة البانتشان أكثر وضوحاً.'
+        conclusion: 'إن فهم مكوّنات الطعام الكوري هو فهم لبنية الوجبة نفسها. فعندما نعرف ما الذي ينمو، وكيف يُحفَظ، وكيف يصل إلى المائدة، تصبح ثقافة البانتشان أكثر وضوحاً.',
+        conclusionDetail: ``
       },
       cta: { label: 'استكشف أشهر أطباق البانتشان', href: '/ar/banchan' }
     },
@@ -132,10 +140,11 @@ export const ingredientsPageI18n: LocalizedPageContent = {
       excerpt: '韓国料理の味は、調味料だけでなく、旬の野菜、海の海藻や魚、穀物や豆類、그리고 発酵食材の深みによって完成されます。',
       body: {
         intro: '韓国の食材には、自然の循環、地域の気候、그리고 保存と発酵の知恵が息づいています。食卓を彩る「パンチャン（おかず）」は単なる添え物ではなく、季節、大地、海、그리고 人々の技と愛情が織りなす芸術です。',
+        introDetail: ``,
         sections: [
           {
             heading: '野菜とナムル',
-            paragraphs: ['野菜は韓国の食卓の中心です。ナムル、根菜、葉野菜などは、和える・炒める・漬けるといった多様な調理法を通じて、素材の食感と香りを繊細に引き出します。'],
+            paragraphs: ['野菜は韓国の食卓の中心です。ナムル、根菜、葉野菜などは、和える・炒める・漬けるといった多様な調理法を通じて、素材の食感と香りを繊細に引き出します.'],
             detail: ``
           },
           {
@@ -154,7 +163,8 @@ export const ingredientsPageI18n: LocalizedPageContent = {
             detail: ``
           }
         ],
-        conclusion: '韓国料理の食材を理解することは、一食の背後にある伝統を読み解くことと同じです。どのような環境で育ち、どのように保存され、どのような工夫で食卓にのぼるのかを知ることで、パンチャン文化の奥深さがより鮮明に見えてきます。'
+        conclusion: '韓国料理の食材を理解することは、一食の背後にある伝統を読み解くことと同じです。どのような環境で育ち、どのように保存され、どのような工夫で食卓にのぼるのかを知ることで、パンチャン文化の奥深さがより鮮明に見えてきます。',
+        conclusionDetail: ``
       },
       cta: { label: '代表的なパンチャンを見る', href: '/ja/banchan' }
     },
@@ -163,6 +173,7 @@ export const ingredientsPageI18n: LocalizedPageContent = {
       excerpt: '韩食的风味不仅源于调味，更在于时令蔬菜、海洋鱼介与海藻、谷物与豆类，以及发酵食材所构成的丰富层次。',
       body: {
         intro: '韩食的食材凝聚着自然循环、地域气候以及保存与发酵的智慧。餐桌上的一盘伴餐（Banchan）不仅是配菜，更是季节、土地、海洋与人文情感交织的结晶。',
+        introDetail: ``,
         sections: [
           {
             heading: '蔬菜与野菜（Namul）',
@@ -185,7 +196,8 @@ export const ingredientsPageI18n: LocalizedPageContent = {
             detail: ``
           }
         ],
-        conclusion: '理解韩食的食材，犹如阅读一顿饭的内在结构。当您了解食材的生长环境、保存方式以及呈上餐桌的工序时，便能更清晰地领略伴餐文化的独特魅力。'
+        conclusion: '理解韩食的食材，犹如阅读一顿饭的内在结构。当您了解食材的生长环境、保存方式以及呈上餐桌的工序时，便能更清晰地领略伴餐文化的独特魅力。',
+        conclusionDetail: ``
       },
       cta: { label: '探索代表性伴餐', href: '/zh/banchan' }
     },
@@ -194,6 +206,7 @@ export const ingredientsPageI18n: LocalizedPageContent = {
       excerpt: 'El sabor de la cocina coreana se define no solo por sus condimentos, sino también por las verduras de temporada, los pescados y algas, los granos y legumbres, y la profundidad de los ingredientes fermentados.',
       body: {
         intro: 'Los ingredientes coreanos reflejan el ciclo de la naturaleza, el clima regional y la sabiduría de la conservación y la fermentación. Una mesa de banchan no es solo un conjunto de acompañamientos, sino una composición de la estación, la tierra, el mar y el toque humano.',
+        introDetail: ``,
         sections: [
           {
             heading: 'Verduras y Hierbas Silvestres',
@@ -216,7 +229,8 @@ export const ingredientsPageI18n: LocalizedPageContent = {
             detail: ``
           }
         ],
-        conclusion: 'Comprender los ingredientes coreanos es como descifrar una comida. Saber qué se cultiva, cómo se almacena y de qué manera llega a la mesa nos permite ver con mayor claridad la estructura y la riqueza de la cultura del banchan.'
+        conclusion: 'Comprender los ingredientes coreanos es como descifrar una comida. Saber qué se cultiva, cómo se almacena y de qué manera llega a la mesa nos permite ver con mayor claridad la estructura y la riqueza de la cultura del banchan.',
+        conclusionDetail: ``
       },
       cta: { label: 'Explorar Banchan Emblemáticos', href: '/es/banchan' }
     },
@@ -225,6 +239,7 @@ export const ingredientsPageI18n: LocalizedPageContent = {
       excerpt: 'Вкус корейской кухни формируется не только приправами, но и сезонными овощами, рыбой и морскими водорослями, злаками и бобовыми, а также глубиной ферментированных продуктов.',
       body: {
         intro: 'Корейские ингредиенты отражают природные циклы, особенности регионального климата и мудрость сохранения продуктов с помощью ферментации. Традиционный стол панчхан — это не просто набор закусок, а гармония времен года, земли, моря и заботливых рук человека.',
+        introDetail: ``,
         sections: [
           {
             heading: 'Овощи и дикорастущие травы',
@@ -247,7 +262,8 @@ export const ingredientsPageI18n: LocalizedPageContent = {
             detail: ``
           }
         ],
-        conclusion: 'Понимание корейских ингредиентов помогает раскрыть саму структуру трапезы. Зная, где растут продукты, как они хранятся и каким способом подаются к столу, вы сможете глубже оценить богатство культуры панчхана.'
+        conclusion: 'Понимание корейских ингредиентов помогает раскрыть саму структуру трапезы. Зная, где растут продукты, как они хранятся и каким способом подаются к столу, вы сможете глубже оценить богатство культуры панчхана.',
+        conclusionDetail: ``
       },
       cta: { label: 'Посмотреть популярные панчханы', href: '/ru/banchan' }
     }
