@@ -9,7 +9,7 @@ import { Flame, ShieldAlert, Sparkles, ArrowRight } from "lucide-react";
 import { summerKoreanFoods10I18n, summerFoodsUiI18n } from "@/data/i18n";
 import { SupportedLocale } from "@/data/i18n/types";
 import SummerFoodNavigation from "@/components/SummerFoodNavigation";
-import HotBannerNav from "@/components/HotBannerNav";
+
 
 type Props = {
   params: { locale: string };
