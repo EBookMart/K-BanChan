@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "@/i18n/routing";
 import { summerFoodsList } from "@/data/summer-foods";
-import { Flame, ShieldAlert, Sparkles, ArrowRight } from "lucide-react";
+import { Flame, Sparkles, ArrowRight } from "lucide-react";
 import { summerKoreanFoods10I18n, summerFoodsUiI18n } from "@/data/i18n";
 import { SupportedLocale } from "@/data/i18n/types";
 import SummerFoodNavigation from "@/components/SummerFoodNavigation";
