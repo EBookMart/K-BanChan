@@ -3,8 +3,10 @@ import Link from "next/link";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SeasonalThemeBanner from "@/components/SeasonalThemeBanner";
+import MonetizationCTA from "@/components/MonetizationCTA";
 import { BANCHAN_GUIDE_ARTICLES } from "@/data/banchan-guide";
-import { BookOpen, Clock, ArrowRight } from "lucide-react";
+import { BookOpen, Clock, ArrowRight, ShoppingCart } from "lucide-react";
 
 type Props = {
   params: { locale: string };
@@ -74,20 +76,25 @@ export default function BanchanGuideIndexPage({ params: { locale } }: Props) {
   const isRtl = lang === "ar";
 
   return (
-    <div className="min-h-screen flex flex-col bg-amber-50/30 dark:bg-stone-950 text-stone-800 dark:text-stone-100 transition-colors duration-300">
+    <div className="min-h-screen flex flex-col bg-slate-950 text-slate-100 transition-colors duration-300">
       <Header />
       
-      <main className="flex-grow py-16 px-4 max-w-7xl mx-auto w-full" dir={isRtl ? "rtl" : "ltr"}>
+      <main className="flex-grow pt-6 pb-16 md:pt-10 md:pb-24 px-4 max-w-7xl mx-auto w-full" dir={isRtl ? "rtl" : "ltr"}>
+        {/* 상단 시즈널 테마 배너 */}
+        <div className="mb-8 md:mb-12 w-full max-w-5xl mx-auto">
+          <SeasonalThemeBanner locale={locale} />
+        </div>
+
         {/* 히어로 헤더 섹션 */}
-        <div className="text-center mb-16 max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 text-sm font-semibold mb-4 border border-amber-200 dark:border-amber-900/50">
+        <div className="text-center mb-10 md:mb-16 max-w-3xl mx-auto">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-sm font-semibold mb-4 border border-amber-500/30">
             <BookOpen size={16} />
             <span>K-BanChan Academic Archive</span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-stone-900 dark:text-white mb-4 font-serif">
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4 font-serif drop-shadow-md">
             {title}
           </h1>
-          <p className="text-lg text-stone-600 dark:text-stone-400">
+          <p className="text-lg text-slate-400 font-light">
             {subtitle}
           </p>
         </div>
@@ -104,14 +111,14 @@ export default function BanchanGuideIndexPage({ params: { locale } }: Props) {
             return (
               <div 
                 key={article.slug}
-                className="group relative flex flex-col justify-between bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:border-amber-400 dark:hover:border-amber-700 transition-all duration-300 transform hover:-translate-y-1"
+                className="group relative flex flex-col justify-between bg-slate-900/40 border border-slate-800 rounded-2xl p-8 shadow-sm hover:shadow-xl hover:border-amber-500/50 transition-all duration-300 transform hover:-translate-y-1"
               >
                 {/* 카드 상단 데코레이션 및 번호 */}
                 <div className="flex justify-between items-start mb-6">
-                  <span className="text-3xl font-extrabold text-amber-500/80 dark:text-amber-500 font-mono">
+                  <span className="text-3xl font-extrabold text-amber-500/80 font-mono">
                     {paddedOrder}
                   </span>
-                  <div className="flex items-center gap-1.5 text-xs text-stone-400 dark:text-stone-500 font-medium">
+                  <div className="flex items-center gap-1.5 text-xs text-slate-500 font-medium">
                     <Clock size={12} />
                     <span>{artReadTime}</span>
                   </div>
@@ -119,22 +126,22 @@ export default function BanchanGuideIndexPage({ params: { locale } }: Props) {
 
                 {/* 메인 텍스트 영역 */}
                 <div className="flex-grow">
-                  <h2 className="text-xl font-bold text-stone-900 dark:text-white mb-2 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors font-serif line-clamp-2">
+                  <h2 className="text-xl font-bold text-white mb-2 group-hover:text-amber-400 transition-colors font-serif line-clamp-2">
                     {artTitle}
                   </h2>
-                  <p className="text-sm font-semibold text-amber-700 dark:text-amber-400 mb-3 tracking-wide">
+                  <p className="text-sm font-semibold text-amber-500 mb-3 tracking-wide">
                     {artSubtitle}
                   </p>
-                  <p className="text-sm text-stone-500 dark:text-stone-400 line-clamp-3 leading-relaxed mb-6">
+                  <p className="text-sm text-slate-400 line-clamp-3 leading-relaxed mb-6 font-light">
                     {artDesc}
                   </p>
                 </div>
 
                 {/* 카드 하단 액션 버튼 */}
-                <div className="border-t border-stone-100 dark:border-stone-800 pt-4 mt-2">
+                <div className="border-t border-slate-800/80 pt-4 mt-2">
                   <Link 
                     href={`/${lang}/banchan-guide/${article.slug}`}
-                    className="inline-flex items-center gap-1.5 text-sm font-bold text-stone-800 dark:text-stone-200 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors"
+                    className="inline-flex items-center gap-1.5 text-sm font-bold text-slate-300 group-hover:text-amber-400 transition-colors"
                   >
                     <span>{readMoreText}</span>
                     <ArrowRight 
@@ -146,6 +153,27 @@ export default function BanchanGuideIndexPage({ params: { locale } }: Props) {
               </div>
             );
           })}
+          
+          {/* 6번째 빈 공간: 수익화 공간 신설 */}
+          <div className="flex h-full w-full">
+            <div className="w-full h-full p-1 rounded-3xl bg-gradient-to-br from-emerald-500/40 via-transparent to-transparent shadow-lg shadow-emerald-900/20 group">
+              <div className="bg-slate-900/90 h-full w-full rounded-[22px] flex flex-col justify-center items-center p-8 text-center border border-emerald-900/50 hover:bg-slate-900/70 transition-all duration-300">
+                <ShoppingCart className="w-10 h-10 text-emerald-400 mb-4 opacity-80 group-hover:scale-110 transition-transform" />
+                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">
+                  프리미엄 리포트 구매
+                </h3>
+                <p className="text-sm text-slate-400 font-light mb-6">
+                  반찬의 역사와 문화를 깊이 있게 다룬 학술 리포트를 파이 코인(Pi)으로 다운로드하세요.
+                </p>
+                <Link 
+                  href="#"
+                  className="px-6 py-2.5 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/20 hover:border-emerald-500/50 transition-all"
+                >
+                  상점 방문하기
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
 
