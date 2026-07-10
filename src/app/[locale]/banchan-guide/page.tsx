@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SeasonalThemeBanner from "@/components/SeasonalThemeBanner";
 import { BANCHAN_GUIDE_ARTICLES } from "@/data/banchan-guide";
-import { BookOpen, Clock, ArrowRight, ShoppingCart } from "lucide-react";
+import { Clock, ArrowRight, ShoppingCart } from "lucide-react";
 
 type Props = {
   params: { locale: string };

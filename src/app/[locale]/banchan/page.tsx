@@ -54,7 +54,6 @@ export default async function BanchanListPage({ params: { locale } }: Props) {
               initialBanchan={allBanchan}
               locale={locale}
               categories={categories}
-              placeholder={t("search_placeholder")}
               noResultsText={t("no_results")}
             />
           </Suspense>

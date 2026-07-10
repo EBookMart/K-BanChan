@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { getAllCurations } from "@/data/hot-curations";
-import { ArrowRight, Flame, Download } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import MonetizationCTA from "@/components/MonetizationCTA";
 import { aiImages } from "@/data/ai-images";
 import SeasonalThemeBanner from "@/components/SeasonalThemeBanner";

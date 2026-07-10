@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { Banchan } from "../types/banchan";
-import SearchBar from "./SearchBar";
 import CategoryFilter from "./CategoryFilter";
 import BanchanCard from "./BanchanCard";
 
@@ -16,7 +15,6 @@ interface BanchanGridProps {
   initialBanchan: Banchan[];
   locale: string;
   categories: Category[];
-  placeholder: string;
   noResultsText: string;
 }
 
@@ -24,7 +22,6 @@ export default function BanchanGrid({
   initialBanchan,
   locale,
   categories,
-  placeholder,
   noResultsText
 }: BanchanGridProps) {
   const searchParams = useSearchParams();

@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import IngredientsClient from "@/components/IngredientsClient";
 import SectionNavigation from "@/components/SectionNavigation";
-import { Leaf } from "lucide-react";
+
 import SectionAccordion from "@/components/SectionAccordion";
 import SeasonalThemeBanner from "@/components/SeasonalThemeBanner";
 import { ingredientsPageI18n } from "@/data/i18n";
