@@ -11,7 +11,7 @@ import BanchanCard from "@/components/BanchanCard";
 import ObangsaekCircleNav from "@/components/ObangsaekCircleNav";
 import MonetizationCTA from "@/components/MonetizationCTA";
 import { Link } from "@/i18n/routing";
-import { Compass, Sparkles, Heart, RefreshCw, Leaf, ArrowLeft, ShoppingCart } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
 import { getAIImage, AIImageKey } from "@/data/ai-images";
 
 const getArticleImageKey = (slug: string): AIImageKey | null => {
@@ -130,23 +130,7 @@ export default async function ArticleDetailPage({ params: { locale, slug } }: Pr
       relatedBanchans = allBanchans.slice(0, 3);
   }
 
-  // 아이콘 매핑 함수
-  const getIcon = (artSlug: string, className: string) => {
-    switch (artSlug) {
-      case "yaksik-dongwon":
-        return <Leaf className={className} />;
-      case "yukmi":
-        return <Sparkles className={className} />;
-      case "obangsaek":
-        return <Compass className={className} />;
-      case "nanum":
-        return <Heart className={className} />;
-      case "ingredients-terroir":
-        return <RefreshCw className={className} />;
-      default:
-        return <Compass className={className} />;
-    }
-  };
+
 
   return (
     <>
