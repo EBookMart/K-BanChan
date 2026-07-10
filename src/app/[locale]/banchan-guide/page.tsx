@@ -4,7 +4,6 @@ import { routing } from "@/i18n/routing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SeasonalThemeBanner from "@/components/SeasonalThemeBanner";
-import MonetizationCTA from "@/components/MonetizationCTA";
 import { BANCHAN_GUIDE_ARTICLES } from "@/data/banchan-guide";
 import { BookOpen, Clock, ArrowRight, ShoppingCart } from "lucide-react";
 
