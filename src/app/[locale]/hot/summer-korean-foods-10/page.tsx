@@ -125,7 +125,7 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
         </section>
 
         {/* 3. 10대 여름철 음식 리스트 카드 영역 */}
-        <section className="space-y-12">
+        <section className="space-y-6">
           {summerFoodsList.map((food, idx) => {
             const numLabel = String(idx + 1).padStart(2, "0");
             const isHot = food.categoryType === "hot";
