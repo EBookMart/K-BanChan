@@ -5,7 +5,8 @@ import Footer from "@/components/Footer";
 import IngredientsClient from "@/components/IngredientsClient";
 import SectionNavigation from "@/components/SectionNavigation";
 import { Link } from "@/i18n/routing";
-import { Leaf, ArrowRight } from "lucide-react";
+import { Leaf, ArrowRight, ChevronDown } from "lucide-react";
+import SimpleMarkdown from "@/components/SimpleMarkdown";
 import { ingredientsPageI18n } from "@/data/i18n";
 import { SupportedLocale } from "@/data/i18n/types";
 
@@ -146,6 +147,20 @@ export default function IngredientsPage({ params: { locale } }: Props) {
                 {p}
               </p>
             ))}
+            {sections[0].detail && (
+              <details className="mt-8 group border border-slate-800 rounded-2xl overflow-hidden bg-slate-900/30">
+                <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer select-none hover:bg-slate-800/50 transition-colors outline-none">
+                  <span className="text-base md:text-lg font-bold text-emerald-400 group-open:text-emerald-300 flex items-center gap-2">
+                    <span className="w-1.5 h-6 bg-emerald-500 rounded-full inline-block"></span>
+                    {clientTranslations.viewDetail}
+                  </span>
+                  <ChevronDown className="text-slate-400 group-open:rotate-180 transition-transform duration-300 w-5 h-5 md:w-6 md:h-6" />
+                </summary>
+                <div className="p-5 md:p-6 border-t border-slate-800 bg-slate-900/50">
+                  <SimpleMarkdown text={sections[0].detail} />
+                </div>
+              </details>
+            )}
           </section>
         )}
 
@@ -179,6 +194,20 @@ export default function IngredientsPage({ params: { locale } }: Props) {
                       {p}
                     </p>
                   ))}
+                  {section.detail && (
+                    <details className="mt-8 group border border-slate-800 rounded-2xl overflow-hidden bg-slate-900/30">
+                      <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer select-none hover:bg-slate-800/50 transition-colors outline-none">
+                        <span className="text-base md:text-lg font-bold text-emerald-400 group-open:text-emerald-300 flex items-center gap-2">
+                          <span className="w-1.5 h-6 bg-emerald-500 rounded-full inline-block"></span>
+                          {clientTranslations.viewDetail}
+                        </span>
+                        <ChevronDown className="text-slate-400 group-open:rotate-180 transition-transform duration-300 w-5 h-5 md:w-6 md:h-6" />
+                      </summary>
+                      <div className="p-5 md:p-6 border-t border-slate-800 bg-slate-900/50">
+                        <SimpleMarkdown text={section.detail} />
+                      </div>
+                    </details>
+                  )}
                 </section>
               );
             })}

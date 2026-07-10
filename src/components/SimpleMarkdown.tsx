@@ -7,8 +7,38 @@ interface Props {
 export default function SimpleMarkdown({ text }: Props) {
   if (!text) return null;
 
-  // 줄바꿈 기준으로 분리하여 한 줄씩 처리
+  // 줄바꿈 기준으로 분리
   const lines = text.split('\n');
+
+  // 그룹화: 일반 줄과 표(Table) 줄을 분리
+  type Block = { type: 'empty' } | { type: 'table', rows: string[] } | { type: 'text', content: string };
+  const blocks: Block[] = [];
+  let currentTable: string[] = [];
+
+  for (let i = 0; i < lines.length; i++) {
+    const trimmed = lines[i].trim();
+    if (!trimmed) {
+      if (currentTable.length > 0) {
+        blocks.push({ type: 'table', rows: currentTable });
+        currentTable = [];
+      }
+      blocks.push({ type: 'empty' });
+      continue;
+    }
+
+    if (trimmed.startsWith('|') && trimmed.endsWith('|')) {
+      currentTable.push(trimmed);
+    } else {
+      if (currentTable.length > 0) {
+        blocks.push({ type: 'table', rows: currentTable });
+        currentTable = [];
+      }
+      blocks.push({ type: 'text', content: trimmed });
+    }
+  }
+  if (currentTable.length > 0) {
+    blocks.push({ type: 'table', rows: currentTable });
+  }
 
   const renderInline = (line: string) => {
     // 만약 줄이 **로 시작하지만 끝에 **가 없다면, 전체 줄을 굵게 처리 (사용자 실수 방지)
@@ -35,12 +65,49 @@ export default function SimpleMarkdown({ text }: Props) {
   };
 
   return (
-    <div className="space-y-3 text-slate-300">
-      {lines.map((line, i) => {
-        const trimmed = line.trim();
-        if (!trimmed) return null;
+    <div className="space-y-3 text-slate-300 overflow-hidden">
+      {blocks.map((block, i) => {
+        if (block.type === 'empty') return null;
+
+        if (block.type === 'table') {
+          const [headerLine, separatorLine, ...bodyLines] = block.rows;
+          // 테이블 헤더 추출
+          const headers = headerLine.split('|').slice(1, -1).map(s => s.trim());
+          
+          // 두 번째 줄이 구분선(|---|---|)인지 확인
+          const isSeparator = separatorLine && separatorLine.replace(/[\s|-]/g, '') === '';
+          const actualBodyLines = isSeparator ? bodyLines : (separatorLine ? [separatorLine, ...bodyLines] : bodyLines);
+
+          return (
+            <div key={i} className="overflow-x-auto my-6 bg-slate-900/50 rounded-lg border border-slate-700/50">
+              <table className="w-full text-sm text-left text-slate-300 border-collapse">
+                <thead className="text-xs text-slate-200 uppercase bg-slate-800/80 border-b border-emerald-500/30">
+                  <tr>
+                    {headers.map((h, j) => (
+                      <th key={j} className="px-4 py-3 font-semibold tracking-wider whitespace-nowrap">{renderInline(h)}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-700/50">
+                  {actualBodyLines.map((row, j) => {
+                    const cells = row.split('|').slice(1, -1).map(s => s.trim());
+                    return (
+                      <tr key={j} className="hover:bg-slate-800/40 transition-colors">
+                        {cells.map((cell, k) => (
+                          <td key={k} className="px-4 py-3 leading-relaxed">{renderInline(cell)}</td>
+                        ))}
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          );
+        }
+
+        const trimmed = block.content;
         
-        // ## 소제목 처리 (띄어쓰기가 없어도 인식하도록 수정)
+        // ## 소제목 처리
         if (trimmed.startsWith('##')) {
           const content = trimmed.replace(/^##\s*/, '');
           return (
@@ -50,7 +117,7 @@ export default function SimpleMarkdown({ text }: Props) {
           );
         }
         
-        // # 대제목 처리 (띄어쓰기가 없어도 인식하도록 수정)
+        // # 대제목 처리
         if (trimmed.startsWith('#')) {
           const content = trimmed.replace(/^#\s*/, '');
           return (

@@ -3,6 +3,7 @@ export type SupportedLocale = 'ko' | 'en' | 'fr' | 'ar' | 'ja' | 'zh' | 'es' | '
 export interface ContentSection {
   heading: string;
   paragraphs: string[];
+  detail?: string;
 }
 
 export interface ContentCTA {
