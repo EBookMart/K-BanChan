@@ -144,7 +144,7 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
                 className="group relative bg-slate-900/30 border border-slate-800/60 rounded-3xl p-4 md:p-6 hover:border-slate-700 transition-all duration-300 scroll-mt-20 md:scroll-mt-24"
               >
                 {/* 상단 헤더 데코레이션 */}
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-3">
                   <div className="flex items-center gap-4">
                     <span className="text-4xl md:text-5xl font-extrabold text-slate-800 dark:text-slate-700 font-mono">
                       {numLabel}
@@ -172,7 +172,7 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
                 </div>
 
                 {/* 에디토리얼 내용 */}
-                <div className="space-y-6">
+                <div className="space-y-3">
                   <div className="space-y-2 border-l-2 border-emerald-500/30 pl-4">
                     <p className="text-base md:text-lg font-semibold text-slate-200">
                       {summary}
