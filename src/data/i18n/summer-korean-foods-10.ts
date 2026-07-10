@@ -216,14 +216,14 @@ export const summerKoreanFoods10I18n: LocalizedPageContent = {
 
 export const summerFoodsUiI18n = {
   cautionBoxTitle: {
-    ko: "⚠️ 이런 분들은 특히 유의하세요 (건강상 주의점)",
-    en: "⚠️ Dietary Cautions & Health Warnings",
-    ja: "⚠️ 食事上の注意と健康上の警告",
-    zh: "⚠️ 饮食注意与健康警告",
-    es: "⚠️ Precauciones Dietéticas y Advertencias de Salud",
-    fr: "⚠️ Précautions et Avertissements de Santé",
-    ar: "⚠️ تحذيرات صحية واحتياطات غذائية",
-    ru: "⚠️ Диетические предостережения и предупреждения о здоровье"
+    ko: "건강상 주의점",
+    en: "Health Cautions",
+    ja: "健康上の注意",
+    zh: "健康注意",
+    es: "Advertencias de Salud",
+    fr: "Avertissements de Santé",
+    ar: "تحذيرات صحية",
+    ru: "Предупреждения о здоровье"
   },
   adPlacementText: {
     ko: "💡 추천 파트너 마케팅 영역 (한국 정통 식재료 밀키트 구매처)",

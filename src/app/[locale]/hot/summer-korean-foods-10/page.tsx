@@ -183,19 +183,15 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
                     {culture}
                   </p>
 
-                  {/* HTML5 Native Zero-JS Accordion Caution Box */}
-                  <details className="group border border-rose-500/15 bg-rose-950/10 rounded-2xl overflow-hidden transition-all duration-300">
-                    <summary className="flex items-center justify-between cursor-pointer p-4 text-xs md:text-sm font-bold text-rose-400 hover:bg-rose-950/20 select-none">
-                      <div className="flex items-center gap-2">
-                        <ShieldAlert size={16} />
-                        <span>{summerFoodsUiI18n.cautionBoxTitle[contentLocale] || summerFoodsUiI18n.cautionBoxTitle.en}</span>
-                      </div>
-                      <span className="transition-transform duration-300 group-open:rotate-180">👇</span>
-                    </summary>
-                    <div className="p-4 pt-0 border-t border-rose-500/10 text-xs md:text-sm text-slate-300 font-normal leading-relaxed">
+                  {/* Caution Box */}
+                  <div className="text-xs md:text-sm leading-relaxed mt-2 p-4 bg-slate-900/50 rounded-xl border border-slate-800/50">
+                    <span className="font-bold text-rose-500 mr-2">
+                      {summerFoodsUiI18n.cautionBoxTitle[contentLocale] || summerFoodsUiI18n.cautionBoxTitle.en}:
+                    </span>
+                    <span className="text-slate-100 font-normal">
                       {caution}
-                    </div>
-                  </details>
+                    </span>
+                  </div>
                 </div>
               </article>
             );
