@@ -4,8 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import IngredientsClient from "@/components/IngredientsClient";
 import SectionNavigation from "@/components/SectionNavigation";
-import { Link } from "@/i18n/routing";
-import { Leaf, ArrowRight } from "lucide-react";
+import { Leaf } from "lucide-react";
 import SectionAccordion from "@/components/SectionAccordion";
 import { ingredientsPageI18n } from "@/data/i18n";
 import { SupportedLocale } from "@/data/i18n/types";
@@ -45,7 +44,6 @@ export default function IngredientsPage({ params: { locale } }: Props) {
   const titleText = content.title;
   const excerptText = content.excerpt;
   const { intro, sections, conclusion } = content.body;
-  const cta = content.cta;
 
   // 다국어 매핑 번역 라벨들
   const RELATED_BANCHAN_LABEL: Record<string, string> = {
@@ -66,10 +64,6 @@ export default function IngredientsPage({ params: { locale } }: Props) {
     fr: "🔍 Cartographie des 5 Ingrédients & Banchans",
     ar: "🔍 رسم المكونات الخمسة الأساسية والبان تشان",
     ru: "🔍 5 категорий ингредиентов и связанных закусок"
-  };
-  const CTA_HEADER_TITLE: Record<string, string> = {
-    ko: "💡 더 알아보기", en: "💡 Learn More", ja: "💡 もっと知る", zh: "💡 了解更多",
-    es: "💡 Saber más", fr: "💡 En savoir plus", ar: "💡 اقرأ المزيد", ru: "💡 Узнать больше"
   };
 
   const INTRO_NAV_LABEL: Record<string, string> = {
