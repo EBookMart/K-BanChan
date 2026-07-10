@@ -121,7 +121,7 @@ export default function SeasonalThemeBanner({ locale }: SeasonalThemeBannerProps
     <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 w-full items-stretch mb-6">
       <Link
         href={theme.href}
-        className={`group flex-1 flex flex-col sm:flex-row items-start sm:items-center p-4 sm:p-5 rounded-2xl bg-gradient-to-r ${theme.gradientFrom} ${theme.gradientTo} border ${theme.borderColor} ${theme.hoverBorderColor} transition-all duration-300 shadow-lg ${theme.shadowColor}`}
+        className={`group shrink-0 flex flex-col sm:flex-row items-start sm:items-center p-4 sm:p-5 rounded-2xl bg-gradient-to-r ${theme.gradientFrom} ${theme.gradientTo} border ${theme.borderColor} ${theme.hoverBorderColor} transition-all duration-300 shadow-lg ${theme.shadowColor}`}
         dir={isRtl ? "rtl" : "ltr"}
       >
         <div className="flex items-center gap-3">
@@ -150,7 +150,7 @@ export default function SeasonalThemeBanner({ locale }: SeasonalThemeBannerProps
         </div>
       </Link>
       
-      <form onSubmit={handleSearch} className="w-full lg:w-[320px] relative flex shrink-0" dir={isRtl ? "rtl" : "ltr"}>
+      <form onSubmit={handleSearch} className="w-full flex-1 relative flex" dir={isRtl ? "rtl" : "ltr"}>
         <input 
           type="text" 
           value={query}
