@@ -187,7 +187,7 @@ export default async function ArticleDetailPage({ params: { locale, slug } }: Pr
             description="약식동원의 철학이 담긴 신선하고 건강한 한국 전통 식재료를 파이(Pi) 코인으로 편리하게 구매해보세요."
             buttonLabel="상점 방문하기"
             href="#"
-            eventName="cta_click_article_store"
+            eventName="cta_click_partner_link"
             variant="primary"
             icon={<ShoppingCart size={24} />}
           />
