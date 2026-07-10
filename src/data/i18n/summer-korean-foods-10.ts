@@ -17,7 +17,8 @@ export const summerKoreanFoods10I18n: LocalizedPageContent = {
             heading: '건강한 선택',
             paragraphs: ['전통적인 지혜는 오늘날에도 유효합니다. 다만 개인의 체질과 건강 상태, 알레르기와 나트륨 섭취량 등을 고려해 자신에게 맞는 방식으로 즐기는 것이 중요합니다.']
           }
-        ]
+        ],
+        conclusion: ''
       },
       cta: { label: '인기 반찬 8선으로 이동', href: '/ko/hot' }
     },
