@@ -124,7 +124,7 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
         </section>
 
         {/* 3. 10대 여름철 음식 리스트 카드 영역 */}
-        <section className="space-y-3">
+        <section className="space-y-2">
           {summerFoodsList.map((food, idx) => {
             const numLabel = String(idx + 1).padStart(2, "0");
             const isHot = food.categoryType === "hot";
@@ -172,7 +172,7 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
                 </div>
 
                 {/* 에디토리얼 내용 */}
-                <div className="space-y-3">
+                <div className="space-y-1.5">
                   <div className="space-y-2 border-l-2 border-emerald-500/30 pl-4">
                     <p className="text-base md:text-lg font-semibold text-slate-200">
                       {summary}
@@ -184,7 +184,7 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
                   </p>
 
                   {/* Caution Box */}
-                  <div className="text-xs md:text-sm leading-relaxed mt-2 p-4 bg-slate-900/50 rounded-xl border border-slate-800/50">
+                  <div className="text-xs md:text-sm leading-relaxed p-4 bg-slate-900/50 rounded-xl border border-slate-800/50">
                     <span className="font-bold text-rose-500 mr-2">
                       {summerFoodsUiI18n.cautionBoxTitle[contentLocale] || summerFoodsUiI18n.cautionBoxTitle.en}:
                     </span>
