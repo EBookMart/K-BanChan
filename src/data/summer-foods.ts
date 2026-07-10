@@ -7,6 +7,7 @@ export interface SummerFoodItem {
   summary: { [key: string]: string };
   culture: { [key: string]: string };
   caution: { [key: string]: string };
+  detail?: { [key: string]: string };
 }
 
 export const summerFoodsList: SummerFoodItem[] = [

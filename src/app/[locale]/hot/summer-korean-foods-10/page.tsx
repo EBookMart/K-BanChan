@@ -9,6 +9,7 @@ import { Flame, Sparkles, ArrowRight } from "lucide-react";
 import { summerKoreanFoods10I18n, summerFoodsUiI18n } from "@/data/i18n";
 import { SupportedLocale } from "@/data/i18n/types";
 import SummerFoodNavigation from "@/components/SummerFoodNavigation";
+import SimpleMarkdown from "@/components/SimpleMarkdown";
 
 
 type Props = {
@@ -192,6 +193,28 @@ export default function SummerKoreanFoodsPage({ params: { locale } }: Props) {
                       {caution}
                     </span>
                   </div>
+
+                  {/* 상세 설명 (더 보기) */}
+                  <details className="group border border-slate-800/60 bg-slate-900/40 rounded-xl overflow-hidden transition-all duration-300">
+                    <summary className="flex items-center justify-between cursor-pointer p-4 text-xs md:text-sm font-bold text-slate-300 hover:bg-slate-800/50 select-none">
+                      <div className="flex items-center gap-2">
+                        <span className="text-emerald-400">📖</span>
+                        <span>{contentLocale === 'ko' ? '상세 설명 더 보기' : 'Read More'}</span>
+                      </div>
+                      <span className="transition-transform duration-300 group-open:rotate-180">👇</span>
+                    </summary>
+                    <div className="p-4 border-t border-slate-800/60 text-sm md:text-base">
+                      {food.detail?.[contentLocale] ? (
+                        <SimpleMarkdown text={food.detail[contentLocale]} />
+                      ) : (
+                        <p className="text-slate-500 italic">
+                          {contentLocale === 'ko' 
+                            ? "아직 상세 설명이 등록되지 않았습니다." 
+                            : "Detailed description coming soon."}
+                        </p>
+                      )}
+                    </div>
+                  </details>
                 </div>
               </article>
             );
