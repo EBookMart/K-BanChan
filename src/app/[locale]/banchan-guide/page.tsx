@@ -80,16 +80,12 @@ export default function BanchanGuideIndexPage({ params: { locale } }: Props) {
       
       <main className="flex-grow pt-6 pb-16 md:pt-10 md:pb-24 px-4 max-w-7xl mx-auto w-full" dir={isRtl ? "rtl" : "ltr"}>
         {/* 상단 시즈널 테마 배너 */}
-        <div className="mb-8 md:mb-12 w-full max-w-5xl mx-auto">
+        <div className="mb-4 w-full max-w-5xl mx-auto">
           <SeasonalThemeBanner locale={locale} />
         </div>
 
         {/* 히어로 헤더 섹션 */}
-        <div className="text-center mb-10 md:mb-16 max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-sm font-semibold mb-4 border border-amber-500/30">
-            <BookOpen size={16} />
-            <span>K-BanChan Academic Archive</span>
-          </div>
+        <div className="text-center mb-8 md:mb-12 max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4 font-serif drop-shadow-md">
             {title}
           </h1>

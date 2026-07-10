@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { getTranslations } from "next-intl/server";
 import { getAllBanchan } from "@/lib/banchan";
 import BanchanGrid from "@/components/BanchanGrid";
@@ -31,7 +31,7 @@ export default async function BanchanListPage({ params: { locale } }: Props) {
 
       <main className="flex-grow pt-8 pb-16 bg-slate-950 text-slate-100 min-h-screen relative overflow-hidden">
         {/* 상단 시즈널 테마 배너 */}
-        <div className="w-full max-w-5xl mx-auto px-4 mb-8 md:mb-12 relative z-20">
+        <div className="w-full max-w-5xl mx-auto px-4 relative z-20">
           <SeasonalThemeBanner locale={locale} />
         </div>
 
@@ -39,23 +39,25 @@ export default async function BanchanListPage({ params: { locale } }: Props) {
         <div className="absolute top-10 left-1/4 w-96 h-96 bg-amber-500/5 rounded-full blur-[100px] pointer-events-none" />
         <div className="absolute bottom-10 right-1/4 w-96 h-96 bg-emerald-500/5 rounded-full blur-[100px] pointer-events-none" />
 
-        <div className="container mx-auto px-4 max-w-7xl relative z-10">
+        <div className="container mx-auto px-4 max-w-7xl relative z-10 pt-4">
           {/* 페이지 메인 타이틀 */}
-          <h1 className="text-4xl md:text-6xl font-black text-center mb-4 bg-gradient-to-r from-emerald-400 via-teal-300 to-amber-300 bg-clip-text text-transparent tracking-tight">
+          <h1 className="text-4xl md:text-6xl font-black text-center mb-2 bg-gradient-to-r from-emerald-400 via-teal-300 to-amber-300 bg-clip-text text-transparent tracking-tight">
             {t("title")}
           </h1>
-          <p className="text-center text-slate-400 text-sm md:text-base font-light mb-12 max-w-xl mx-auto leading-relaxed">
-            {t("subtitle")}
+          <p className="text-center text-slate-400 text-sm md:text-base font-medium mb-6 max-w-xl mx-auto">
+            한국인이 선호하는 50가지 전통 반찬의 비밀코드를 찾아 보세요
           </p>
 
           {/* 목록 검색 및 그리드 */}
-          <BanchanGrid
-            initialBanchan={allBanchan}
-            locale={locale}
-            categories={categories}
-            placeholder={t("search_placeholder")}
-            noResultsText={t("no_results")}
-          />
+          <Suspense fallback={<div className="h-20" />}>
+            <BanchanGrid
+              initialBanchan={allBanchan}
+              locale={locale}
+              categories={categories}
+              placeholder={t("search_placeholder")}
+              noResultsText={t("no_results")}
+            />
+          </Suspense>
         </div>
       </main>
 

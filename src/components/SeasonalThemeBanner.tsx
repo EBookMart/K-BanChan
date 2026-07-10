@@ -1,8 +1,8 @@
 "use client";
 
-import React from "react";
-import { Link, usePathname } from "@/i18n/routing";
-import { ArrowRight, ArrowLeft, Sparkles, Flame, Leaf } from "lucide-react";
+import React, { useState } from "react";
+import { Link, usePathname, useRouter } from "@/i18n/routing";
+import { ArrowRight, ArrowLeft, Sparkles, Flame, Leaf, Search } from "lucide-react";
 
 interface SeasonalThemeBannerProps {
   locale: string;
@@ -89,6 +89,15 @@ export const seasonalConfig = {
 
 export default function SeasonalThemeBanner({ locale }: SeasonalThemeBannerProps) {
   const pathname = usePathname();
+  const router = useRouter();
+  const [query, setQuery] = useState("");
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (query.trim()) {
+      router.push(`/${locale}/banchan?q=${encodeURIComponent(query)}`);
+    }
+  };
   const isRtl = locale === "ar";
   
   // 현재 페이지가 summer-korean-foods-10 인 경우, 뒤로가기(Hot 8) 배너로 자동 전환
@@ -109,32 +118,50 @@ export default function SeasonalThemeBanner({ locale }: SeasonalThemeBannerProps
   const Icon = theme.icon;
 
   return (
-    <Link
-      href={theme.href}
-      className={`group flex flex-col sm:flex-row items-start sm:items-center justify-between p-4 sm:p-5 rounded-2xl bg-gradient-to-r ${theme.gradientFrom} ${theme.gradientTo} border ${theme.borderColor} ${theme.hoverBorderColor} transition-all duration-300 w-full shadow-lg ${theme.shadowColor} mb-8`}
-      dir={isRtl ? "rtl" : "ltr"}
-    >
-      <div className="flex items-center gap-3 mb-2 sm:mb-0">
-        <div className={`p-2.5 rounded-full ${theme.iconBg} ${theme.iconColor} group-hover:scale-110 transition-transform`}>
-          <Icon className="w-5 h-5 animate-pulse" />
-        </div>
-        <div>
-          <div className={`text-[10px] ${theme.iconColor} opacity-80 font-bold uppercase tracking-widest mb-0.5`}>
-            {t.sub}
+    <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 w-full items-stretch mb-6">
+      <Link
+        href={theme.href}
+        className={`group flex-1 flex flex-col sm:flex-row items-start sm:items-center p-4 sm:p-5 rounded-2xl bg-gradient-to-r ${theme.gradientFrom} ${theme.gradientTo} border ${theme.borderColor} ${theme.hoverBorderColor} transition-all duration-300 shadow-lg ${theme.shadowColor}`}
+        dir={isRtl ? "rtl" : "ltr"}
+      >
+        <div className="flex items-center gap-3">
+          <div className={`p-2.5 rounded-full shrink-0 ${theme.iconBg} ${theme.iconColor} group-hover:scale-110 transition-transform`}>
+            <Icon className="w-5 h-5 animate-pulse" />
           </div>
-          <div className={`text-sm md:text-base font-bold text-slate-200 group-hover:text-white transition-colors`}>
-            {t.title}
+          <div className="flex flex-col sm:flex-row sm:items-center sm:gap-4">
+            <div>
+              <div className={`text-[10px] ${theme.iconColor} opacity-80 font-bold uppercase tracking-widest mb-0.5`}>
+                {t.sub}
+              </div>
+              <div className={`text-sm md:text-base font-bold text-slate-200 group-hover:text-white transition-colors`}>
+                {t.title}
+              </div>
+            </div>
+            
+            <div className={`flex items-center gap-1.5 text-xs font-bold ${theme.iconColor} group-hover:text-white transition-colors mt-2 sm:mt-0 bg-slate-900/40 px-3 py-1.5 rounded-full border ${theme.borderColor} group-hover:bg-slate-800/60`}>
+              <span>Go</span>
+              <ArrowIcon className={`w-4 h-4 transform transition-transform ${
+                isRtl 
+                  ? (isSummerPage ? "group-hover:translate-x-1" : "group-hover:-translate-x-1")
+                  : (isSummerPage ? "group-hover:-translate-x-1" : "group-hover:translate-x-1")
+              }`} />
+            </div>
           </div>
         </div>
-      </div>
-      <div className={`flex items-center gap-2 text-xs font-semibold ${theme.iconColor} opacity-80 group-hover:opacity-100 transition-colors self-end sm:self-auto`}>
-        <span>Go</span>
-        <ArrowIcon className={`w-4 h-4 transform transition-transform ${
-          isRtl 
-            ? (isSummerPage ? "group-hover:translate-x-1" : "group-hover:-translate-x-1")
-            : (isSummerPage ? "group-hover:-translate-x-1" : "group-hover:translate-x-1")
-        }`} />
-      </div>
-    </Link>
+      </Link>
+      
+      <form onSubmit={handleSearch} className="w-full lg:w-[320px] relative flex shrink-0" dir={isRtl ? "rtl" : "ltr"}>
+        <input 
+          type="text" 
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="반찬이름이나 재료를 검색해보세요" 
+          className={`w-full bg-slate-900/60 border border-slate-700/80 rounded-2xl py-4 px-5 text-sm text-white focus:outline-none focus:border-emerald-500/50 focus:bg-slate-900/90 shadow-lg transition-all ${isRtl ? 'pl-12' : 'pr-12'}`}
+        />
+        <button type="submit" className={`absolute ${isRtl ? 'left-4' : 'right-4'} top-1/2 -translate-y-1/2 p-2 text-slate-400 hover:text-emerald-400 transition-colors`}>
+          <Search size={20} />
+        </button>
+      </form>
+    </div>
   );
 }

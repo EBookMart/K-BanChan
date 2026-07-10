@@ -97,22 +97,18 @@ export default function IngredientsPage({ params: { locale } }: Props) {
       <Header />
       
       {/* 상단 시즈널 테마 배너 */}
-      <div className="w-full bg-slate-950 pt-6 px-4">
+      <div className="w-full bg-slate-950 pt-6 px-4 relative z-20">
         <div className="max-w-5xl mx-auto">
           <SeasonalThemeBanner locale={locale} />
         </div>
       </div>
 
-      {/* 1. 히어로 배너 섹션 (위아래 패딩 과도한 여백 축소: py-20 md:py-28 -> pt-16 pb-12 md:pt-20 md:pb-16) */}
-      <div className="relative w-full overflow-hidden border-b border-slate-900 bg-slate-950 pt-16 pb-12 md:pt-20 md:pb-16">
+      {/* 1. 히어로 배너 섹션 */}
+      <div className="relative w-full overflow-hidden border-b border-slate-900 bg-slate-950 pt-6 pb-10 md:pt-8 md:pb-12">
         <div className="absolute inset-0 bg-[url('/images/ai/articles/yaksik-dongwon.webp')] bg-cover bg-center opacity-15 blur-md scale-105 pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent pointer-events-none" />
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" dir={isRtl ? "rtl" : "ltr"}>
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs md:text-sm font-semibold mb-5">
-            <Leaf size={14} className="animate-pulse" />
-            <span>K-BanChan Academic Curation</span>
-          </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-5 font-serif leading-tight">
             {titleText}

@@ -255,11 +255,7 @@ export default function HotIndexPage({ params: { locale } }: Props) {
       
       <div className="max-w-6xl mx-auto relative z-10">
         <SeasonalThemeBanner locale={locale} />
-        <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-400 text-xs font-bold uppercase tracking-widest mb-6 animate-pulse">
-            <Flame className="w-3.5 h-3.5" />
-            <span>K-Banchan Curations</span>
-          </div>
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12 mt-2">
           
           <h1 className="text-4xl md:text-6xl font-black text-white tracking-tight mb-6">
             {title}

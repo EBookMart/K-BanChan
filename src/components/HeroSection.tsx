@@ -15,7 +15,7 @@ export default function HeroSection() {
   const altText = aiImages.homeHero.alt[locale as keyof typeof aiImages.homeHero.alt] || aiImages.homeHero.alt.en;
 
   return (
-    <section className="relative w-full py-6 md:py-16 bg-slate-950 flex flex-col items-center justify-center overflow-hidden border-b border-slate-900/80">
+    <section className="relative w-full pt-4 pb-6 md:pt-6 md:pb-16 bg-slate-950 flex flex-col items-center justify-center overflow-hidden border-b border-slate-900/80">
       {/* 백그라운드 오방색 그라디언트 및 조명 효과 */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900/60 via-slate-950 to-slate-950 z-0" />
       
@@ -25,9 +25,9 @@ export default function HeroSection() {
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-96 h-96 bg-amber-500/5 rounded-full blur-[100px] pointer-events-none" />
 
       {/* 컨텐츠 영역 */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-4 flex flex-col items-center mb-4 md:mb-6 mt-2 md:mt-4">
+      <div className="relative z-10 text-center max-w-5xl w-full mx-auto px-4 flex flex-col items-center mb-4 md:mb-6 mt-2 md:mt-4">
         {/* 관리자가 설정한 시즈널 테마 배너 (오프닝 페이지 최상단) */}
-        <div className="w-full max-w-2xl mx-auto mb-6 md:mb-10 text-left">
+        <div className="w-full mx-auto mb-2 md:mb-3 text-left">
           <SeasonalThemeBanner locale={locale} />
         </div>
 

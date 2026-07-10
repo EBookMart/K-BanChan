@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { Banchan } from "../types/banchan";
 import SearchBar from "./SearchBar";
 import CategoryFilter from "./CategoryFilter";
@@ -26,7 +27,8 @@ export default function BanchanGrid({
   placeholder,
   noResultsText
 }: BanchanGridProps) {
-  const [searchQuery, setSearchQuery] = useState("");
+  const searchParams = useSearchParams();
+  const searchQuery = searchParams.get("q") || "";
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   // 검색 및 카테고리 통합 필터링 로직
@@ -70,10 +72,10 @@ export default function BanchanGrid({
   };
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-4">
       {/* 검색 바 & 필터 영역 */}
       <div className="flex flex-col gap-4 items-center">
-        <SearchBar value={searchQuery} onChange={setSearchQuery} placeholder={placeholder} />
+        {/* SearchBar는 전역 컴포넌트로 이동됨 */}
         <CategoryFilter
           selected={selectedCategory}
           onChange={setSelectedCategory}
