@@ -192,35 +192,11 @@ export default function IngredientsPage({ params: { locale } }: Props) {
           />
         )}
 
-        {/* 5. 하단 CTA 링크 버튼 섹션 */}
-        <section className="border-t border-slate-900 pt-12 space-y-6">
-          <h3 className="text-xl font-bold text-white flex items-center gap-2">
-            <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
-            <span>{CTA_HEADER_TITLE[contentLocale] || CTA_HEADER_TITLE.en}</span>
-          </h3>
-          
-          <div>
-            {(() => {
-              const labelText = cta.label;
-              const pureHref = cta.href.replace(/^\/(ko|en|ja|zh|es|fr|ar|ru)(?=\/|$)/, "") || "/";
-
-              return (
-                <Link
-                  href={pureHref}
-                  className="flex items-center justify-between p-5 rounded-2xl bg-slate-900/40 border border-slate-800 hover:border-emerald-500/40 hover:bg-slate-900/60 transition-all duration-300 group shadow-md max-w-md mx-auto"
-                >
-                  <span className="text-sm font-bold text-slate-200 group-hover:text-emerald-400 transition-colors">
-                    {labelText}
-                  </span>
-                  <ArrowRight
-                    size={16}
-                    className={`text-slate-500 group-hover:text-emerald-400 transition-transform duration-300 group-hover:translate-x-1 ${
-                      isRtl ? "rotate-180 group-hover:-translate-x-1" : ""
-                    }`}
-                  />
-                </Link>
-              );
-            })()}
+        {/* 5. 수익화 (광고/협찬) 배너 영역 플레이스홀더 */}
+        <section className="border-t border-slate-900 pt-12">
+          <div className="w-full h-32 md:h-40 border border-dashed border-slate-800 rounded-2xl flex flex-col items-center justify-center bg-slate-900/20 text-slate-600 font-medium text-sm space-y-2">
+            <span className="text-emerald-500/50">Advertisement / Sponsorship Space</span>
+            <span>[추후 광고 및 협찬 수익화 아이템 노출 영역]</span>
           </div>
         </section>
 
