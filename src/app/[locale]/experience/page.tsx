@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { routing, Link } from "@/i18n/routing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SeasonalThemeBanner from "@/components/SeasonalThemeBanner";
 import { festivalsData, academicEventsData, culinaryToursData, getEventStatus } from "@/data/experience";
 import { Calendar, MapPin, Building, ChevronRight, GraduationCap, Map, PartyPopper, CheckCircle2, Bell } from "lucide-react";
 import MonetizationCTA from "@/components/MonetizationCTA";
@@ -39,11 +40,16 @@ export default async function ExperiencePage({ params: { locale } }: Props) {
     <div className="min-h-screen flex flex-col bg-slate-950 text-slate-100 transition-colors duration-300">
       <Header />
       
-      <main className="flex-grow pt-8 pb-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full space-y-20" dir={isRtl ? "rtl" : "ltr"}>
+      <main className="flex-grow pt-8 pb-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full" dir={isRtl ? "rtl" : "ltr"}>
         
+        {/* 상단 시즈널 테마 배너 */}
+        <div className="w-full max-w-5xl mx-auto mb-6 md:mb-8">
+          <SeasonalThemeBanner locale={locale} />
+        </div>
+
         {/* Intro Section */}
-        <section className="text-center pt-8 md:pt-16 pb-8 border-b border-slate-900">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 font-serif">
+        <section className="text-center pt-4 md:pt-6 pb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-4 font-serif">
             {t("title")}
           </h1>
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-400 font-light leading-relaxed">
@@ -52,7 +58,7 @@ export default async function ExperiencePage({ params: { locale } }: Props) {
         </section>
 
         {/* Section A: Festivals */}
-        <section id="festivals" className="space-y-8">
+        <section id="festivals" className="mt-4 md:mt-6 space-y-8">
           <div className="flex items-center gap-3 border-b border-slate-800 pb-4">
             <div className="p-2.5 rounded-xl bg-rose-500/10 text-rose-400">
               <PartyPopper size={24} />
@@ -142,7 +148,7 @@ export default async function ExperiencePage({ params: { locale } }: Props) {
         </section>
 
         {/* Section B: Culinary Tours */}
-        <section id="tours" className="space-y-8">
+        <section id="tours" className="mt-20 space-y-8">
           <div className="flex items-center gap-3 border-b border-slate-800 pb-4">
             <div className="p-2.5 rounded-xl bg-emerald-500/10 text-emerald-400">
               <Map size={24} />
@@ -205,7 +211,7 @@ export default async function ExperiencePage({ params: { locale } }: Props) {
         </section>
 
         {/* Section C: Academic & Marketing Events */}
-        <section id="academic" className="space-y-8">
+        <section id="academic" className="mt-20 space-y-8">
           <div className="flex items-center gap-3 border-b border-slate-800 pb-4">
             <div className="p-2.5 rounded-xl bg-blue-500/10 text-blue-400">
               <GraduationCap size={24} />

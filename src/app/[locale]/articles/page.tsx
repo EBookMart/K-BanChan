@@ -4,6 +4,7 @@ import { getAllArticles } from "@/data/articles";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ArticleCard from "@/components/ArticleCard";
+import SeasonalThemeBanner from "@/components/SeasonalThemeBanner";
 
 type Props = {
   params: { locale: string };
@@ -44,6 +45,11 @@ export default async function ArticlesIndexPage({ params: { locale } }: Props) {
       {/* 메인 영역 */}
       <main className="flex-grow bg-slate-950 text-slate-100 min-h-screen pt-8 pb-16 md:pt-12 md:pb-24 px-4 relative overflow-hidden">
         
+        {/* 상단 시즈널 테마 배너 */}
+        <div className="w-full max-w-5xl mx-auto mb-8 md:mb-12 relative z-20">
+          <SeasonalThemeBanner locale={locale} />
+        </div>
+
         {/* 데코레이션 라이트 */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none" />
 
@@ -51,9 +57,6 @@ export default async function ArticlesIndexPage({ params: { locale } }: Props) {
           
           {/* 아티클 인덱스 헤더 */}
           <div className="text-center max-w-2xl mx-auto mb-10 md:mb-12">
-            <span className="text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-950/40 border border-emerald-500/20 px-3 py-1 rounded-full mb-4 inline-block">
-              {t("title")}
-            </span>
             <h1 className="text-3xl md:text-5xl font-black text-white tracking-tight">
               {t("index_title")}
             </h1>
