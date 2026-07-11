@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { ChevronDown, MapPin, Building, Calendar, CheckCircle2, ChevronRight } from "lucide-react";
+import { ChevronDown, MapPin, Calendar, CheckCircle2, ChevronRight } from "lucide-react";
 import { Festival, getEventStatus } from "@/data/experience";
 
 interface Props {
