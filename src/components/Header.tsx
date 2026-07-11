@@ -101,6 +101,16 @@ export default function Header() {
           >
             <span>{tNav("experience")}</span>
           </Link>
+          <Link
+            href="/story"
+            className={`transition-colors flex items-center gap-1.5 ${
+              pathname.startsWith("/story")
+                ? "text-indigo-400"
+                : "text-slate-300 hover:text-white"
+            }`}
+          >
+            <span>{tNav("story")}</span>
+          </Link>
         </nav>
 
         {/* 3. 우측 다국어 선택기 & 모바일 햄버거 버튼 */}
@@ -233,6 +243,17 @@ export default function Header() {
               }`}
             >
               <span>{tNav("experience")}</span>
+            </Link>
+            <Link
+              href="/story"
+              onClick={() => setIsMenuOpen(false)}
+              className={`p-2 rounded-lg transition-colors flex items-center gap-1.5 ${
+                pathname.startsWith("/story")
+                  ? "bg-indigo-500/10 text-indigo-400"
+                  : "text-slate-300 hover:bg-slate-900/50"
+              }`}
+            >
+              <span>{tNav("story")}</span>
             </Link>
           </nav>
         </div>

@@ -124,6 +124,7 @@
     "hot": "人气伴餐8选",
     "ingredients": "韩食食材",
     "experience": "韩食体验",
+    "story": "韩食 故事与起源",
     "previous": "上一页",
     "next": "下一页"
   },
@@ -222,5 +223,9 @@
       "title": "食材与风土 (Terroir)",
       "subtitle": "四季和三面环海孕育的鲜活风味与发酵技术"
     }
+  },
+  "story": {
+    "title": "韩食 故事与起源",
+    "subtitle": "韩食，美味的故事"
   }
 }

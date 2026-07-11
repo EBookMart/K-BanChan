@@ -123,6 +123,7 @@
     "hot": "Top 8 Plats",
     "ingredients": "Ingrédients",
     "experience": "Expérience K-Food",
+    "story": "L'Histoire Cachée de la Cuisine Coréenne",
     "previous": "Précédent",
     "next": "Suivant"
   },
@@ -221,5 +222,9 @@
       "title": "Ingrédients & Terroir",
       "subtitle": "La fraîcheur et la fermentation façonnées par les quatre saisons et la géographie de la péninsule"
     }
+  },
+  "story": {
+    "title": "L'Histoire Cachée de la Cuisine Coréenne",
+    "subtitle": "La Cuisine Coréenne, Sa Délicieuse Histoire"
   }
 }

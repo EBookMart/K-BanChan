@@ -127,6 +127,7 @@
     "hot": "Top 8 Dishes",
     "ingredients": "Korean Ingredients",
     "experience": "K-Food Experience",
+    "story": "Korean Food Chronicles",
     "previous": "Previous",
     "next": "Next"
   },
@@ -225,5 +226,9 @@
       "title": "Ingredients & Terroir",
       "subtitle": "Freshness and fermentation crafted by four seasons and the peninsula geography"
     }
+  },
+  "story": {
+    "title": "Korean Food Chronicles",
+    "subtitle": "Korean Food, Its Delicious Story"
   }
 }

@@ -125,6 +125,7 @@
     "hot": "Top 8 Platos",
     "ingredients": "Ingredientes coreanos",
     "experience": "Experiencia de K-Food",
+    "story": "Historias y Orígenes de la Comida Coreana",
     "previous": "Anterior",
     "next": "Siguiente"
   },
@@ -223,5 +224,9 @@
       "title": "Ingredientes y Terroir",
       "subtitle": "Frescura y fermentación creadas por las cuatro estaciones y la geografía peninsular"
     }
+  },
+  "story": {
+    "title": "Historias y Orígenes de la Comida Coreana",
+    "subtitle": "Comida Coreana, Su Deliciosa Historia"
   }
 }
