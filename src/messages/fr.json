@@ -132,7 +132,17 @@
     "intro": "Découvrez en profondeur la culture de la cuisine coréenne à travers divers festivals, événements et visites culinaires.",
     "festivals": {
       "title": "Festivals K-Food",
-      "description": "Découvrez des festivals gastronomiques animés organisés à travers le pays."
+      "description": "Découvrez des festivals gastronomiques animés organisés à travers le pays.",
+      "ongoing_title": "Festivals en Cours",
+      "upcoming_title": "Festivals à Venir",
+      "no_upcoming": "Aucun festival à venir.",
+      "other_ongoing": "Autres Événements en Cours",
+      "official_website": "Site Officiel"
+    },
+    "newsletter": {
+      "title": "S'abonner aux Mises à Jour",
+      "description": "Soyez le premier à recevoir les programmes des nouveaux festivals, événements académiques et circuits culinarios coréens.",
+      "button": "Être Notifié"
     },
     "academic": {
       "title": "Événements Académiques et Marketing",
@@ -225,6 +235,28 @@
   },
   "story": {
     "title": "L'Histoire Cachée de la Cuisine Coréenne",
-    "subtitle": "La Cuisine Coréenne, Sa Délicieuse Histoire"
+    "subtitle": "La Cuisine Coréenne, Sa Délicieuse Histoire",
+    "search_placeholder": "Rechercher des essais...",
+    "table_title": "Titre",
+    "table_date": "Date",
+    "coming_soon": "À venir",
+    "no_results": "Aucun résultat trouvé.",
+    "date_tbd": "À déterminer",
+    "essays": {
+      "story_1": { "title": "Depuis quand les Coréens prennent-ils la nourriture si au sérieux ?", "subtitle": "Le roi qui s'inquiétait que son peuple se soucie trop de manger" },
+      "story_2": { "title": "Cache-cache du Yakgwa", "subtitle": "Pourquoi la douceur traditionnelle bien-aimée a parfois été interdite par décret royal" },
+      "story_3": { "title": "Naissance du K-Chicken", "subtitle": "Comment les Coréens ont transformé le poulet frit américain en K-Chicken mondial" },
+      "story_4": { "title": "Mondialisation du K-Ramyeon", "subtitle": "Comment les nouilles inventées au Japon ont captivé les palais du monde entier" },
+      "story_5": { "title": "Transformation du Hotteok", "subtitle": "Comment le pain vendu par les marchands Qing est devenu la nourriture de rue emblématique de la Corée" },
+      "story_6": { "title": "L'Histoire Secrète du Budaejjigae", "subtitle": "La nourriture de l'âme coréenne moderne née de la douleur de la guerre de Corée" },
+      "story_7": { "title": "Secrets des Aires de Repos des Autoroutes", "subtitle": "Pourquoi les aires de repos coréennes sont devenues des paradis culinaires diversifiés" },
+      "story_8": { "title": "Qu'est-ce que l'Anju exactement ?", "subtitle": "Le mariage parfait entre l'alcool et la nourriture, la culture de la boisson unique de la Corée" },
+      "story_9": { "title": "L'Ascension du Tteokbokki", "subtitle": "Comment un mets de la cour royale est devenu la nourriture de rue nationale" },
+      "story_10": { "title": "Dessert Premium, Hangwa", "subtitle": "Comment le Hangwa est devenu le dessert suprême dans une cuisine avec peu d'aliments frits" },
+      "story_11": { "title": "Évolution de la Pizza à la coréenne", "subtitle": "L'évolution colorée franchissant les frontières de la tradition et de la fusion" },
+      "story_12": { "title": "Le Kimchi est-il un plat ou un ingrédient ?", "subtitle": "De l'esthétique de la fermentation à la base de dizaines de milliers de plats" },
+      "story_13": { "title": "Esthétique du Bibim (Mélanger)", "subtitle": "Le point commun dans la culture alimentaire coréenne caché dans le Gujeolpan, le Bibimbap et le Budaejjigae" },
+      "story_14": { "title": "L'Évolution Infinie du Gimbap", "subtitle": "Jusqu'où le Gimbap peut-il se diversifier et évoluer ?" }
+    }
   }
 }

@@ -133,7 +133,17 @@
     "intro": "通过各种庆典、活动和游记，深入体验韩食文化。",
     "festivals": {
       "title": "韩食相关庆典",
-      "description": "了解在全国各地举办的生动美食庆典。"
+      "description": "了解在全国各地举办的生动美食庆典。",
+      "ongoing_title": "正在进行的节日",
+      "upcoming_title": "即将举行的节日",
+      "no_upcoming": "没有即将举行的节日。",
+      "other_ongoing": "其他正在进行的活动",
+      "official_website": "官方网站"
+    },
+    "newsletter": {
+      "title": "订阅韩国美食体验更新",
+      "description": "第一时间获取新的韩国美食节、学术活动和美食之旅的时间表。",
+      "button": "获取通知"
     },
     "academic": {
       "title": "学术及营销活动",
@@ -226,6 +236,28 @@
   },
   "story": {
     "title": "韩食 故事与起源",
-    "subtitle": "韩食，美味的故事"
+    "subtitle": "韩食，美味的故事",
+    "search_placeholder": "搜索文章...",
+    "table_title": "标题",
+    "table_date": "日期",
+    "coming_soon": "敬请期待",
+    "no_results": "未找到结果。",
+    "date_tbd": "待定",
+    "essays": {
+      "story_1": { "title": "韩国人从何时开始对食物如此认真？", "subtitle": "因为百姓对吃太认真而担忧的国王" },
+      "story_2": { "title": "药果的捉迷藏", "subtitle": "从高丽时代就备受喜爱的药果为何有时会被王命禁止" },
+      "story_3": { "title": "K-炸鸡的诞生", "subtitle": "韩国人如何将美国炸鸡发展为世界级的K-炸鸡？" },
+      "story_4": { "title": "K-拉面的全球化", "subtitle": "在日本发明的拉面如何迷倒全球的味蕾" },
+      "story_5": { "title": "糖饼的变身", "subtitle": "清朝商人出售的面包如何成为韩国代表性的街头小吃" },
+      "story_6": { "title": "部队锅的诞生秘闻", "subtitle": "朝鲜战争的痛苦孕育出的现代韩国人的灵魂食物" },
+      "story_7": { "title": "高速公路服务区的秘密", "subtitle": "为什么韩国的服务区成了多样美食的天堂？" },
+      "story_8": { "title": "下酒菜（Anju）到底是什么？", "subtitle": "酒与食物的完美结合，韩国独特的饮酒文化" },
+      "story_9": { "title": "炒年糕的身份上升", "subtitle": "曾在宫廷享用的高级料理如何成为国民街头小吃？" },
+      "story_10": { "title": "高级甜点，韩菓", "subtitle": "在油炸食品稀少的韩国料理中，韩菓如何登上最高地位" },
+      "story_11": { "title": "韩式比萨的进化", "subtitle": "跨越传统与融合边界的丰富进化过程" },
+      "story_12": { "title": "泡菜是菜肴还是食材？", "subtitle": "从发酵的美学到成为成千上万道菜的基础" },
+      "story_13": { "title": "拌的美学", "subtitle": "隐藏在九折板、拌饭、部队锅中的韩国饮食文化共同点" },
+      "story_14": { "title": "无限进化的紫菜包饭", "subtitle": "紫菜包饭能变得多具多样性和进化能力？" }
+    }
   }
 }

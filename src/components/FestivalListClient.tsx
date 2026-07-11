@@ -2,36 +2,32 @@
 
 import React, { useState } from "react";
 import { ChevronDown, MapPin, Calendar, CheckCircle2, ChevronRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Festival, getEventStatus } from "@/data/experience";
 
 interface Props {
   festivals: Festival[];
   locale: string;
-  loadMoreText: string;
-  statusLabels: Record<string, string>;
-  labels: Record<string, string>;
   isRtl?: boolean;
 }
 
-export default function FestivalListClient({ festivals, locale, loadMoreText, statusLabels, labels, isRtl = false }: Props) {
+export default function FestivalListClient({ festivals, locale, isRtl = false }: Props) {
   const [expanded, setExpanded] = useState(false);
+  const tExp = useTranslations("experience");
 
   const getLocalText = (data: Record<string, string>, defaultLang = "ko") => {
     return data[locale] || data[defaultLang] || data["en"] || "";
   };
 
-  // 진행 상태에 따라 분류
   const ongoingFestivals = festivals.filter(f => getEventStatus(f.startDate, f.endDate, f.status) === "ongoing");
   const upcomingFestivals = festivals.filter(f => getEventStatus(f.startDate, f.endDate, f.status) === "upcoming");
   
-  // 나머지 기타 상태(계절별 등)도 필요에 따라 ongoing에 합치거나 별도 처리
   const otherFestivals = festivals.filter(f => {
     const s = getEventStatus(f.startDate, f.endDate, f.status);
     return s !== "ongoing" && s !== "upcoming";
   });
 
   const allOngoing = [...ongoingFestivals, ...otherFestivals];
-
   const ongoingTop3 = allOngoing.slice(0, 3);
   const ongoingRemaining = allOngoing.slice(3);
   const upcomingTop3 = upcomingFestivals.slice(0, 3);
@@ -52,11 +48,11 @@ export default function FestivalListClient({ festivals, locale, loadMoreText, st
             currentStatus === "seasonal" ? "bg-amber-500/10 text-amber-400 border-amber-500/20" :
             "bg-slate-800 text-slate-400 border-slate-700"
           }`}>
-            {statusLabels[currentStatus] || currentStatus}
+            {tExp(`status.${currentStatus}`)}
           </span>
           {festival.featured && (
             <span className="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded-md font-bold">
-              {labels.featured || "Featured"}
+              {tExp("labels.featured")}
             </span>
           )}
         </div>
@@ -92,7 +88,7 @@ export default function FestivalListClient({ festivals, locale, loadMoreText, st
             <div />
           )}
           <span className="text-xs font-semibold text-slate-500 group-hover:text-rose-400 transition-colors inline-flex items-center gap-1">
-            공식 홈페이지 <ChevronRight size={14} className={isRtl ? "rotate-180" : ""} />
+            {tExp("festivals.official_website")} <ChevronRight size={14} className={isRtl ? "rotate-180" : ""} />
           </span>
         </div>
       </a>
@@ -102,7 +98,6 @@ export default function FestivalListClient({ festivals, locale, loadMoreText, st
   return (
     <div className="space-y-8">
       {!expanded ? (
-        // 확장 전: 기본 진행중 행사 3개
         <>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {ongoingTop3.map(f => renderCard(f, getEventStatus(f.startDate, f.endDate, f.status)))}
@@ -112,50 +107,44 @@ export default function FestivalListClient({ festivals, locale, loadMoreText, st
               onClick={() => setExpanded(true)}
               className="group flex items-center gap-2 px-6 py-3 bg-slate-900 border border-slate-800 rounded-full hover:bg-slate-800 hover:border-slate-700 transition-all text-slate-300 font-medium text-sm"
             >
-              {loadMoreText}
+              {tExp("labels.load_more_festivals")}
               <ChevronDown size={16} className="text-slate-500 group-hover:text-slate-300 transition-colors" />
             </button>
           </div>
         </>
       ) : (
-        // 확장 후: 2단 레이아웃
         <div className="space-y-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-            
-            {/* 좌측: 진행 중인 행사 Top 3 */}
             <div className="space-y-6">
               <div className="flex items-center gap-2 border-b border-rose-500/20 pb-3">
                 <div className="w-2 h-6 bg-rose-500 rounded-full"></div>
-                <h3 className="text-xl font-bold text-white">진행 중인 축제</h3>
+                <h3 className="text-xl font-bold text-white">{tExp("festivals.ongoing_title")}</h3>
               </div>
               <div className="flex flex-col gap-6">
                 {ongoingTop3.map(f => renderCard(f, getEventStatus(f.startDate, f.endDate, f.status)))}
               </div>
             </div>
 
-            {/* 우측: 진행 예정 행사 Top 3 */}
             <div className="space-y-6">
               <div className="flex items-center gap-2 border-b border-emerald-500/20 pb-3">
                 <div className="w-2 h-6 bg-emerald-500 rounded-full"></div>
-                <h3 className="text-xl font-bold text-white">진행 예정 축제</h3>
+                <h3 className="text-xl font-bold text-white">{tExp("festivals.upcoming_title")}</h3>
               </div>
               <div className="flex flex-col gap-6">
                 {upcomingTop3.length > 0 ? (
                   upcomingTop3.map(f => renderCard(f, getEventStatus(f.startDate, f.endDate, f.status)))
                 ) : (
-                  <p className="text-slate-500 text-sm py-4">예정된 축제가 없습니다.</p>
+                  <p className="text-slate-500 text-sm py-4">{tExp("festivals.no_upcoming")}</p>
                 )}
               </div>
             </div>
-
           </div>
 
-          {/* 하단: 나머지 진행 중 행사 */}
           {ongoingRemaining.length > 0 && (
             <div className="pt-8 border-t border-slate-800/50">
               <div className="flex items-center gap-2 mb-6">
                 <div className="w-2 h-6 bg-slate-600 rounded-full"></div>
-                <h3 className="text-xl font-bold text-white">그 외 진행 중인 행사</h3>
+                <h3 className="text-xl font-bold text-white">{tExp("festivals.other_ongoing")}</h3>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {ongoingRemaining.map(f => renderCard(f, getEventStatus(f.startDate, f.endDate, f.status)))}

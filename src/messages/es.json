@@ -134,7 +134,17 @@
     "intro": "Experimente profundamente la cultura gastronómica coreana a través de varios festivales, eventos y recorridos culinarios.",
     "festivals": {
       "title": "Festivales de K-Food",
-      "description": "Descubra vibrantes festivales gastronómicos celebrados en todo el país."
+      "description": "Descubra vibrantes festivales gastronómicos celebrados en todo el país.",
+      "ongoing_title": "Festivales en Curso",
+      "upcoming_title": "Próximos Festivales",
+      "no_upcoming": "No hay festivales próximos.",
+      "other_ongoing": "Otros Eventos en Curso",
+      "official_website": "Sitio Web Oficial"
+    },
+    "newsletter": {
+      "title": "Suscribirse a las Actualizaciones de Experiencias",
+      "description": "Sé el primero en recibir calendarios de nuevos festivales de comida coreana, eventos académicos y tours culinarios.",
+      "button": "Recibir Notificación"
     },
     "academic": {
       "title": "Eventos Académicos y de Marketing",
@@ -227,6 +237,28 @@
   },
   "story": {
     "title": "Historias y Orígenes de la Comida Coreana",
-    "subtitle": "Comida Coreana, Su Deliciosa Historia"
+    "subtitle": "Comida Coreana, Su Deliciosa Historia",
+    "search_placeholder": "Buscar ensayos...",
+    "table_title": "Título",
+    "table_date": "Fecha",
+    "coming_soon": "Próximamente",
+    "no_results": "No se encontraron resultados.",
+    "date_tbd": "Por determinar",
+    "essays": {
+      "story_1": { "title": "¿Desde cuándo los coreanos se toman tan en serio la comida?", "subtitle": "El rey que se preocupaba de que a su pueblo le importara demasiado comer" },
+      "story_2": { "title": "El Escondite de Yakgwa", "subtitle": "Por qué el querido dulce tradicional a veces fue prohibido por decreto real" },
+      "story_3": { "title": "Nacimiento del K-Chicken", "subtitle": "¿Cómo evolucionaron los coreanos el pollo frito americano hacia el K-Chicken global?" },
+      "story_4": { "title": "Globalización del K-Ramyeon", "subtitle": "¿Cómo los fideos inventados en Japón cautivaron los paladares globales?" },
+      "story_5": { "title": "Transformación de Hotteok", "subtitle": "¿Cómo el pan vendido por comerciantes Qing se convirtió en la comida callejera característica de Corea?" },
+      "story_6": { "title": "La Historia Secreta del Budaejjigae", "subtitle": "La comida para el alma del coreano moderno nacida del dolor de la Guerra de Corea" },
+      "story_7": { "title": "Secretos de las Áreas de Descanso en Autopistas", "subtitle": "¿Por qué las paradas de descanso coreanas se convirtieron en paraísos culinarios diversos?" },
+      "story_8": { "title": "¿Qué es exactamente el Anju?", "subtitle": "El matrimonio perfecto entre alcohol y comida, la cultura de bebida única de Corea" },
+      "story_9": { "title": "El Ascenso del Tteokbokki", "subtitle": "¿Cómo un manjar de la corte real se convirtió en la comida callejera nacional?" },
+      "story_10": { "title": "Postre Premium, Hangwa", "subtitle": "¿Cómo Hangwa se convirtió en el postre principal en una gastronomía con pocos fritos?" },
+      "story_11": { "title": "Evolución de la Pizza al estilo coreano", "subtitle": "La colorida evolución cruzando las fronteras entre tradición y fusión" },
+      "story_12": { "title": "¿Es el Kimchi un plato o un ingrediente?", "subtitle": "De la estética de la fermentación a la base de decenas de miles de platos" },
+      "story_13": { "title": "La Estética de Bibim (Mezclar)", "subtitle": "Lo que tienen en común el Gujeolpan, el Bibimbap y el Budaejjigae en la cultura coreana" },
+      "story_14": { "title": "La Evolución Infinita del Gimbap", "subtitle": "¿Qué tan diverso puede llegar a ser el Gimbap?" }
+    }
   }
 }

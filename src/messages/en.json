@@ -136,7 +136,17 @@
     "intro": "Experience Korean food culture deeply through various festivals, events, and culinary tours.",
     "festivals": {
       "title": "K-Food Festivals",
-      "description": "Discover vibrant gastronomic festivals held across the country."
+      "description": "Discover vibrant gastronomic festivals held across the country.",
+      "ongoing_title": "Ongoing Festivals",
+      "upcoming_title": "Upcoming Festivals",
+      "no_upcoming": "No upcoming festivals.",
+      "other_ongoing": "Other Ongoing Events",
+      "official_website": "Official Website"
+    },
+    "newsletter": {
+      "title": "Subscribe to Korean Food Experience Updates",
+      "description": "Be the first to receive schedules for new Korean food festivals, academic events, and culinary tours.",
+      "button": "Get Notified"
     },
     "academic": {
       "title": "Academic & Marketing Events",
@@ -229,6 +239,28 @@
   },
   "story": {
     "title": "Korean Food Chronicles",
-    "subtitle": "Korean Food, Its Delicious Story"
+    "subtitle": "Korean Food, Its Delicious Story",
+    "search_placeholder": "Search essays...",
+    "table_title": "Title",
+    "table_date": "Date",
+    "coming_soon": "Coming Soon",
+    "no_results": "No results found.",
+    "date_tbd": "TBD",
+    "essays": {
+      "story_1": { "title": "Since when have Koreans been so serious about food?", "subtitle": "The king who worried his people cared too much about eating" },
+      "story_2": { "title": "Hide and Seek of Yakgwa", "subtitle": "Why the beloved traditional sweet was sometimes banned by royal decree" },
+      "story_3": { "title": "Birth of K-Chicken", "subtitle": "How Koreans evolved American fried chicken into global K-Chicken" },
+      "story_4": { "title": "Globalization of K-Ramyeon", "subtitle": "How noodles invented in Japan captivated global taste buds" },
+      "story_5": { "title": "Transformation of Hotteok", "subtitle": "How bread sold by Qing merchants became Korea's signature street food" },
+      "story_6": { "title": "The Secret History of Budaejjigae", "subtitle": "Modern Korean soul food born from the pain of the Korean War" },
+      "story_7": { "title": "Secrets of Highway Rest Areas", "subtitle": "Why Korean rest stops became diverse culinary paradises" },
+      "story_8": { "title": "What exactly is Anju?", "subtitle": "The perfect marriage of alcohol and food, Korea's unique drinking culture" },
+      "story_9": { "title": "The Rise of Tteokbokki", "subtitle": "How a royal court delicacy became the national street food" },
+      "story_10": { "title": "Premium Dessert, Hangwa", "subtitle": "How Hangwa became the top dessert in a cuisine with rare fried foods" },
+      "story_11": { "title": "Evolution of Korean-style Pizza", "subtitle": "The colorful evolution crossing the boundaries of tradition and fusion" },
+      "story_12": { "title": "Is Kimchi a dish or an ingredient?", "subtitle": "From the aesthetics of fermentation to the foundation of tens of thousands of dishes" },
+      "story_13": { "title": "Aesthetics of Bibim (Mixing)", "subtitle": "The commonality in Korean food culture hidden in Gujeolpan, Bibimbap, and Budaejjigae" },
+      "story_14": { "title": "The Infinite Evolution of Gimbap", "subtitle": "How diverse can Gimbap get and evolve?" }
+    }
   }
 }

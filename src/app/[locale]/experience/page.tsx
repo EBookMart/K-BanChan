@@ -75,18 +75,7 @@ export default async function ExperiencePage({ params: { locale } }: Props) {
           <FestivalListClient 
             festivals={festivalsData} 
             locale={locale} 
-            loadMoreText={t("labels.load_more_festivals") || "더 보기"} 
             isRtl={isRtl}
-            statusLabels={{
-              upcoming: t("status.upcoming"),
-              ongoing: t("status.ongoing"),
-              seasonal: t("status.seasonal"),
-              tbd: t("status.tbd"),
-              archived: t("status.archived")
-            }}
-            labels={{
-              featured: t("labels.featured")
-            }}
           />
         </section>
 
@@ -200,7 +189,7 @@ export default async function ExperiencePage({ params: { locale } }: Props) {
                   </div>
                   
                   <div className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 group-hover:text-blue-400 transition-colors mt-auto">
-                    <span>상세 보기</span>
+                    <span>{t("labels.view_details")}</span>
                     <ChevronRight size={14} className={isRtl ? "rotate-180" : ""} />
                   </div>
                 </div>
@@ -212,9 +201,9 @@ export default async function ExperiencePage({ params: { locale } }: Props) {
         {/* 하단 구독 CTA */}
         <section className="mt-20 border-t border-slate-900 pt-16">
           <MonetizationCTA 
-            title="한식 체험 업데이트 구독"
-            description="새로운 한식 축제, 학술 행사, 미식 투어 일정을 가장 먼저 받아보세요."
-            buttonLabel="알림 받기"
+            title={t("newsletter.title")}
+            description={t("newsletter.description")}
+            buttonLabel={t("newsletter.button")}
             href="/newsletter"
             eventName="cta_click_experience"
             variant="secondary"

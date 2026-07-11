@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Story } from "@/data/story";
 import SearchBar from "@/components/SearchBar";
+import { useTranslations } from "next-intl";
 
 interface Props {
   initialStories: Story[];
@@ -12,11 +13,14 @@ interface Props {
 
 export default function StoryClient({ initialStories, title, subtitle }: Props) {
   const [searchTerm, setSearchTerm] = useState("");
+  const tStory = useTranslations("story");
 
-  const filteredStories = initialStories.filter((s) =>
-    s.id.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    s.slug.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredStories = initialStories.filter((s) => {
+    const sTitle = tStory(s.titleKey);
+    const sSubtitle = tStory(s.subtitleKey);
+    return sTitle.toLowerCase().includes(searchTerm.toLowerCase()) ||
+           sSubtitle.toLowerCase().includes(searchTerm.toLowerCase());
+  });
 
   return (
     <div className="w-full">
@@ -25,7 +29,7 @@ export default function StoryClient({ initialStories, title, subtitle }: Props) 
         <SearchBar
           value={searchTerm}
           onChange={setSearchTerm}
-          placeholder="에세이 검색..."
+          placeholder={tStory("search_placeholder")}
         />
       </div>
 
@@ -45,8 +49,8 @@ export default function StoryClient({ initialStories, title, subtitle }: Props) 
           <table className="w-full text-left border-collapse">
             <thead>
               <tr className="bg-slate-900/80 border-b border-slate-800 text-slate-300">
-                <th className="py-4 px-6 font-bold text-sm md:text-base w-3/4">글 제목 (Title)</th>
-                <th className="py-4 px-6 font-bold text-sm md:text-base w-1/4 text-center">게재 일자 (Date)</th>
+                <th className="py-4 px-6 font-bold text-sm md:text-base w-3/4">{tStory("table_title")}</th>
+                <th className="py-4 px-6 font-bold text-sm md:text-base w-1/4 text-center">{tStory("table_date")}</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-800/60">
@@ -55,15 +59,15 @@ export default function StoryClient({ initialStories, title, subtitle }: Props) 
                   <tr key={story.id} className="hover:bg-slate-800/30 transition-colors">
                     <td className="py-4 px-6">
                       <div className="font-bold text-white text-base md:text-lg mb-1">
-                        {story.titleKey}
+                        {tStory(story.titleKey)}
                       </div>
                       <div className="text-sm text-slate-400">
-                        {story.subtitleKey}
+                        {tStory(story.subtitleKey)}
                       </div>
                     </td>
                     <td className="py-4 px-6 text-center">
                       <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-slate-800 text-slate-400 text-xs font-medium">
-                        {story.date}
+                        {tStory(story.dateKey)}
                       </span>
                     </td>
                   </tr>
@@ -71,7 +75,7 @@ export default function StoryClient({ initialStories, title, subtitle }: Props) 
               ) : (
                 <tr>
                   <td colSpan={2} className="py-12 text-center text-slate-500">
-                    검색 결과가 없습니다.
+                    {tStory("no_results")}
                   </td>
                 </tr>
               )}
