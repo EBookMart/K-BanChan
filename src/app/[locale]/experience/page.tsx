@@ -9,6 +9,7 @@ import { festivalsData, academicEventsData, culinaryToursData, getEventStatus } 
 import { Calendar, MapPin, Building, ChevronRight, GraduationCap, Map, PartyPopper, CheckCircle2, Bell } from "lucide-react";
 import MonetizationCTA from "@/components/MonetizationCTA";
 import ExpandableList from "@/components/ExpandableList";
+import FestivalListClient from "@/components/FestivalListClient";
 
 interface Props {
   params: {
@@ -71,80 +72,22 @@ export default async function ExperiencePage({ params: { locale } }: Props) {
             </div>
           </div>
           
-          <ExpandableList loadMoreText={t("labels.load_more_festivals") || "더 보기"} gridClassName="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[...festivalsData]
-              .sort((a, b) => {
-                const statusOrder: Record<string, number> = { ongoing: 1, upcoming: 2, seasonal: 3, tbd: 4, archived: 5 };
-                const statusA = getEventStatus(a.startDate, a.endDate, a.status);
-                const statusB = getEventStatus(b.startDate, b.endDate, b.status);
-                return (statusOrder[statusA] || 99) - (statusOrder[statusB] || 99);
-              })
-              .map((festival) => {
-              const currentStatus = getEventStatus(festival.startDate, festival.endDate, festival.status);
-              return (
-                <Link href={`/experience/festivals/${festival.slug}`} key={festival.slug} className="group flex flex-col bg-slate-900/40 border border-slate-800 rounded-2xl p-6 hover:border-rose-500/50 hover:bg-slate-900/60 transition-all duration-300 shadow-md">
-                  <div className="flex justify-between items-start mb-4">
-                    <span className={`px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md border ${
-                      currentStatus === "upcoming" ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20" :
-                      currentStatus === "ongoing" ? "bg-rose-500/10 text-rose-400 border-rose-500/20" :
-                      currentStatus === "seasonal" ? "bg-amber-500/10 text-amber-400 border-amber-500/20" :
-                      "bg-slate-800 text-slate-400 border-slate-700"
-                    }`}>
-                      {t(`status.${currentStatus}`)}
-                    </span>
-                    {festival.featured && (
-                      <span className="text-[10px] bg-slate-800 text-slate-300 px-2 py-1 rounded-md font-bold">
-                        {t("labels.featured")}
-                      </span>
-                    )}
-                  </div>
-                  
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-rose-400 transition-colors line-clamp-1">
-                    {getLocalText(festival.title)}
-                  </h3>
-                  {festival.subtitle && (
-                    <p className="text-xs text-rose-300/80 mb-3 font-semibold line-clamp-1">{getLocalText(festival.subtitle)}</p>
-                  )}
-                  
-                  <p className="text-sm text-slate-400 line-clamp-2 leading-relaxed mb-6 flex-grow">
-                    {getLocalText(festival.summary)}
-                  </p>
-                  
-                  <div className="space-y-2 mt-auto border-t border-slate-800/80 pt-4">
-                    <div className="flex items-center gap-2 text-xs text-slate-400">
-                      <MapPin size={14} className="text-slate-500 shrink-0" />
-                      <span className="line-clamp-1">{getLocalText(festival.region)}</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-xs text-slate-400">
-                      <Building size={14} className="text-slate-500 shrink-0" />
-                      <span className="line-clamp-1">{getLocalText(festival.organizer)}</span>
-                    </div>
-                    {(festival.startDate || festival.endDate) && (
-                      <div className="flex items-center gap-2 text-xs text-slate-400">
-                        <Calendar size={14} className="text-slate-500 shrink-0" />
-                        <span>{festival.startDate || ""} ~ {festival.endDate || ""}</span>
-                      </div>
-                    )}
-                  </div>
-                  
-                  <div className="mt-4 flex items-center justify-between pt-2">
-                    {festival.isVerified && festival.sourceLabel ? (
-                      <div className="flex items-center gap-1.5 text-[10px] text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded border border-emerald-500/20">
-                        <CheckCircle2 size={12} />
-                        <span>{getLocalText(festival.sourceLabel)}</span>
-                      </div>
-                    ) : (
-                      <div />
-                    )}
-                    <span className="text-xs font-semibold text-slate-500 group-hover:text-rose-400 transition-colors inline-flex items-center gap-1">
-                      상세 보기 <ChevronRight size={14} className={isRtl ? "rotate-180" : ""} />
-                    </span>
-                  </div>
-                </Link>
-              );
-            })}
-          </ExpandableList>
-          {/* TODO: 추후 외부 관광 API 연동 (한국관광공사 TourAPI 등) 시 페이징 또는 무한 스크롤 구현 */}
+          <FestivalListClient 
+            festivals={festivalsData} 
+            locale={locale} 
+            loadMoreText={t("labels.load_more_festivals") || "더 보기"} 
+            isRtl={isRtl}
+            statusLabels={{
+              upcoming: t("status.upcoming"),
+              ongoing: t("status.ongoing"),
+              seasonal: t("status.seasonal"),
+              tbd: t("status.tbd"),
+              archived: t("status.archived")
+            }}
+            labels={{
+              featured: t("labels.featured")
+            }}
+          />
         </section>
 
         {/* Section B: Culinary Tours */}

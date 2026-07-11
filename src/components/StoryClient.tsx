@@ -39,20 +39,45 @@ export default function StoryClient({ initialStories, title, subtitle }: Props) 
         </p>
       </div>
 
-      {/* 스토리 리스트 */}
-      <div className="space-y-6 md:space-y-8 relative z-10">
-        {filteredStories.length > 0 ? (
-          filteredStories.map((story) => (
-            <div key={story.id} className="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 transition-all hover:border-slate-700">
-              <h3 className="text-xl font-bold text-white mb-2">{story.titleKey}</h3>
-              <p className="text-slate-400 text-sm">{story.date} | {story.author}</p>
-            </div>
-          ))
-        ) : (
-          <div className="text-center text-slate-500 py-12">
-            연재 준비 중입니다. (Coming Soon)
-          </div>
-        )}
+      {/* 스토리 리스트 (표 형식) */}
+      <div className="relative z-10 bg-slate-900/40 border border-slate-800 rounded-2xl overflow-hidden shadow-lg">
+        <div className="overflow-x-auto">
+          <table className="w-full text-left border-collapse">
+            <thead>
+              <tr className="bg-slate-900/80 border-b border-slate-800 text-slate-300">
+                <th className="py-4 px-6 font-bold text-sm md:text-base w-3/4">글 제목 (Title)</th>
+                <th className="py-4 px-6 font-bold text-sm md:text-base w-1/4 text-center">게재 일자 (Date)</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-slate-800/60">
+              {filteredStories.length > 0 ? (
+                filteredStories.map((story) => (
+                  <tr key={story.id} className="hover:bg-slate-800/30 transition-colors">
+                    <td className="py-4 px-6">
+                      <div className="font-bold text-white text-base md:text-lg mb-1">
+                        {story.titleKey}
+                      </div>
+                      <div className="text-sm text-slate-400">
+                        {story.subtitleKey}
+                      </div>
+                    </td>
+                    <td className="py-4 px-6 text-center">
+                      <span className="inline-flex items-center justify-center px-3 py-1 rounded-full bg-slate-800 text-slate-400 text-xs font-medium">
+                        {story.date}
+                      </span>
+                    </td>
+                  </tr>
+                ))
+              ) : (
+                <tr>
+                  <td colSpan={2} className="py-12 text-center text-slate-500">
+                    검색 결과가 없습니다.
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );
