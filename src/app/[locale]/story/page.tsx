@@ -39,7 +39,6 @@ export default async function StoryPage({ params: { locale } }: Props) {
         <div className="container mx-auto px-4 max-w-5xl relative z-10 pt-4">
           <StoryClient 
             initialStories={allStories} 
-            locale={locale} 
             title={t("title")} 
             subtitle={t("subtitle")} 
           />

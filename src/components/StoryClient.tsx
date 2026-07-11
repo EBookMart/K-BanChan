@@ -6,12 +6,11 @@ import SearchBar from "@/components/SearchBar";
 
 interface Props {
   initialStories: Story[];
-  locale: string;
   title: string;
   subtitle: string;
 }
 
-export default function StoryClient({ initialStories, locale, title, subtitle }: Props) {
+export default function StoryClient({ initialStories, title, subtitle }: Props) {
   const [searchTerm, setSearchTerm] = useState("");
 
   const filteredStories = initialStories.filter((s) =>
