@@ -242,7 +242,10 @@
     "table_title": "Título",
     "table_date": "Fecha",
     "coming_soon": "Próximamente",
+    "coming_soon_title": "Actualmente en redacción",
+    "coming_soon_desc": "Pronto te traeremos una maravillosa historia de comida coreana. ¡Por favor, espera un poco!",
     "no_results": "No se encontraron resultados.",
+    "back_to_list": "Volver a la lista",
     "date_tbd": "Por determinar",
     "essays": {
       "story_1": { "title": "¿Desde cuándo los coreanos se toman tan en serio la comida?", "subtitle": "El rey que se preocupaba de que a su pueblo le importara demasiado comer" },
@@ -258,7 +261,8 @@
       "story_11": { "title": "Evolución de la Pizza al estilo coreano", "subtitle": "La colorida evolución cruzando las fronteras entre tradición y fusión" },
       "story_12": { "title": "¿Es el Kimchi un plato o un ingrediente?", "subtitle": "De la estética de la fermentación a la base de decenas de miles de platos" },
       "story_13": { "title": "La Estética de Bibim (Mezclar)", "subtitle": "Lo que tienen en común el Gujeolpan, el Bibimbap y el Budaejjigae en la cultura coreana" },
-      "story_14": { "title": "La Evolución Infinita del Gimbap", "subtitle": "¿Qué tan diverso puede llegar a ser el Gimbap?" }
+      "story_14": { "title": "La Evolución Infinita del Gimbap", "subtitle": "¿Qué tan diverso puede llegar a ser el Gimbap?" },
+      "story_15": { "title": "Una nación loca por el café, Corea", "subtitle": "La transformación moderna de Jarikki y Sungnyung y su significado sociocultural" }
     }
   }
 }

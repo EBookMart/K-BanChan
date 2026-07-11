@@ -244,7 +244,10 @@
     "table_title": "Title",
     "table_date": "Date",
     "coming_soon": "Coming Soon",
+    "coming_soon_title": "Currently being written",
+    "coming_soon_desc": "We will bring you a wonderful Korean food story soon. Please wait a little!",
     "no_results": "No results found.",
+    "back_to_list": "Back to List",
     "date_tbd": "TBD",
     "essays": {
       "story_1": { "title": "Since when have Koreans been so serious about food?", "subtitle": "The king who worried his people cared too much about eating" },
@@ -260,7 +263,8 @@
       "story_11": { "title": "Evolution of Korean-style Pizza", "subtitle": "The colorful evolution crossing the boundaries of tradition and fusion" },
       "story_12": { "title": "Is Kimchi a dish or an ingredient?", "subtitle": "From the aesthetics of fermentation to the foundation of tens of thousands of dishes" },
       "story_13": { "title": "Aesthetics of Bibim (Mixing)", "subtitle": "The commonality in Korean food culture hidden in Gujeolpan, Bibimbap, and Budaejjigae" },
-      "story_14": { "title": "The Infinite Evolution of Gimbap", "subtitle": "How diverse can Gimbap get and evolve?" }
+      "story_14": { "title": "The Infinite Evolution of Gimbap", "subtitle": "How diverse can Gimbap get and evolve?" },
+      "story_15": { "title": "A Nation Crazy for Coffee, Korea", "subtitle": "The Modern Transformation of Jarikki and Sungnyung and Its Socio-Cultural Meaning" }
     }
   }
 }

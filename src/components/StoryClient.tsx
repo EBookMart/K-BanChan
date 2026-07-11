@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Story } from "@/data/story";
 import SearchBar from "@/components/SearchBar";
 import { useTranslations } from "next-intl";
+import { useRouter } from "@/i18n/routing";
 
 interface Props {
   initialStories: Story[];
@@ -14,6 +15,7 @@ interface Props {
 export default function StoryClient({ initialStories, title, subtitle }: Props) {
   const [searchTerm, setSearchTerm] = useState("");
   const tStory = useTranslations("story");
+  const router = useRouter();
 
   const filteredStories = initialStories.filter((s) => {
     const sTitle = tStory(s.titleKey);
@@ -56,9 +58,13 @@ export default function StoryClient({ initialStories, title, subtitle }: Props) 
             <tbody className="divide-y divide-slate-800/60">
               {filteredStories.length > 0 ? (
                 filteredStories.map((story) => (
-                  <tr key={story.id} className="hover:bg-slate-800/30 transition-colors">
+                  <tr 
+                    key={story.id} 
+                    className="hover:bg-slate-800/30 transition-colors cursor-pointer group"
+                    onClick={() => router.push(`/story/${story.id}` as `/story/${string}`)}
+                  >
                     <td className="py-4 px-6">
-                      <div className="font-bold text-white text-base md:text-lg mb-1">
+                      <div className="font-bold text-white text-base md:text-lg mb-1 group-hover:text-indigo-300 transition-colors">
                         {tStory(story.titleKey)}
                       </div>
                       <div className="text-sm text-slate-400">

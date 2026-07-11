@@ -247,7 +247,10 @@
     "table_title": "글 제목 (Title)",
     "table_date": "게재 일자 (Date)",
     "coming_soon": "연재 준비 중입니다. (Coming Soon)",
+    "coming_soon_title": "현재 원고를 집필 중입니다",
+    "coming_soon_desc": "곧 훌륭한 한식 이야기로 찾아뵙겠습니다. 조금만 기다려 주세요!",
     "no_results": "검색 결과가 없습니다.",
+    "back_to_list": "목록으로 돌아가기",
     "date_tbd": "준비중",
     "essays": {
       "story_1": { "title": "한국 사람들은 언제부터 먹는 일에 진심이었을까?", "subtitle": "백성들이 먹는 일에 너무 진심이라고 걱정했던 왕" },
@@ -263,7 +266,8 @@
       "story_11": { "title": "한국식 피자의 진화", "subtitle": "전통과 퓨전의 경계를 넘나드는 다채로운 진화 과정" },
       "story_12": { "title": "김치는 요리인가, 식재료인가?", "subtitle": "발효의 미학에서 수만 가지 요리의 바탕이 되기까지" },
       "story_13": { "title": "비빔의 미학", "subtitle": "구절판, 비빔밥, 부대찌개에 숨겨진 한국 식문화의 공통점" },
-      "story_14": { "title": "무한 진화하는 김밥", "subtitle": "김밥은 어디까지 다양해지고 진화할 수 있을까?" }
+      "story_14": { "title": "무한 진화하는 김밥", "subtitle": "김밥은 어디까지 다양해지고 진화할 수 있을까?" },
+      "story_15": { "title": "커피에 미친 나라, 한국", "subtitle": "자리끼와 숭늉의 현대적 변용과 사회문화적 의미" }
     }
   }
 }

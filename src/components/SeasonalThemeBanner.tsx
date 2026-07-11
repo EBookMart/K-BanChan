@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Link, usePathname, useRouter } from "@/i18n/routing";
 import { ArrowRight, ArrowLeft, Sparkles, Flame, Leaf, Search } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 interface SeasonalThemeBannerProps {
   locale: string;
@@ -91,11 +92,12 @@ export default function SeasonalThemeBanner({ locale }: SeasonalThemeBannerProps
   const pathname = usePathname();
   const router = useRouter();
   const [query, setQuery] = useState("");
+  const tBanchan = useTranslations("banchan");
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (query.trim()) {
-      router.push(`/${locale}/banchan?q=${encodeURIComponent(query)}`);
+      router.push(`/banchan?q=${encodeURIComponent(query)}`);
     }
   };
   const isRtl = locale === "ar";
@@ -155,7 +157,7 @@ export default function SeasonalThemeBanner({ locale }: SeasonalThemeBannerProps
           type="text" 
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="반찬이름이나 재료를 검색해보세요" 
+          placeholder={tBanchan("search_placeholder")} 
           className={`w-full bg-slate-900/60 border border-slate-700/80 rounded-2xl py-4 px-5 text-sm text-white focus:outline-none focus:border-emerald-500/50 focus:bg-slate-900/90 shadow-lg transition-all ${isRtl ? 'pl-12' : 'pr-12'}`}
         />
         <button type="submit" className={`absolute ${isRtl ? 'left-4' : 'right-4'} top-1/2 -translate-y-1/2 p-2 text-slate-400 hover:text-emerald-400 transition-colors`}>

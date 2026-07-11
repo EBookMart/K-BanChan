@@ -241,7 +241,10 @@
     "table_title": "标题",
     "table_date": "日期",
     "coming_soon": "敬请期待",
+    "coming_soon_title": "正在撑笔中",
+    "coming_soon_desc": "即将为您带来精彩的韩食故事，请稍候！",
     "no_results": "未找到结果。",
+    "back_to_list": "返回列表",
     "date_tbd": "待定",
     "essays": {
       "story_1": { "title": "韩国人从何时开始对食物如此认真？", "subtitle": "因为百姓对吃太认真而担忧的国王" },
@@ -257,7 +260,8 @@
       "story_11": { "title": "韩式比萨的进化", "subtitle": "跨越传统与融合边界的丰富进化过程" },
       "story_12": { "title": "泡菜是菜肴还是食材？", "subtitle": "从发酵的美学到成为成千上万道菜的基础" },
       "story_13": { "title": "拌的美学", "subtitle": "隐藏在九折板、拌饭、部队锅中的韩国饮食文化共同点" },
-      "story_14": { "title": "无限进化的紫菜包饭", "subtitle": "紫菜包饭能变得多具多样性和进化能力？" }
+      "story_14": { "title": "无限进化的紫菜包饭", "subtitle": "紫菜包饭能变得多具多样性和进化能力？" },
+      "story_15": { "title": "为咖啡疯狂的国家，韩国", "subtitle": "Jarikki和锅巴汤的现代演变及其社会文化意义" }
     }
   }
 }

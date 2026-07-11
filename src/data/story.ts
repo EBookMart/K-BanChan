@@ -22,7 +22,8 @@ export const stories: Story[] = [
   { id: "story-11", slug: "korean-pizza-evolution", image: "/images/story/placeholder.jpg", titleKey: "essays.story_11.title", subtitleKey: "essays.story_11.subtitle", author: "K-BanChan Editorial", dateKey: "date_tbd" },
   { id: "story-12", slug: "kimchi-ingredient-or-dish", image: "/images/story/placeholder.jpg", titleKey: "essays.story_12.title", subtitleKey: "essays.story_12.subtitle", author: "K-BanChan Editorial", dateKey: "date_tbd" },
   { id: "story-13", slug: "harmony-in-korean-food", image: "/images/story/placeholder.jpg", titleKey: "essays.story_13.title", subtitleKey: "essays.story_13.subtitle", author: "K-BanChan Editorial", dateKey: "date_tbd" },
-  { id: "story-14", slug: "gimbap-infinite-evolution", image: "/images/story/placeholder.jpg", titleKey: "essays.story_14.title", subtitleKey: "essays.story_14.subtitle", author: "K-BanChan Editorial", dateKey: "date_tbd" }
+  { id: "story-14", slug: "gimbap-infinite-evolution", image: "/images/story/placeholder.jpg", titleKey: "essays.story_14.title", subtitleKey: "essays.story_14.subtitle", author: "K-BanChan Editorial", dateKey: "date_tbd" },
+  { id: "story-15", slug: "coffee-culture-evolution", image: "/images/story/placeholder.jpg", titleKey: "essays.story_15.title", subtitleKey: "essays.story_15.subtitle", author: "K-BanChan Editorial", dateKey: "date_tbd" }
 ];
 
 export function getAllStories(): Story[] {

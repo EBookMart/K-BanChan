@@ -240,7 +240,10 @@
     "table_title": "Titre",
     "table_date": "Date",
     "coming_soon": "À venir",
+    "coming_soon_title": "En cours de rédaction",
+    "coming_soon_desc": "Nous vous apporterons bientôt une merveilleuse histoire de cuisine coréenne. Veuillez patienter un peu !",
     "no_results": "Aucun résultat trouvé.",
+    "back_to_list": "Retour à la liste",
     "date_tbd": "À déterminer",
     "essays": {
       "story_1": { "title": "Depuis quand les Coréens prennent-ils la nourriture si au sérieux ?", "subtitle": "Le roi qui s'inquiétait que son peuple se soucie trop de manger" },
@@ -256,7 +259,8 @@
       "story_11": { "title": "Évolution de la Pizza à la coréenne", "subtitle": "L'évolution colorée franchissant les frontières de la tradition et de la fusion" },
       "story_12": { "title": "Le Kimchi est-il un plat ou un ingrédient ?", "subtitle": "De l'esthétique de la fermentation à la base de dizaines de milliers de plats" },
       "story_13": { "title": "Esthétique du Bibim (Mélanger)", "subtitle": "Le point commun dans la culture alimentaire coréenne caché dans le Gujeolpan, le Bibimbap et le Budaejjigae" },
-      "story_14": { "title": "L'Évolution Infinie du Gimbap", "subtitle": "Jusqu'où le Gimbap peut-il se diversifier et évoluer ?" }
+      "story_14": { "title": "L'Évolution Infinie du Gimbap", "subtitle": "Jusqu'où le Gimbap peut-il se diversifier et évoluer ?" },
+      "story_15": { "title": "Une nation folle de café, la Corée", "subtitle": "La transformation moderne du Jarikki et du Sungnyung et sa signification socioculturelle" }
     }
   }
 }
