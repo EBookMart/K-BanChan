@@ -39,6 +39,17 @@ export default async function StoryDetailPage({ params: { locale, id } }: Props)
 
   const isRtl = locale === "ar";
 
+  let content: string[] | null = null;
+  const contentKey = story.titleKey.replace('.title', '.content');
+  try {
+    const rawContent = t.raw(contentKey);
+    if (Array.isArray(rawContent) && rawContent.length > 0) {
+      content = rawContent as string[];
+    }
+  } catch (error) {
+    // Content not found
+  }
+
   return (
     <>
       <Header />
@@ -84,18 +95,26 @@ export default async function StoryDetailPage({ params: { locale, id } }: Props)
             </div>
           </div>
 
-          {/* 준비중 영역 */}
-          <div className="flex flex-col items-center justify-center py-24 text-center">
-            <div className="w-20 h-20 rounded-full bg-slate-800/60 border border-slate-700 flex items-center justify-center mb-6">
-              <BookOpen className="w-9 h-9 text-slate-500" />
+          {/* 본문 또는 준비중 영역 */}
+          {content ? (
+            <article className="prose prose-invert prose-lg max-w-none prose-p:leading-relaxed prose-p:mb-6 prose-p:text-slate-300">
+              {content.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </article>
+          ) : (
+            <div className="flex flex-col items-center justify-center py-24 text-center">
+              <div className="w-20 h-20 rounded-full bg-slate-800/60 border border-slate-700 flex items-center justify-center mb-6">
+                <BookOpen className="w-9 h-9 text-slate-500" />
+              </div>
+              <h2 className="text-xl font-bold text-slate-300 mb-3">
+                {t("coming_soon_title")}
+              </h2>
+              <p className="text-slate-500 text-sm max-w-sm leading-relaxed">
+                {t("coming_soon_desc")}
+              </p>
             </div>
-            <h2 className="text-xl font-bold text-slate-300 mb-3">
-              {t("coming_soon_title")}
-            </h2>
-            <p className="text-slate-500 text-sm max-w-sm leading-relaxed">
-              {t("coming_soon_desc")}
-            </p>
-          </div>
+          )}
         </div>
       </main>
       <Footer />
