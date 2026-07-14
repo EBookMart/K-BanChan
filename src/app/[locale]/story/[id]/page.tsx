@@ -46,7 +46,7 @@ export default async function StoryDetailPage({ params: { locale, id } }: Props)
     if (Array.isArray(rawContent) && rawContent.length > 0) {
       content = rawContent as string[];
     }
-  } catch (error) {
+  } catch {
     // Content not found
   }
 
