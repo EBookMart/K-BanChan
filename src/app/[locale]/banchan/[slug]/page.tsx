@@ -224,6 +224,31 @@ export default async function BanchanDetailPage({ params: { locale, slug } }: Pr
                   {banchan.ingredients.seasoning || "N/A"}
                 </p>
               </div>
+
+              {/* 식재료 구매 가이드 (아코디언) */}
+              <details className="group border border-slate-800 bg-slate-900/40 rounded-2xl overflow-hidden open:bg-slate-900/60 transition-colors shadow-lg">
+                <summary className="flex items-center justify-between p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-slate-800/50 transition-colors">
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 rounded-lg bg-amber-950/50 text-amber-500 group-hover:text-amber-400 transition-colors">
+                      <BookOpen size={20} />
+                    </div>
+                    <h4 className="text-base font-bold text-slate-200 group-hover:text-white transition-colors">반찬 식재료 구매 가이드</h4>
+                  </div>
+                  <div className="text-slate-400 text-xs font-bold px-3 py-1.5 rounded-lg border border-slate-700 group-open:bg-amber-600 group-open:text-white group-open:border-amber-500 transition-colors">
+                    <span className="group-open:hidden">열기</span>
+                    <span className="hidden group-open:inline">닫기</span>
+                  </div>
+                </summary>
+                <div className="p-5 pt-0 border-t border-slate-800/50 mt-2">
+                  <div className="p-4 bg-slate-950/50 rounded-xl border border-slate-800/50 prose prose-invert prose-sm prose-p:text-slate-300">
+                    {purchaseGuideMarkdown ? (
+                      <SimpleMarkdown text={purchaseGuideMarkdown} />
+                    ) : (
+                      <p className="text-slate-400 text-sm">현재 상세 가이드를 준비 중입니다.</p>
+                    )}
+                  </div>
+                </div>
+              </details>
             </div>
 
             {/* 우측: 조리법 및 문화 배경 (md:7열) */}
@@ -269,41 +294,14 @@ export default async function BanchanDetailPage({ params: { locale, slug } }: Pr
 
           {/* 중간 CTA: 관련 식재료 및 가이드 북 다운로드 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-             {purchaseGuideMarkdown ? (
-               <details className="group border border-slate-800 bg-slate-900/40 rounded-2xl overflow-hidden open:bg-slate-900/60 transition-colors">
-                 <summary className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
-                   <div className="flex items-start gap-4 flex-1">
-                     <div className="p-3 rounded-xl shrink-0 bg-slate-800 text-slate-400 group-hover:text-amber-400 transition-colors">
-                       <BookOpen size={24} />
-                     </div>
-                     <div>
-                       <h4 className="text-lg font-bold text-white mb-1.5">반찬 식재료 구매 가이드</h4>
-                       <p className="text-sm text-slate-400 leading-relaxed max-w-2xl">
-                         이 반찬을 만들 때 필요한 핵심 식재료와 양념의 올바른 선택법을 알아보세요.
-                       </p>
-                     </div>
-                   </div>
-                   <div className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold text-sm transition-colors whitespace-nowrap shrink-0 w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 mt-6 sm:mt-0 group-open:bg-amber-600 group-open:text-white group-open:border-amber-500">
-                     <span className="group-open:hidden">가이드 열기</span>
-                     <span className="hidden group-open:inline">가이드 닫기</span>
-                   </div>
-                 </summary>
-                 <div className="p-6 pt-0 border-t border-slate-800/50 mt-2">
-                   <div className="p-6 bg-slate-950/50 rounded-xl border border-slate-800/50 mt-4">
-                     <SimpleMarkdown text={purchaseGuideMarkdown} />
-                   </div>
-                 </div>
-               </details>
-             ) : (
-               <MonetizationCTA 
-                 title="반찬 식재료 구매 가이드"
-                 description="이 반찬을 만들 때 필요한 핵심 식재료와 양념의 올바른 선택법을 알아보세요."
-                 buttonLabel="식재료 뷰어 열기"
-                 href="/ingredients"
-                 eventName="cta_click_related_ingredient"
-                 variant="subtle"
-               />
-             )}
+             <MonetizationCTA 
+               title="[임시] 광고 및 제휴 사이트 연결"
+               description="추후 아마존, 쿠팡 등 관련된 추천 상품 및 스폰서 광고가 표시될 자리입니다."
+               buttonLabel="제휴 사이트로 이동"
+               href="#"
+               eventName="cta_click_sponsor_ad"
+               variant="subtle"
+             />
              <MonetizationCTA 
                title="초보자를 위한 한식 반찬 레시피 북"
                description="PDF 가이드북을 다운로드하고 K-BanChan의 베스트셀러 레시피 10가지를 평생 소장하세요."
