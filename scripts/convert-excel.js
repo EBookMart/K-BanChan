@@ -757,32 +757,10 @@ try {
     }
 
     // spicy_level 지수 분석 (0~3단계)
-    const seasoning = String(row["양념(양)"] || "").trim();
-    const method = String(row["조리법"] || "").trim();
-    let spicyLevel = 0;
-
-    // 3단계 매운 반찬: 전통의 극강 매운 양념 고기/오징어 볶음류
-    if (nameKo === "제육볶음" || nameKo === "오징어볶음") {
-      spicyLevel = 3;
-    }
-    // 2단계 매운 반찬: 양념장에 고춧가루, 고추장, 청양고추가 적극 사용된 조림, 전, 볶음류
-    else if (
-      (seasoning.includes("고춧가루") || seasoning.includes("고추장") || seasoning.includes("청양고추")) &&
-      (matchedCategory.key === "volkkeum" || matchedCategory.key === "jorim" || nameKo === "김치전" || nameKo === "파김치" || nameKo === "배추겉절이")
-    ) {
-      spicyLevel = 2;
-    }
-    // 1단계 매운 반찬: 약간 매운 양념(액젓, 고추, 고춧가루 약간)이 가볍게 들어간 무침류 및 기타 반찬
-    else if (
-      seasoning.includes("고춧가루") ||
-      seasoning.includes("고추장") ||
-      seasoning.includes("고추") ||
-      seasoning.includes("액젓") ||
-      nameKo.includes("김치") ||
-      nameKo.includes("무생채")
-    ) {
-      spicyLevel = 1;
-    }
+    // 엑셀의 '매운맛' 컬럼에서 직접 읽어옵니다. (입력 예: 0, 1, 2, 3)
+    const spicyRaw = String(row["매운맛"] || row["J: 매운맛"] || "0").replace(/[^0-9]/g, "");
+    let spicyLevel = parseInt(spicyRaw, 10);
+    if (isNaN(spicyLevel)) spicyLevel = 0;
 
     return {
       id: `banchan-${rankStr}`,

@@ -201,29 +201,43 @@ export default async function BanchanDetailPage({ params: { locale, slug } }: Pr
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16">
             {/* 좌측: 재료 및 양념 (md:5열) */}
             <div className="md:col-span-5 space-y-6">
-              {/* 주재료 박스 */}
-              <div className="p-6 rounded-2xl bg-slate-900/50 border border-slate-800/60 shadow-lg relative overflow-hidden group">
-                <div className="absolute top-0 left-0 w-1 h-full bg-amber-500" />
-                <h3 className="text-lg font-bold text-amber-400 mb-3 flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
-                  {t("detail.ingredients")}
-                </h3>
-                <p className="text-sm text-slate-300 leading-relaxed whitespace-pre-line font-medium">
-                  {banchan.ingredients.main}
-                </p>
-              </div>
+              {/* 주재료 박스 (아코디언) */}
+              <details className="group border border-slate-800 bg-slate-900/40 rounded-2xl overflow-hidden open:bg-slate-900/60 transition-colors shadow-lg">
+                <summary className="flex items-center justify-between p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-slate-800/50 transition-colors">
+                  <div className="flex items-center gap-3">
+                    <span className="w-2 h-2 rounded-full bg-amber-400" />
+                    <h3 className="text-lg font-bold text-amber-400 group-hover:text-amber-300 transition-colors">{t("detail.ingredients")}</h3>
+                  </div>
+                  <div className="text-slate-400 text-xs font-bold px-3 py-1.5 rounded-lg border border-slate-700 group-open:bg-amber-600 group-open:text-white group-open:border-amber-500 transition-colors">
+                    <span className="group-open:hidden">열기</span>
+                    <span className="hidden group-open:inline">닫기</span>
+                  </div>
+                </summary>
+                <div className="p-5 pt-0 border-t border-slate-800/50 mt-2">
+                  <p className="text-sm text-slate-300 leading-relaxed whitespace-pre-line font-medium pt-2">
+                    {banchan.ingredients.main}
+                  </p>
+                </div>
+              </details>
 
-              {/* 양념 박스 */}
-              <div className="p-6 rounded-2xl bg-slate-900/50 border border-slate-800/60 shadow-lg relative overflow-hidden group">
-                <div className="absolute top-0 left-0 w-1 h-full bg-red-500" />
-                <h3 className="text-lg font-bold text-red-400 mb-3 flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-red-400" />
-                  {t("detail.seasoning")}
-                </h3>
-                <p className="text-sm text-slate-300 leading-relaxed whitespace-pre-line font-medium">
-                  {banchan.ingredients.seasoning || "N/A"}
-                </p>
-              </div>
+              {/* 양념 박스 (아코디언) */}
+              <details className="group border border-slate-800 bg-slate-900/40 rounded-2xl overflow-hidden open:bg-slate-900/60 transition-colors shadow-lg">
+                <summary className="flex items-center justify-between p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-slate-800/50 transition-colors">
+                  <div className="flex items-center gap-3">
+                    <span className="w-2 h-2 rounded-full bg-red-400" />
+                    <h3 className="text-lg font-bold text-red-400 group-hover:text-red-300 transition-colors">{t("detail.seasoning")}</h3>
+                  </div>
+                  <div className="text-slate-400 text-xs font-bold px-3 py-1.5 rounded-lg border border-slate-700 group-open:bg-red-600 group-open:text-white group-open:border-red-500 transition-colors">
+                    <span className="group-open:hidden">열기</span>
+                    <span className="hidden group-open:inline">닫기</span>
+                  </div>
+                </summary>
+                <div className="p-5 pt-0 border-t border-slate-800/50 mt-2">
+                  <p className="text-sm text-slate-300 leading-relaxed whitespace-pre-line font-medium pt-2">
+                    {banchan.ingredients.seasoning || "N/A"}
+                  </p>
+                </div>
+              </details>
 
               {/* 식재료 구매 가이드 (아코디언) */}
               <details className="group border border-slate-800 bg-slate-900/40 rounded-2xl overflow-hidden open:bg-slate-900/60 transition-colors shadow-lg">
@@ -253,29 +267,49 @@ export default async function BanchanDetailPage({ params: { locale, slug } }: Pr
 
             {/* 우측: 조리법 및 문화 배경 (md:7열) */}
             <div className="md:col-span-7 space-y-6">
-              {/* 조리법 요약 */}
-              <div className="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/60 shadow-lg">
-                <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                  <BookOpen className="w-5 h-5 text-emerald-400" />
-                  {t("detail.cooking_summary")}
-                </h3>
-                <div className="text-sm text-slate-300 leading-relaxed whitespace-pre-line pl-1">
-                  {banchan.cooking.method}
+              {/* 조리법 요약 (아코디언) */}
+              <details className="group border border-slate-800 bg-slate-900/40 rounded-2xl overflow-hidden open:bg-slate-900/60 transition-colors shadow-lg">
+                <summary className="flex items-center justify-between p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-slate-800/50 transition-colors">
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 rounded-lg bg-emerald-950/50 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                      <BookOpen size={20} />
+                    </div>
+                    <h3 className="text-lg font-bold text-slate-200 group-hover:text-white transition-colors">{t("detail.cooking_summary")}</h3>
+                  </div>
+                  <div className="text-slate-400 text-xs font-bold px-3 py-1.5 rounded-lg border border-slate-700 group-open:bg-emerald-600 group-open:text-white group-open:border-emerald-500 transition-colors">
+                    <span className="group-open:hidden">열기</span>
+                    <span className="hidden group-open:inline">닫기</span>
+                  </div>
+                </summary>
+                <div className="p-5 pt-0 border-t border-slate-800/50 mt-2">
+                  <div className="text-sm text-slate-300 leading-relaxed whitespace-pre-line pt-2">
+                    {banchan.cooking.method}
+                  </div>
                 </div>
-                
-                {/* 요리 팁 / 조리법 응용 */}
-                {banchan.cooking.tip && (
-                  <div className="mt-6 p-5 rounded-2xl bg-amber-950/20 border border-amber-900/40 text-amber-100/90 shadow-inner">
-                    <span className="font-bold text-amber-400 block mb-3 text-sm flex items-center gap-2">
-                      <Lightbulb className="w-4 h-4" />
-                      조리법 응용: 해외·현대 식재료 활용 요령
-                    </span>
-                    <div className="text-sm leading-relaxed whitespace-pre-line font-medium text-amber-100/80">
+              </details>
+
+              {/* 요리 팁 / 조리법 응용 (아코디언) */}
+              {banchan.cooking.tip && (
+                <details className="group border border-slate-800 bg-slate-900/40 rounded-2xl overflow-hidden open:bg-slate-900/60 transition-colors shadow-lg">
+                  <summary className="flex items-center justify-between p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-slate-800/50 transition-colors">
+                    <div className="flex items-center gap-3">
+                      <div className="p-2 rounded-lg bg-amber-950/50 text-amber-400 group-hover:text-amber-300 transition-colors">
+                        <Lightbulb size={20} />
+                      </div>
+                      <h3 className="text-lg font-bold text-slate-200 group-hover:text-white transition-colors">조리법 응용</h3>
+                    </div>
+                    <div className="text-slate-400 text-xs font-bold px-3 py-1.5 rounded-lg border border-slate-700 group-open:bg-amber-600 group-open:text-white group-open:border-amber-500 transition-colors">
+                      <span className="group-open:hidden">열기</span>
+                      <span className="hidden group-open:inline">닫기</span>
+                    </div>
+                  </summary>
+                  <div className="p-5 pt-0 border-t border-slate-800/50 mt-2">
+                    <div className="text-sm text-slate-300 leading-relaxed whitespace-pre-line pt-2">
                       {banchan.cooking.tip}
                     </div>
                   </div>
-                )}
-              </div>
+                </details>
+              )}
 
               {/* 반찬 스토리 (아코디언) */}
               <details className="group border border-slate-800 bg-slate-900/40 rounded-2xl overflow-hidden open:bg-slate-900/60 transition-colors shadow-lg">
