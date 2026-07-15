@@ -340,14 +340,46 @@ export default async function BanchanDetailPage({ params: { locale, slug } }: Pr
 
           {/* 중간 CTA: 관련 식재료 및 가이드 북 다운로드 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-             <MonetizationCTA 
-               title="[임시] 광고 및 제휴 사이트 연결"
-               description="추후 아마존, 쿠팡 등 관련된 추천 상품 및 스폰서 광고가 표시될 자리입니다."
-               buttonLabel="제휴 사이트로 이동"
-               href="#"
-               eventName="cta_click_partner_link"
-               variant="subtle"
-             />
+            {banchan.affiliate?.amazon_us ? (
+              <MonetizationCTA 
+                title="Amazon 식재료 빠른 배송"
+                description="아마존에서 이 반찬에 필요한 핵심 한식 식재료를 전 세계 어디서나 빠르게 받아보세요."
+                buttonLabel="Amazon에서 구매하기"
+                href={banchan.affiliate.amazon_us}
+                eventName="cta_click_partner_link"
+                variant="secondary"
+                isExternal={true}
+              />
+            ) : banchan.affiliate?.coupang ? (
+              <MonetizationCTA 
+                title="쿠팡 로켓프레시 식재료"
+                description="쿠팡을 통해 이 반찬에 필요한 신선한 식재료를 내일 아침 바로 받아보세요."
+                buttonLabel="쿠팡에서 구매하기"
+                href={banchan.affiliate.coupang}
+                eventName="cta_click_partner_link"
+                variant="secondary"
+                isExternal={true}
+              />
+            ) : banchan.affiliate?.rakuten_jp ? (
+              <MonetizationCTA 
+                title="라쿠텐 한식 식재료 직구"
+                description="일본 라쿠텐에서 품질 좋은 한국 식재료를 편리하게 구매하세요."
+                buttonLabel="라쿠텐에서 구매하기"
+                href={banchan.affiliate.rakuten_jp}
+                eventName="cta_click_partner_link"
+                variant="secondary"
+                isExternal={true}
+              />
+            ) : (
+              <MonetizationCTA 
+                title="[제휴 링크 대기중]"
+                description="엑셀의 M(쿠팡), N(아마존), O(라쿠텐) 열에 링크를 입력하시면 여기에 자동으로 버튼이 생성됩니다."
+                buttonLabel="링크 연결 대기중"
+                href="#"
+                eventName="cta_click_partner_link"
+                variant="subtle"
+              />
+            )}
              <MonetizationCTA 
                title="초보자를 위한 한식 반찬 레시피 북"
                description="PDF 가이드북을 다운로드하고 K-BanChan의 베스트셀러 레시피 10가지를 평생 소장하세요."

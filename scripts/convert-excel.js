@@ -818,10 +818,9 @@ try {
       featured: rank <= 8, // 상위 8개 반찬은 홈페이지에 Featured 반찬으로 매핑하기 쉽도록 featured 기본값을 true로 설정해 줍니다.
       views_weekly: weeklyViewsOverrides[uniqueSlug] ?? Math.floor(Math.random() * 50) + 10,
       affiliate: {
-
-        coupang: "",
-        amazon_us: "",
-        rakuten_jp: ""
+        coupang: String(row["쿠팡 링크"] || row["M: 쿠팡 링크"] || "").trim(),
+        amazon_us: String(row["아마존 링크"] || row["N: 아마존 링크"] || "").trim(),
+        rakuten_jp: String(row["라쿠텐 링크"] || row["O: 라쿠텐 링크"] || "").trim()
       },
       created_at: currentDate,
       updated_at: currentDate
