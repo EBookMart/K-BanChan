@@ -743,7 +743,7 @@ try {
     const matchedCategory = categoryMap[nameKo] || { key: "gita", ko: "기타 (장아찌/전/찜)" };
 
     // 비건 분석
-    const veganRaw = String(row["비건 여부(H)"] || "X").trim();
+    const veganRaw = String(row["비건여부"] || row["비건 여부(H)"] || "X").trim();
     const vegan = veganRaw === "O";
 
     let veganNote = "";
@@ -805,10 +805,10 @@ try {
       },
       cooking: {
         method: method,
-        tip: String(row["팁"] || "").trim()
+        tip: String(row["조리법 응용"] || row["팁"] || "").trim()
       },
-      summary: String(row["블로그/기사 주요 요약(G)"] || "").trim(),
-      purchase_guide: String(row["구매가이드"] || "").trim(),
+      summary: String(row["반찬 스토리"] || row["문화적 배경 및 특징"] || row["블로그/기사 주요 요약(G)"] || "").trim(),
+      purchase_guide: String(row["재료 구입∙준비 가이드"] || row["반찬 식재료 구입.준비 가이드"] || row["구매가이드"] || "").trim(),
       vegan: vegan,
       vegan_note: veganNote,
       u_ksc_code: "",

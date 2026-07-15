@@ -232,7 +232,7 @@ export default async function BanchanDetailPage({ params: { locale, slug } }: Pr
                     <div className="p-2 rounded-lg bg-amber-950/50 text-amber-500 group-hover:text-amber-400 transition-colors">
                       <BookOpen size={20} />
                     </div>
-                    <h4 className="text-base font-bold text-slate-200 group-hover:text-white transition-colors">반찬 식재료 구매 가이드</h4>
+                    <h4 className="text-base font-bold text-slate-200 group-hover:text-white transition-colors">재료 구입∙준비 가이드</h4>
                   </div>
                   <div className="text-slate-400 text-xs font-bold px-3 py-1.5 rounded-lg border border-slate-700 group-open:bg-amber-600 group-open:text-white group-open:border-amber-500 transition-colors">
                     <span className="group-open:hidden">열기</span>
@@ -277,18 +277,30 @@ export default async function BanchanDetailPage({ params: { locale, slug } }: Pr
                 )}
               </div>
 
-              {/* 블로그/기사 주요요약 (상세설명) */}
-              <div className="p-6 rounded-2xl bg-slate-900/30 border border-slate-850/50 shadow-inner">
-                <h3 className="text-lg font-bold text-slate-300 mb-4 flex items-center gap-2">
-                  <BookOpen className="w-4 h-4 text-slate-400" />
-                  {t("detail.cultural_note")}
-                </h3>
-                {banchan.summary && (
-                  <div className="text-sm text-slate-300 leading-relaxed font-light mt-2 prose prose-invert prose-p:text-slate-300 prose-headings:text-slate-200">
-                    <SimpleMarkdown text={banchan.summary} />
+              {/* 반찬 스토리 (아코디언) */}
+              <details className="group border border-slate-800 bg-slate-900/40 rounded-2xl overflow-hidden open:bg-slate-900/60 transition-colors shadow-lg">
+                <summary className="flex items-center justify-between p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-slate-800/50 transition-colors">
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 rounded-lg bg-indigo-950/50 text-indigo-400 group-hover:text-indigo-300 transition-colors">
+                      <BookOpen size={20} />
+                    </div>
+                    <h4 className="text-base font-bold text-slate-200 group-hover:text-white transition-colors">{t("detail.cultural_note")}</h4>
                   </div>
-                )}
-              </div>
+                  <div className="text-slate-400 text-xs font-bold px-3 py-1.5 rounded-lg border border-slate-700 group-open:bg-indigo-600 group-open:text-white group-open:border-indigo-500 transition-colors">
+                    <span className="group-open:hidden">열기</span>
+                    <span className="hidden group-open:inline">닫기</span>
+                  </div>
+                </summary>
+                <div className="p-5 pt-0 border-t border-slate-800/50 mt-2">
+                  <div className="text-sm text-slate-300 leading-relaxed font-light mt-2 prose prose-invert prose-p:text-slate-300 prose-headings:text-slate-200">
+                    {banchan.summary ? (
+                      <SimpleMarkdown text={banchan.summary} />
+                    ) : (
+                      <p className="text-slate-400 text-sm">상세 스토리를 준비 중입니다.</p>
+                    )}
+                  </div>
+                </div>
+              </details>
             </div>
           </div>
 

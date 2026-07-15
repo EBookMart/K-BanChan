@@ -104,7 +104,7 @@
       "ingredients": "주재료",
       "seasoning": "양념",
       "cooking_summary": "조리법 요약",
-      "cultural_note": "문화적 배경 및 특징",
+      "cultural_note": "반찬 스토리",
       "related_banchan": "이런 반찬은 어떠세요?",
       "spicy": "매운맛",
       "vegan": "비건(채식)",
@@ -121,7 +121,7 @@
     "logo_alt": "K-BanChan - 프리미엄 한식 가이드"
   },
   "nav": {
-    "banchan": "반찬50선",
+    "banchan": "반찬 50선",
     "banchan_guide": "반찬의 이해",
     "articles": "한식의 5대 특성",
     "hot": "인기 반찬 8선",
