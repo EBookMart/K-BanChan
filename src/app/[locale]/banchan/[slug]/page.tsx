@@ -299,7 +299,7 @@ export default async function BanchanDetailPage({ params: { locale, slug } }: Pr
                description="추후 아마존, 쿠팡 등 관련된 추천 상품 및 스폰서 광고가 표시될 자리입니다."
                buttonLabel="제휴 사이트로 이동"
                href="#"
-               eventName="cta_click_sponsor_ad"
+               eventName="cta_click_partner_link"
                variant="subtle"
              />
              <MonetizationCTA 
