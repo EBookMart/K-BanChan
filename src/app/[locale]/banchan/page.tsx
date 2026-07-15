@@ -21,6 +21,9 @@ export default async function BanchanListPage({ params: { locale } }: Props) {
     { key: "jorim", label: t("filter.jorim") },
     { key: "muchim", label: t("filter.muchim") },
     { key: "namul", label: t("filter.namul") },
+    { key: "soup_stew", label: t("filter.soup_stew") },
+    { key: "steamed_grilled", label: t("filter.steamed_grilled") },
+    { key: "kimchi_pickled", label: t("filter.kimchi_pickled") },
     { key: "gita", label: t("filter.gita") }
   ];
 

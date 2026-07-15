@@ -98,6 +98,9 @@
       "jorim": "조림",
       "muchim": "무침",
       "namul": "나물",
+      "soup_stew": "국∙찌개∙전골",
+      "steamed_grilled": "찜∙구이∙전",
+      "kimchi_pickled": "김치∙장아찌∙젓갈",
       "gita": "기타"
     },
     "detail": {

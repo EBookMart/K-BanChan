@@ -739,8 +739,27 @@ try {
     const rankStr = String(rank).padStart(2, "0");
     const uniqueSlug = `${mapping.slug}-${rankStr}`;
 
-    // 카테고리 매핑
-    const matchedCategory = categoryMap[nameKo] || { key: "gita", ko: "기타 (장아찌/전/찜)" };
+    // 카테고리 매핑: 엑셀의 '조리법 분류' (K열) 번호를 통해 분류합니다.
+    const categoryRaw = String(row["조리법 분류"] || row["K: 조리법 분류"] || "").replace(/[^0-9]/g, "");
+    const categoryNum = parseInt(categoryRaw, 10);
+    
+    let matchedCategory = { key: "gita", ko: "기타" }; // 기본값 8: 기타
+    switch (categoryNum) {
+      case 1: matchedCategory = { key: "volkkeum", ko: "볶음" }; break;
+      case 2: matchedCategory = { key: "jorim", ko: "조림" }; break;
+      case 3: matchedCategory = { key: "muchim", ko: "무침" }; break;
+      case 4: matchedCategory = { key: "namul", ko: "나물" }; break;
+      case 5: matchedCategory = { key: "soup_stew", ko: "국∙찌개∙전골" }; break;
+      case 6: matchedCategory = { key: "steamed_grilled", ko: "찜∙구이∙전" }; break;
+      case 7: matchedCategory = { key: "kimchi_pickled", ko: "김치∙장아찌∙젓갈" }; break;
+      case 8: matchedCategory = { key: "gita", ko: "기타" }; break;
+      default: 
+        // 숫자가 없거나 일치하지 않으면 기존 시트 기반 매핑 사용 (하위 호환성)
+        if (categoryMap[nameKo]) {
+          matchedCategory = categoryMap[nameKo];
+        }
+        break;
+    }
 
     // 비건 분석
     const veganRaw = String(row["비건여부"] || row["비건 여부(H)"] || "X").trim();
@@ -792,7 +811,10 @@ try {
       vegan_note: veganNote,
       u_ksc_code: "",
       u_ksc_notes: "",
-      image_url: `/images/banchan/${mapping.slug}.jpg`,
+      // L열에 지정된 사진 파일명이 있으면 사용하고, 없으면 기본 영어 이름(slug)을 사용합니다.
+      image_url: row["사진 파일명"] || row["L: 사진 파일명"] 
+        ? `/images/banchan/${String(row["사진 파일명"] || row["L: 사진 파일명"]).trim()}`
+        : `/images/banchan/${mapping.slug}.jpg`,
       featured: rank <= 8, // 상위 8개 반찬은 홈페이지에 Featured 반찬으로 매핑하기 쉽도록 featured 기본값을 true로 설정해 줍니다.
       views_weekly: weeklyViewsOverrides[uniqueSlug] ?? Math.floor(Math.random() * 50) + 10,
       affiliate: {
