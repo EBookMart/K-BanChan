@@ -756,11 +756,12 @@ try {
       }
     }
 
-    // spicy_level 지수 분석 (0~3단계)
     // 엑셀의 '매운맛' 컬럼에서 직접 읽어옵니다. (입력 예: 0, 1, 2, 3)
     const spicyRaw = String(row["매운맛"] || row["J: 매운맛"] || "0").replace(/[^0-9]/g, "");
     let spicyLevel = parseInt(spicyRaw, 10);
     if (isNaN(spicyLevel)) spicyLevel = 0;
+
+    const method = String(row["조리법"] || "").trim();
 
     return {
       id: `banchan-${rankStr}`,
