@@ -22,6 +22,7 @@ export interface Banchan {
     tip: string;
   };
   summary: string;
+  purchase_guide?: string;
   vegan: boolean;
   vegan_note: string;
   u_ksc_code: string;

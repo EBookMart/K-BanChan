@@ -173,11 +173,24 @@ export default async function ArticleDetailPage({ params: { locale, slug } }: Pr
           </div>
         </section>
 
-        {/* 2. 본문 (새 텍스트 중심 세부 설명 배치 예정) */}
-        <section className="max-w-4xl mx-auto px-4 mt-8 md:mt-12 relative z-10 flex justify-center items-center min-h-[400px] border-2 border-dashed border-emerald-500/50 rounded-3xl bg-emerald-950/10 mb-12">
-          <p className="text-emerald-400 font-bold text-lg md:text-2xl text-center px-4">
-            (이 부분에 새로 텍스트 중심 세부 설명 배치 예정)
-          </p>
+        {/* 2. 본문 영역 */}
+        <section className="max-w-4xl mx-auto px-4 mt-8 md:mt-12 relative z-10 mb-12">
+          {art.content[locale] || art.content["en"] ? (
+            <article className="prose prose-invert prose-lg md:prose-xl max-w-none prose-p:leading-loose prose-p:mb-8 prose-p:text-slate-300">
+              {(art.content[locale] || art.content["en"] || "")
+                .split('\n')
+                .filter(p => p.trim() !== '')
+                .map((paragraph, index) => (
+                  <p key={index}>{paragraph.trim()}</p>
+              ))}
+            </article>
+          ) : (
+            <div className="flex justify-center items-center min-h-[400px] border-2 border-dashed border-slate-700/50 rounded-3xl bg-slate-900/40">
+              <p className="text-slate-400 font-bold text-lg md:text-2xl text-center px-4">
+                준비 중입니다. (Coming Soon)
+              </p>
+            </div>
+          )}
         </section>
 
         {/* 2.5. 수익화 연동 구역 (광고 또는 상품 판매 링크) */}

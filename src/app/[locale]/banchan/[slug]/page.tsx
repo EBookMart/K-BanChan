@@ -7,12 +7,13 @@ import { getAllBanchan, getBanchanBySlug } from "@/lib/banchan";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BanchanCard from "@/components/BanchanCard";
-import { ArrowLeft, BookOpen } from "lucide-react";
+import { ArrowLeft, BookOpen, Lightbulb } from "lucide-react";
 import { getAIImage } from "@/data/ai-images";
 import BanchanDetailHero from "@/components/banchan/BanchanDetailHero";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import MonetizationCTA from "@/components/MonetizationCTA";
 import { Download } from "lucide-react";
+import SimpleMarkdown from "@/components/SimpleMarkdown";
 
 function getPremiumBanchanImage(slug: string, locale: string) {
   if (slug === "kimchi" || slug === "baechu-geotjeori-26") {
@@ -122,6 +123,8 @@ export default async function BanchanDetailPage({ params: { locale, slug } }: Pr
     }
   };
   const displayName = getNameByLocale();
+
+  const purchaseGuideMarkdown = banchan.purchase_guide || null;
 
   const premiumImg = getPremiumBanchanImage(slug, locale);
   const imageUrl = premiumImg ? premiumImg.src : banchan.image_url;
@@ -235,39 +238,72 @@ export default async function BanchanDetailPage({ params: { locale, slug } }: Pr
                   {banchan.cooking.method}
                 </div>
                 
-                {/* 요리 팁 */}
+                {/* 요리 팁 / 조리법 응용 */}
                 {banchan.cooking.tip && (
-                  <div className="mt-5 p-4 rounded-xl bg-slate-950/80 border border-amber-950/40 text-amber-300/90 text-xs leading-relaxed">
-                    <span className="font-bold text-amber-400 uppercase tracking-wider block mb-1">
-                      💡 Culinary Chef Tip
+                  <div className="mt-6 p-5 rounded-2xl bg-amber-950/20 border border-amber-900/40 text-amber-100/90 shadow-inner">
+                    <span className="font-bold text-amber-400 block mb-3 text-sm flex items-center gap-2">
+                      <Lightbulb className="w-4 h-4" />
+                      조리법 응용: 해외·현대 식재료 활용 요령
                     </span>
-                    {banchan.cooking.tip}
+                    <div className="text-sm leading-relaxed whitespace-pre-line font-medium text-amber-100/80">
+                      {banchan.cooking.tip}
+                    </div>
                   </div>
                 )}
               </div>
 
-              {/* 문화적 배경 / 블로그 요약 */}
+              {/* 블로그/기사 주요요약 (상세설명) */}
               <div className="p-6 rounded-2xl bg-slate-900/30 border border-slate-850/50 shadow-inner">
-                <h3 className="text-lg font-bold text-slate-300 mb-3">
+                <h3 className="text-lg font-bold text-slate-300 mb-4 flex items-center gap-2">
+                  <BookOpen className="w-4 h-4 text-slate-400" />
                   {t("detail.cultural_note")}
                 </h3>
-                <p className="text-sm text-slate-400 leading-relaxed font-light">
-                  {banchan.summary}
-                </p>
+                {banchan.summary && (
+                  <div className="text-sm text-slate-300 leading-relaxed font-light mt-2 prose prose-invert prose-p:text-slate-300 prose-headings:text-slate-200">
+                    <SimpleMarkdown text={banchan.summary} />
+                  </div>
+                )}
               </div>
             </div>
           </div>
 
           {/* 중간 CTA: 관련 식재료 및 가이드 북 다운로드 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-             <MonetizationCTA 
-               title="반찬 식재료 구매 가이드"
-               description="이 반찬을 만들 때 필요한 핵심 식재료와 양념의 올바른 선택법을 알아보세요."
-               buttonLabel="식재료 뷰어 열기"
-               href="/ingredients"
-               eventName="cta_click_related_ingredient"
-               variant="subtle"
-             />
+             {purchaseGuideMarkdown ? (
+               <details className="group border border-slate-800 bg-slate-900/40 rounded-2xl overflow-hidden open:bg-slate-900/60 transition-colors">
+                 <summary className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                   <div className="flex items-start gap-4 flex-1">
+                     <div className="p-3 rounded-xl shrink-0 bg-slate-800 text-slate-400 group-hover:text-amber-400 transition-colors">
+                       <BookOpen size={24} />
+                     </div>
+                     <div>
+                       <h4 className="text-lg font-bold text-white mb-1.5">반찬 식재료 구매 가이드</h4>
+                       <p className="text-sm text-slate-400 leading-relaxed max-w-2xl">
+                         이 반찬을 만들 때 필요한 핵심 식재료와 양념의 올바른 선택법을 알아보세요.
+                       </p>
+                     </div>
+                   </div>
+                   <div className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold text-sm transition-colors whitespace-nowrap shrink-0 w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 mt-6 sm:mt-0 group-open:bg-amber-600 group-open:text-white group-open:border-amber-500">
+                     <span className="group-open:hidden">가이드 열기</span>
+                     <span className="hidden group-open:inline">가이드 닫기</span>
+                   </div>
+                 </summary>
+                 <div className="p-6 pt-0 border-t border-slate-800/50 mt-2">
+                   <div className="p-6 bg-slate-950/50 rounded-xl border border-slate-800/50 mt-4">
+                     <SimpleMarkdown text={purchaseGuideMarkdown} />
+                   </div>
+                 </div>
+               </details>
+             ) : (
+               <MonetizationCTA 
+                 title="반찬 식재료 구매 가이드"
+                 description="이 반찬을 만들 때 필요한 핵심 식재료와 양념의 올바른 선택법을 알아보세요."
+                 buttonLabel="식재료 뷰어 열기"
+                 href="/ingredients"
+                 eventName="cta_click_related_ingredient"
+                 variant="subtle"
+               />
+             )}
              <MonetizationCTA 
                title="초보자를 위한 한식 반찬 레시피 북"
                description="PDF 가이드북을 다운로드하고 K-BanChan의 베스트셀러 레시피 10가지를 평생 소장하세요."

@@ -808,6 +808,7 @@ try {
         tip: String(row["팁"] || "").trim()
       },
       summary: String(row["블로그/기사 주요 요약(G)"] || "").trim(),
+      purchase_guide: String(row["구매가이드"] || "").trim(),
       vegan: vegan,
       vegan_note: veganNote,
       u_ksc_code: "",
